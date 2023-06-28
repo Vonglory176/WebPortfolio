@@ -1,8 +1,4 @@
-* {
-    font-family: 'Rubik', sans-serif;
-    /* -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0) scale(1.0, 1.0); */
-}
+* {font-family: 'Rubik', sans-serif;}
 
 html { scroll-behavior: smooth;}
 
@@ -20,8 +16,6 @@ code {
 hr {width:80%;}
 
 .card {
-    /* box-shadow:100%; */
-    /* margin: 15px; */
     padding: 5px;
     border-radius: 1rem !important;
 }
@@ -31,11 +25,6 @@ main, footer {min-width: 375px;}
 
 /* MAIN SECTION ------------------------------------------------------------------ */
 main {
-    /* padding-bottom: 10px; */
-    /* background-size: 300% 300%;
-    background-image: linear-gradient(-45deg, #63aae0 0%, #428cc5 25%, #428cc5 51%, #15d8ff 100%);
-    -webkit-animation: AnimateBG 20s ease infinite;
-    animation: AnimateBG 10s ease infinite; */
     background-size: 300% 300%;
     background-image: linear-gradient(-45deg, #15d8ff 0%, #428cc5 50%, #15d8ff 100%);
     -webkit-animation: AnimateBG 10s ease infinite;
@@ -125,7 +114,7 @@ nav img {
 /* ---------------------------------------------------------------------------------- */
 
 /* WELCOME SECTION ---------------------------------------------------------- */
-#welcome-section span {animation: fadeInBottom 0.5s;}
+#welcome-section > div {animation: fadeInBottom 0.5s;}
 nav {animation: fadeInRight 0.5s;}
 #welcome-section h1 {
   background-image: linear-gradient(
@@ -153,8 +142,6 @@ nav {animation: fadeInRight 0.5s;}
   }
 }
 
-
-
 @keyframes fadeInBottom {
     0% {opacity: 0}
     0% {transform:translateY(100%);}
@@ -174,7 +161,7 @@ nav {animation: fadeInRight 0.5s;}
     padding-bottom: 1rem;
 }
 
-#welcome-section div:first-child {
+#welcome-section div div:first-child {
     display: flex;
     align-items: end;
     justify-content: center;
@@ -182,20 +169,17 @@ nav {animation: fadeInRight 0.5s;}
     padding-top:11px;
 }
 
-#welcome-section div:nth-child(2) {
+#welcome-section div div:nth-child(2) {
     max-width: 738px;
 }
 
 #welcome-section h1 {
-    /* font-size: calc(2em + 2.4vw); */
-    /* font-size: calc(2em + 4vw); */
     font-size: 45px;
 }
 
 #welcome-section img {
     border: 5px solid black;
     border-radius: 50%;
-    /* max-width: 30%; */
     max-width: 118px;
 }
 
@@ -223,16 +207,16 @@ nav {animation: fadeInRight 0.5s;}
     overflow: hidden;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)
 }
-.project-tile span {
+/* .project-tile span {
     margin-top:auto;
     margin-bottom:auto;
-}
+} */
 .project-tile > a {padding:0}
 
 #projects h5 {text-align: center;}
-#projects span h5:not(.project-tools h5) {margin:0.5rem;}
+#projects div h5:not(.project-tools h5) {margin:0.5rem;}
 
-#projects p {margin-top: 0.5rem;}
+/* #projects p {margin-top: 0.5rem;} */
 #projects img:not(.project-tools img) {width: 100%;}
 .project-tile {padding:0 !important;}
 .project-tile img:not(.project-tools img) {
@@ -279,7 +263,6 @@ nav {animation: fadeInRight 0.5s;}
 #skills h1, #skills h6 {margin: 0 !important;}
 
 #skills > div:nth-child(2) {
-    /* max-width: 1220px; */
     padding: 1rem 1rem 0.5rem 1rem;
     background-color: white;
     border-radius: 1rem;
@@ -328,6 +311,11 @@ button:not(.collapsed) .button-arrow {border-bottom: 12px solid #343a40;}
     margin:5px;
 }
 
+#skills-div:after {
+    content: "";
+    width: 200px;
+}
+
 #skills img {
     /* width: 60px; */
     max-width: 100%;
@@ -339,23 +327,10 @@ button:not(.collapsed) .button-arrow {border-bottom: 12px solid #343a40;}
     padding:0;
     max-width: 90px;
 }
-
-/* #skills .collapse div:nth-child(2n+2) {background-color: rgb(232, 230, 230);} */
-/* #skills .collapse div {
-    display: flex;
-    gap:5px;
-    margin-bottom: 0.5rem;
-}
-#skills .collapse input {
-    align-self: flex-start;
-    margin:5px 0 0 6px;
-} */
 /* ---------------------------------------------------------------------------------- */
 
 /* CONTACT SECTION ------------------------------------------------------------------ */
 #contact {
-    /* min-height: calc(100vh - 56px); */
-    /* max-width: 710px; */
     max-width: 1183px;
     display: flex;
     flex-direction: column;
@@ -364,8 +339,6 @@ button:not(.collapsed) .button-arrow {border-bottom: 12px solid #343a40;}
     padding: 2rem 0 4rem 0;
     margin: auto;
 }
-
-/* #contact h1 {margin-top: 56px !important;} */
 
 #contact div {
     padding: 1rem;
@@ -382,7 +355,12 @@ button:not(.collapsed) .button-arrow {border-bottom: 12px solid #343a40;}
     border-radius: 1rem;
 }
 
-#contact textarea {margin:0.5rem 0;}
+/* #contact textarea {margin:0.5rem 0;} */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
 #contact img {width: 35px;}
 #contact a:first-child {margin-right: 5px;}
 
@@ -399,6 +377,9 @@ footer h5 {
 @media only screen and (max-width:398px) {
     #welcome-section div:nth-child(2) {padding: 0}
 }
+
+@media only screen and (max-width:599px) {#skills-div {justify-content: center;}}
+
 @media only screen and (min-width:992px) and (max-width:1025px)  {
     .project-tile hr {display: none;}
 }
@@ -413,10 +394,8 @@ footer h5 {
         padding: 0;
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     }
-    /* .project-tile > a div {width: 100%; height: 100%; position: absolute !important;} */
 
     .project-tile > span {box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)}
-    /* .project-tile img:not(.project-tools img) {border-radius: 1rem;}  CHANGE HERE !!!!!!!!!!!!!!!!*/ 
     .project-tile .carousel {
         border-radius: 1rem;
         overflow: hidden;
@@ -441,14 +420,12 @@ footer h5 {
         padding-right: 1rem;
         border-radius: 1rem;
         background-color: white;
-        /* border-right: 15px solid white; */
         border: 1px solid lightgrey;
     }
     
     .animate-middle-right {
         position: absolute !important;
         transition: all 0.4s ease-out;
-        /* transition-delay: 0.2s; */
     
         height: 100%;
         display: flex;
@@ -469,20 +446,17 @@ footer h5 {
     
     .animate-middle-left-reverse {
         transition: all 0.4s ease-out;
-        /* transition-delay: 0.2s; */
     
         z-index: 1;
         padding-left: 1rem;
         border-radius: 1rem;
         background-color: white;
-        /* border-left: 15px solid white; */
         border: 1px solid white;
     }
     
     .animate-middle-right-reverse {
         position: absolute !important;
         transition: all 0.4s ease-out;
-        /* transition-delay: 0.2s; */
     
         height: 100%;
         display: flex;
@@ -501,6 +475,3 @@ footer h5 {
         transform: translate(-49.7%, 0); /* 50% */
     }
 }
-/* @media only screen and (min-width:1500px) {
-    #skills > div {max-width: 1220px;}
-} */
