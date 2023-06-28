@@ -1,0 +1,506 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    /* -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0); */
+}
+
+html { scroll-behavior: smooth;}
+
+p, code {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1rem;
+}
+
+code {
+    background-color: rgb(232, 230, 230);
+    padding:0.1rem;
+    border-radius: 0.3rem;
+}
+
+hr {width:80%;}
+
+.card {
+    /* box-shadow:100%; */
+    /* margin: 15px; */
+    padding: 5px;
+    border-radius: 1rem !important;
+}
+
+main, footer {min-width: 375px;}
+
+
+/* MAIN SECTION ------------------------------------------------------------------ */
+main {
+    /* padding-bottom: 10px; */
+    /* background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #63aae0 0%, #428cc5 25%, #428cc5 51%, #15d8ff 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 10s ease infinite; */
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #15d8ff 0%, #428cc5 50%, #15d8ff 100%);
+    -webkit-animation: AnimateBG 10s ease infinite;
+    animation: AnimateBG 10s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* ---------------------------------------------------------------------------------- */
+
+/* COLOR SECTION ------------------------------------------------------------------ */
+nav ul, nav button, nav a {color:white;}
+nav ul, nav button  {background-color:#172033 !important;}
+
+nav a:hover {
+    text-decoration: none !important;
+    color:white !important;
+}
+nav li:hover:not(:last-child) {
+    background-color: #428cc5 !important;
+    border-radius: 0.5rem;
+}
+
+.section-title, #skills > div:nth-child(2), #contact > div, #contact .form-control {
+    border: 1.5px solid #172033 !important
+}
+@media only screen and (min-width:991px) {
+    .project-tile > span {border: 1.5px solid #172033}
+}
+
+footer {
+    background-color:#172033 !important; 
+    /* background-color: #01161E !important; */
+
+    color:white;
+}
+/* ---------------------------------------------------------------------------------- */
+
+/* NAV SECTION ------------------------------------------------------------------ */
+nav {
+    width:100%;
+    min-width: 375px;
+    top: 0;
+    z-index:1;
+    padding: 5px 5px 0 0 !important;
+}
+
+nav ul {
+    width: min-content;
+    border-radius: 1rem;
+    margin-top:1px;
+    padding:7px !important;
+    text-align: center;
+}
+
+nav li {
+    margin:auto;
+    padding: 2px 5px 2px 5px;
+}
+
+nav img {
+    width: 35px;
+    margin: -5px 0 -5px 0;
+}
+#navImage-div {gap:5px;}
+/* ---------------------------------------------------------------------------------- */
+
+/* WELCOME SECTION ---------------------------------------------------------- */
+#welcome-section span {animation: fadeInBottom 0.5s;}
+nav {animation: fadeInRight 0.5s;}
+#welcome-section h1 {
+  background-image: linear-gradient(
+    -225deg,
+    /* #231557 0%, */
+    #44107a 20%,
+    #ff1361 57%,
+    #ff8121 75%,
+    #ff1361 90%,
+    #231557 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* animation: textclip 2s linear infinite; */
+  animation: textclip 5s reverse infinite
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+@keyframes fadeInBottom {
+    0% {opacity: 0}
+    0% {transform:translateY(100%);}
+}
+
+@keyframes fadeInRight {
+    0% {opacity: 0}
+    0% {transform:translateX(100%);}
+}
+
+#welcome-section {
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#welcome-section div:first-child {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap:5px;
+    padding-top:11px;
+}
+
+#welcome-section div:nth-child(2) {
+    max-width: 738px;
+}
+
+#welcome-section h1 {
+    /* font-size: calc(2em + 2.4vw); */
+    /* font-size: calc(2em + 4vw); */
+    font-size: 45px;
+}
+
+#welcome-section img {
+    border: 5px solid black;
+    border-radius: 50%;
+    /* max-width: 30%; */
+    max-width: 118px;
+}
+
+#welcome-section p {text-align: center;}
+/* ---------------------------------------------------------------------------------- */
+
+/* PROJECT SECTION ------------------------------------------------------------------ */
+#projects {
+    max-width: 1500px;
+    padding:2rem 0 !important;
+}
+#projects > div {gap:1rem;}
+#projects > h1 {
+    background-color: white;
+    margin:auto;
+    padding:1rem;
+    width: fit-content;
+    border-radius: 1rem;
+}
+
+.project-tile {
+    max-width:559px;
+    margin:1rem 0;
+    padding:10px;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)
+}
+.project-tile span {
+    margin-top:auto;
+    margin-bottom:auto;
+}
+.project-tile > a {padding:0}
+
+#projects h5 {text-align: center;}
+#projects span h5:not(.project-tools h5) {margin:0.5rem;}
+
+#projects p {margin-top: 0.5rem;}
+#projects img:not(.project-tools img) {width: 100%;}
+.project-tile {padding:0 !important;}
+.project-tile img:not(.project-tools img) {
+    /* border-radius: 15px; */
+    object-fit:cover;
+    min-height: 300px;
+    height: 100%;
+}
+.project-tile:last-child {margin-bottom:0;}
+
+.project-tools {margin-bottom:0.5rem;}
+.project-tools img {
+    max-width: 3.75rem;
+}
+.project-tools span {
+    gap:0.4rem;
+    flex-wrap: wrap;
+}
+
+.badge {
+    position: absolute;
+    margin: 0.5rem !important;
+    bottom:0;
+    z-index: 1;
+}
+/* ---------------------------------------------------------------------------------- */
+
+/* SKILLS SECTION ------------------------------------------------------------------ */
+#skills {
+    height: min-content;
+    margin: 0 auto;
+    padding: 2rem 0;
+    max-width: 1183px;
+}
+
+#skills > div:first-child {
+    background-color: white;
+    margin: 0 auto 1rem auto;
+    padding:1rem;
+    width: fit-content;
+    border-radius: 1rem;
+    text-align: center;
+}
+#skills h1, #skills h6 {margin: 0 !important;}
+
+#skills > div:nth-child(2) {
+    /* max-width: 1220px; */
+    padding: 1rem 1rem 0.5rem 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    margin:auto;
+}
+
+#skills button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#skills button div:first-child {
+    display: flex;
+    gap:0.3em
+}
+
+.button-arrow {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent; 
+    width: 18px;
+}
+.collapsed .button-arrow {border-top: 12px solid #343a40;}
+button:not(.collapsed) .button-arrow {border-bottom: 12px solid #343a40;}
+
+#skills .collapse > div {
+    display: flex; 
+    align-items: start;
+}
+
+#skills input[type=checkbox] {
+    pointer-events: none;
+    position: relative;
+    margin: 0.5rem 0.2rem 0.2rem 0.5rem;
+    width: auto; 
+    flex: 0 0 16px;
+}
+
+/* #skills span div:nth-child(2n+2) {background-color: lightgrey;} */
+/* #skills .collapse div:not(:last-child) {border-bottom: 1px solid #077187;} */
+/* #skills button img {margin-top: auto; margin-bottom: auto;} */
+
+#skills-div > div {
+    padding: 5px;
+    margin:5px;
+}
+
+#skills img {
+    /* width: 60px; */
+    max-width: 100%;
+    height: auto;
+}
+
+#skills-div div{
+    text-align: center;
+    padding:0;
+    max-width: 90px;
+}
+
+/* #skills .collapse div:nth-child(2n+2) {background-color: rgb(232, 230, 230);} */
+/* #skills .collapse div {
+    display: flex;
+    gap:5px;
+    margin-bottom: 0.5rem;
+}
+#skills .collapse input {
+    align-self: flex-start;
+    margin:5px 0 0 6px;
+} */
+/* ---------------------------------------------------------------------------------- */
+
+/* CONTACT SECTION ------------------------------------------------------------------ */
+#contact {
+    /* min-height: calc(100vh - 56px); */
+    /* max-width: 710px; */
+    max-width: 1183px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 4rem 0;
+    margin: auto;
+}
+
+/* #contact h1 {margin-top: 56px !important;} */
+
+#contact div {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 0 auto
+}
+
+#contact h1 {
+    background-color: white;
+    margin: 0 auto 1rem auto;
+    padding:1rem;
+    width: fit-content;
+    border-radius: 1rem;
+}
+
+#contact textarea {margin:0.5rem 0;}
+#contact img {width: 35px;}
+#contact a:first-child {margin-right: 5px;}
+
+/* ---------------------------------------------------------------------------------- */
+
+/* FOOTER SECTION ------------------------------------------------------------------ */
+footer {width: 100%;}
+footer h5 {
+    margin:0; 
+    padding: 1rem; 
+    text-align: center;
+}
+/* ---------------------------------------------------------------------------------- */
+@media only screen and (max-width:398px) {
+    #welcome-section div:nth-child(2) {padding: 0}
+}
+@media only screen and (min-width:992px) and (max-width:1025px)  {
+    .project-tile hr {display: none;}
+}
+
+@media only screen and (max-width:991px) {
+    .project-tile img:not(.project-tools img) {max-height: 50vh;}
+    .project-tile img:not(.project-tools img, .project-tile:last-child a img) {object-position: top;}
+}
+
+@media only screen and (min-width:992px) {
+    .project-tile > a {
+        padding: 0;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    }
+    /* .project-tile > a div {width: 100%; height: 100%; position: absolute !important;} */
+
+    .project-tile > span {box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)}
+    /* .project-tile img:not(.project-tools img) {border-radius: 1rem;}  CHANGE HERE !!!!!!!!!!!!!!!!*/ 
+    .project-tile .carousel {
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    .project-tile {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        background-color:transparent !important;
+        border: none !important;
+        box-shadow: none;
+    }
+
+    .project-tile:nth-child(2n+2){flex-direction: row-reverse !important;}
+
+    .animate-middle-left {
+        transition: all 0.4s ease-out;
+        /* transition-delay: 0.2s; */
+    
+        z-index: 1;
+        padding-right: 1rem;
+        border-radius: 1rem;
+        background-color: white;
+        /* border-right: 15px solid white; */
+        border: 1px solid lightgrey;
+    }
+    
+    .animate-middle-right {
+        position: absolute !important;
+        transition: all 0.4s ease-out;
+        /* transition-delay: 0.2s; */
+    
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        border-radius: 1rem;
+        padding-left: 9.5% !important;
+    }
+    
+    .animate-1 {
+        transform: translate(-35.7%, 0); /* 36% */
+    }
+    
+    .animate-2 {
+        transform: translate(49.7%, 0); /* 50% */
+    }
+    
+    .animate-middle-left-reverse {
+        transition: all 0.4s ease-out;
+        /* transition-delay: 0.2s; */
+    
+        z-index: 1;
+        padding-left: 1rem;
+        border-radius: 1rem;
+        background-color: white;
+        /* border-left: 15px solid white; */
+        border: 1px solid white;
+    }
+    
+    .animate-middle-right-reverse {
+        position: absolute !important;
+        transition: all 0.4s ease-out;
+        /* transition-delay: 0.2s; */
+    
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: white;
+        border-radius: 1rem;
+        padding-right: 9.5% !important;
+    }
+    
+    .animate-1-reverse {
+        transform: translate(35.7%, 0); /* 36% */
+    }
+    
+    .animate-2-reverse {
+        transform: translate(-49.7%, 0); /* 50% */
+    }
+}
+/* @media only screen and (min-width:1500px) {
+    #skills > div {max-width: 1220px;}
+} */
