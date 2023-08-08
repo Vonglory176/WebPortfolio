@@ -1,0 +1,102 @@
+* {font-family: 'Rubik', sans-serif;}
+
+p, code {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1rem;
+}
+
+html { scroll-behavior: smooth;}
+/* 
+In safari 9.0 (only, not > 9.0) you can do it now in CSS with this nice hack. 
+You don't need any JS code. I did it and its working fine for me. Use this hack:
+
+@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
+
+    type your custom css code here 
+    
+}
+*/
+
+.logoLink {
+    img {
+        width: 35px;
+    }
+}
+
+section {
+    margin: 0 auto 2rem auto;
+    padding: 1rem 0;
+
+    .sectionContainer-div, .section-title {
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+        border: 1.5px solid #172033;
+        background-color: white;
+        border-radius: 1rem;
+        margin: auto;
+    }
+
+    .section-title {
+        width: fit-content;
+        margin-bottom: 1rem;
+        padding:1rem;
+    }
+
+    .sectionContainer-div {
+        padding: 0.8rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+hr {
+    width:80%;
+    margin: 1rem auto !important;
+}
+
+h5 {text-align: center;}
+
+.skillLogo-div {
+    text-align: center;
+    img {
+        width: 65px;
+        height: 65px;
+    }            
+    h6 {margin:5px 0 0 0}
+}   
+
+
+body {
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #15d8ff 0%, #428cc5 50%, #15d8ff 100%);
+    -webkit-animation: AnimateBG 10s ease infinite;
+    animation: AnimateBG 10s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@import "./navbar.scss";
+@import "./welcome.scss";
+@import "./projects.scss";
+@import "./skills.scss";
+@import "./contact";
