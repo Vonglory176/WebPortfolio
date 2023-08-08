@@ -164,7 +164,7 @@ export default {
                 },
                 {
                     id:"ES6 syntactic sugar - JavascriptSkill",
-                    checked:false,
+                    checked:true,
                     content:<span>ES6 syntactic sugar (arrow functions, destructuring assignments, object initializer shorthand, rest parameters, spread operator)</span>
                 },
                 {

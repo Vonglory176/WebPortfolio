@@ -15,23 +15,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 )
     
 window.addEventListener('load', function() {
-  // let projectPeices = this.document.querySelectorAll(".project-imageLink")
-  // let cntr = 1
-
-  // projectPeices.forEach(e => {
-  //   if (cntr%2) e.classList.add("animate-middle-left")
-  //   else e.classList.add("animate-middle-left-reverse")
-  //   cntr++
-  // })
-
-  // projectPeices = this.document.querySelectorAll(".project-content")
-  // projectPeices.forEach(e => {
-  //   if (cntr%2) e.classList.add("animate-middle-right")
-  //   else e.classList.add("animate-middle-right-reverse")
-  //   cntr++
-  // })
-
-  ///////////
 
   const animation_elements = document.querySelectorAll('.animate-middle-left, .animate-middle-right, .animate-middle-left-reverse, .animate-middle-right-reverse') //, .animate-top-down
 
