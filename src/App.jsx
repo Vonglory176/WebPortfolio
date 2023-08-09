@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Navbar from './component/Navbar'
 import Welcome from './component/Welcome'
 import Projects from './component/Projects'
@@ -6,6 +5,7 @@ import Skills from './component/Skills'
 import Contact from './component/Contact'
 
 export default function App() {
+
   return (
     <>
       <Navbar />
