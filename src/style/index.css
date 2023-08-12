@@ -154,7 +154,7 @@ nav .navbar-nav .navbar-image-li {
   gap: 5px;
 }
 #welcome-section .welcomeContainer-div .welcomeTitle-div img {
-  border: 5px solid black;
+  border: 1px solid black;
   border-radius: 50%;
   max-width: 118px;
 }
@@ -296,10 +296,14 @@ nav .navbar-nav .navbar-image-li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 1rem;
     background-color: white;
     border: 1px solid lightgrey;
+    overflow: hidden;
+  }
+  .project-card .project-content p {
+    overflow: auto;
   }
   .animate-middle-left {
     transition: all 0.4s ease-out;

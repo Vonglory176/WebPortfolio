@@ -51,12 +51,12 @@ export default {
                 },
                 {
                     id:"Display value types - CssSkill",
-                    checked:false,
+                    checked:true,
                     content:<span>Display value types (block, inline-block, inline, flex, grid)</span>
                 },
                 {
                     id:"Positioning - CssSkill",
-                    checked:false,
+                    checked:true,
                     content:<span>Positioning (static, absolute, fixed, relative)</span>
                 },
                 {

@@ -18,7 +18,7 @@ export default function Projects() {
     
     return (
         <section id="projects-section">
-            <h1 className="projects-title section-title shadow">Recent projects</h1>
+            <h1 className="projects-title section-title shadow">Noteable projects</h1>
 
             <div className="projectsContainer-div">
                 {projectCardArray}

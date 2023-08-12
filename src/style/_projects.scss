@@ -100,10 +100,15 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding: 0 1rem;
+            padding: 0.5rem 1rem;
             border-radius: 1rem;
             background-color: white;
             border: 1px solid lightgrey;
+            overflow: hidden;
+
+            p {
+                overflow: auto;
+            }
         }
     }
 
