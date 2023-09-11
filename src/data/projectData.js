@@ -1,21 +1,21 @@
 export default [
     {
         position:1,
-        link:"https://codepen.io/Vonglory176/pen/ExdvPJp",
+        link:"https://vonglory176.github.io/ImageGenerator/",
         projectImages:[
             {
-                alt:"Theodore Roosevelt project image 1",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1119784945708175480/image.png"
+                alt:"Image generator project image 1",
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1144375437066244277/image.png"
             },
             {
-                alt:"Theodore Roosevelt project image 2",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1119784945397813368/image1.png"
+                alt:"Image generator project image 2",
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1144378120556773558/image.png"
             }
         ],
-        title:"Theodore Roosevelt Tribute",
-        description:"This was a simple project of mine built to give a brief summary of president Theodore Roosevelt. In building it, focus was on formatting and layout, citations through figure/figcaption elements and content sizing via page responsiveness. Fairly basic and didn't take too long to do as such, most of the time being spent on research and creating the written content itself.",
+        title:"Image Generator",
+        description:"This project is exactly as it sounds, that being a small React application allowing you to use AI to easily create detailed artwork! Through the use of Horde-AI API services and a series of fetch calls, clicking the generate button will send whatever settings you've configured off to be processed and returned as an image of your design. The work itself was of course very heavily focused on fundamental React concepts (like useState and useEffect) and Asynchronous Fetch/API calls in particular, though also involved extensive utilization of React-Bootstrap for much of the UI. With the “Batch Size” feature being the latest addition to my program, I'm also planning on adding some basic Local Storage functions to allow easy reuse of previous prompts. I'd like a gallery feature of sorts as well, though this looks to require back-end work and is as such an idea on the shelf for now.",
         skillLogos:[
-            "HTML","CSS","Bootstrap"
+            "HTML","CSS","Sass","Bootstrap","Javascript","React","Vite"
             // {
             //     id:1,
             //     alt:"HTML logo",

@@ -4,6 +4,10 @@ import SkillLogo from "./SkillLogo"
 
 export default function ProjectCard({position,link,projectImages,title,description,skillLogos}) {
     const {ref, inView, entry} = useInView({threshold:0.7})
+    // https://www.youtube.com/watch?v=r1auJEf9ISo
+    // https://github.com/thebuilder/react-intersection-observer
+    // https://dev.to/producthackers/intersection-observer-using-react-49ko
+    // https://youtu.be/QD4GcZJObXg
     
     //Determining tile shift direction
     const reverse = Boolean(position%2)
