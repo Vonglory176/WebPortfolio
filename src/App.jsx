@@ -10,9 +10,24 @@ export default function App() {
     <>
       <Navbar />
       <Welcome />
+      {/* <div className='angle1'></div> */}
       <Projects />
       <Skills />
       <Contact />
+
+      {/* <div style={{
+        width: '100%',
+        height: '250px',
+        background: 'linear-gradient(135deg, red 50%, blue 50%)',
+        
+        //0,0 is top left, 1,1 is bottom right
+        clipPath: 'polygon(0 0, 100% 0%, 100% 0%, 0% 100%)'
+        //clipPath: 'polygon(0 0, 100% 0%, 100% 100%, 0% 100%)'//'polygon(50% 50% at 50% 50%)'
+      }}></div> */}
+
+
+      {/* <div style={{height: '500px', width: '100%', background: 'linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)', clipPath: 'polygon(0 0, 100% 50%, 100% 85%, 0% 100%)'}}></div> */}
+      
       
       {/* <section id="mainFooter-section" className='d-flex align-items-center gap-1'>
         <h6>Skyler 2023</h6> 
