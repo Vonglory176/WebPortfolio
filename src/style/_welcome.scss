@@ -37,12 +37,12 @@
 
 }
 
-@media only screen and (min-width:455px) {
-  .welcomeTitle-div {
-    // img {width: 118px !important;}
+// @media only screen and (min-width:455px) {
+//   .welcomeTitle-div {
+//     // img {width: 118px !important;}
     
-  } 
-}
+//   } 
+// }
 
 @media screen and (min-width:585px) {
   .welcomeTitle-div {
@@ -83,7 +83,7 @@
     animation: textclip 5s reverse infinite
   }
 
-  .welcomeContainer-div {
+  .welcomeContainer-div, .welcomeTitle-div {
     animation: fadeInBottom 0.5s;
 
   }
