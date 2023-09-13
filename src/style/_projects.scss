@@ -52,22 +52,35 @@
         height: 100%;
     }
 
+    .project-description {
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 16px;
+        overflow: auto;
+        p:last-child {margin:0}
+        padding: 8px 0 8px 0;
+    }
+
     .project-tools {
         display: flex;
         justify-content: center;
+        align-items: center;
         gap:0.4rem;
         flex-wrap: wrap;
         
         .skillLogo-div {
+            display: flex;
+            align-items: center;
             img {
-                max-width: 3.75rem;
+                height: auto;
+                max-width: 2rem;
             }
         }
     }
 }
 
 @media only screen and (min-width:992px) and (max-width:1025px)  {
-    .project-card hr {display: none;}
+    // .project-card hr {display: none;}
 }
 
 @media only screen and (max-width:991px) {
@@ -106,8 +119,8 @@
             border: 1px solid lightgrey;
             overflow: hidden;
 
-            p {
-                overflow: auto;
+            .project-title {
+                // font-weight: 500;
             }
         }
     }
