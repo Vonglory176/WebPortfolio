@@ -1,73 +1,91 @@
 #welcome-section {
   min-height:100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
+  .welcomeTitle-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+
+    img {
+      border: 1px solid black;
+      border-radius: 50%;
+      width:118px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+  }
+
+  .welcomeContent-div {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    padding: 8px 0 8px 0;
+    max-width: 738px;
+    p:last-child {margin:0}
+    margin: 0 auto 16px auto;
+  }
+}
   .welcomeContainer-div {
     max-width: 765px;
 
-    .welcomeTitle-div {
-      display: flex;
-      align-items: end;
-      justify-content: center;
-      gap:5px;
-
-      img {
-        border: 1px solid black;
-        border-radius: 50%;
-        max-width: 118px;
-      }
-
-      h1 {
-        font-size: 40px;
-      }
-    }
-
-    .welcomeContent-div {
-      max-width: 738px;
-      margin: auto;
-    }
-  }
 }
 
-@media only screen and (min-width:425px) {
-  .welcomeTitle-div h1 {
-    font-size: 50px !important;
-    margin-bottom: -7 !important;
-  }
+@media only screen and (min-width:455px) {
+  .welcomeTitle-div {
+    // img {width: 118px !important;}
+    
+  } 
+}
+
+@media screen and (min-width:585px) {
+  .welcomeTitle-div {
+    flex-direction: row !important;
+    h1 {font-size: 50px !important;}
+    img {
+      width: 91px !important;
+      margin-bottom:16px;
+    }
+  } 
 }
 
 #welcome-section {
+  .welcomeTitle-div h1 {
+    background-image: linear-gradient(
+      -225deg,
+      #44107a 20%,
+      #ff1361 57%,
+      #ff8121 75%,
+      #ff1361 90%,
+      #231557 100%
+      /* 
+
+      #44107a 10%,
+      #ff1361 30%,
+      #ff8121 50%,
+      #ff1361 70%,
+      #231557 90%,
+      #44107a 100%
+      */
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    // background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s reverse infinite
+  }
+
   .welcomeContainer-div {
     animation: fadeInBottom 0.5s;
 
-    .welcomeTitle-div h1 {
-      background-image: linear-gradient(
-        -225deg,
-        #44107a 20%,
-        #ff1361 57%,
-        #ff8121 75%,
-        #ff1361 90%,
-        #231557 100%
-        /* 
-
-        #44107a 10%,
-        #ff1361 30%,
-        #ff8121 50%,
-        #ff1361 70%,
-        #231557 90%,
-        #44107a 100%
-        */
-      );
-      background-size: auto auto;
-      background-clip: border-box;
-      background-size: 200% auto;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: textclip 5s reverse infinite
-    }
   }
 }
 
