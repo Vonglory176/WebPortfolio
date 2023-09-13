@@ -4,7 +4,7 @@
 
 p, code {
   font-family: "PT Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 html {
@@ -141,49 +141,63 @@ nav .navbar-nav .navbar-image-li {
 #welcome-section {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#welcome-section .welcomeContainer-div {
-  max-width: 765px;
-}
-#welcome-section .welcomeContainer-div .welcomeTitle-div {
+#welcome-section .welcomeTitle-div {
   display: flex;
-  align-items: end;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 5px;
 }
-#welcome-section .welcomeContainer-div .welcomeTitle-div img {
+#welcome-section .welcomeTitle-div img {
   border: 1px solid black;
   border-radius: 50%;
-  max-width: 118px;
+  width: 118px;
 }
-#welcome-section .welcomeContainer-div .welcomeTitle-div h1 {
+#welcome-section .welcomeTitle-div h1 {
   font-size: 40px;
 }
-#welcome-section .welcomeContainer-div .welcomeContent-div {
+#welcome-section .welcomeContent-div {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding: 8px 0 8px 0;
   max-width: 738px;
-  margin: auto;
+  margin: 0 auto 16px auto;
+}
+#welcome-section .welcomeContent-div p:last-child {
+  margin: 0;
 }
 
-@media only screen and (min-width: 425px) {
+.welcomeContainer-div {
+  max-width: 765px;
+}
+
+@media screen and (min-width: 585px) {
+  .welcomeTitle-div {
+    flex-direction: row !important;
+  }
   .welcomeTitle-div h1 {
     font-size: 50px !important;
-    margin-bottom: -7 !important;
+  }
+  .welcomeTitle-div img {
+    width: 91px !important;
+    margin-bottom: 16px;
   }
 }
-#welcome-section .welcomeContainer-div {
-  animation: fadeInBottom 0.5s;
-}
-#welcome-section .welcomeContainer-div .welcomeTitle-div h1 {
+#welcome-section .welcomeTitle-div h1 {
   background-image: linear-gradient(-225deg, #44107a 20%, #ff1361 57%, #ff8121 75%, #ff1361 90%, #231557 100%);
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 5s reverse infinite;
+}
+#welcome-section .welcomeContainer-div {
+  animation: fadeInBottom 0.5s;
 }
 
 @keyframes textclip {
@@ -251,21 +265,32 @@ nav .navbar-nav .navbar-image-li {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   height: 100%;
 }
+.project-card .project-description {
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 16px;
+  overflow: auto;
+  padding: 8px 0 8px 0;
+}
+.project-card .project-description p:last-child {
+  margin: 0;
+}
 .project-card .project-tools {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 0.4rem;
   flex-wrap: wrap;
 }
+.project-card .project-tools .skillLogo-div {
+  display: flex;
+  align-items: center;
+}
 .project-card .project-tools .skillLogo-div img {
-  max-width: 3.75rem;
+  height: auto;
+  max-width: 2rem;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1025px) {
-  .project-card hr {
-    display: none;
-  }
-}
 @media only screen and (max-width: 991px) {
   .carousel-inner img {
     max-height: 50vh;
@@ -301,9 +326,6 @@ nav .navbar-nav .navbar-image-li {
     background-color: white;
     border: 1px solid lightgrey;
     overflow: hidden;
-  }
-  .project-card .project-content p {
-    overflow: auto;
   }
   .animate-middle-left {
     transition: all 0.4s ease-out;
