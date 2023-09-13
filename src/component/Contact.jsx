@@ -1,12 +1,13 @@
 export default function Contact() {
     return (
         <section id="contact-section">
-            <h1 className="contact-title section-title">Contact me here</h1>
+            <h1 className="contact-title section-title">Interested in hiring me?</h1>
 
             <div className="contactContainer-div sectionContainer-div col-11 col-md-9">
-                <h5>What I'm looking for</h5>
-                <p>I'm currently searching for work and am happy to look into any offers given, though my ideal for the moment is something within a team. I've made a lot of progress in my learning, but with so many nuances and techniques that go into Web Development, getting a full idea of what's possible and where the head should turn next when getting started can be quite the maze.</p>
-                <hr/>
+                {/* <h5>What I'm looking for</h5> */}
+                {/* <p>I'm currently searching for work and am happy to look into any offers given, though my ideal for the moment is something within a team. I've made a lot of progress in my learning, but with so many nuances and techniques that go into Web Development, getting a full idea of what's possible and where the head should turn next when getting started can be quite the maze.</p> */}
+                {/* <h5>Contact me here</h5> */}
+                {/* <hr/> */}
 
                 <form className="contact-form" action="https://formsubmit.co/SkylerGConley@gmail.com" method="POST">
                     <input id="email" name="email" className="form-control" placeholder="Enter your email address.." type="email" required/>
