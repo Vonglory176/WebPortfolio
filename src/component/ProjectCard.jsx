@@ -55,10 +55,11 @@ export default function ProjectCard({position,link,projectImages,title,descripti
                       "animate-middle-right-reverse" + (inView? " animate-2-reverse" : ""))
             }> {/* animate-middle-right*/}
                 <h5 className="project-title">{title}</h5>
-                <p className="project-description">{description}</p>
-                <hr/>
-                <h5>Tools used</h5>
+                {/* <p className="project-description">{description}</p> */}
+                <div className="project-description">{description}</div>
+                {/* <hr/> */}
                 <div className="project-tools">
+                    <h5 className='m-0'>Tools used:</h5>
                     {skillLogoElements}
                 </div>
                 <hr/>
