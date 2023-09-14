@@ -7,7 +7,8 @@ export default function Projects() {
             <ProjectCard 
             key={item.title}
             position={item.position}
-            link={item.link}
+            projectLink={item.projectLink}
+            githubLink={item.githubLink}
             projectImages={item.projectImages}
             title={item.title}
             description={item.description}
@@ -18,7 +19,7 @@ export default function Projects() {
     
     return (
         <section id="projects-section">
-            <h1 className="projects-title section-title shadow">Noteable projects</h1>
+            <h1 className="projects-title section-title shadow">Noteable Projects</h1>
 
             <div className="projectsContainer-div">
                 {projectCardArray}
