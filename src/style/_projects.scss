@@ -23,14 +23,18 @@
         height: min-content !important;
         overflow: hidden;
 
-        .badge {
+        .badgeContainer-div {
             position:absolute;
             margin: 0.5rem !important;
             bottom:0;
-            z-index: 1;
+            z-index: 2;
+            gap:5px;
+
+            a {text-decoration: none;}
         }
         
         .carousel {
+            .carousel-indicators {margin: 0 auto 1rem auto;}
             .carousel-inner {
                 .carousel-item {
                     img {
@@ -47,7 +51,7 @@
     .project-content {
         margin: auto;
         padding: 1rem;
-        padding-bottom:0;
+        // padding-bottom:0;
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
         height: 100%;
     }
@@ -79,9 +83,9 @@
     }
 }
 
-@media only screen and (min-width:992px) and (max-width:1025px)  {
+// @media only screen and (min-width:992px) and (max-width:1025px)  {
     // .project-card hr {display: none;}
-}
+// }
 
 @media only screen and (max-width:991px) {
     .carousel-inner {
