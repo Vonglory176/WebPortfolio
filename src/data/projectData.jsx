@@ -1,7 +1,8 @@
 export default [
     {
         position:1,
-        link:"https://vonglory176.github.io/ImageGenerator/",
+        projectLink:"https://vonglory176.github.io/ImageGenerator/",
+        githubLink:"https://github.com/Vonglory176/ImageGenerator/",
         projectImages:[
             {
                 alt:"AI Image Generator project image 1",
@@ -15,7 +16,7 @@ export default [
         title:"AI Image Generator",
         description:[<p>This project is exactly as it sounds, that being a small React application allowing you to use AI to easily create detailed artwork!</p>, <p>Through the use of Horde-AI API services and a series of fetch calls, clicking the generate button will send whatever settings you've configured off to be processed and returned as an image of your design. The work itself was of course very heavily focused on fundamental React concepts (like useState and useEffect) and Asynchronous Fetch calls in particular, though also involved extensive utilization of React-Bootstrap for much of the UI. </p>, <p>With the “Batch Size” feature being the latest addition to my program, I'm also planning on adding some basic Local Storage functions to allow easy reuse of previous prompts. I'd like a gallery feature of sorts as well, though this looks to require back-end work and is as such an idea on the shelf for now.</p>],
         skillLogos:[
-            "HTML","CSS","Sass","Bootstrap","Javascript","React","Vite"
+            "HTML","CSS","Sass","Bootstrap","Javascript","React","Vite","RESTful API"
             // {
             //     id:1,
             //     alt:"HTML logo",
@@ -35,7 +36,8 @@ export default [
     },
     {
         position:2,
-        link:"https://vonglory176.github.io/Mock-ReactDoc-Page/",
+        projectLink:"https://vonglory176.github.io/Mock-ReactDoc-Page/",
+        githubLink:"https://github.com/Vonglory176/Mock-ReactDoc-Page/",
         projectImages:[
             {
                 alt:"React Documentation Page project image 1",
@@ -79,7 +81,8 @@ export default [
     },
     {
         position: 3,
-        link:"https://vonglory176.github.io/SpaceShip-Game/",
+        projectLink:"https://vonglory176.github.io/SpaceShip-Game/",
+        githubLink:"https://github.com/Vonglory176/SpaceShip-Game/",
         projectImages:[
             {
                 alt:"Asteroid Gauntlet Game project image 1",
