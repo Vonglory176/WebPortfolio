@@ -26,7 +26,7 @@ export default function Skills() {
 
     return (
         <section id="skills-section">
-            <h1 className="skills-title section-title">Skills and toolset<br/><span>With future plans shown <a href="https://steep-parent-61b.notion.site/Junior-Web-Developer-Checklist-1-0-aca59fa0c8864ed7809c3c0f5d3c3bc3" target="_blank"> here</a>..</span></h1>
+            <h1 className="skills-title section-title">Skills And Toolset<br/><span>With future plans shown <a href="https://steep-parent-61b.notion.site/Junior-Web-Developer-Checklist-1-0-aca59fa0c8864ed7809c3c0f5d3c3bc3" target="_blank"> here</a>..</span></h1>
             <div className="skillsContainer-div sectionContainer-div col-11 col-md-9">
                 <div className="skillsDropdownContainer-div">
                     {skillDropdowns /* Printing Dropdowns */}

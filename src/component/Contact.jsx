@@ -1,7 +1,7 @@
 export default function Contact() {
     return (
         <section id="contact-section">
-            <h1 className="contact-title section-title">Want to get in touch?</h1>
+            <h1 className="contact-title section-title">Want To Get In Touch?</h1>
 
             <div className="contactContainer-div sectionContainer-div col-11 col-md-9">
                 {/* <h5>What I'm looking for</h5> */}
