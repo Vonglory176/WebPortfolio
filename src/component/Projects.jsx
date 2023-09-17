@@ -7,6 +7,7 @@ export default function Projects() {
             <ProjectCard 
             key={item.title}
             position={item.position}
+            imagePosition={item.imagePosition}
             projectLink={item.projectLink}
             githubLink={item.githubLink}
             projectImages={item.projectImages}
