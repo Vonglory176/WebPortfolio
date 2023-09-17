@@ -287,7 +287,6 @@ nav .navbar-nav .navbar-image-li {
   background-color: rgb(73, 73, 73);
 }
 .project-card .project-imageLink .carousel .carousel-inner .carousel-item img {
-  position: relative;
   -o-object-fit: cover;
      object-fit: cover;
   min-height: 300px;
