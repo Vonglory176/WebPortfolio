@@ -6,7 +6,7 @@ export default function SkillLogo({name, noName}) {
 if (logo) { // ??
     return (
         <div className="skillLogo-div">
-            <img alt={logo.alt} src={logo.image}/>
+            <img alt={logo.alt} src={logo.image} loading="lazy"/>
             {!noName && <h6>{logo.name}</h6>}
         </div>
     )
