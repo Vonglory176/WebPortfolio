@@ -1,0 +1,152 @@
+/* PROJECT SECTION ------------------------------------------------------------------ */
+#projects-section {
+    max-width: 1500px;
+
+    .projectsContainer-div {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap:1.5rem;
+    }
+}
+
+.project-card {
+    // max-width:559px;
+    border-radius: 1rem !important;
+    overflow: hidden;
+    padding:10px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    padding:0 !important;
+
+    .project-imageLink {
+        position: relative;
+        height: min-content !important;
+        overflow: hidden;
+
+        .badgeContainer-div {
+            position:absolute;
+            margin: 0.5rem !important;
+            bottom:0;
+            z-index: 2;
+            gap:5px;
+
+            a {text-decoration: none;}
+        }
+        
+        .carousel {
+            .carousel-indicators {margin: 0 auto 1rem auto;}
+            .carousel-inner {
+                background-color: rgb(73, 73, 73);
+                .carousel-item {
+                    img {
+                        object-fit: cover;
+                        min-height: 300px;
+                        width: 100% !important;
+                        height: 100% !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .project-content {
+        margin: auto;
+        padding: 1rem;
+        // padding-bottom:0;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+        height: 100%;
+    }
+
+    .project-description {
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        margin-bottom: 16px;
+        overflow: auto;
+        p:last-child {margin:0}
+        padding: 8px 0 8px 0;
+    }
+
+    .project-tools {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:0.4rem;
+        flex-wrap: wrap;
+        
+        .skillLogo-div {
+            display: flex;
+            align-items: center;
+            img {
+                height: auto;
+                max-width: 2rem;
+            }
+        }
+    }
+}
+
+// @media only screen and (min-width:992px) and (max-width:1025px)  {
+    // .project-card hr {display: none;}
+// }
+
+@media only screen and (max-width:991px) {
+    .carousel-inner {
+        img {max-height: 50vh;}         
+    }
+}
+
+@media only screen and (min-width:992px) {
+    
+    .project-card {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        background-color:transparent !important;
+        border: none !important;
+        box-shadow: none;
+        max-width: 100%;
+        border-radius: 0;
+        overflow: visible;
+
+        .project-imageLink {
+            padding: 0;
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+            border-radius: 1rem;
+        }
+        
+        .project-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            background-color: white;
+            border: 1px solid lightgrey;
+            overflow: hidden;
+        }
+    }
+
+    // Animation specific
+    .animate-middle-left {
+        transition: all 0.4s ease-out;
+        z-index: 1;
+    }
+    .animate-middle-right {
+        position: absolute !important;
+        transition: all 0.4s ease-out;
+        padding-left: 9.5% !important;
+    }
+    .animate-1 {transform: translate(-35.7%, 0); /* 36% */}
+    .animate-2 {transform: translate(49.7%, 0); /* 50% */}
+    
+    .animate-middle-left-reverse {
+        transition: all 0.4s ease-out;
+        z-index: 1;
+    }
+    .animate-middle-right-reverse {
+        position: absolute !important;
+        transition: all 0.4s ease-out;
+        padding-right: 9.5% !important;
+    }
+    .animate-1-reverse {transform: translate(35.7%, 0); /* 36% */}
+    .animate-2-reverse {transform: translate(-49.7%, 0); /* 50% */}
+}
