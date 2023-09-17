@@ -168,10 +168,18 @@ nav .navbar-nav .navbar-image-li {
   justify-content: center;
   gap: 5px;
 }
-#welcome-section .welcomeTitle-div img {
+#welcome-section .welcomeTitle-div .welcomePicture-div {
+  background: url(https://cdn.discordapp.com/attachments/1117279430281285632/1153024085790568578/SkylerPictureSmall.png) no-repeat center;
+  background-size: cover;
   border: 1px solid black;
   border-radius: 50%;
+  overflow: hidden;
+  height: 100%;
   width: 118px;
+  height: 118px;
+}
+#welcome-section .welcomeTitle-div .welcomePicture-div img {
+  background-color: rgb(73, 73, 73);
 }
 #welcome-section .welcomeTitle-div h1 {
   font-size: 40px;
@@ -198,8 +206,9 @@ nav .navbar-nav .navbar-image-li {
   .welcomeTitle-div h1 {
     font-size: 50px !important;
   }
-  .welcomeTitle-div img {
+  .welcomeTitle-div .welcomePicture-div {
     width: 91px !important;
+    height: 91px !important;
     margin-bottom: 16px;
   }
 }
@@ -274,7 +283,11 @@ nav .navbar-nav .navbar-image-li {
 .project-card .project-imageLink .carousel .carousel-indicators {
   margin: 0 auto 1rem auto;
 }
+.project-card .project-imageLink .carousel .carousel-inner {
+  background-color: rgb(73, 73, 73);
+}
 .project-card .project-imageLink .carousel .carousel-inner .carousel-item img {
+  position: relative;
   -o-object-fit: cover;
      object-fit: cover;
   min-height: 300px;
@@ -316,10 +329,6 @@ nav .navbar-nav .navbar-image-li {
 @media only screen and (max-width: 991px) {
   .carousel-inner img {
     max-height: 50vh;
-  }
-  .carousel-inner:not(:last-child) {
-    -o-object-position: top;
-       object-position: top;
   }
 }
 @media only screen and (min-width: 992px) {
