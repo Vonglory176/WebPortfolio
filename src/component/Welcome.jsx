@@ -1,10 +1,26 @@
+import React from "react";
+
 export default function Header() {
+    const [loaded, setLoaded] = React.useState(false);
     return (
         <section id="welcome-section">
             {/* <h1 className="welcome-title section-title">Interested in hiring me?</h1> */}
 
             <div className="welcomeTitle-div">
-                <img className="img-fluid" alt="Picture of Skyler" src="https://media.discordapp.net/attachments/937466658027618324/1107840420836290570/image.png"/>
+                <div className="welcomePicture-div">
+                    <img 
+                        className="img-fluid"
+                        alt="Picture of Skyler" 
+                        src="https://media.discordapp.net/attachments/937466658027618324/1107840420836290570/image.png" 
+                        loading="lazy" 
+                        style={{
+                            opacity: loaded ? 1 : 0,
+                            transition: '200ms ease-in-out'
+                        }}
+                        onLoad={() => setLoaded(true)}
+                    />
+                </div>
+
                 <span className="section-title">
                     <h1 className="text-left m-0">Hello, I'm Skyler</h1>
                 </span>

@@ -12,11 +12,21 @@
     justify-content: center;
     gap:5px;
 
-    img {
+    .welcomePicture-div {
+      background: url(https://cdn.discordapp.com/attachments/1117279430281285632/1153024085790568578/SkylerPictureSmall.png) no-repeat center;
+      background-size: cover;
       border: 1px solid black;
       border-radius: 50%;
+      overflow: hidden;
+      height: 100%;
       width:118px;
+      height: 118px;
+
+      img {
+        background-color: rgb(73, 73, 73);
+      }
     }
+
 
     h1 {
       font-size: 40px;
@@ -48,8 +58,9 @@
   .welcomeTitle-div {
     flex-direction: row !important;
     h1 {font-size: 50px !important;}
-    img {
+    .welcomePicture-div {
       width: 91px !important;
+      height: 91px !important;
       margin-bottom:16px;
     }
   } 
