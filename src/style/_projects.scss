@@ -36,6 +36,7 @@
         .carousel {
             .carousel-indicators {margin: 0 auto 1rem auto;}
             .carousel-inner {
+                background-color: rgb(73, 73, 73);
                 .carousel-item {
                     img {
                         object-fit: cover;
@@ -89,8 +90,7 @@
 
 @media only screen and (max-width:991px) {
     .carousel-inner {
-        img {max-height: 50vh;}
-        &:not(:last-child) {object-position: top;}            
+        img {max-height: 50vh;}         
     }
 }
 
