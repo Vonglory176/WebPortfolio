@@ -1,16 +1,19 @@
 export default [
     {
         position:1,
+        imagePosition:"center",
         projectLink:"https://vonglory176.github.io/ImageGenerator/",
         githubLink:"https://github.com/Vonglory176/ImageGenerator/",
         projectImages:[
             {
                 alt:"AI Image Generator project image 1",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1144375437066244277/image.png"
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1144375437066244277/image.png",
+                imageSmall:"https://media.discordapp.net/attachments/1117279430281285632/1153017028941197456/ImageGenerator1Small.png"
             },
             {
                 alt:"AI Image Generator project image 2",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1144378120556773558/image.png"
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1144378120556773558/image.png",
+                imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017029297721424/ImageGenerator2Small.png"
             }
         ],
         title:"AI Image Generator",
@@ -45,20 +48,24 @@ export default [
     },
     {
         position:2,
+        imagePosition:"top",
         projectLink:"https://vonglory176.github.io/Business-Page/",
         githubLink:"https://github.com/Vonglory176/Business-Page",
         projectImages:[
             {
                 alt:"Ocular Instruments Business Page project image 1",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1152666201839911052/businessPageNew1.png"
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1152666201839911052/businessPageNew1.png",
+                imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017030732169226/OcularBusinessPage1Small.png"
             },
             {
                 alt:"Ocular Instruments Business Page project image 2",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1152667789329436723/businessPageNew2.png"
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1152667789329436723/businessPageNew2.png",
+                imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017030480507031/OcularBusinessPage2Small.png"
             },
             {
                 alt:"Ocular Instruments Business Page project image 3",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1152666201550491688/businessPageOld.png"
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1152666201550491688/businessPageOld.png",
+                imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017030216274063/OcularBusinessPage3Small.png"
             }
         ],
         title:"Ocular Instruments Business Page (WIP)",
@@ -75,16 +82,19 @@ export default [
     },
     {
         position: 3,
+        imagePosition:"center",
         projectLink:"https://vonglory176.github.io/SpaceShip-Game/",
         githubLink:"https://github.com/Vonglory176/SpaceShip-Game/",
         projectImages:[
             {
                 alt:"Asteroid Gauntlet Game project image 1",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1119796973562757180/sddsdfsdf.png"
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1152993753401929758/AsteroidGauntlet1.png",
+                imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017028412723280/AsteroidGauntlet1Small.png"
             },
             {
                 alt:"Asteroid Gauntlet Game project image 2",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1119796973176893582/sddsjkljkdfsdf.png"
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1152993753825562714/AsteroidGauntlet2.png",
+                imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017028114923610/AsteroidGauntlet2Small.png"
             }
         ],
         title:"Asteroid Gauntlet Game",
@@ -99,16 +109,19 @@ export default [
     },
     {
         position:4,
+        imagePosition:"top",
         projectLink:"https://vonglory176.github.io/Mock-ReactDoc-Page/",
         githubLink:"https://github.com/Vonglory176/Mock-ReactDoc-Page/",
         projectImages:[
             {
                 alt:"React Documentation Page project image 1",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1119786085124411463/Screenshot_2023-06-17_172718.png"
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1119786085124411463/Screenshot_2023-06-17_172718.png",
+                imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017029981388820/ReactDocumentationPage1Small.png"
             },
             {
                 alt:"React Documentation Page project image 2",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1119786085376077894/Screenshot_2023-06-17_172904.png"
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1119786085376077894/Screenshot_2023-06-17_172904.png",
+                imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017029578731551/ReactDocumentationPage2Small.png"
             }
         ],
         title:"React.js Documentation Page",
