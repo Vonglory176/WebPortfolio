@@ -2,6 +2,7 @@ import Navbar from './component/Navbar'
 import Welcome from './component/Welcome'
 import Projects from './component/Projects'
 import Skills from './component/Skills'
+import References from './component/References'
 import Contact from './component/Contact'
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
       {/* <div className='angle1'></div> */}
       <Projects />
       <Skills />
+      <References />
       <Contact />
 
       {/* <div style={{
