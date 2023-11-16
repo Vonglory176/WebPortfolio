@@ -33,7 +33,7 @@ export default {
                 },
                 {
                     id:"SVG basics - HtmlSkill",
-                    checked:false,
+                    checked:true,
                     content:<span>SVG basics</span>
                 }
             ]
