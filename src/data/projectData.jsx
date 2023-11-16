@@ -29,18 +29,18 @@ export default [
             "RESTful API",
             {
                 // {
-                //     id:1,
-                //     alt:"HTML logo",
-                //     image:"https://www.svgrepo.com/show/452228/html-5.svg"
-                // },
-                // {
-                //     id:2,
-                //     alt:"CSS logo",
-                //     image:"https://www.svgrepo.com/show/452185/css-3.svg"
-                // },
-                // {
-                //     id:3,
-                //     alt:"Bootstrap logo",
+                    //     id:1,
+                    //     alt:"HTML logo",
+                    //     image:"https://www.svgrepo.com/show/452228/html-5.svg"
+                    // },
+                    // {
+                        //     id:2,
+                        //     alt:"CSS logo",
+                        //     image:"https://www.svgrepo.com/show/452185/css-3.svg"
+                        // },
+                        // {
+                            //     id:3,
+                            //     alt:"Bootstrap logo",
                 //     image:"https://www.svgrepo.com/show/303293/bootstrap-4-logo.svg"
                 // }
             }
@@ -49,27 +49,22 @@ export default [
     {
         position:2,
         imagePosition:"top",
-        projectLink:"https://vonglory176.github.io/Business-Page/",
-        githubLink:"https://github.com/Vonglory176/Business-Page",
+        projectLink:"https://vonglory176.github.io/Mock-ReactDoc-Page/",
+        githubLink:"https://github.com/Vonglory176/Mock-ReactDoc-Page/",
         projectImages:[
             {
-                alt:"Ocular Instruments Business Page project image 1",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1152666201839911052/businessPageNew1.png",
-                imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017030732169226/OcularBusinessPage1Small.png"
+                alt:"Netflix Clone Page project image 1",
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1174795436582780968/Netflix1.jpg",
+                imageSmall:"https://media.discordapp.net/attachments/1117279430281285632/1174795435928453282/Netflix1Small.jpg"
             },
             {
-                alt:"Ocular Instruments Business Page project image 2",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1152667789329436723/businessPageNew2.png",
-                imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017030480507031/OcularBusinessPage2Small.png"
-            },
-            {
-                alt:"Ocular Instruments Business Page project image 3",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1152666201550491688/businessPageOld.png",
-                imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017030216274063/OcularBusinessPage3Small.png"
+                alt:"Netflix Clone Page project image 2",
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1174795435643256932/Netflix2.jpg",
+                imageSmall:"https://media.discordapp.net/attachments/1117279430281285632/1174795436222062623/Netflix2Small.jpg"
             }
         ],
-        title:"Ocular Instruments Business Page (WIP)",
-        description:[<p>This is a project I started working on after seeing the rather static website of the company I currently work for. Lacking any form of responsive code or flashy graphics, it inspired me to sit down and see how I could improve things were I to devote some time to it. </p>, <p>The page is still rather rough and requires a good deal of polish work, but I'm already very happy with how things have come along and am excited to continue! So far, all viewports from mobile to desktop work as intended and content will shift and reorganize to compensate, the hardest part for me really just coming down to deciding what more I'd like to add or change and the CSS to be included. Finding good quality pictures has also been a bit of a task, though I'm planning on doing some minor photoshop work to spiff up what I already have.</p>, <p>As far as plans go my main focus is currently directed to the navbar. Things are still a bit unkempt, and I'm going to spruce up the way it looks and functions alongside adding some visual animation/changes to links when you interact with them. </p>],
+        title:"Netflix Clone",
+        description:[<p>This is a recreation of Netflix's home page I built with HTML/SCSS/Bootstrap and some minor React code. It's completely responsive across all viewports and matches the original site almost perfectly, just needing some extra tweaks to the email input for final touches.</p>,<p>Building this helped improve my CSS/SCSS quite a bit, and I learned a fair deal more about more complicated positioning, niche selectors, videos, transitions and so on. Beyond what I've done already, I'm also considering the addition of one or two other pages (sign-in) to showcase proper page routing.</p>,<p>If you'd like to vist, do note that there might be a warning of some kind from Google however. The similarity had them think the page was for a scam of some sort, though a review request has since been submitted.</p>],
         skillLogos:[
             "HTML",
             "CSS",
@@ -110,28 +105,35 @@ export default [
     {
         position:4,
         imagePosition:"top",
-        projectLink:"https://vonglory176.github.io/Mock-ReactDoc-Page/",
-        githubLink:"https://github.com/Vonglory176/Mock-ReactDoc-Page/",
+        projectLink:"https://vonglory176.github.io/Business-Page/",
+        githubLink:"https://github.com/Vonglory176/Business-Page",
         projectImages:[
             {
-                alt:"React Documentation Page project image 1",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1119786085124411463/Screenshot_2023-06-17_172718.png",
-                imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017029981388820/ReactDocumentationPage1Small.png"
+                alt:"Ocular Instruments Business Page project image 1",
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1152666201839911052/businessPageNew1.png",
+                imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017030732169226/OcularBusinessPage1Small.png"
             },
             {
-                alt:"React Documentation Page project image 2",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1119786085376077894/Screenshot_2023-06-17_172904.png",
-                imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017029578731551/ReactDocumentationPage2Small.png"
+                alt:"Ocular Instruments Business Page project image 2",
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1152667789329436723/businessPageNew2.png",
+                imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017030480507031/OcularBusinessPage2Small.png"
+            },
+            {
+                alt:"Ocular Instruments Business Page project image 3",
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1152666201550491688/businessPageOld.png",
+                imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017030216274063/OcularBusinessPage3Small.png"
             }
         ],
-        title:"React.js Documentation Page",
-        description:[<p>This is a little documentation page built to give the reader some information on the React Javascript library.</p>, <p>In building it, most all attention was on media queries and bootstrap use to make the page's content completely responsive and scalable. It has 3 main viewports in which the navbar will shift around the screen, the mobile view in particular condensing it to a small hamburger menu. Each link within said navbar is connected to a certain section of the page's content, this also incorperating some basic JavaScript / jQuery to keep the navbar out of the way of headers.</p>, <p>Note that the content images included were left on the larger side to better demonstrate this.</p>],
+        title:"Ocular Instruments Business Page",
+        description:[<p>This is a project I started working on after seeing the rather static website of the company I currently work for. Lacking any form of responsive code or flashy graphics, it inspired me to sit down and see how I could improve things were I to devote some time to it. </p>, <p>The page proved to be great practice for my SCSS / CSS skills, and I also learned quite a lot about React-Bootstrap and Image Optimization / Progressive-Loading among other things.</p>],
         skillLogos:[
             "HTML",
             "CSS",
+            "Sass",
             "Bootstrap",
             "Javascript",
-            "jQuery"
+            "React",
+            "Vite"
         ]
     }
 ]
