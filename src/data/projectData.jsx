@@ -49,8 +49,8 @@ export default [
     {
         position:2,
         imagePosition:"top",
-        projectLink:"https://vonglory176.github.io/Mock-ReactDoc-Page/",
-        githubLink:"https://github.com/Vonglory176/Mock-ReactDoc-Page/",
+        projectLink:"https://vonglory176.github.io/NetflixClone/",
+        githubLink:"https://github.com/Vonglory176/NetflixClone",
         projectImages:[
             {
                 alt:"Netflix Clone Page project image 1",
