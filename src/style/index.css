@@ -522,6 +522,9 @@ nav .navbar-nav .navbar-image-li {
     display: block;
   }
 }
+#references-section .references-div {
+  margin-bottom: 2rem;
+}
 
 /* CONTACT SECTION ------------------------------------------------------------------ */
 #contact-section .contactContainer-div {
