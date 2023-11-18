@@ -1,24 +1,29 @@
 import React from "react";
+import earthImage from "../assets/earth2.png"
 
 export default function Header() {
     const [loaded, setLoaded] = React.useState(false);
     return (
         <section id="welcome-section">
+            <div id="earthGradient-div"></div>
+                <img src={earthImage} id="earth-img"/>
             {/* <h1 className="welcome-title section-title">Interested in hiring me?</h1> */}
 
             <div className="welcomeTitle-div">
-                <div className="welcomePicture-div">
-                    <img 
-                        className="img-fluid"
-                        alt="Picture of Skyler" 
-                        src="https://media.discordapp.net/attachments/937466658027618324/1107840420836290570/image.png" 
-                        loading="lazy" 
-                        style={{
-                            opacity: loaded ? 1 : 0,
-                            transition: '200ms ease-in-out'
-                        }}
-                        onLoad={() => setLoaded(true)}
-                    />
+                <div className="welcomePictureWrap-div">
+                    <div className="welcomePicture-div">
+                        <img 
+                            className="img-fluid"
+                            alt="Picture of Skyler" 
+                            src="https://media.discordapp.net/attachments/937466658027618324/1107840420836290570/image.png" 
+                            loading="lazy" 
+                            style={{
+                                opacity: loaded ? 1 : 0,
+                                transition: '200ms ease-in-out'
+                            }}
+                            onLoad={() => setLoaded(true)}
+                        />
+                    </div>
                 </div>
 
                 <span className="section-title">
