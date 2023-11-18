@@ -64,7 +64,7 @@ export default [
             }
         ],
         title:"Netflix Clone",
-        description:[<p>This is a recreation of Netflix's home page I built with HTML/SCSS/Bootstrap and some minor React code. It's completely responsive across all viewports and matches the original site almost perfectly, just needing some extra tweaks to the email input for final touches.</p>,<p>Building this helped improve my CSS/SCSS quite a bit, and I learned a fair deal more about more complicated positioning, niche selectors, videos, transitions and so on. Beyond what I've done already, I'm also considering the addition of one or two other pages (sign-in) to showcase proper page routing.</p>,<p>If you'd like to vist, do note that there might be a warning of some kind from Google however. The similarity had them think the page was for a scam of some sort, though a review request has since been submitted.</p>],
+        description:[<p>This is a recreation of Netflix's home page I built with HTML/SCSS/Bootstrap and some minor React code. It's completely responsive across all viewports and matches the original site almost perfectly, just needing some extra tweaks to the email input for final touches.</p>,<p>Building this helped improve my CSS/SCSS quite a bit, and I learned a fair deal more about more complicated positioning, niche selectors, videos, transitions and so on. Beyond what I've done already, I'm also considering the addition of one or two other pages (sign-in) to showcase proper page routing.</p>,<p><span style={{background:"yellow", fontWeight:"800"}}>If you'd like to visit:</span> Note that there might be a warning of some kind from Google. The similarity to Netflix had their automatic security system think the page was for a scam of some sort, though a review request to fix this has since been submitted.</p>],
         skillLogos:[
             "HTML",
             "CSS",
@@ -125,7 +125,7 @@ export default [
             }
         ],
         title:"Ocular Instruments Business Page",
-        description:[<p>This is a project I started working on after seeing the rather static website of the company I currently work for. Lacking any form of responsive code or flashy graphics, it inspired me to sit down and see how I could improve things were I to devote some time to it. </p>, <p>The page proved to be great practice for my SCSS / CSS skills, and I also learned quite a lot about React-Bootstrap and Image Optimization / Progressive-Loading among other things.</p>],
+        description:[<p>This is a project I started working on after seeing the rather static website of the company I currently work for. Lacking any form of responsive code or flashy graphics, it inspired me to sit down and see how I could improve things were I to devote some time to it. </p>, <p>The page proved to be great practice for my SCSS / CSS skills, and I also learned quite a lot about React-Bootstrap and Image-Optimization / Progressive-Loading among other things.</p>],
         skillLogos:[
             "HTML",
             "CSS",
