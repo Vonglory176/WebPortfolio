@@ -1,6 +1,10 @@
+import moonImage from "../assets/moon4.png"
+
 export default function Contact() {
     return (
         <section id="contact-section">
+            <img src={moonImage} id="moon-img"/>
+
             <h1 className="contact-title section-title">Want To Get In Touch?</h1>
 
             <div className="contactContainer-div sectionContainer-div col-11 col-md-9">

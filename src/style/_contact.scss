@@ -1,6 +1,26 @@
 /* CONTACT SECTION ------------------------------------------------------------------ */
 #contact-section {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 3rem 0 2rem 0;
     // max-width: 1183px;
+    
+    #moon-img {
+        z-index: -1;
+        min-width: 630px;
+        max-width: 1090px;
+        // max-width: 150%;
+        width: 130%;
+        position: absolute;
+        top:0%;
+        left:50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .section-title {
+        margin-top: 1rem;
+    }
 
     .contactContainer-div {
         max-width: 678px;
