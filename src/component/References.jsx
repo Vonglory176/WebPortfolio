@@ -29,7 +29,7 @@ export default function References() {
             <p>
                 Lawrence Conley<br/>
                 SDET Lead<br/>
-                Walt Disney Parks and Resorts Online at Walt Disney Attractions Technology<br/>
+                Walt Disney Attractions Technology<br/>
                 lconley@mindspring.com<br/>
             </p>
             <hr/>
