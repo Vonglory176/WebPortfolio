@@ -1,9 +1,13 @@
-import moonImage from "../assets/moon4.png"
+import OptimizedImage from "./OptimizedImage";
+import moonImage from "../assets/spaceBackgroundStuff/moon4.png"
+import moonImageSmall from "../assets/spaceBackgroundStuff/moonSmall.png"
 
 export default function Contact() {
     return (
         <section id="contact-section">
-            <img src={moonImage} id="moon-img"/>
+            <OptimizedImage src={moonImage} placeholderSrc={moonImageSmall} id={"moon-img"} lazyloading={"true"}/>
+            <div id="moonFlag-div"/>
+            <div id="moonLander-div"/>
 
             <h1 className="contact-title section-title">Want To Get In Touch?</h1>
 

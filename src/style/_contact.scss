@@ -3,7 +3,7 @@
     position: relative;
     overflow: hidden;
     margin: 0;
-    padding: 3rem 0 2rem 0;
+    padding: 4rem 0 2rem 0;
     // max-width: 1183px;
     
     #moon-img {
@@ -13,13 +13,35 @@
         // max-width: 150%;
         width: 130%;
         position: absolute;
-        top:0%;
+        top:80px;
         left:50%;
+        transform: translate(-50%, 0%);
+        border-radius: 50%;
+    }
+
+    #moonLander-div {
+        background-image: url("../assets/lander1.svg");
+        position: absolute;
+        left: calc(50%);
+        top: 32px;
+        height: 50px;
+        width: 50px;
+        transform: translate(-50%, 0%);
+        // transform: rotate(35deg);
+    }
+    
+    #moonFlag-div {
+        background-image: url("../assets/flag1.svg");
+        position: absolute;
+        left: calc(50%);
+        top: 0;
+        height: 32px;
+        width: 60px;
         transform: translate(-50%, 0%);
     }
 
     .section-title {
-        margin-top: 1rem;
+        margin-top: 80px;
     }
 
     .contactContainer-div {
@@ -44,9 +66,11 @@
     }
 }
 
-#contact textarea {margin:0.5rem 0;}
-#contact img {width: 35px;}
-#contact a:first-child {margin-right: 5px;}
+#contact {
+    textarea {margin:0.5rem 0;}
+    img {width: 35px;}
+    a:first-child {margin-right: 5px;}
+}
 
 .contactContainer-div, .form-control {
     border: 1.5px solid #172033 !important
