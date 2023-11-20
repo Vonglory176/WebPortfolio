@@ -1,13 +1,14 @@
 import React from "react";
-import earthImage from "../assets/earth2.png"
+import OptimizedImage from "./OptimizedImage";
+import earthImage from "../assets/spaceBackgroundStuff/earth3.png"
+import earthImageSmall from "../assets/spaceBackgroundStuff/earthSmall.png"
 
 export default function Header() {
     const [loaded, setLoaded] = React.useState(false);
     return (
         <section id="welcome-section">
             <div id="earthGradient-div"></div>
-                <img src={earthImage} id="earth-img"/>
-            {/* <h1 className="welcome-title section-title">Interested in hiring me?</h1> */}
+            <OptimizedImage src={earthImage} placeholderSrc={earthImageSmall} id={"earth-img"}/>
 
             <div className="welcomeTitle-div">
                 <div className="welcomePictureWrap-div">
