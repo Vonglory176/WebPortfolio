@@ -1,45 +1,38 @@
+// GENERAL CHANGES
 * {font-family: 'Rubik', sans-serif;}
 
+html { scroll-behavior: smooth;}
+
+// FONT CHANGES
 p, code {
     font-family: 'PT Sans', sans-serif;
     font-size: 18px;
 }
 
-html { scroll-behavior: smooth;}
-/* 
-In safari 9.0 (only, not > 9.0) you can do it now in CSS with this nice hack. 
-You don't need any JS code. I did it and its working fine for me. Use this hack:
+h5 {text-align: center;}
 
-@supports (overflow:-webkit-marquee) and (justify-content:inherit) {
-
-    type your custom css code here 
-    
+// IMAGE CHANGES
+.loading {
+    filter: blur(10px);
+    clip-path: inset(0);
+    animation: pulse 2.5s infinite;    
 }
-*/
 
-// img {
-    // background-color: lightgray;
-// }
-
-.angle1 {
-    position: relative;
-    width: 100%;
-    height: 250px;
-    background-color: #428CC5;
-    
-    
-    //clipPath: 'polygon(0 0, 100% 0%, 100% 100%, 0% 100%)'//'polygon(50% 50% at 50% 50%)'
+@keyframes pulse {
+    0% {
+        background-color: rgba(255,255,255,0);
+    }
+    50% {
+        background-color: rgba(255,255,255,0.2);
+    }
+    100% {
+        background-color: rgba(255,255,255,0);
+    }
 }
-.angle1::after {
-    display: block;
-    content:'';
-    height:100%;
-    width: 100%;
-    background: #4C86B0;
 
-    //0,0 is top left, 1,1 is bottom right
-    clip-path: polygon(0 0, 100% 0%, 100% 0%, 0% 100%);
-    // clip-path: polygon(0 0, 100% 0, 0 100%);
+.loaded {
+    filter: blur(0px);
+    transition: filter 0.5s linear;
 }
 
 .logoLink {
@@ -48,6 +41,16 @@ You don't need any JS code. I did it and its working fine for me. Use this hack:
     }
 }
 
+.skillLogo-div {
+    text-align: center;
+    img {
+        width: 65px;
+        height: 65px;
+    }            
+    h6 {margin:5px 0 0 0}
+}   
+
+//SECTIONAL CHANGES
 section {
     margin: 0 auto 2rem auto;
     padding: 1rem 0;
@@ -77,18 +80,9 @@ hr {
     margin: 1rem auto !important;
 }
 
-h5 {text-align: center;}
-
-.skillLogo-div {
-    text-align: center;
-    img {
-        width: 65px;
-        height: 65px;
-    }            
-    h6 {margin:5px 0 0 0}
-}   
 
 
+// PAGE BACKGROUND
 body {
     position: relative;
     // background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
@@ -102,7 +96,7 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
-        background-image: url("../assets/stars.png");
+        background-image: url("../assets/spaceBackgroundStuff/stars.png");
         background-position-x: center;
         // background-repeat: space;
         
