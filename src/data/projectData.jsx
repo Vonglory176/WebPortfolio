@@ -1,3 +1,8 @@
+// import imageGenerator1 from "../assets/projectImages/imageGenerator1.jpg"
+// import imageGenerator1Small from "../assets/projectImages/imageGenerator1Small.png"
+// import imageGenerator2 from "../assets/projectImages/imageGenerator2.jpg"
+// import imageGenerator2Small from "../assets/projectImages/imageGenerator2Small.png"
+
 export default [
     {
         position:1,
@@ -7,13 +12,19 @@ export default [
         projectImages:[
             {
                 alt:"AI Image Generator project image 1",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1144375437066244277/image.png",
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1175933044801151046/imageGenerator1.jpg",
                 imageSmall:"https://media.discordapp.net/attachments/1117279430281285632/1153017028941197456/ImageGenerator1Small.png"
+
+                // image:{imageGenerator1},
+                // imageSmall:{imageGenerator1Small}
             },
             {
                 alt:"AI Image Generator project image 2",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1144378120556773558/image.png",
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1175933045077971095/imageGenerator2.jpg",
                 imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017029297721424/ImageGenerator2Small.png"
+
+                // image:{imageGenerator2},
+                // imageSmall:{imageGenerator2Small}
             }
         ],
         title:"AI Image Generator",
@@ -26,24 +37,7 @@ export default [
             "Javascript",
             "React",
             "Vite",
-            "RESTful API",
-            {
-                // {
-                    //     id:1,
-                    //     alt:"HTML logo",
-                    //     image:"https://www.svgrepo.com/show/452228/html-5.svg"
-                    // },
-                    // {
-                        //     id:2,
-                        //     alt:"CSS logo",
-                        //     image:"https://www.svgrepo.com/show/452185/css-3.svg"
-                        // },
-                        // {
-                            //     id:3,
-                            //     alt:"Bootstrap logo",
-                //     image:"https://www.svgrepo.com/show/303293/bootstrap-4-logo.svg"
-                // }
-            }
+            "RESTful API"
         ]
     },
     {
@@ -54,17 +48,19 @@ export default [
         projectImages:[
             {
                 alt:"Netflix Clone Page project image 1",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1174795436582780968/Netflix1.jpg",
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1175933045384167454/netflix1.jpg",
                 imageSmall:"https://media.discordapp.net/attachments/1117279430281285632/1174795435928453282/Netflix1Small.jpg"
             },
             {
                 alt:"Netflix Clone Page project image 2",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1174795435643256932/Netflix2.jpg",
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1175933045635817482/netflix2.jpg",
                 imageSmall:"https://media.discordapp.net/attachments/1117279430281285632/1174795436222062623/Netflix2Small.jpg"
             }
         ],
         title:"Netflix Clone",
-        description:[<p>This is a recreation of Netflix's home page I built with HTML/SCSS/Bootstrap and some minor React code. It's completely responsive across all viewports and matches the original site almost perfectly, just needing some extra tweaks to the email input for final touches.</p>,<p>Building this helped improve my CSS/SCSS quite a bit, and I learned a fair deal more about more complicated positioning, niche selectors, videos, transitions and so on. Beyond what I've done already, I'm also considering the addition of one or two other pages (sign-in) to showcase proper page routing.</p>,<p><span style={{background:"yellow", fontWeight:"800"}}>If you'd like to visit:</span> Note that there might be a warning of some kind from Google. The similarity to Netflix had their automatic security system think the page was for a scam of some sort, though a review request to fix this has since been submitted.</p>],
+        description:[<p>This is a recreation of Netflix's home page I built with HTML/SCSS/Bootstrap and some minor React code. It's completely responsive across all viewports and matches the original site almost perfectly, just needing some extra tweaks to the email input for final touches.</p>,<p>Building this helped improve my CSS/SCSS quite a bit, and I learned a fair deal more about more complicated positioning, niche selectors, videos, transitions and so on. Beyond what I've done already, I'm also considering the addition of one or two other pages (sign-in) to showcase proper page routing.</p>],
+        // ,<p><span style={{background:"yellow", fontWeight:"800"}}>If you'd like to visit:</span> Note that there might be a warning of some kind from Google. The similarity to Netflix had their automatic security system think the page was for a scam of some sort, though a review request to fix this has since been submitted.</p>]
+
         skillLogos:[
             "HTML",
             "CSS",
@@ -83,12 +79,12 @@ export default [
         projectImages:[
             {
                 alt:"Asteroid Gauntlet Game project image 1",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1152993753401929758/AsteroidGauntlet1.png",
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1175933045925220433/asteroidGauntlet1.jpg",
                 imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017028412723280/AsteroidGauntlet1Small.png"
             },
             {
                 alt:"Asteroid Gauntlet Game project image 2",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1152993753825562714/AsteroidGauntlet2.png",
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1175933046260777030/asteroidGauntlet2.jpg",
                 imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017028114923610/AsteroidGauntlet2Small.png"
             }
         ],
@@ -110,17 +106,17 @@ export default [
         projectImages:[
             {
                 alt:"Ocular Instruments Business Page project image 1",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1152666201839911052/businessPageNew1.png",
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1175933043970678824/businessPage1.jpg",
                 imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017030732169226/OcularBusinessPage1Small.png"
             },
             {
                 alt:"Ocular Instruments Business Page project image 2",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1152667789329436723/businessPageNew2.png",
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1175933044251693177/businessPage2.jpg",
                 imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017030480507031/OcularBusinessPage2Small.png"
             },
             {
                 alt:"Ocular Instruments Business Page project image 3",
-                image:"https://media.discordapp.net/attachments/1117279430281285632/1152666201550491688/businessPageOld.png",
+                image:"https://media.discordapp.net/attachments/1117279430281285632/1175933044524335216/businessPage3.jpg",
                 imageSmall:"https://cdn.discordapp.com/attachments/1117279430281285632/1153017030216274063/OcularBusinessPage3Small.png"
             }
         ],

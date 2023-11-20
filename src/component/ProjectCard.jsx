@@ -1,4 +1,5 @@
 import React from 'react'
+// import OptimizedImage from "./OptimizedImage";
 import {useInView} from 'react-intersection-observer'
 import Carousel from 'react-bootstrap/Carousel';
 import SkillLogo from "./SkillLogo"
@@ -42,8 +43,18 @@ export default function ProjectCard({position,imagePosition,projectLink,githubLi
         style={{
             backgroundImage:`url(${projectImages[i].imageSmall})`,
             backgroundSize: 'cover'
-            }}>
+            }}
+            >
             
+            {/* <OptimizedImage 
+                className={"img-fluid"} 
+                src={projectImages[i].image} 
+                placeholderSrc={projectImages[i].imageSmall} 
+                alt={projectImages[i].alt} 
+                style={{objectPosition:imagePosition}} 
+                lazyLoading={"true"}
+            /> */}
+
             <img 
             className="img-fluid" 
             alt={projectImages[i].alt} 
@@ -53,8 +64,7 @@ export default function ProjectCard({position,imagePosition,projectLink,githubLi
                 objectPosition:imagePosition, 
                 opacity: loadedImages[i] ? 1 : 0, //Only showing when fully loaded
                 transition: '200ms ease-in-out'
-
-            }} 
+            }}
             />
         </Carousel.Item>
         )}
