@@ -22,7 +22,7 @@ const References = () => {
 
     return (
         <SectionWrapper id='references' title='References'>
-            <div className='flex flex-1 flex-col p-4 items-center justify-center'>
+            <div className='flex flex-1 flex-col px-4 py-8 items-center justify-center'>
 
                 <div className="flex flex-col gap-4">
                     {references.map((reference, index) => (
@@ -47,7 +47,7 @@ const References = () => {
 
                                 <button 
                                 onClick={() => setCurrentReference(checkRef(index) ? null : index)}
-                                className={`flex justify-center items-center flex-1 h-full p-4 rounded-lg h-[80px] ${checkRef(index) ? 'bg-blue-900' : 'bg-gray-800'}`}>
+                                className={`flex justify-center items-center flex-1 h-full p-4 rounded-lg h-[80px] ${checkRef(index) ? 'bg-blue-900 duration-200' : 'bg-gray-800'}`}>
 
                                     <div className='flex flex-col text-left'>
                                         {/* <a href={reference.linkedIn} target='_blank' className='text-2xl font-bold'>{reference.name}</a> */}
