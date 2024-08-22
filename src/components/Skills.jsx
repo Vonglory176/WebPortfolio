@@ -14,7 +14,7 @@ const Skills = () => {
 
     return (
         <SectionWrapper id='skills' title='Skills'>
-            <div className='flex flex-col flex-1 items-center p-4 justify-center gap-4'> {/* flex-1 h-full  */}
+            <div className='flex flex-col flex-1 items-center px-4 py-8 justify-center gap-4'> {/* flex-1 h-full  */}
 
                 <div className="flex flex-col items-center gap-6 p-4 rounded-lg bg-gray-800 h-[630px] w-full max-w-[500px]">
 
