@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e129ed63.css",
+    "main.js": "/static/js/main.76e4afc3.js",
+    "static/media/gym-app-1.png": "/static/media/gym-app-1.25417676fddd48d1ea5f.png",
+    "static/media/gym-app-2.png": "/static/media/gym-app-2.dd383d0ddbdcd774aa76.png",
+    "static/media/bg-colors-5.png": "/static/media/bg-colors-5.6085aab64dc395cbe0db.png",
+    "static/media/paulPicture.jfif": "/static/media/paulPicture.e1b08b6ff16448bfe1d8.jfif",
+    "static/media/skylerPicture.webp": "/static/media/skylerPicture.d01f1c06e471fca5aa09.webp",
+    "static/media/keithPicture.jfif": "/static/media/keithPicture.9ae86936fbf7c65567e9.jfif",
+    "static/media/kurtPicture.jfif": "/static/media/kurtPicture.1894047cdad5cde64118.jfif",
+    "static/media/lawrencePicture.jfif": "/static/media/lawrencePicture.291f5ee357087a784c2d.jfif",
+    "index.html": "/index.html",
+    "main.e129ed63.css.map": "/static/css/main.e129ed63.css.map",
+    "main.76e4afc3.js.map": "/static/js/main.76e4afc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e129ed63.css",
+    "static/js/main.76e4afc3.js"
+  ]
+}
