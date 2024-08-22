@@ -1,20 +1,16 @@
 import React from 'react'
 import SectionWrapper from './SectionWrapper'
-import skylerPicture from '../assets/skylerPicture.webp'
+import skylerPicture from '../assets/people/skylerPicture.webp'
 import { FaGithub, FaLinkedin, FaGitlab, FaEnvelope, FaWhatsapp, FaChevronDown } from 'react-icons/fa'
-import bgColorImg from '../assets/bg-colors-5.png'
+import bgColorImg from '../assets/images/bg-colors-5.png'
 
 const Landing = () => {
   return (
     <SectionWrapper id='landing'>
-        <div className='flex flex-col items-center justify-center flex-1 h-full gap-4 relative'>
-
-            <div className="background-image-container">
-                <img src={bgColorImg} alt=""/>
-            </div>
+        <div className='flex flex-col items-center justify-center p-4 flex-1 h-full gap-4 relative'>            
 
             {/* Picture */}
-            <div className='w-[144px] h-[144px] rounded-full overflow-hidden border-[6px] border-white shadow-[0_0_30px_cyan]'> {/* shadow-lg shadow-gray-800 // shadow-[0_0_30px_seagreen]*/}
+            <div className='w-[144px] h-[144px] rounded-full bg-gray-800 overflow-hidden border-[6px] border-white shadow-[0_0_30px_cyan]'> {/* shadow-lg shadow-gray-800 // shadow-[0_0_30px_seagreen]*/}
                 <img src={skylerPicture} alt="Skyler" className='w-full h-full object-cover' />
             </div>
 
@@ -53,6 +49,11 @@ const Landing = () => {
                     <FaChevronDown size={24} className="animate-bounce" />
                     {/* <FaDoubleChevronDown size={24} className="text-blue-500 animate-bounce" /> */}
                 </div>
+            </div>
+
+            {/* Background Image */}
+            <div className="background-image-container pointer-events-none">
+                <img src={bgColorImg} alt=""/>
             </div>
             
             {/* <div className="absolute top-0 inset-x-0 h-[37.5rem] bg-grid-slate-900/[0.04] bg-top [mask-image:linear-gradient(0deg,transparent,black)] dark:bg-grid-slate-100/[0.03] dark:bg-[center_top_-1px] dark:border-t dark:border-slate-100/5 top-0 xl:top-18 z-100"></div> */}
