@@ -24,11 +24,87 @@ body {
      object-fit: cover;
 }
 
+#contact-form-email,
+#contact-form-subject,
+#contact-form-message {
+  position: relative;
+}
 #contact-form-email label,
 #contact-form-subject label,
 #contact-form-message label {
   content: attr(htmlFor);
   position: absolute;
-  width: 100%;
-  transition: 0.3s;
+  top: 16px;
+  left: 8px;
+  transition: 0.3s ease-in-out;
+  pointer-events: none;
+}
+#contact-form-email input:focus + label,
+#contact-form-email textarea:focus + label,
+#contact-form-subject input:focus + label,
+#contact-form-subject textarea:focus + label,
+#contact-form-message input:focus + label,
+#contact-form-message textarea:focus + label {
+  color: #fff;
+}
+#contact-form-email input:focus + label,
+#contact-form-email textarea:focus + label, #contact-form-email.is-active label,
+#contact-form-subject input:focus + label,
+#contact-form-subject textarea:focus + label,
+#contact-form-subject.is-active label,
+#contact-form-message input:focus + label,
+#contact-form-message textarea:focus + label,
+#contact-form-message.is-active label {
+  top: -12px;
+  font-size: 12px;
+  color: inherit;
+}
+#contact-form-email.has-error,
+#contact-form-subject.has-error,
+#contact-form-message.has-error {
+  border-color: #f56565;
+}
+#contact-form-email.has-error label,
+#contact-form-subject.has-error label,
+#contact-form-message.has-error label {
+  color: #f56565 !important;
+}
+#contact-form-email.is-active:not(.has-error),
+#contact-form-subject.is-active:not(.has-error),
+#contact-form-message.is-active:not(.has-error) {
+  border-color: #fff;
+}
+#contact-form-email.is-active:not(.has-error) label,
+#contact-form-subject.is-active:not(.has-error) label,
+#contact-form-message.is-active:not(.has-error) label {
+  color: #fff;
+}
+
+.project-card-info {
+  opacity: 0;
+  transition: 0.4s ease-in-out opacity;
+}
+.project-card-info, .project-card-info a, .project-card-info button {
+  pointer-events: none;
+}
+.project-card:hover .project-card-info, .project-card:focus-within .project-card-info {
+  opacity: 1;
+}
+.project-card:hover .project-card-info, .project-card:hover .project-card-info a, .project-card:hover .project-card-info button, .project-card:focus-within .project-card-info, .project-card:focus-within .project-card-info a, .project-card:focus-within .project-card-info button {
+  pointer-events: auto;
+}
+
+.carousel-content {
+  display: inline-block;
+  animation: scroll 10s linear infinite;
+  transform: translateY(-50%);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }/*# sourceMappingURL=index.css.map */
