@@ -1,13 +1,13 @@
 import React from 'react'
 import SectionWrapper from './SectionWrapper'
-import skylerPicture from '../assets/people/skylerPicture.webp'
+import skylerPicture from '../assets/images/people/skylerPicture.webp'
 import { FaGithub, FaLinkedin, FaGitlab, FaEnvelope, FaWhatsapp, FaChevronDown } from 'react-icons/fa'
 import bgColorImg from '../assets/images/bg-colors-5.png'
 
 const Landing = () => {
   return (
     <SectionWrapper id='landing'>
-        <div className='flex flex-col items-center justify-center p-4 flex-1 h-full gap-4 relative'>            
+        <div className='flex flex-col items-center justify-center px-4 py-8 flex-1 h-full gap-4 relative'>            
 
             {/* Picture */}
             <div className='w-[144px] h-[144px] rounded-full bg-gray-800 overflow-hidden border-[6px] border-white shadow-[0_0_30px_cyan]'> {/* shadow-lg shadow-gray-800 // shadow-[0_0_30px_seagreen]*/}
