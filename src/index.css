@@ -1,10 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 body {
   /* margin: 0; */
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
@@ -21,5 +20,15 @@ body {
 .background-image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+
+#contact-form-email label,
+#contact-form-subject label,
+#contact-form-message label {
+  content: attr(htmlFor);
+  position: absolute;
+  width: 100%;
+  transition: 0.3s;
+}/*# sourceMappingURL=index.css.map */
