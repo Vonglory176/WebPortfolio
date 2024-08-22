@@ -47,20 +47,92 @@ body {
 #contact-form-subject,
 #contact-form-message
 {  
+  position: relative;
 
   label {
     content: attr(htmlFor); // Use the name attribute for content
     position: absolute;
-    // top: .4rem;
-    width: 100%;
-    // font-size: var(--normal-font-size);
-    transition: .3s;
+    top: 16px;
+    left: 8px;
+    transition: .3s ease-in-out;
+    // color: #999;
+    pointer-events: none;
   }
 
-  input:focus + label {
-    // top: -.75rem;
-    // left: 0;
-    // z-index: 10;
-  }
+  // input:valid + label,
+  // textarea:valid + label, // Interesting !!!!
+
   
+  input:focus + label,
+  textarea:focus + label {
+    color: #fff;
+  }
+
+  input:focus + label,
+  textarea:focus + label,
+  &.is-active label {
+    top: -12px;
+    font-size: 12px;
+    color: inherit;
+  }
+
+  &.has-error {
+    border-color: #f56565;
+    label {color: #f56565 !important} // text-red-500
+  }
+
+  &.is-active:not(.has-error) {
+    border-color: #fff;
+    label {color: #fff} // text-white
+  }
+
+  // &:not(.is-active):not(.has-error) {
+    // border-color: #a0aec0;
+    // label {color: #a0aec0} // text-gray-500
+  // }
+}
+
+.project-card {
+
+  &-info {
+    opacity: 0;
+    transition: .4s ease-in-out opacity;
+    &, a, button {pointer-events: none}
+  }
+
+  &:hover, &:focus-within {
+
+    .project-card-info {
+      opacity: 1;
+      &, a, button {pointer-events: auto}
+    }
+  }
+}
+
+// .carousel {
+//   overflow: hidden;
+//   white-space: nowrap;
+//   box-sizing: border-box;
+// }
+
+.carousel-content {
+  // position: absolute;
+  display: inline-block;
+  animation: scroll 10s linear infinite;
+  // top: 50%;
+  transform: translateY(-50%);
+}
+
+// .carousel-content span {
+//   display: inline-block;
+//   font-size: 1.5rem;
+// }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
