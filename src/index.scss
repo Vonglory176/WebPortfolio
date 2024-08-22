@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* margin: 0; */
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+.background-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// form input, form textarea {
+//     // position: relative;
+//     &:focus {
+//         outline: 1px solid rgb(29 78 216);
+
+//         // &::after {
+//         //     position: absolute;
+//         //     top: 0;
+//         //     left: 0;
+//         //     width: 100%;
+//         //     height: 100%;
+//         // }
+//     }
+// }
+
+// input::before {
+//     content: 'Name' !important;
+// }
+
+#contact-form-email,
+#contact-form-subject,
+#contact-form-message
+{  
+
+  label {
+    content: attr(htmlFor); // Use the name attribute for content
+    position: absolute;
+    // top: .4rem;
+    width: 100%;
+    // font-size: var(--normal-font-size);
+    transition: .3s;
+  }
+
+  input:focus + label {
+    // top: -.75rem;
+    // left: 0;
+    // z-index: 10;
+  }
+  
+}
