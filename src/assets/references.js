@@ -1,7 +1,7 @@
-import paulPicture from '../assets/images/people/paulPicture.jfif'
-import lawrencePicture from '../assets/images/people/lawrencePicture.jfif'
-import keithPicture from '../assets/images/people/keithPicture.jfif'
-import kurtPicture from '../assets/images/people/kurtPicture.jfif'
+import paulPicture from '../assets/images/people/paulPicture.webp'
+import lawrencePicture from '../assets/images/people/lawrencePicture.webp'
+import keithPicture from '../assets/images/people/keithPicture.webp'
+import kurtPicture from '../assets/images/people/kurtPicture.webp'
 
 export const references = [
     {
