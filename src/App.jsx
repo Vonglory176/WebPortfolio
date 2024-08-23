@@ -5,21 +5,30 @@ import Projects from "./components/Projects"
 import Skills from "./components/Skills"
 import Contact from "./components/Contact"
 import References from "./components/References"
-import ProjectCardModal from "./components/ProjectCardModal"
+import SlideshowModal from "./components/SlideshowModal"
 import { useSiteContext } from "./context/SiteContext"
+import { useEffect } from "react"
 
 
 function App() {
   const { modal } = useSiteContext()
 
+  useEffect(() => {
+    if (modal) {
+      document.body.classList.add('modal-open')
+    } else {
+      document.body.classList.remove('modal-open')
+    }
+  }, [modal])
+
   return (
     <div className="App">
       
-      <main className="bg-gray-900 text-white">
+      <main className={`bg-gray-900 text-white`}>
 
 
         <Header />
-        {modal && <ProjectCardModal />}
+        {modal && <SlideshowModal />}
 
         <Landing />
 
