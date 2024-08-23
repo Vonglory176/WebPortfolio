@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import SectionWrapper from './SectionWrapper'
 import { references } from '../assets/references'
 import { FaChevronDown } from 'react-icons/fa'
+import ProgressiveImage from 'react-progressive-graceful-image'
 
 const References = () => {
     const [currentReference, setCurrentReference] = useState(null)
@@ -37,11 +38,22 @@ const References = () => {
                                 href={reference.linkedIn}
                                 target='_blank'
                                 className='w-20 h-20 rounded-full bg-gray-800 overflow-hidden'> {/* border-[2px] border-white shadow-[0_0_7px_cyan] */}
-                                    <img 
+                                    
+                                    <ProgressiveImage src={reference.image} placeholder={''}>
+                                        {(src, loading) => (
+                                            <img
+                                                src={src}
+                                                alt={reference.name}
+                                                className={`w-full h-full object-cover duration-300 ${loading ? 'opacity-0' : 'opacity-100'}`}
+                                            />
+                                        )}
+                                    </ProgressiveImage>
+
+                                    {/* <img 
                                     className='object-cover'
                                     src={reference.image} 
                                     alt={reference.name} 
-                                    />
+                                    /> */}
                                 </a>
 
 
