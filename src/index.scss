@@ -2,12 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   /* margin: 0; */
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
+
+
+  &.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+  }
 }
 
 .background-image-container {
@@ -136,3 +146,25 @@ body {
     transform: translateX(-100%);
   }
 }
+
+.modal-container {
+  animation: fade-in 0.3s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// @keyframes un-blur {
+//   0% {
+//     filter: blur(10px);
+//   }
+//   100% {
+//     filter: blur(0px);
+//   }
+// }
