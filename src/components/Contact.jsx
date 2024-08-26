@@ -63,83 +63,86 @@ const Contact = () => {
 
     return (
         <SectionWrapper id='contact' title='Contact'>
-            <div className='flex flex-1 flex-col items-center justify-center px-4 py-8 gap-8'>
+            <div className='flex flex-1 flex-col items-center justify-center px-4 py-8 bg-gray-800 bg-opacity-30 relative'>
 
-                {/* Contact Info */}
-                <ul className='flex flex-col gap-4'>
-                    <li className='flex flex-col justify-center gap-2'>
-                        <h3 className='text-lg font-bold'>Email Me</h3>
-                        <a 
-                        href={`mailto:${email}`} 
-                        className='flex items-center gap-2 hover:text-blue-500'
-                        >
-                            <FaEnvelope size={18} className='text-blue-500' />
-                            <p>{email}</p>
-                        </a>
-                    </li>
-                    <li className='flex flex-col justify-center gap-2'>
-                        <h3 className='text-lg font-bold'>Text Me</h3>
-                        <a 
-                        href={`tel:${phone}`} 
-                        className='flex items-center gap-2 hover:text-blue-500'
-                        >
-                            <FaPhone size={18} className='text-blue-500' />
-                            <p>{phone}</p>
-                        </a>
-                    </li>                    
-                </ul>
+                <div className="content-wrapper flex flex-wrap justify-center items-start gap-8 w-full"> {/* 619px */}
 
-                {/* Contact Form */}
-                <form 
-                action=""
-                className='flex flex-col gap-8 w-full'
-                onSubmit={handleSubmit}
-                >
+                    {/* Contact Info */}
+                    <ul className='flex flex-col justify-center gap-4'>
+                        <li className='flex flex-col justify-center gap-2'>
+                            <h3 className='text-lg font-bold'>Email Me</h3>
+                            <a 
+                            href={`mailto:${email}`} 
+                            className='flex items-center gap-2 hover:text-blue-500'
+                            >
+                                <FaEnvelope size={18} className='text-blue-500' />
+                                <p>{email}</p>
+                            </a>
+                        </li>
+                        <li className='flex flex-col justify-center gap-2'>
+                            <h3 className='text-lg font-bold'>Text Me</h3>
+                            <a 
+                            href={`tel:${phone}`} 
+                            className='flex items-center gap-2 hover:text-blue-500'
+                            >
+                                <FaPhone size={18} className='text-blue-500' />
+                                <p>{phone}</p>
+                            </a>
+                        </li>                    
+                    </ul>
 
-                    {/* Email */}
-                    <div id='contact-form-email' className={`flex flex-col gap-2 border-b border-gray-400 duration-300 focus-within:border-white ${formData.email ? 'is-active' : ''} ${formErrors.email ? 'has-error' : ''}`}>
-                        <input 
-                        type="email" 
-                        name="email" 
-                        className='bg-transparent my-2 p-2 rounded focus:outline-none z-20'
-                        value={formData.email}
-                        onChange={handleChange}
-                        />
-                        <label htmlFor="Email" className='text-gray-400 z-10'>Email</label>
-                    </div>
+                    {/* Contact Form */}
+                    <form 
+                    action=""
+                    className='flex flex-col gap-8 w-full max-w-[536px]'
+                    onSubmit={handleSubmit}
+                    >
 
-                    {/* Subject */}
-                    <div id='contact-form-subject' className={`flex flex-col gap-2 border-b border-gray-400 duration-300 focus-within:border-white ${formData.subject ? 'is-active' : ''} ${formErrors.subject ? 'has-error' : ''}`}>
-                        <input 
-                        type="text" 
-                        name="subject" 
-                        className='bg-transparent my-2 p-2 rounded focus:outline-none z-20'
-                        value={formData.subject}
-                        onChange={handleChange}
-                        />
-                        <label htmlFor="Subject" className='text-gray-400 z-10'>Subject</label>
-                    </div>
+                        {/* Email */}
+                        <div id='contact-form-email' className={`flex flex-col gap-2 border-b border-gray-400 duration-300 focus-within:border-white ${formData.email ? 'is-active' : ''} ${formErrors.email ? 'has-error' : ''}`}>
+                            <input 
+                            type="email" 
+                            name="email" 
+                            className='bg-transparent my-2 p-2 rounded focus:outline-none z-20'
+                            value={formData.email}
+                            onChange={handleChange}
+                            />
+                            <label htmlFor="Email" className='text-gray-400 z-10'>Email</label>
+                        </div>
 
-                    {/* Message */}
-                    <div id='contact-form-message' className={`flex flex-col gap-2 border-b border-gray-400 duration-300 focus-within:border-white ${formData.message ? 'is-active' : ''} ${formErrors.message ? 'has-error' : ''}`}>
-                        <textarea 
-                        ref={textareaRef}
-                        name="message" 
-                        className='bg-transparent my-2 p-2 rounded resize-none focus:outline-none z-20'
-                        value={formData.message}
-                        onChange={handleChange}
-                        ></textarea>
-                        <label htmlFor="Message" className='text-gray-400 z-10'>Message</label>
-                    </div>
+                        {/* Subject */}
+                        <div id='contact-form-subject' className={`flex flex-col gap-2 border-b border-gray-400 duration-300 focus-within:border-white ${formData.subject ? 'is-active' : ''} ${formErrors.subject ? 'has-error' : ''}`}>
+                            <input 
+                            type="text" 
+                            name="subject" 
+                            className='bg-transparent my-2 p-2 rounded focus:outline-none z-20'
+                            value={formData.subject}
+                            onChange={handleChange}
+                            />
+                            <label htmlFor="Subject" className='text-gray-400 z-10'>Subject</label>
+                        </div>
 
-                    {/* Submit Button */}
-                    <button 
-                    type="submit"
-                    className='bg-blue-700 p-2 rounded-lg hover:bg-blue-800'
-                    >Send</button>
+                        {/* Message */}
+                        <div id='contact-form-message' className={`flex flex-col gap-2 border-b border-gray-400 duration-300 focus-within:border-white ${formData.message ? 'is-active' : ''} ${formErrors.message ? 'has-error' : ''}`}>
+                            <textarea 
+                            ref={textareaRef}
+                            name="message" 
+                            className='bg-transparent my-2 p-2 rounded resize-none focus:outline-none z-20'
+                            value={formData.message}
+                            onChange={handleChange}
+                            ></textarea>
+                            <label htmlFor="Message" className='text-gray-400 z-10'>Message</label>
+                        </div>
 
-                    {formErrors.errorExists && <p className='text-red-500'>Please make sure all fields are filled out and valid</p>}
-                </form>
+                        {/* Submit Button */}
+                        <button 
+                        type="submit"
+                        className='bg-blue-700 p-2 rounded-lg hover:bg-blue-800'
+                        >Send</button>
+
+                        {formErrors.errorExists && <p className='text-red-500'>Please make sure all fields are filled out and valid</p>}
+                    </form>
+                </div>
 
             </div>
         </SectionWrapper>
