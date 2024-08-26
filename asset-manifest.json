@@ -1,23 +1,39 @@
 {
   "files": {
-    "main.css": "/WebPortfolio/static/css/main.049404ec.css",
-    "main.js": "/WebPortfolio/static/js/main.8102a3c4.js",
+    "main.css": "/WebPortfolio/static/css/main.c401f00c.css",
+    "main.js": "/WebPortfolio/static/js/main.192bb20f.js",
+    "static/media/bg-colors-6.png": "/WebPortfolio/static/media/bg-colors-6.49faed7788b0d6cf081b.png",
     "static/media/bg-colors-5.png": "/WebPortfolio/static/media/bg-colors-5.6085aab64dc395cbe0db.png",
-    "static/media/gym-app-2.webp": "/WebPortfolio/static/media/gym-app-2.a2a56924b26a9d4a3441.webp",
-    "static/media/gym-app-1.webp": "/WebPortfolio/static/media/gym-app-1.0a89817c68032f11c005.webp",
+    "static/media/bg-colors-3.png": "/WebPortfolio/static/media/bg-colors-3.07492fc02c618c142512.png",
+    "static/media/bg-colors-1.png": "/WebPortfolio/static/media/bg-colors-1.d78c08ed9d85e5e85d0b.png",
+    "static/media/freeScribe-1.webp": "/WebPortfolio/static/media/freeScribe-1.637b5264ddcd5a1181d1.webp",
+    "static/media/gym-app-2.webp": "/WebPortfolio/static/media/gym-app-2.f5e7d17e2d4f29547391.webp",
+    "static/media/gym-app-3.webp": "/WebPortfolio/static/media/gym-app-3.9872a10a54db7424bd66.webp",
+    "static/media/gym-app-1.webp": "/WebPortfolio/static/media/gym-app-1.520416e753f0a2442faa.webp",
+    "static/media/freeScribe-2.webp": "/WebPortfolio/static/media/freeScribe-2.33e3ef18d0d829142a66.webp",
+    "static/media/freeScribe-4.webp": "/WebPortfolio/static/media/freeScribe-4.59c0d7685a3a5e22bdb0.webp",
+    "static/media/freeScribe-3.webp": "/WebPortfolio/static/media/freeScribe-3.e05bc366855f7cdd4cd7.webp",
     "static/media/paulPicture.webp": "/WebPortfolio/static/media/paulPicture.f824fa9df0612c14f25d.webp",
     "static/media/keithPicture.webp": "/WebPortfolio/static/media/keithPicture.2c838ad15c6d3591cbe7.webp",
+    "static/media/gym-app-thumbnail.webp": "/WebPortfolio/static/media/gym-app-thumbnail.56e1c8d9677a503a0c57.webp",
     "static/media/lawrencePicture.webp": "/WebPortfolio/static/media/lawrencePicture.b28127c12514a54a31b1.webp",
-    "static/media/gym-app-thumbnail.webp": "/WebPortfolio/static/media/gym-app-thumbnail.b8819824c6e6051773f1.webp",
+    "static/media/freeScribe-thumbnail.webp": "/WebPortfolio/static/media/freeScribe-thumbnail.8e5d4c838226541243c4.webp",
     "static/media/kurtPicture.webp": "/WebPortfolio/static/media/kurtPicture.10a5f746e613ab7e1802.webp",
     "static/media/skylerPicture.webp": "/WebPortfolio/static/media/skylerPicture.50862280339464618872.webp",
+    "static/media/gym-app-3-small.webp": "/WebPortfolio/static/media/gym-app-3-small.334857380864311185dc.webp",
+    "static/media/gym-app-2-small.webp": "/WebPortfolio/static/media/gym-app-2-small.ff8e8e60620f0c8528f1.webp",
+    "static/media/gym-app-1-small.webp": "/WebPortfolio/static/media/gym-app-1-small.43c4ceffec1c9b3b1c90.webp",
+    "static/media/freeScribe-1-small.webp": "/WebPortfolio/static/media/freeScribe-1-small.4e919c597ffda75b7bed.webp",
+    "static/media/freeScribe-4-small.webp": "/WebPortfolio/static/media/freeScribe-4-small.af87e1dd63b49d89d6cd.webp",
     "index.html": "/WebPortfolio/index.html",
+    "static/media/freeScribe-3-small.webp": "/WebPortfolio/static/media/freeScribe-3-small.beda3c00d1be15908177.webp",
     "static/media/loading-icon.svg": "/WebPortfolio/static/media/loading-icon.b94357ddf1227386952028b7b56a08fa.svg",
-    "main.049404ec.css.map": "/WebPortfolio/static/css/main.049404ec.css.map",
-    "main.8102a3c4.js.map": "/WebPortfolio/static/js/main.8102a3c4.js.map"
+    "static/media/freeScribe-2-small.webp": "/WebPortfolio/static/media/freeScribe-2-small.050a63e95a9d122bcea6.webp",
+    "main.c401f00c.css.map": "/WebPortfolio/static/css/main.c401f00c.css.map",
+    "main.192bb20f.js.map": "/WebPortfolio/static/js/main.192bb20f.js.map"
   },
   "entrypoints": [
-    "static/css/main.049404ec.css",
-    "static/js/main.8102a3c4.js"
+    "static/css/main.c401f00c.css",
+    "static/js/main.192bb20f.js"
   ]
 }
