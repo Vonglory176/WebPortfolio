@@ -7,7 +7,7 @@ const TextCarosuel = ({skills}) => {
     ))
 
     return (
-        <div className='carousel absolute top-1/2 -translate-y-1/2 w-full overflow-hidden whitespace-nowrap box-sizing-border'>
+        <div className='carousel w-full overflow-hidden whitespace-nowrap box-sizing-border mt-[-5px]'> {/* absolute top-1/2 -translate-y-1/2  */}
 
             {/* Using double for a constant loop */}
             <div className='carousel-content'>
