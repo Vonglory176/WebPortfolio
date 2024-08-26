@@ -10,11 +10,11 @@ const SlideshowModal = () => {
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const handleNext = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % modal.images.length)
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % modal.images.full.length)
     }
 
     const handlePrev = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + modal.images.length) % modal.images.length)
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + modal.images.full.length) % modal.images.full.length)
     }
 
     return (
@@ -46,7 +46,7 @@ const SlideshowModal = () => {
                     </div>
 
                     <div className="modal-ui-bottom flex items-center justify-center gap-2">
-                        {modal.images.map((image, index) => (
+                        {modal.images.full.map((image, index) => (
                             <button key={index} className={`modal-ui-button p-3 rounded-full ${index === currentIndex ? 'bg-blue-600 bg-opacity-80' : 'bg-gray-600'}`} onClick={() => setCurrentIndex(index)}></button>
                         ))}
                     </div>
@@ -54,7 +54,7 @@ const SlideshowModal = () => {
 
                 {/* Slideshow Images */}
                 <div className="modal-image-container flex flex-1 items-center justify-center">
-                    <ProgressiveImage src={modal.images[currentIndex]} placeholder={modal.images[currentIndex]}>
+                    <ProgressiveImage src={modal.images.full[currentIndex]} placeholder={modal.images.small[currentIndex]}>
                         {(src, loading) => (
                             <img
                                 src={src}
