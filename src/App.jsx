@@ -55,8 +55,8 @@ TODO:
 
 Hook-up contact form
 Fix button clicking while opacity is 0 in project card
-Make nav menu
-Get image preloading working
 Get resume download working
+Make landing background swap between images (background 4) via timer
+Issue between small and medium view reference buttons being highlighted (Open and 'close' reference is medium view, then look at small view)
 
 */
