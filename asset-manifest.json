@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WebPortfolio/static/css/main.842ff9ca.css",
-    "main.js": "/WebPortfolio/static/js/main.2fd88dd6.js",
+    "main.css": "/WebPortfolio/static/css/main.ad5f8894.css",
+    "main.js": "/WebPortfolio/static/js/main.4461ec79.js",
     "static/media/bg-colors-6.png": "/WebPortfolio/static/media/bg-colors-6.49faed7788b0d6cf081b.png",
     "static/media/bg-colors-5.png": "/WebPortfolio/static/media/bg-colors-5.6085aab64dc395cbe0db.png",
     "static/media/bg-colors-3.png": "/WebPortfolio/static/media/bg-colors-3.07492fc02c618c142512.png",
@@ -9,11 +9,17 @@
     "static/media/freeScribe-1.webp": "/WebPortfolio/static/media/freeScribe-1.637b5264ddcd5a1181d1.webp",
     "static/media/gym-app-2.webp": "/WebPortfolio/static/media/gym-app-2.f5e7d17e2d4f29547391.webp",
     "static/media/gym-app-3.webp": "/WebPortfolio/static/media/gym-app-3.9872a10a54db7424bd66.webp",
+    "static/media/colprosol-1.webp": "/WebPortfolio/static/media/colprosol-1.690d000fa5ebc8e61b1c.webp",
     "static/media/gym-app-1.webp": "/WebPortfolio/static/media/gym-app-1.520416e753f0a2442faa.webp",
     "static/media/freeScribe-2.webp": "/WebPortfolio/static/media/freeScribe-2.33e3ef18d0d829142a66.webp",
     "static/media/freeScribe-4.webp": "/WebPortfolio/static/media/freeScribe-4.59c0d7685a3a5e22bdb0.webp",
+    "static/media/colprosol-4.webp": "/WebPortfolio/static/media/colprosol-4.a8d8671911d455cf5d15.webp",
+    "static/media/colprosol-3.webp": "/WebPortfolio/static/media/colprosol-3.554f13735b1d72afe4ed.webp",
+    "static/media/colprosol-2.webp": "/WebPortfolio/static/media/colprosol-2.5069a3d8b97bacac1ff3.webp",
     "static/media/freeScribe-3.webp": "/WebPortfolio/static/media/freeScribe-3.e05bc366855f7cdd4cd7.webp",
+    "static/media/colprosol-5.webp": "/WebPortfolio/static/media/colprosol-5.be92c80d4f2420a073e7.webp",
     "static/media/paulPicture.webp": "/WebPortfolio/static/media/paulPicture.f824fa9df0612c14f25d.webp",
+    "static/media/colprosol-thumbnail.webp": "/WebPortfolio/static/media/colprosol-thumbnail.0abe52c6bc5852db4422.webp",
     "static/media/keithPicture.webp": "/WebPortfolio/static/media/keithPicture.2c838ad15c6d3591cbe7.webp",
     "static/media/gym-app-thumbnail.webp": "/WebPortfolio/static/media/gym-app-thumbnail.56e1c8d9677a503a0c57.webp",
     "static/media/lawrencePicture.webp": "/WebPortfolio/static/media/lawrencePicture.b28127c12514a54a31b1.webp",
@@ -22,18 +28,23 @@
     "static/media/skylerPicture.webp": "/WebPortfolio/static/media/skylerPicture.50862280339464618872.webp",
     "static/media/gym-app-3-small.webp": "/WebPortfolio/static/media/gym-app-3-small.334857380864311185dc.webp",
     "static/media/gym-app-2-small.webp": "/WebPortfolio/static/media/gym-app-2-small.ff8e8e60620f0c8528f1.webp",
+    "static/media/colprosol-1-small.webp": "/WebPortfolio/static/media/colprosol-1-small.aa659b64cd252ee04100.webp",
     "static/media/gym-app-1-small.webp": "/WebPortfolio/static/media/gym-app-1-small.43c4ceffec1c9b3b1c90.webp",
+    "static/media/colprosol-2-small.webp": "/WebPortfolio/static/media/colprosol-2-small.4e64f7db46dc4e2443b0.webp",
+    "static/media/colprosol-5-small.webp": "/WebPortfolio/static/media/colprosol-5-small.0b864a0232cd05af9253.webp",
+    "static/media/colprosol-4-small.webp": "/WebPortfolio/static/media/colprosol-4-small.e00520fe726f454ef261.webp",
     "static/media/freeScribe-1-small.webp": "/WebPortfolio/static/media/freeScribe-1-small.4e919c597ffda75b7bed.webp",
     "static/media/freeScribe-4-small.webp": "/WebPortfolio/static/media/freeScribe-4-small.af87e1dd63b49d89d6cd.webp",
+    "static/media/colprosol-3-small.webp": "/WebPortfolio/static/media/colprosol-3-small.5673975887fe3d9dbb91.webp",
     "index.html": "/WebPortfolio/index.html",
     "static/media/freeScribe-3-small.webp": "/WebPortfolio/static/media/freeScribe-3-small.beda3c00d1be15908177.webp",
     "static/media/loading-icon.svg": "/WebPortfolio/static/media/loading-icon.b94357ddf1227386952028b7b56a08fa.svg",
     "static/media/freeScribe-2-small.webp": "/WebPortfolio/static/media/freeScribe-2-small.050a63e95a9d122bcea6.webp",
-    "main.842ff9ca.css.map": "/WebPortfolio/static/css/main.842ff9ca.css.map",
-    "main.2fd88dd6.js.map": "/WebPortfolio/static/js/main.2fd88dd6.js.map"
+    "main.ad5f8894.css.map": "/WebPortfolio/static/css/main.ad5f8894.css.map",
+    "main.4461ec79.js.map": "/WebPortfolio/static/js/main.4461ec79.js.map"
   },
   "entrypoints": [
-    "static/css/main.842ff9ca.css",
-    "static/js/main.2fd88dd6.js"
+    "static/css/main.ad5f8894.css",
+    "static/js/main.4461ec79.js"
   ]
 }
