@@ -8,7 +8,7 @@ import ProgressiveImage from 'react-progressive-graceful-image'
 const Landing = () => {
   return (
     <SectionWrapper id='landing'>
-        <div className='flex flex-col items-center justify-center px-4 py-8 flex-1 h-full relative'>            
+        {/* <div className='flex flex-col items-center justify-center px-4 py-8 flex-1 h-full relative'>             */}
 
             <div className="content-wrapper flex flex-col items-center gap-4 z-10">
 
@@ -35,16 +35,16 @@ const Landing = () => {
                 {/* Socials */}
                 <ul className="social-icons flex gap-4"> 
                     <li> 
-                        <a aria-label="github" href="https://github.com/vonglory176" rel="noreferrer" target="_blank"><FaGithub size={24} className='text-white hover:text-blue-400' /></a> 
+                        <a aria-label="github" href="https://github.com/vonglory176" rel="noreferrer" target="_blank"><FaGithub size={24} className='text-white hover:text-blue-500 duration-300' /></a> 
                     </li> 
                     <li> 
-                        <a aria-label="FaGitlab" href="https://gitlab.com/vonglory176" rel="noreferrer" target="_blank"><FaGitlab size={24} className='text-white hover:text-blue-400' /></a> 
+                        <a aria-label="FaGitlab" href="https://gitlab.com/vonglory176" rel="noreferrer" target="_blank"><FaGitlab size={24} className='text-white hover:text-blue-500 duration-300' /></a> 
                     </li>                
                     <li> 
-                        <a aria-label="linkedin" href="https://www.linkedin.com/in/skyler-g-conley-1b6a33133/" rel="noreferrer" target="_blank"><FaLinkedin size={24} className='text-white hover:text-blue-400' /></a> 
+                        <a aria-label="linkedin" href="https://www.linkedin.com/in/skyler-g-conley-1b6a33133/" rel="noreferrer" target="_blank"><FaLinkedin size={24} className='text-white hover:text-blue-500 duration-300' /></a> 
                     </li> 
                     <li> 
-                        <a aria-label="send mail" href="mailto:skylergconley@gmail.com" rel="noreferrer" target="_blank"><FaEnvelope size={24} className='text-white hover:text-blue-400' /></a> 
+                        <a aria-label="send mail" href="mailto:skylergconley@gmail.com" rel="noreferrer" target="_blank"><FaEnvelope size={24} className='text-white hover:text-blue-500 duration-300' /></a> 
                     </li> 
                     {/* <li> 
                         <a aria-label="whatsapp" href="" rel="noreferrer" target="_blank"><FaWhatsapp /></a> 
@@ -52,12 +52,12 @@ const Landing = () => {
                 </ul>
 
                 {/* Contact Button */}
-                <button href="#contact" className='bg-blue-700 px-4 py-2 mt-3 rounded hover:bg-blue-800'>Contact Me</button>
+                <button href="#contact" className='bg-blue-700 px-4 py-2 mt-3 rounded hover:bg-blue-800 duration-300'>Contact Me</button>
 
 
                 {/* Scroll For More */}
                 <div className='absolute bottom-0 left-0 w-full'>
-                    <h2 className='text-xl text-center'><a href="#about">Scroll For More</a></h2>
+                    <h2 className='text-xl text-center'><a href="#about" className='hover:text-blue-400 duration-300'>Scroll For More</a></h2>
 
                     <div className="flex justify-center mt-2 mb-4">
                         <FaChevronDown size={24} className="animate-bounce" />
@@ -67,7 +67,7 @@ const Landing = () => {
             </div>
 
             {/* Background Image */}
-            <div className="background-image-container pointer-events-none">
+            {/* <div className="background-image-container pointer-events-none">
                 <ProgressiveImage src={bgColorImg} placeholder={''}>
                     {(src, loading) => (
                         <img
@@ -77,10 +77,10 @@ const Landing = () => {
                         />
                     )}
                 </ProgressiveImage>
-            </div>
+            </div> */}
             
             {/* <div className="absolute top-0 inset-x-0 h-[37.5rem] bg-grid-slate-900/[0.04] bg-top [mask-image:linear-gradient(0deg,transparent,black)] dark:bg-grid-slate-100/[0.03] dark:bg-[center_top_-1px] dark:border-t dark:border-slate-100/5 top-0 xl:top-18 z-100"></div> */}
-        </div>
+        {/* </div> */}
     </SectionWrapper>
   )
 }
