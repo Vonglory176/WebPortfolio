@@ -9,9 +9,9 @@ import bgColorImg from '../assets/images/bg-colors-6.png'
 const Projects = () => {
   return (
     <SectionWrapper id='projects' title='Projects'>
-        <div className='flex flex-1 flex-col px-4 py-8 items-center justify-center relative'>
+        {/* <div className='flex flex-1 flex-col px-4 py-8 items-center justify-center relative'> */}
 
-          <div className='flex flex-col gap-4 z-10'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 z-10'>
             {projects.map((project, index) => (
 
               <ProjectCard project={project} index={index} key={index} />
@@ -20,7 +20,7 @@ const Projects = () => {
           </div>
 
           {/* Background Image */}
-          <div className="background-image-container pointer-events-none">
+          {/* <div className="background-image-container pointer-events-none">
                 <ProgressiveImage src={bgColorImg} placeholder={''}>
                     {(src, loading) => (
                         <img
@@ -30,9 +30,9 @@ const Projects = () => {
                         />
                     )}
                 </ProgressiveImage>
-            </div>
+            </div> */}
 
-        </div>
+        {/* </div> */}
     </SectionWrapper>
   )
 }
