@@ -8,6 +8,18 @@ import bgColorImg from '../assets/images/bg-colors-3.png'
 const References = () => {
     const [currentReference, setCurrentReference] = useState(0)
     const [isOpen, setIsOpen] = useState(false)
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+
+    const handleResize = () => {
+        setWindowWidth(window.innerWidth)
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize)
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        }
+    }, [])
 
     const handleChangeReference = (index) => {
         // if (index === currentReference && isOpen && window.innerWidth < 768) setIsOpen(false)
@@ -34,7 +46,7 @@ const References = () => {
 
     return (
         <SectionWrapper id='references' title='References'>
-            <div className='flex flex-1 flex-col px-4 py-8 items-center justify-center relative'>
+            {/* <div className='flex flex-1 flex-col px-4 py-8 items-center justify-center relative'> */}
 
                 <div className="content-wrapper z-10 gap-8 max-w-[800px] w-full md:max-w-[1000px] md:grid md:grid-cols-[362px,1fr] md:h-[600px]">
 
@@ -47,7 +59,7 @@ const References = () => {
                                 className={`flex items-center gap-4 py-2 w-full rounded-lg ${index % 2 === 0 ? 'flex-row-reverse' : ''}`} // bg-gray-800 rounded-lg hover:bg-gray-800
                                 // onClick={() => setCurrentReference(index === currentReference ? null : index)}
                                 >
-                                    <a 
+                                    {windowWidth >= 375 && <a 
                                     href={reference.linkedIn}
                                     target='_blank'
                                     className='w-20 h-20 rounded-full bg-gray-800 overflow-hidden shadow-lg'> {/* border-[2px] border-white shadow-[0_0_7px_cyan] */}
@@ -67,16 +79,16 @@ const References = () => {
                                         src={reference.image} 
                                         alt={reference.name} 
                                         /> */}
-                                    </a>
+                                    </a>}
 
                                     
                                     <button
                                     onClick={() => handleChangeReference(index)}
-                                    className={`flex justify-center items-center flex-1 h-full p-4 rounded-lg h-[80px] shadow-lg ${checkRef(index) && (window.innerWidth < 768 ? isOpen : true) ? 'bg-blue-800 duration-200' : 'bg-gray-800'}`}>
+                                    className={`flex justify-center items-center flex-1 h-full p-4 rounded-lg h-[80px] shadow-lg duration-300 ${checkRef(index) && windowWidth >= 768 ? ' scale-105' : ''} ${checkRef(index) && (windowWidth < 768 ? isOpen : true) ? 'bg-blue-800' : 'bg-gray-800 hover:bg-gray-700'}`}>
 
                                         <div className='flex flex-col text-left'>
                                             <h3 className='text-xl font-bold truncate'>{reference.name}</h3>
-                                            <span className={`text-sm text-gray-300`}>{reference.description}</span>
+                                            <span className={`text-sm ${checkRef(index) && (windowWidth < 768 ? isOpen : true) ? 'text-gray-300' : 'text-gray-400'}`}>{reference.description}</span>
                                         </div>
 
                                         <FaChevronDown className={`ml-auto md:hidden ${checkRef(index) && isOpen ? 'rotate-180' : ''}`} />
@@ -103,7 +115,7 @@ const References = () => {
 
 
                 {/* Background Image */}
-                <div className="background-image-container pointer-events-none">
+                {/* <div className="background-image-container pointer-events-none">
                     <ProgressiveImage src={bgColorImg} placeholder={''}>
                         {(src, loading) => (
                             <img
@@ -113,9 +125,9 @@ const References = () => {
                             />
                         )}
                     </ProgressiveImage>
-                </div>
+                </div> */}
 
-            </div>
+            {/* </div> */}
         </SectionWrapper>
     )
 }
