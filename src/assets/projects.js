@@ -44,7 +44,7 @@ export const projects = [
     },
     {
         name: 'FreeScribe',
-        description: 'A website for recording and transcribing audio',
+        description: 'A site to record and transcribe audio',
         // description: 'A website to record & transcribe audio',
         thumbnail: {
             full: freeScribeThumbnail,
@@ -96,7 +96,7 @@ export const projects = [
     },
     {
         name: 'FreeScribe',
-        description: 'A website to record & transcribe audio',
+        description: 'A site to record & transcribe audio',
         thumbnail: {
             full: freeScribeThumbnail,
             small: freeScribeThumbnail,
