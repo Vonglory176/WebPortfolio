@@ -1,5 +1,5 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython, FaGit, FaGithub, FaGitlab, FaSass, FaBootstrap, FaGlobe, FaMobileAlt } from 'react-icons/fa'
-import { SiTypescript, SiNextdotjs, SiRedux, SiMongodb, SiPostgresql, SiMysql, SiFirebase, SiFigma, SiAdobephotoshop, SiPostman, SiTailwindcss, SiJson, SiJquery, SiW3Schools, SiExpress, SiMicrosoftsqlserver, SiRabbitmq } from 'react-icons/si'
+import { SiTypescript, SiNextdotjs, SiRedux, SiMongodb, SiPostgresql, SiMysql, SiFirebase, SiFigma, SiAdobephotoshop, SiPostman, SiTailwindcss, SiJson, SiJquery, SiW3Schools, SiExpress, SiMicrosoftsqlserver, SiRabbitmq, SiVite } from 'react-icons/si'
 import { AiOutlineApi, AiOutlineProject } from 'react-icons/ai'
 import { MdAccessibility, MdDesignServices, MdOutlineAssignment, MdOutlineManageAccounts, MdOutlineTest } from 'react-icons/md'
 import { DiResponsive } from 'react-icons/di'
@@ -49,6 +49,7 @@ export const skills = {
         { name: 'Git', image: FaGit, description: 'Git' },
         { name: 'GitHub', image: FaGithub, description: 'GitHub' },
         { name: 'GitLab', image: FaGitlab, description: 'GitLab' },
+        { name: 'Vite', image: SiVite, description: 'Vite.js' },
         { name: 'Postman', image: SiPostman, description: 'Postman' },
 
         // Design merge
