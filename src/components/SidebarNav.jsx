@@ -1,9 +1,19 @@
 import React, { useRef, useState } from 'react'
+import { useSiteContext } from '../context/SiteContext'
 
 const SidebarNav = () => {
-    // Only show certain links when logged-in
+    const { currentSection } = useSiteContext()
     const [isOpen, setIsOpen] = useState(false)
     const dropdownNavContentRef = useRef(null)
+
+    const sectionLinks = [
+        { id: 'landing', name: 'Home' },
+        { id: 'about', name: 'About' },
+        { id: 'projects', name: 'Projects' },
+        { id: 'skills', name: 'Skills' },
+        { id: 'references', name: 'References' },
+        { id: 'contact', name: 'Contact' }
+    ]
 
     const toggleDropdown = () => {
         if (isOpen) {
@@ -57,8 +67,14 @@ const SidebarNav = () => {
           {/* Post Related */}
           <ul className='dropdownnav-navlink-list flex flex-col gap-4 font-bold text-center' aria-label='Main links'>
 
-            <li>
-              <a href="#landing">Home</a>
+            {sectionLinks.map((link) => (
+              <li key={link.id} className={`m-auto ${currentSection === link.id ? ' border-b-2 border-blue-500' : ''}`}>
+                <a href={`#${link.id}`} className={"duration-300 text-300 hover:text-blue-500 " + (currentSection === link.id ? 'text-blue-500' : 'text-white')}>{link.name}</a>
+              </li>
+            ))}
+
+            {/* <li>
+              <a href="#landing" className={"duration-300 " + (currentSection === 'landing' ? 'text-blue-500' : 'text-white')}>Home</a>
             </li>
 
             <li>
@@ -79,7 +95,7 @@ const SidebarNav = () => {
 
             <li>
               <a href="#contact">Contact</a>
-            </li>
+            </li> */}
 
           </ul>
 
