@@ -1,47 +1,57 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import SectionWrapper from './SectionWrapper'
 import { skills } from '../assets/skills'
 import { FaCode, FaServer, FaTools } from 'react-icons/fa'
 
 const Skills = () => {
     const [currentSkill, setCurrentSkill] = useState('frontend')
+    const skillList = Object.keys(skills)
+    const skillListRef = useRef(null)
+    const skillHeaderRef = useRef(null)
 
-    const handleSkillChange = (skill) => {
-        setCurrentSkill(skill)
+    useEffect(() => {
+        if (!skillHeaderRef.current || !skillListRef.current) return
+        
+        setTimeout(() => {
+            skillHeaderRef.current.classList.remove('opacity-0')
+            skillHeaderRef.current.classList.add('opacity-100')
+            skillListRef.current.classList.remove('opacity-0')
+            skillListRef.current.classList.add('opacity-100')
+        }, 200)
+    }, [currentSkill])
+
+    const handleSkillChange = (index) => {
+        if (index === currentSkill) return
+
+        skillHeaderRef.current.classList.remove('opacity-100')
+        skillHeaderRef.current.classList.add('opacity-0')
+        skillListRef.current.classList.remove('opacity-100')
+        skillListRef.current.classList.add('opacity-0')
+        setTimeout(() => setCurrentSkill(index), 250) // Change to useEffect later !!!
     }
-
-    // CHANGE UNSKILLS TO BE HIDDEN, NOT UNMOUNTED
 
     return (
         <SectionWrapper id='skills' title='Skills'>
             {/* <div className='flex flex-col flex-1 items-center px-4 py-8 justify-center gap-4 bg-gray-800 bg-opacity-30 relative'> flex-1 h-full  */}
 
-                <div className="flex flex-col items-center gap-6 px-4 py-6 rounded-lg bg-gray-800 h-[646px] w-full max-w-[500px] md:max-w-[700px] shadow-lg">
+                <h1 ref={skillHeaderRef} className='text-4xl font-bold capitalize duration-300'><span className='text-blue-500'>{currentSkill}</span> Skills</h1>
 
+                <div className="flex flex-col items-center gap-6 px-4 py-6 rounded-lg bg-gray-800 h-[655px] w-full max-w-[500px] md:max-w-[700px] shadow-lg border border-solid border-gray-700">
                     {/* Skill Selector */}
-                    <div className="grid grid-cols-3 gap-5 justify-around w-full">
-                        <button name='frontend' title='Frontend Skills' onClick={() => handleSkillChange('frontend')} className={`flex justify-center ${currentSkill === 'frontend' ? 'bg-blue-900' : 'bg-blue-700'} p-2 duration-300 rounded hover:bg-blue-800 items-center gap-2`}>
-                            <FaCode size={24} /> 
-                            <p className="hidden sm:inline-block">Frontend</p>
-                        </button>
-                        <button name='backend' title='Backend Skills' onClick={() => handleSkillChange('backend')} className={`flex justify-center ${currentSkill === 'backend' ? 'bg-blue-900' : 'bg-blue-700'} p-2 duration-300 rounded hover:bg-blue-800 items-center gap-2`}>
-                            <FaServer size={24} /> 
-                            <p className="hidden sm:inline-block">Backend</p>
-                        </button>
-                        {/* <button name='design' onClick={handleSkillChange} className='bg-blue-700 p-2 duration-300 rounded hover:bg-blue-800 flex items-center gap-2'>
-                            <FaPaintBrush /> Design
-                        </button> */}
-                        <button name='other' title='Other Skills' onClick={() => handleSkillChange('other')} className={`flex justify-center ${currentSkill === 'other' ? 'bg-blue-900' : 'bg-blue-700'} p-2 duration-300 rounded hover:bg-blue-800 flex items-center gap-2`}>
-                            <FaTools size={24} /> 
-                            <p className="hidden sm:inline-block">Other</p>
-                        </button>
+                    <div className="grid grid-cols-3 gap-5 w-full">
+                        {skillList.map((skill, index) => (
+                            <button key={index} name={skill} title={`${skill.charAt(0).toUpperCase() + skill.slice(1)} Skills`} onClick={() => handleSkillChange(skill)} className={`flex justify-center border border-solid ${currentSkill === skill ? 'bg-blue-800 border-blue-500' : 'hover:bg-gray-700 hover:text-white border-gray-700 text-gray-400'} px-4 py-3 duration-300 rounded items-center gap-2`}>
+                                {skills[skill]?.image && React.createElement(skills[skill].image, { size: 24 })}
+                                {/* <p className="hidden sm:inline-block">{skill}</p> */}
+                            </button>
+                        ))}
                     </div>
 
                     <hr className='w-full border-gray-700' />
 
                     {/* Skill Printing */}
-                    <div className="grid grid-cols-3 justify-between gap-5 w-full md:grid-cols-4 md:gap-8">
-                        {skills[currentSkill]?.map((skill, index) => (
+                    <div ref={skillListRef} className="grid grid-cols-3 justify-between gap-5 w-full md:grid-cols-4 md:gap-8 duration-200 transition-opacity">
+                        {skills[currentSkill]?.list?.map((skill, index) => (
 
                             <div key={index} className="flex flex-col items-center gap-2" title={skill.description}>
                                 {skill.image && <skill.image size={32} />}
