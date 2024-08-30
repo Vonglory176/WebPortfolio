@@ -48,7 +48,7 @@ const SidebarNav = () => {
     <div className='dropdownnav-container relative'>
 
       {/* Open/Close Button */}
-      <button aria-label='Toggle Dropdown Navigation' name='dropdown-nav-toggle' className={`dropdownnav-button flex justify-center items-center w-8 h-8 z-10 relative ${isOpen ? 'toggled' : ''}`} onClick={toggleDropdown}>
+      <button aria-label='Toggle Dropdown Navigation' name='dropdown-nav-toggle' className={`dropdownnav-button flex justify-center items-center w-8 h-8 z-10 relative pointer-events-auto ${isOpen ? 'toggled' : ''}`} onClick={toggleDropdown}>
 
         <div className={`hamburger-icon duration-300 ${isOpen ? 'change' : ''}`}>
           <div className='hamburger-icon-bar1'></div>
