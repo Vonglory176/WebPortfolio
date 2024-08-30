@@ -90,7 +90,7 @@ const References = () => {
                                     
                                     <button
                                     onClick={() => handleChangeReference(index)}
-                                    className={`flex justify-center items-center flex-1 h-full p-4 rounded h-[80px] shadow-lg duration-300 border-solid border ${checkRef(index) && windowWidth >= 1024 ? ' scale-105' : ''} ${checkRef(index) && (windowWidth < 1024 ? isOpen : true) ? 'bg-blue-800 border-blue-500' : 'bg-gray-800 bg-opacity-50 border-gray-700 hover:bg-gray-700'}`}>
+                                    className={`flex justify-center items-center flex-1 h-full p-4 rounded-lg h-[80px] shadow-lg duration-300 border-solid border ${checkRef(index) && windowWidth >= 1024 ? ' scale-105' : ''} ${checkRef(index) && (windowWidth < 1024 ? isOpen : true) ? 'bg-blue-800 border-blue-500' : 'bg-gray-800 bg-opacity-50 border-gray-700 hover:bg-gray-700'}`}>
 
                                         <div className='flex flex-col text-left'>
                                             <h3 className='text-xl font-bold truncate'>{reference.name}</h3>
