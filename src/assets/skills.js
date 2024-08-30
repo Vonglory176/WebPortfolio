@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython, FaGit, FaGithub, FaGitlab, FaSass, FaBootstrap, FaGlobe, FaMobileAlt } from 'react-icons/fa'
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython, FaGit, FaGithub, FaGitlab, FaSass, FaBootstrap, FaGlobe, FaMobileAlt, FaTools, FaServer, FaCode, FaPaintBrush } from 'react-icons/fa'
 import { SiTypescript, SiNextdotjs, SiRedux, SiMongodb, SiPostgresql, SiMysql, SiFirebase, SiFigma, SiAdobephotoshop, SiPostman, SiTailwindcss, SiJson, SiJquery, SiW3Schools, SiExpress, SiMicrosoftsqlserver, SiRabbitmq, SiVite } from 'react-icons/si'
 import { AiOutlineApi, AiOutlineProject } from 'react-icons/ai'
 import { MdAccessibility, MdDesignServices, MdOutlineAssignment, MdOutlineManageAccounts, MdOutlineTest } from 'react-icons/md'
@@ -7,61 +7,73 @@ import { GrMysql } from 'react-icons/gr'
 import { GiSkills } from 'react-icons/gi'
 
 export const skills = {
-    frontend: [
-        { name: 'HTML', image: FaHtml5, description: 'HyperText Markup Language' },
-        { name: 'CSS', image: FaCss3Alt, description: 'Cascading Style Sheets' },
-        { name: 'SCSS', image: FaSass, description: 'Sassy CSS' },
-        { name: 'Bootstrap', image: FaBootstrap, description: 'Bootstrap CSS Framework' },
-        { name: 'Tailwind', image: SiTailwindcss, description: 'Tailwind CSS Framework' },
-        { name: 'JavaScript', image: FaJs, description: 'JavaScript' },
-        { name: 'TypeScript', image: SiTypescript, description: 'TypeScript' },
-        { name: 'React', image: FaReact, description: 'React.js' },
-        { name: 'Next.JS', image: SiNextdotjs, description: 'Next.js' },
-        { name: 'jQuery', image: SiJquery, description: 'jQuery' },
-        { name: 'Redux', image: SiRedux, description: 'Redux' },
-        { name: 'JSON', image: SiJson, description: 'JavaScript Object Notation' },
-        { name: 'REST API', image: AiOutlineApi, description: 'Representational State Transfer API' },
-        { name: 'W3C', image: SiW3Schools, description: 'World Wide Web Consortium' },
-        { name: 'Accessibility', image: MdAccessibility, description: 'Web Accessibility' },
-        { name: 'Responsive Design', image: FaMobileAlt, description: 'Responsive Web Design' }, // DiResponsive
-        { name: 'Cross Browser', image: FaGlobe, description: 'Cross Browser Compatibility' }
-    ],
-    backend: [
-        { name: 'NodeJS', image: FaNodeJs, description: 'Node.js' },
-        { name: 'ExpressJS', image: SiExpress, description: 'Express.js' },
-        { name: 'Python', image: FaPython, description: 'Python' },
-        { name: 'MySQL', image: SiMysql, description: 'MySQL' },
-        { name: 'MS SQL Server', image: SiMicrosoftsqlserver, description: 'Microsoft SQL Server' },
-        { name: 'Postgres', image: SiPostgresql, description: 'PostgreSQL' },
-        { name: 'Firebase', image: SiFirebase, description: 'Firebase' },
-        { name: 'MongoDB', image: SiMongodb, description: 'MongoDB' },
-        { name: 'MVC', image: GiSkills, description: 'Model-View-Controller' }
-    ],
-    // design: [
-        // { name: 'Figma', image: SiFigma },
-        // { name: 'Photoshop', image: SiAdobephotoshop },
-        // { name: 'UI Design', image: MdDesignServices },
-        // { name: 'UX Design', image: MdDesignServices },
-        // { name: 'User Interface', image: MdDesignServices },
-        // { name: 'User Experience', image: MdDesignServices }
-    // ],
-    other: [
-        { name: 'Git', image: FaGit, description: 'Git' },
-        { name: 'GitHub', image: FaGithub, description: 'GitHub' },
-        { name: 'GitLab', image: FaGitlab, description: 'GitLab' },
-        { name: 'Vite', image: SiVite, description: 'Vite.js' },
-        { name: 'Postman', image: SiPostman, description: 'Postman' },
-
-        // Design merge
-        { name: 'Figma', image: SiFigma, description: 'Figma' },
-        { name: 'Photoshop', image: SiAdobephotoshop, description: 'Adobe Photoshop' },
-        { name: 'UI Design', image: MdDesignServices, description: 'User Interface Design' },
-        { name: 'UX Design', image: MdDesignServices, description: 'User Experience Design' },
-
-        { name: 'Project Management', image: AiOutlineProject, description: 'Project Management' },
-        // { name: 'Test Case Management', image: MdOutlineAssignment, description: 'Test Case Management' },
-        { name: 'Agile Methodology', image: MdOutlineManageAccounts, description: 'Agile Methodology' }
+    frontend: {
+        image: FaCode,
+        list: [
+            { name: 'HTML', image: FaHtml5, description: 'HyperText Markup Language' },
+            { name: 'CSS', image: FaCss3Alt, description: 'Cascading Style Sheets' },
+            { name: 'SCSS', image: FaSass, description: 'Sassy CSS' },
+            { name: 'Bootstrap', image: FaBootstrap, description: 'Bootstrap CSS Framework' },
+            { name: 'Tailwind', image: SiTailwindcss, description: 'Tailwind CSS Framework' },
+            { name: 'JavaScript', image: FaJs, description: 'JavaScript' },
+            { name: 'TypeScript', image: SiTypescript, description: 'TypeScript' },
+            { name: 'React', image: FaReact, description: 'React.js' },
+            { name: 'Next.JS', image: SiNextdotjs, description: 'Next.js' },
+            { name: 'jQuery', image: SiJquery, description: 'jQuery' },
+            { name: 'Redux', image: SiRedux, description: 'Redux' },
+            { name: 'JSON', image: SiJson, description: 'JavaScript Object Notation' },
+            { name: 'REST API', image: AiOutlineApi, description: 'Representational State Transfer API' },
+            { name: 'W3C', image: SiW3Schools, description: 'World Wide Web Consortium' },
+            { name: 'Accessibility', image: MdAccessibility, description: 'Web Accessibility' },
+            { name: 'Responsive Design', image: FaMobileAlt, description: 'Responsive Web Design' }, // DiResponsive
+            { name: 'Cross Browser', image: FaGlobe, description: 'Cross Browser Compatibility' }
+        ]
+    },
+    backend: {
+        image: FaServer,
+        list: [
+            { name: 'NodeJS', image: FaNodeJs, description: 'Node.js' },
+            { name: 'ExpressJS', image: SiExpress, description: 'Express.js' },
+            { name: 'Python', image: FaPython, description: 'Python' },
+            { name: 'MySQL', image: SiMysql, description: 'MySQL' },
+            { name: 'MS SQL Server', image: SiMicrosoftsqlserver, description: 'Microsoft SQL Server' },
+            { name: 'Postgres', image: SiPostgresql, description: 'PostgreSQL' },
+            { name: 'Firebase', image: SiFirebase, description: 'Firebase' },
+            { name: 'MongoDB', image: SiMongodb, description: 'MongoDB' },
+            { name: 'MVC', image: GiSkills, description: 'Model-View-Controller' }
     ]
+    },
+    // design: {
+    //     image: FaPaintBrush,
+    //     list: [
+    //         { name: 'Figma', image: SiFigma },
+    //         { name: 'Photoshop', image: SiAdobephotoshop },
+    //         { name: 'UI Design', image: MdDesignServices },
+    //         { name: 'UX Design', image: MdDesignServices },
+    //         // { name: 'User Interface', image: MdDesignServices },
+    //         // { name: 'User Experience', image: MdDesignServices }
+    //     ]
+    // },
+    other: {
+        image: FaTools,
+        list: [
+            { name: 'Git', image: FaGit, description: 'Git' },
+            { name: 'GitHub', image: FaGithub, description: 'GitHub' },
+            { name: 'GitLab', image: FaGitlab, description: 'GitLab' },
+            { name: 'Vite', image: SiVite, description: 'Vite.js' },
+            { name: 'Postman', image: SiPostman, description: 'Postman' },
+
+            // Design merge
+            { name: 'Figma', image: SiFigma, description: 'Figma' },
+            { name: 'Photoshop', image: SiAdobephotoshop, description: 'Adobe Photoshop' },
+            { name: 'UI Design', image: MdDesignServices, description: 'User Interface Design' },
+            { name: 'UX Design', image: MdDesignServices, description: 'User Experience Design' },
+
+            { name: 'Project Management', image: AiOutlineProject, description: 'Project Management' },
+            // { name: 'Test Case Management', image: MdOutlineAssignment, description: 'Test Case Management' },
+            { name: 'Agile Methodology', image: MdOutlineManageAccounts, description: 'Agile Methodology' }
+        ]
+    }
 }
 
 // import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython, FaGit, FaGithub, FaGitlab, FaSass, FaBootstrap, FaGlobe,  } from 'react-icons/fa'
