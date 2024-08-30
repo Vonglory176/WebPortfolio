@@ -8,7 +8,7 @@ const ProjectCard = ({project, index}) => {
     const { showModal } = useSiteContext()
 
     return (
-        <div key={index} className='project-card bg-gray-800 rounded-lg overflow-hidden relative w-full h-full max-w-[384px] max-h-[216px] shadow-lg hover:scale-105 duration-300'> {/* w-[343px] h-[195px] // hover:scale-105 */}
+        <div key={index} className='project-card bg-gray-800 rounded-lg overflow-hidden relative w-full h-full max-w-[384px] min-h-[192.4px] max-h-[216px] shadow-lg hover:scale-105 duration-300'> {/* w-[343px] h-[195px] // hover:scale-105 */}
 
             <ProgressiveImage src={project.thumbnail.full} placeholder={project.thumbnail.small}>
                 {(src, loading) => (
