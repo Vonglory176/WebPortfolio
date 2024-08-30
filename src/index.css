@@ -55,6 +55,7 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1a202c;
   color: white;
 }
 body.modal-open {
@@ -85,6 +86,11 @@ body.modal-open {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+section {
+  min-height: 100vh;
+  min-height: 100svh;
 }
 
 #contact-form-email,
