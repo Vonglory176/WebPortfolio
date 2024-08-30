@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WebPortfolio/static/css/main.ad5f8894.css",
-    "main.js": "/WebPortfolio/static/js/main.8f6b08fa.js",
+    "main.css": "/WebPortfolio/static/css/main.a9dc8a9a.css",
+    "main.js": "/WebPortfolio/static/js/main.65fefece.js",
     "static/media/catalystStore-1.webp": "/WebPortfolio/static/media/catalystStore-1.63ae3ead402804b96116.webp",
     "static/media/asteroidGauntlet-2.webp": "/WebPortfolio/static/media/asteroidGauntlet-2.b4bbdcddf7047b694674.webp",
     "static/media/asteroidGauntlet-1.webp": "/WebPortfolio/static/media/asteroidGauntlet-1.45c7e2fbb5c75b384204.webp",
@@ -57,11 +57,11 @@
     "static/media/freeScribe-3-small.webp": "/WebPortfolio/static/media/freeScribe-3-small.beda3c00d1be15908177.webp",
     "static/media/loading-icon.svg": "/WebPortfolio/static/media/loading-icon.b94357ddf1227386952028b7b56a08fa.svg",
     "static/media/freeScribe-2-small.webp": "/WebPortfolio/static/media/freeScribe-2-small.050a63e95a9d122bcea6.webp",
-    "main.ad5f8894.css.map": "/WebPortfolio/static/css/main.ad5f8894.css.map",
-    "main.8f6b08fa.js.map": "/WebPortfolio/static/js/main.8f6b08fa.js.map"
+    "main.a9dc8a9a.css.map": "/WebPortfolio/static/css/main.a9dc8a9a.css.map",
+    "main.65fefece.js.map": "/WebPortfolio/static/js/main.65fefece.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad5f8894.css",
-    "static/js/main.8f6b08fa.js"
+    "static/css/main.a9dc8a9a.css",
+    "static/js/main.65fefece.js"
   ]
 }
