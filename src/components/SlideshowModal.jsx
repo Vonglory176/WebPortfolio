@@ -47,7 +47,7 @@ const SlideshowModal = () => {
 
                     <div className="modal-ui-bottom flex items-center justify-center gap-2">
                         {modal.images.full.map((image, index) => (
-                            <button key={index} className={`modal-ui-button p-3 rounded-full ${index === currentIndex ? 'bg-blue-600 bg-opacity-80' : 'bg-gray-600'}`} onClick={() => setCurrentIndex(index)}></button>
+                            <button key={index} className={`modal-ui-button p-3 rounded-full border border-solid duration-300 ${index === currentIndex ? 'bg-blue-600 bg-opacity-80 border-blue-500' : 'bg-gray-600 border-gray-700'}`} onClick={() => setCurrentIndex(index)}></button>
                         ))}
                     </div>
                 </div>
