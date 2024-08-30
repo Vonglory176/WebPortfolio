@@ -33,6 +33,37 @@
   }
 }
 
+.custom-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px; /* Adjust width as needed */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbar-bg);
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none; /* Remove the arrows */
+}
+
+// .custom-scrollbar {
+//   scrollbar-width: none; /* Firefox */
+// }
+
+// .custom-scrollbar::-webkit-scrollbar {
+//   display: none; /* WebKit browsers */
+// }
+
 body {
   /* margin: 0; */
   font-family: 'Poppins', sans-serif;
