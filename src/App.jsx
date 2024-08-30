@@ -59,6 +59,8 @@ Get resume download working
 Project info text fuzzy/jump on hover transition
 Contact error not printing? (At least on empty form)
 Change transition opacity logic (References + Skills) to use useEffect
+Weird issue regarding min-height on sections in Discord ??
+Weird shadow/background issue in mobile when opening/closing a reference
 
 IDEAS ---
 
