@@ -22,12 +22,12 @@ const SectionWrapper = ({id, title, children}) => {
     {/* <section id={id} className='flex flex-col min-h-screen w-full' ref={ref} style={{backgroundImage: `url(${bgPattern})`, backgroundOpacity: '0.5'}}> */}
 
         {/* Section Header */}
-        {title && <div className='bg-gray-800 bg-opacity-80 sticky top-0 z-20 shadow-sm'>
-            <h2 className='text-2xl font-bold text-center p-4 relative z-[11]'>{title}</h2>
+        {title && <div className='bg-gray-800 bg-opacity-80 sticky top-0 z-20 shadow-sm border-b border-solid border-gray-700'>
+            <h2 className='text-2xl font-semibold text-center p-4 relative z-[11]'>{title}</h2>
         </div>}
 
         {/* Section Content */}
-        <div className='section-content-wrapper flex flex-1 flex-col px-4 py-8 items-center justify-center gap-4 bg-gray-800 bg-opacity-30 relative z-10'>
+        <div className='section-content-wrapper flex flex-1 flex-col px-4 py-8 items-center justify-center gap-4 bg-gray-800 bg-opacity-30 relative z-10 border-b border-solid border-gray-700'>
           {children}
         </div>
 
