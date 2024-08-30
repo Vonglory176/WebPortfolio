@@ -18,7 +18,8 @@ const SectionWrapper = ({id, title, children}) => {
   const currentBackgroundImage = id === 'landing' ? landingBgColorImg : id === 'projects' ? projectsBgColorImg : id === 'references' ? referencesBgColorImg : null
 
   return (
-    <section id={id} className='flex flex-col min-h-screen w-full relative' ref={ref}> {/*  style={{backgroundImage: 'url("https://www.transparenttextures.com/patterns/always-grey.png")'}} */}
+    //  min-h-screen
+    <section id={id} className='flex flex-col w-full relative' ref={ref}> {/*  style={{backgroundImage: 'url("https://www.transparenttextures.com/patterns/always-grey.png")'}} */}
     {/* <section id={id} className='flex flex-col min-h-screen w-full' ref={ref} style={{backgroundImage: `url(${bgPattern})`, backgroundOpacity: '0.5'}}> */}
 
         {/* Section Header */}
