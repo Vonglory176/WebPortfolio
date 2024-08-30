@@ -1,13 +1,16 @@
 {
   "files": {
     "main.css": "/WebPortfolio/static/css/main.ad5f8894.css",
-    "main.js": "/WebPortfolio/static/js/main.f90d127c.js",
+    "main.js": "/WebPortfolio/static/js/main.64ef4932.js",
+    "static/media/catalystStore-1.webp": "/WebPortfolio/static/media/catalystStore-1.63ae3ead402804b96116.webp",
     "static/media/asteroidGauntlet-2.webp": "/WebPortfolio/static/media/asteroidGauntlet-2.b4bbdcddf7047b694674.webp",
     "static/media/asteroidGauntlet-1.webp": "/WebPortfolio/static/media/asteroidGauntlet-1.45c7e2fbb5c75b384204.webp",
     "static/media/asteroidGauntlet-3.webp": "/WebPortfolio/static/media/asteroidGauntlet-3.b45f10c53278cb057740.webp",
+    "static/media/imageGenerator-3.webp": "/WebPortfolio/static/media/imageGenerator-3.03149178097a01702779.webp",
     "static/media/bg-colors-6.png": "/WebPortfolio/static/media/bg-colors-6.49faed7788b0d6cf081b.png",
     "static/media/bg-colors-5.png": "/WebPortfolio/static/media/bg-colors-5.6085aab64dc395cbe0db.png",
     "static/media/bg-colors-3.png": "/WebPortfolio/static/media/bg-colors-3.07492fc02c618c142512.png",
+    "static/media/catalystStore-thumbnail.webp": "/WebPortfolio/static/media/catalystStore-thumbnail.b399e93e3cb8e0289a68.webp",
     "static/media/bg-colors-1.png": "/WebPortfolio/static/media/bg-colors-1.d78c08ed9d85e5e85d0b.png",
     "static/media/imageGenerator-2.webp": "/WebPortfolio/static/media/imageGenerator-2.6afaa4d4579613c6bae2.webp",
     "static/media/asteroidGauntlet-thumbnail.webp": "/WebPortfolio/static/media/asteroidGauntlet-thumbnail.735d39bbac609ce63b40.webp",
@@ -25,6 +28,7 @@
     "static/media/freeScribe-3.webp": "/WebPortfolio/static/media/freeScribe-3.e05bc366855f7cdd4cd7.webp",
     "static/media/colprosol-5.webp": "/WebPortfolio/static/media/colprosol-5.be92c80d4f2420a073e7.webp",
     "static/media/paulPicture.webp": "/WebPortfolio/static/media/paulPicture.f824fa9df0612c14f25d.webp",
+    "static/media/catalystStore-1-small.webp": "/WebPortfolio/static/media/catalystStore-1-small.0144c07f5f915160c7dd.webp",
     "static/media/imageGenerator-thumbnail.webp": "/WebPortfolio/static/media/imageGenerator-thumbnail.67b9e1414446377f8fa8.webp",
     "static/media/colprosol-thumbnail.webp": "/WebPortfolio/static/media/colprosol-thumbnail.0abe52c6bc5852db4422.webp",
     "static/media/keithPicture.webp": "/WebPortfolio/static/media/keithPicture.2c838ad15c6d3591cbe7.webp",
@@ -36,6 +40,7 @@
     "static/media/skylerPicture.webp": "/WebPortfolio/static/media/skylerPicture.50862280339464618872.webp",
     "static/media/asteroidGauntlet-1-small.webp": "/WebPortfolio/static/media/asteroidGauntlet-1-small.fed15deb36b42b483b77.webp",
     "static/media/asteroidGauntlet-3-small.webp": "/WebPortfolio/static/media/asteroidGauntlet-3-small.413042f8abdc2d68f9e9.webp",
+    "static/media/imageGenerator-3-small.webp": "/WebPortfolio/static/media/imageGenerator-3-small.a549a4b7a987814a8f9b.webp",
     "static/media/gym-app-3-small.webp": "/WebPortfolio/static/media/gym-app-3-small.334857380864311185dc.webp",
     "static/media/imageGenerator-2-small.webp": "/WebPortfolio/static/media/imageGenerator-2-small.c3cba57934caa5b22695.webp",
     "static/media/gym-app-2-small.webp": "/WebPortfolio/static/media/gym-app-2-small.ff8e8e60620f0c8528f1.webp",
@@ -53,10 +58,10 @@
     "static/media/loading-icon.svg": "/WebPortfolio/static/media/loading-icon.b94357ddf1227386952028b7b56a08fa.svg",
     "static/media/freeScribe-2-small.webp": "/WebPortfolio/static/media/freeScribe-2-small.050a63e95a9d122bcea6.webp",
     "main.ad5f8894.css.map": "/WebPortfolio/static/css/main.ad5f8894.css.map",
-    "main.f90d127c.js.map": "/WebPortfolio/static/js/main.f90d127c.js.map"
+    "main.64ef4932.js.map": "/WebPortfolio/static/js/main.64ef4932.js.map"
   },
   "entrypoints": [
     "static/css/main.ad5f8894.css",
-    "static/js/main.f90d127c.js"
+    "static/js/main.64ef4932.js"
   ]
 }
