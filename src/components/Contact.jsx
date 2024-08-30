@@ -98,7 +98,7 @@ const Contact = () => {
                     className='flex flex-col gap-8 w-full max-w-[536px]'
                     onSubmit={handleSubmit}
                     >
-                        <h2 className='text-2xl md:text-3xl font-bold'>Message Me Directly</h2>
+                        <h2 className='text-2xl md:text-3xl font-bold'>Message Me <span className='text-blue-500'>Directly</span></h2>
 
                         {/* Email */}
                         <div id='contact-form-email' className={`flex flex-col gap-2 border-b border-gray-400 duration-300 focus-within:border-white ${formData.email ? 'is-active' : ''} ${formErrors.email ? 'has-error' : ''}`}>
@@ -139,7 +139,7 @@ const Contact = () => {
                         {/* Submit Button */}
                         <button 
                         type="submit"
-                        className='bg-blue-700 p-2 rounded-lg hover:bg-blue-800 duration-300'
+                        className='bg-blue-700 px-4 py-3 rounded hover:bg-blue-800 duration-300'
                         >Send</button>
 
                         {formErrors.errorExists && <p className='text-red-500'>Please make sure all fields are filled out and valid</p>}
