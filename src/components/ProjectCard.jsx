@@ -35,7 +35,15 @@ const ProjectCard = ({project, index}) => {
                 {/* Buttons */}
                 <div className='flex items-center justify-between gap-2 w-full px-4'>
                     <a href={project.link} target='_blank' className='bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 duration-300'><FaExternalLinkAlt size={20} /></a>
-                    <a href={project.github} target='_blank' className='bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 duration-300'><FaGithub size={20} /></a>
+                    {project.github ? (
+                        <a href={project.github} target='_blank' className='bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 duration-300'>
+                            <FaGithub size={20} />
+                        </a>
+                    ) : (
+                        <div className='bg-gray-600 text-white p-3 rounded-full'>
+                            <FaGithub size={20} />
+                        </div>
+                    )}
                     <button onClick={() => showModal(project)} className='bg-blue-600 text-white p-3 rounded-full flex items-center gap-2 hover:bg-blue-700 duration-300'>
                         <FaImages size={20} />
                         {/* <FaTools size={20} /> */}
