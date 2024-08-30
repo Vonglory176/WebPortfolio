@@ -224,7 +224,7 @@ export const projects = [
     {
         // Asteroid Gauntlet
         name: 'Asteroid Gauntlet',
-        description: 'A small JS/Html-Canvas game I made for a college project',
+        description: 'A small game I made with JavaScript and Canvas as a Final Project in College',
         thumbnail: {
             full: asteroidGauntletThumbnail,
             small: asteroidGauntletThumbnail,
