@@ -51,17 +51,18 @@ function App() {
 export default App
 
 /*
-TODO:
+TODO ---
 
 Hook-up contact form
 Fix button clicking while opacity is 0 in project card
 Get resume download working
-Make landing background swap between images (background 4) via timer
 Project info text fuzzy/jump on hover transition
 Contact error not printing? (At least on empty form)
-Weird graphical bug when closing reference
+Change transition opacity logic (References + Skills) to use useEffect
 
 IDEAS ---
+
+Make landing background swap between images (background 4) via timer
 
 
 */
