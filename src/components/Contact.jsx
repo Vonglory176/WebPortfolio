@@ -98,7 +98,7 @@ const Contact = () => {
             {/* <div className='flex flex-1 flex-col items-center justify-center px-4 py-8 bg-gray-800 bg-opacity-30 relative'> */}
 
 
-                <div className="content-wrapper flex flex-wrap justify-center items-start gap-12 w-full"> {/* 619px */}
+                <div className="content-wrapper flex flex-wrap justify-center items-start gap-12 w-full pb-12"> {/* 619px */}
 
                     {/* Contact Info */}
                     <ul className='flex flex-col justify-center gap-4'>
