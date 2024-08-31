@@ -11,7 +11,7 @@ const Projects = () => {
     <SectionWrapper id='projects' title='Projects'>
         {/* <div className='flex flex-1 flex-col px-4 py-8 items-center justify-center relative'> */}
 
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 z-10'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 z-10 p-1'>
             {projects.map((project, index) => (
 
               <ProjectCard project={project} index={index} key={index} />
