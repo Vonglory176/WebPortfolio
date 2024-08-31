@@ -61,6 +61,11 @@ body {
 body.modal-open {
   height: 100vh;
   overflow-y: hidden;
+  padding-right: 17px;
+}
+body.modal-open .hamburger-icon {
+  position: absolute;
+  right: 17px;
 }
 
 .background-image-container {
@@ -133,11 +138,6 @@ section {
 #contact-form-message.has-error {
   border-color: #f56565;
 }
-#contact-form-email.has-error label,
-#contact-form-subject.has-error label,
-#contact-form-message.has-error label {
-  color: #f56565 !important;
-}
 #contact-form-email.is-active:not(.has-error),
 #contact-form-subject.is-active:not(.has-error),
 #contact-form-message.is-active:not(.has-error) {
@@ -149,18 +149,31 @@ section {
   color: #fff;
 }
 
-.project-card-info {
-  opacity: 0;
-  transition: 0.4s ease-in-out opacity;
+.project-card {
+  will-change: transform;
+  font-size: 16px;
 }
-.project-card-info, .project-card-info a, .project-card-info button {
-  pointer-events: none;
+.project-card:hover, .project-card:focus-within {
+  scale: 1.037;
+  transform: perspective(1px) translateZ(0);
+  backface-visibility: hidden;
 }
 .project-card:hover .project-card-info, .project-card:focus-within .project-card-info {
   opacity: 1;
 }
-.project-card:hover .project-card-info, .project-card:hover .project-card-info a, .project-card:hover .project-card-info button, .project-card:focus-within .project-card-info, .project-card:focus-within .project-card-info a, .project-card:focus-within .project-card-info button {
-  pointer-events: auto;
+.project-card .skills-static {
+  display: none;
+}
+@media (min-width: 470px) and (max-width: 767px), (min-width: 908px) and (max-width: 1023px), (min-width: 1346px) {
+  .project-card h3 {
+    font-size: x-large;
+  }
+  .project-card .skills-static {
+    display: flex;
+  }
+  .project-card .skills-carousel {
+    display: none;
+  }
 }
 
 .carousel-content {
@@ -181,6 +194,10 @@ section {
   animation: fade-in 0.3s ease-in-out;
 }
 
+.fade-in {
+  animation: fade-in 0.3s ease-in-out;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -189,15 +206,15 @@ section {
     opacity: 1;
   }
 }
-.dropdownnav.open .dropdownnav-content, .dropdownnav.open .dropdownnav-content:focus-within {
+.sidebarnav.open .sidebarnav-content, .sidebarnav.open .sidebarnav-content:focus-within {
   transform: translateX(-160px);
   pointer-events: auto;
   background-color: rgba(31, 41, 55, 0.8);
 }
-.dropdownnav.open::before {
+.sidebarnav.open::before {
   opacity: 1;
 }
-.dropdownnav .dropdownnav-content {
+.sidebarnav .sidebarnav-content {
   overflow: hidden;
   position: fixed;
   z-index: 2;
@@ -207,7 +224,7 @@ section {
   bottom: 0;
   pointer-events: none;
 }
-.dropdownnav::before {
+.sidebarnav::before {
   content: "";
   position: fixed;
   top: 0;
@@ -259,4 +276,22 @@ section {
 }
 .hamburger-icon.change .hamburger-icon-bar3 {
   transform: translate(0, -10px) rotate(45deg);
+}
+
+.sidebarnav-navlink-list li {
+  position: relative;
+}
+.sidebarnav-navlink-list li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #60a5fa;
+  transition: 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+.sidebarnav-navlink-list li.isActive::after {
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */
