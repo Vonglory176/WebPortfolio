@@ -3,7 +3,7 @@ import { useSiteContext } from '../context/SiteContext'
 import { FaArrowLeft, FaArrowRight, FaSpinner } from 'react-icons/fa'
 import { FaX } from 'react-icons/fa6'
 import ProgressiveImage from 'react-progressive-graceful-image'
-import loadingIcon from '../assets/icons/loading-icon.svg'
+// import loadingIcon from '../assets/icons/loading-icon.svg'
 
 const SlideshowModal = () => {
     const { modal, hideModal } = useSiteContext()
@@ -33,21 +33,21 @@ const SlideshowModal = () => {
                         <h2 className='text-xl font-bold rounded-full bg-blue-600 bg-opacity-80 px-2 py-1'>
                             {modal.link ? <a href={modal.link} target='_blank'>{modal.name}</a> : modal.name}
                         </h2>
-                        <button className="close-button p-3 rounded-full bg-blue-600 bg-opacity-80" onClick={hideModal}><FaX size={20} /></button>
+                        <button aria-label='Close Slideshow Modal' name='close-slideshow-modal' className="close-button p-3 rounded-full bg-blue-600 bg-opacity-80" onClick={hideModal}><FaX size={20} /></button>
                     </div>
 
                     <div className="modal-ui-middle flex items-center justify-between">
-                        <button className="modal-ui-button p-3 rounded-full bg-blue-600 bg-opacity-80" onClick={handlePrev}>
+                        <button aria-label='Previous Slideshow Image' name='previous-slideshow-image' className="modal-ui-button p-3 rounded-full bg-blue-600 bg-opacity-80" onClick={handlePrev}>
                             <FaArrowLeft size={20} />
                         </button>
-                        <button className="modal-ui-button p-3 rounded-full bg-blue-600 bg-opacity-80" onClick={handleNext}>
+                        <button aria-label='Next Slideshow Image' name='next-slideshow-image' className="modal-ui-button p-3 rounded-full bg-blue-600 bg-opacity-80" onClick={handleNext}>
                             <FaArrowRight size={20} />
                         </button>
                     </div>
 
                     <div className="modal-ui-bottom flex items-center justify-center gap-2">
                         {modal.images.full.map((image, index) => (
-                            <button key={index} className={`modal-ui-button p-3 rounded-full border border-solid duration-300 ${index === currentIndex ? 'bg-blue-600 bg-opacity-80 border-blue-500' : 'bg-gray-600 border-gray-700'}`} onClick={() => setCurrentIndex(index)}></button>
+                            <button key={index} aria-label={`Slideshow Image ${index + 1}`} name={`slideshow-image-${index + 1}`} className={`modal-ui-button p-3 rounded-full border border-solid duration-300 ${index === currentIndex ? 'bg-blue-600 bg-opacity-80 border-blue-500' : 'bg-gray-600 border-gray-700'}`} onClick={() => setCurrentIndex(index)}></button>
                         ))}
                     </div>
                 </div>
@@ -59,7 +59,7 @@ const SlideshowModal = () => {
                             <img
                                 src={src}
                                 alt={modal.name}
-                                className={`w-full h-full object-cover duration-300 ${loading ? 'blur-sm' : 'blur-0'}`}
+                                className={`w-full h-full object-cover duration-300 max-w-[1920px] max-h-[1080px] ${loading ? 'blur-sm' : 'blur-0'}`}
                             />
                         )}
                     </ProgressiveImage>
