@@ -3,6 +3,7 @@ import SectionWrapper from './SectionWrapper'
 import { FaCheckCircle, FaCodeBranch, FaDownload } from 'react-icons/fa'
 import bgColorImg from '../assets/images/bg-colors-1.png'
 import ProgressiveImage from 'react-progressive-graceful-image'
+import resume from '../assets/docs/SkylerConley-Resume-8-22-2024.pdf'
 
 const About = () => {
     const hobbyRef = useRef(null)
@@ -33,7 +34,6 @@ const About = () => {
 
   return (
     <SectionWrapper id='about' title='About'>
-        {/* <div className='flex flex-1 flex-col px-4 py-8 items-center justify-center gap-4 bg-gray-800 bg-opacity-30 relative'> flex-1 h-full //  style={{backgroundImage: 'url("https://www.transparenttextures.com/patterns/always-grey.png")'}}  */}
 
             <div className="content-wrapper flex flex-col gap-4 max-w-[548px]"> {/* 619px */}
                 
@@ -60,11 +60,9 @@ const About = () => {
                     <p>Results-oriented and highly motivated <span className='text-blue-400'>Full-Stack Developer</span> with <span className='text-blue-400'>3+ years</span> of experience in <span className='text-blue-400'>Web Development</span>, specializing in the <span className='text-blue-400'>MERN tech stack</span>.</p>
                     <p>Proficient in <span className='text-blue-400'>Responsive Design</span>, <span className='text-blue-400'>Best Practices</span>, and <span className='text-blue-400'>W3C Standards</span>. <span className='text-blue-400'>Self-motivated</span>, <span className='text-blue-400'>fast learner</span>, and always eager to tackle new challenges to expand my skillset.</p>
 
-                    {/* <button className='bg-blue-700 px-4 py-2 mt-2 rounded hover:bg-blue-800 duration-300'>Download Resume</button> */}
                 </div>
 
                 <div className="flex justify-around gap-2 w-full z-10 text-gray-400 text-center">
-                {/* <div className="flex justify-around w-full p-4 z-10 text-gray-400"> */}
 
                     <div className="flex flex-col items-center justify-center gap-2 w-full max-w-[110px]">
                         <FaCheckCircle size={24} />
@@ -72,18 +70,12 @@ const About = () => {
                         <p>Projects Completed</p>
                     </div>
 
-                    <button className='bg-blue-700 text-white px-4 py-3 my-auto rounded hover:bg-blue-800 duration-300 flex items-center gap-2'>
+                    <a href={resume} download='Skyler_Conley_Resume.pdf' target='_blank' title="Download Skyler's Resume" className='bg-blue-700 text-white px-4 py-3 my-auto rounded hover:bg-blue-800 duration-300 flex items-center gap-2'>
                         {/* Download */}
                         <span className='hidden sm:block'>Download</span>
                         <span>Resume</span>
                         <FaDownload />
-                    </button>
-
-                    {/* <div className="flex flex-col items-center gap-2">
-                        <FaCheckCircle size={24} />
-                        <h3 className='text-lg font-bold'>+2</h3>
-                        <p>Happy Clients</p>
-                    </div> */}
+                    </a>
 
                     <div className="flex flex-col items-center gap-2 w-full max-w-[110px]">
                         <FaCodeBranch size={24} />
@@ -93,21 +85,6 @@ const About = () => {
                 </div>
 
             </div>
-
-            {/* Background Image */}
-            {/* <div className="background-image-container pointer-events-none">
-                <ProgressiveImage src={bgColorImg} placeholder={''}>
-                    {(src, loading) => (
-                        <img
-                            src={src}
-                            alt={""}
-                            className={`w-full h-full object-cover duration-300 ${loading ? 'opacity-0' : 'opacity-100'}`}
-                        />
-                    )}
-                </ProgressiveImage>
-            </div> */}
-
-        {/* </div> */}
     </SectionWrapper>
   )
 }
