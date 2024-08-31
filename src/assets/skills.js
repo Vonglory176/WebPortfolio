@@ -1,10 +1,9 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython, FaGit, FaGithub, FaGitlab, FaSass, FaBootstrap, FaGlobe, FaMobileAlt, FaTools, FaServer, FaCode, FaPaintBrush } from 'react-icons/fa'
-import { SiTypescript, SiNextdotjs, SiRedux, SiMongodb, SiPostgresql, SiMysql, SiFirebase, SiFigma, SiAdobephotoshop, SiPostman, SiTailwindcss, SiJson, SiJquery, SiW3Schools, SiExpress, SiMicrosoftsqlserver, SiRabbitmq, SiVite } from 'react-icons/si'
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython, FaGit, FaGithub, FaGitlab, FaSass, FaBootstrap, FaGlobe, FaMobileAlt, FaTools, FaServer, FaCode } from 'react-icons/fa'
+import { SiTypescript, SiNextdotjs, SiRedux, SiMongodb, SiPostgresql, SiMysql, SiFirebase, SiFigma, SiAdobephotoshop, SiPostman, SiTailwindcss, SiJson, SiJquery, SiW3Schools, SiExpress, SiMicrosoftsqlserver, SiVite } from 'react-icons/si'
 import { AiOutlineApi, AiOutlineProject } from 'react-icons/ai'
-import { MdAccessibility, MdDesignServices, MdOutlineAssignment, MdOutlineManageAccounts, MdOutlineTest } from 'react-icons/md'
-import { DiResponsive } from 'react-icons/di'
-import { GrMysql } from 'react-icons/gr'
+import { MdAccessibility, MdDesignServices, MdOutlineManageAccounts } from 'react-icons/md'
 import { GiSkills } from 'react-icons/gi'
+import { FaPaintbrush } from 'react-icons/fa6'
 
 export const skills = {
     frontend: {
@@ -15,6 +14,7 @@ export const skills = {
             { name: 'SCSS', image: FaSass, description: 'Sassy CSS' },
             { name: 'Bootstrap', image: FaBootstrap, description: 'Bootstrap CSS Framework' },
             { name: 'Tailwind', image: SiTailwindcss, description: 'Tailwind CSS Framework' },
+            { name: 'Canvas', image: FaPaintbrush, description: 'HTML5 Canvas' },
             { name: 'JavaScript', image: FaJs, description: 'JavaScript' },
             { name: 'TypeScript', image: SiTypescript, description: 'TypeScript' },
             { name: 'React', image: FaReact, description: 'React.js' },
