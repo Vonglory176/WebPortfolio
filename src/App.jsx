@@ -52,19 +52,22 @@ export default App
 
 /*
 TODO ---
+Google Lighthouse
+Look at aria controls
 
-Hook-up contact form
 Fix button clicking while opacity is 0 in project card
-Get resume download working
-Project info text fuzzy/jump on hover transition
+
 Contact error not printing? (At least on empty form)
 Change transition opacity logic (References + Skills) to use useEffect
+
 Weird issue regarding min-height on sections in Discord ??
 Weird shadow/background issue in mobile when opening/closing a reference
+Weird issues with project info jumping around
 
 IDEAS ---
 
 Make landing background swap between images (background 4) via timer
+Add a load animation for projects, making them appear one by one
 
 
 */
