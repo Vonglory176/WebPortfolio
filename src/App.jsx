@@ -52,12 +52,12 @@ export default App
 
 /*
 TODO ---
-Google Lighthouse
 Look at aria controls
 
-Fix button clicking while opacity is 0 in project card
+Update size of small projects images
+Make Sidenav larger
+Make skill transition faster?
 
-Contact error not printing? (At least on empty form)
 Change transition opacity logic (References + Skills) to use useEffect
 
 Weird issue regarding min-height on sections in Discord ??
