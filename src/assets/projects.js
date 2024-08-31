@@ -139,7 +139,7 @@ export const projects = [
         },
         link: 'https://colprosol.com/',
         github: '',
-        skills: ['HTML', 'SCSS', 'React', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API'],
+        skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API'],
     },
     {
         // ColProSol - Admin
@@ -167,7 +167,7 @@ export const projects = [
         },
         link: 'https://colprosol.com/',
         github: '',
-        skills: ['HTML', 'SCSS', 'React', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API'],
+        skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API'],
     },
     {
         // Catalyst Store Clone
@@ -195,7 +195,7 @@ export const projects = [
         },
         link: 'https://catalyst-clone.netlify.app/',
         github: 'https://github.com/Vonglory176/CatalystClone',
-        skills: ['HTML', 'SCSS', 'React', 'Firebase', 'RESTful API', 'Stripe Payments'],
+        skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'Firebase', 'RESTful API', 'Stripe Payments'],
     },
     {
         // Image Generator
@@ -219,7 +219,7 @@ export const projects = [
         },
         link: 'https://vonglory176.github.io/ImageGenerator/',
         github: 'https://github.com/Vonglory176/ImageGenerator',
-        skills: ['HTML', 'CSS', 'React', 'BootStrap', 'RESTful API', 'OpenAI'],
+        skills: ['HTML', 'CSS', 'BootStrap', 'JavaScript', 'React', 'RESTful API', 'OpenAI'],
     },
     {
         // Asteroid Gauntlet
