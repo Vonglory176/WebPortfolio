@@ -4,7 +4,7 @@ import { useSiteContext } from '../context/SiteContext'
 const SidebarNav = () => {
     const { currentSection } = useSiteContext()
     const [isOpen, setIsOpen] = useState(false)
-    const dropdownNavContentRef = useRef(null)
+    const sidebarNavContentRef = useRef(null)
 
     const sectionLinks = [
         { id: 'landing', name: 'Home' },
@@ -20,7 +20,7 @@ const SidebarNav = () => {
         setIsOpen(false)
         }
         else {
-        const dropdownContent = dropdownNavContentRef.current
+        const dropdownContent = sidebarNavContentRef.current
         if (dropdownContent && !dropdownContent.contains(document.activeElement)) {
             setIsOpen(true)
             dropdownContent.focus()
@@ -41,14 +41,14 @@ const SidebarNav = () => {
 
     return (
     <div 
-    className={`dropdownnav ${isOpen? 'open' : ''}`} 
+    className={`sidebarnav ${isOpen? 'open' : ''}`} 
     onBlur={handleBlur}
     tabIndex={0}
     >
-    <div className='dropdownnav-container relative'>
+    <div className='sidebarnav-container relative'>
 
       {/* Open/Close Button */}
-      <button aria-label='Toggle Dropdown Navigation' name='dropdown-nav-toggle' className={`dropdownnav-button flex justify-center items-center w-8 h-8 z-10 relative pointer-events-auto ${isOpen ? 'toggled' : ''}`} onClick={toggleDropdown}>
+      <button aria-label='Toggle Sidebar Navigation' name='sidebar-nav-toggle' className={`sidebarnav-button flex justify-center items-center w-8 h-8 z-10 relative pointer-events-auto ${isOpen ? 'toggled' : ''}`} onClick={toggleDropdown}>
 
         <div className={`hamburger-icon duration-300 ${isOpen ? 'change' : ''}`}>
           <div className='hamburger-icon-bar1'></div>
@@ -59,17 +59,18 @@ const SidebarNav = () => {
       </button>
 
       {/* Dropdown Navigation Menu */}
-      <aside className={`dropdownnav-content rounded-tl-lg rounded-bl-lg pt-12 duration-300`} ref={dropdownNavContentRef} >      
+      <aside className={`sidebarnav-content rounded-tl-lg rounded-bl-lg pt-12 duration-300`} ref={sidebarNavContentRef} >      
 
-        <nav className='dropdownnav-content-container w-full h-full p-4'>
+        <nav className='sidebarnav-content-container w-full h-full p-4'>
           
 
           {/* Post Related */}
-          <ul className='dropdownnav-navlink-list flex flex-col gap-4 font-bold text-center' aria-label='Main links'>
+          <ul className='sidebarnav-navlink-list flex flex-col gap-4 font-bold text-center' aria-label='Main links'>
 
             {sectionLinks.map((link) => (
-              <li key={link.id} className={`m-auto ${currentSection === link.id ? ' border-b-2 border-blue-500' : ''}`}>
-                <a href={`#${link.id}`} className={"duration-300 text-300 hover:text-blue-500 " + (currentSection === link.id ? 'text-blue-500' : 'text-white')}>{link.name}</a>
+              // <li key={link.id} className={`m-auto duration-100 border-blue-500 ${currentSection === link.id ? 'border-b-2' : ''}`}>
+              <li key={link.id} className={`m-auto ${currentSection === link.id ? 'isActive' : ''}`}>
+                <a href={`#${link.id}`} className={"duration-300 hover:text-blue-400 " + (currentSection === link.id ? 'text-blue-400' : 'text-white')}>{link.name}</a>
               </li>
             ))}
 
