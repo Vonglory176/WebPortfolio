@@ -120,7 +120,7 @@ const References = () => {
 
                         {/* Reference Header */}
                         <div className="flex justify-between items-end">
-                            <h2 className='text-4xl'><span className='text-blue-500 font-bold'>{references[currentReference]?.name.split(' ')[0] || references[0].name.split(' ')[0]}</span> <span className='text-xl'>said...</span></h2>
+                            <h2 className='text-4xl'><span className='text-blue-500 font-bold'>{references[currentReference]?.name.split(' ')[0] || references[0].name.split(' ')[0]}</span> <span className='text-xl text-gray-200'>said...</span></h2>
                             <p className='text-gray-400'>{references[currentReference].description}</p>
                         </div>
 
