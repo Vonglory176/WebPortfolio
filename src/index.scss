@@ -4,6 +4,7 @@
 
 * {
   scroll-behavior: smooth;
+  // -webkit-font-smoothing: subpixel-antialiased;
 }
 
 :root {
@@ -75,6 +76,13 @@ body {
   &.modal-open {
     height: 100vh;
     overflow-y: hidden;
+    padding-right:17px;
+
+    .hamburger-icon {
+      // padding-right: 17px !important;
+      position: absolute;
+      right: 17px;
+    }
   }
 }
 
@@ -181,7 +189,7 @@ section {
 
   &.has-error {
     border-color: #f56565;
-    label {color: #f56565 !important} // text-red-500
+    // label {color: #f56565 !important} // text-red-500
   }
 
   &.is-active:not(.has-error) {
@@ -197,22 +205,48 @@ section {
 
 .project-card {
 
-  &-info {
-    opacity: 0;
-    transition: .4s ease-in-out opacity;
-    &, a, button {pointer-events: none}
-  }
+  // &-info {
+    // opacity: 0;
+    // transition: .4s ease-in-out opacity;
+    // backface-visibility: hidden
+    // &, a, button {pointer-events: none}
+    // * {
+    //   will-change: transform;
+    // }
+  // }
+
+  will-change: transform;
 
   &:hover, &:focus-within {
 
+    scale: 1.037; // 1.03; // 1.06;
+    // transform: scale(1.03) perspective(1px) translateZ(0px);
+    transform: perspective(1px) translateZ(0);
+    backface-visibility: hidden;
+
     .project-card-info {
       opacity: 1;
-      &, a, button {pointer-events: auto}
+      // &, a, button {pointer-events: auto}
     }
+  }
+
+  .skills-static {
+    display: none;
+  }
+
+  font-size: 16px;
+
+  // Skill display logic
+  @media (min-width: 470px) and (max-width: 767px),
+         (min-width: 908px) and (max-width: 1023px),
+         (min-width: 1346px) {
+    h3 {font-size: x-large}
+    .skills-static { display: flex }
+    .skills-carousel { display: none }
   }
 }
 
-// .carousel {
+// .skill-carousel {
 //   overflow: hidden;
 //   white-space: nowrap;
 //   box-sizing: border-box;
@@ -231,6 +265,7 @@ section {
 //   font-size: 1.5rem;
 // }
 
+
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -244,6 +279,10 @@ section {
   animation: fade-in 0.3s ease-in-out;
 }
 
+.fade-in {
+  animation: fade-in 0.3s ease-in-out;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;
@@ -253,11 +292,11 @@ section {
   }
 }
 
-.dropdownnav {
+.sidebarnav {
   // position: relative;
 
   &.open {
-    .dropdownnav-content, .dropdownnav-content:focus-within {  // , &:focus-within
+    .sidebarnav-content, .sidebarnav-content:focus-within {  // , &:focus-within
       transform: translateX(-160px);
       pointer-events: auto;
       background-color: rgba(31, 41, 55, 0.8);  
@@ -268,7 +307,7 @@ section {
     }
   }
   
-  .dropdownnav-content {
+  .sidebarnav-content {
     overflow: hidden;
     position: fixed;
     z-index: 2;
@@ -295,7 +334,7 @@ section {
   }
 }
 
-// .dropdownnav-button {
+// .sidebarnav-button {
 //   // position: absolute;
 //   z-index: 10;
 //   left: -30px;
@@ -338,6 +377,28 @@ section {
     }
     .hamburger-icon-bar3 {
       transform: translate(0, -10px) rotate(45deg);
+    }
+  }
+}
+
+.sidebarnav-navlink-list {
+  li {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background-color: #60a5fa;
+      transition: .3s ease-in-out;
+      transform: translateX(-50%);
+    }
+
+    &.isActive::after {
+      width: 100%;
     }
   }
 }
