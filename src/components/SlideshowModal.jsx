@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSiteContext } from '../context/SiteContext'
 import { FaArrowLeft, FaArrowRight, FaSpinner } from 'react-icons/fa'
 import { FaX } from 'react-icons/fa6'
@@ -16,6 +16,20 @@ const SlideshowModal = () => {
     const handlePrev = () => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + modal.images.full.length) % modal.images.full.length)
     }
+
+    // Keyboard Navigation
+    const handleKeyDown = (e) => {
+        if (e.key === 'ArrowRight') {
+            handleNext()
+        } else if (e.key === 'ArrowLeft') {
+            handlePrev()
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('keydown', handleKeyDown)
+        return () => window.removeEventListener('keydown', handleKeyDown)
+    }, [])
 
     return (
         <div className='modal-container fixed inset-0 bg-black bg-opacity-60 z-30'>
@@ -37,29 +51,30 @@ const SlideshowModal = () => {
                     </div>
 
                     <div className="modal-ui-middle flex items-center justify-between">
-                        <button aria-label='Previous Slideshow Image' name='previous-slideshow-image' className="modal-ui-button p-3 rounded-full bg-blue-600 bg-opacity-80" onClick={handlePrev}>
+                        <button aria-label='Previous Slideshow Image' name='previous-slideshow-image' className="modal-ui-button p-3 rounded-full bg-blue-600 bg-opacity-80" onClick={handlePrev} aria-controls='slideshow-image-container'>
                             <FaArrowLeft size={20} />
                         </button>
-                        <button aria-label='Next Slideshow Image' name='next-slideshow-image' className="modal-ui-button p-3 rounded-full bg-blue-600 bg-opacity-80" onClick={handleNext}>
+                        <button aria-label='Next Slideshow Image' name='next-slideshow-image' className="modal-ui-button p-3 rounded-full bg-blue-600 bg-opacity-80" onClick={handleNext} aria-controls='slideshow-image-container'>
                             <FaArrowRight size={20} />
                         </button>
                     </div>
 
                     <div className="modal-ui-bottom flex items-center justify-center gap-2">
                         {modal.images.full.map((image, index) => (
-                            <button key={index} aria-label={`Slideshow Image ${index + 1}`} name={`slideshow-image-${index + 1}`} className={`modal-ui-button p-3 rounded-full border border-solid duration-300 ${index === currentIndex ? 'bg-blue-600 bg-opacity-80 border-blue-500' : 'bg-gray-600 border-gray-700'}`} onClick={() => setCurrentIndex(index)}></button>
+                            <button key={index} aria-label={`Slideshow Image ${index + 1}`} name={`slideshow-image-${index + 1}`} className={`modal-ui-button p-3 rounded-full border border-solid duration-300 ${index === currentIndex ? 'bg-blue-600 bg-opacity-80 border-blue-500' : 'bg-gray-600 border-gray-700'}`} onClick={() => setCurrentIndex(index)} aria-controls='slideshow-image-container'></button>
                         ))}
                     </div>
                 </div>
 
                 {/* Slideshow Images */}
-                <div className="modal-image-container flex flex-1 items-center justify-center">
+                <div id='slideshow-image-container' className="modal-image-container fixed inset-0 flex items-center justify-center">
                     <ProgressiveImage src={modal.images.full[currentIndex]} placeholder={modal.images.small[currentIndex]}>
                         {(src, loading) => (
                             <img
                                 src={src}
                                 alt={modal.name}
-                                className={`w-full h-full object-cover duration-300 max-w-[1920px] max-h-[1080px] ${loading ? 'blur-sm' : 'blur-0'}`}
+                                className={`object-contain min-h-[100svh] min-w-[100svw] max-h-[100svh] max-w-[1920px] ${loading ? 'blur-sm' : 'blur-0 transition-[filter] duration-300'}`}
+                                // className={`w-full h-full object-cover duration-300 max-w-[1920px] max-h-[1080px] ${loading ? 'blur-sm' : 'blur-0'}`}
                             />
                         )}
                     </ProgressiveImage>
