@@ -61,11 +61,15 @@ body {
 body.modal-open {
   height: 100vh;
   overflow-y: hidden;
-  padding-right: 17px;
 }
-body.modal-open .hamburger-icon {
-  position: absolute;
-  right: 17px;
+@media (min-width: 1025px) {
+  body.modal-open {
+    padding-right: 17px;
+  }
+  body.modal-open .hamburger-icon {
+    position: absolute;
+    right: 17px;
+  }
 }
 
 .background-image-container {
@@ -206,26 +210,25 @@ section {
     opacity: 1;
   }
 }
-.sidebarnav.open .sidebarnav-content, .sidebarnav.open .sidebarnav-content:focus-within {
-  transform: translateX(-160px);
+.sidebarnav.open .sidebarnav-content, .sidebarnav .sidebarnav-content:focus-within {
+  transform: translateX(-230px);
   pointer-events: auto;
   background-color: rgba(31, 41, 55, 0.8);
 }
-.sidebarnav.open::before {
+.sidebarnav.open .sidebarnav-content + .sidebarnav-overlay, .sidebarnav .sidebarnav-content:focus-within + .sidebarnav-overlay {
   opacity: 1;
+  pointer-events: auto;
 }
 .sidebarnav .sidebarnav-content {
-  overflow: hidden;
   position: fixed;
   z-index: 2;
-  width: 200px;
-  right: -160px;
+  width: 270px;
+  right: -230px;
   top: 0;
   bottom: 0;
   pointer-events: none;
 }
-.sidebarnav::before {
-  content: "";
+.sidebarnav .sidebarnav-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -265,7 +268,7 @@ section {
   left: 0px;
 }
 .hamburger-icon.change {
-  transform: translateX(-130px);
+  transform: translateX(-200px);
 }
 .hamburger-icon.change .hamburger-icon-bar1 {
   transform: translate(0, 10px) rotate(-45deg);
@@ -278,10 +281,10 @@ section {
   transform: translate(0, -10px) rotate(45deg);
 }
 
-.sidebarnav-navlink-list li {
+.sidebarnav-navlink-list li a {
   position: relative;
 }
-.sidebarnav-navlink-list li::after {
+.sidebarnav-navlink-list li a::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -292,6 +295,6 @@ section {
   transition: 0.3s ease-in-out;
   transform: translateX(-50%);
 }
-.sidebarnav-navlink-list li.isActive::after {
+.sidebarnav-navlink-list li.isActive a::after {
   width: 100%;
 }/*# sourceMappingURL=index.css.map */
