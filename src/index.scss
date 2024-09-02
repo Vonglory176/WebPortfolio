@@ -76,13 +76,21 @@ body {
   &.modal-open {
     height: 100vh;
     overflow-y: hidden;
-    padding-right:17px;
+    
+    
+    @media (min-width: 1025px) {     
+      // .App { overflow-y: scroll; }
+      // main { overflow-y: hidden; }
 
-    .hamburger-icon {
-      // padding-right: 17px !important;
-      position: absolute;
-      right: 17px;
+      padding-right:17px;
+
+      .hamburger-icon {
+        // padding-right: 17px !important;
+        position: absolute;
+        right: 17px;
+      }
     }
+
   }
 }
 
@@ -293,34 +301,37 @@ section {
 }
 
 .sidebarnav {
-  // position: relative;
 
-  &.open {
-    .sidebarnav-content, .sidebarnav-content:focus-within {  // , &:focus-within
-      transform: translateX(-160px);
+  // &.open .sidebarnav-content, .sidebarnav-container:focus-within .sidebarnav-content {  // , &:focus-within
+  &.open .sidebarnav-content, .sidebarnav-content:focus-within {  // , &:focus-within
+
+      transform: translateX(-230px); // -160px
       pointer-events: auto;
-      background-color: rgba(31, 41, 55, 0.8);  
-    }
-    
-    &::before {
-      opacity: 1;
-    }
+      background-color: rgba(31, 41, 55, 0.8);
+      // border-left: 1px solid #4b5563;
+
+      & + .sidebarnav-overlay {  // Neat!
+        opacity: 1; 
+        pointer-events: auto;
+        // cursor: pointer;
+      }
   }
   
   .sidebarnav-content {
-    overflow: hidden;
+    // overflow: hidden;
     position: fixed;
     z-index: 2;
     // width: 0;
-    width: 200px;
-    right: -160px; // -200px;
+    width: 270px; // 200px;
+    right: -230px; // 160px; // -200px;
     top: 0;
     bottom: 0;
-    pointer-events: none;    
+    pointer-events: none;
+    // border-left: 0px solid #4b5563;
   }
 
-  &::before {
-    content: '';
+  .sidebarnav-overlay {
+    // content: '';
     position: fixed;
     top: 0;
     left: 0;
@@ -365,7 +376,7 @@ section {
   &-bar3 { left: 0px }
 
   &.change {
-    transform: translateX(-130px);
+    transform: translateX(-200px); // -130px
 
     .hamburger-icon-bar1 {
       transform: translate(0, 10px) rotate(-45deg);
@@ -383,21 +394,24 @@ section {
 
 .sidebarnav-navlink-list {
   li {
-    position: relative;
 
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 0;
-      height: 2px;
-      background-color: #60a5fa;
-      transition: .3s ease-in-out;
-      transform: translateX(-50%);
+    a {
+      position: relative;
+  
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: #60a5fa;
+        transition: .3s ease-in-out;
+        transform: translateX(-50%);
+      }
     }
 
-    &.isActive::after {
+    &.isActive a::after {
       width: 100%;
     }
   }
