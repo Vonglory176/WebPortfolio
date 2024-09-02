@@ -10,7 +10,7 @@ const SidebarNav = () => {
         { id: 'landing', name: 'Home' },
         { id: 'about', name: 'About' },
         { id: 'projects', name: 'Projects' },
-        { id: 'skills', name: 'Skills' },
+        { id: 'skillset', name: 'Skillset' },
         { id: 'references', name: 'References' },
         { id: 'contact', name: 'Contact' }
     ]
@@ -32,8 +32,13 @@ const SidebarNav = () => {
       if (!e.currentTarget.contains(e.relatedTarget)) {
         setIsOpen(false)
         console.log('blur')
+      }
     }
-    }
+
+    // const handleLinkClick = (e) => {
+      // setIsOpen(false)
+      // sidebarNavContentRef.current.focus()
+    // }
 
     // const toggleDropdown = () => {
     //   setIsOpen(!isOpen) // Simplified toggle logic
@@ -45,10 +50,10 @@ const SidebarNav = () => {
     onBlur={handleBlur}
     tabIndex={0}
     >
-    <div className='sidebarnav-container relative'>
+    <div className='sidebarnav-container pointer-events-auto'>
 
       {/* Open/Close Button */}
-      <button aria-label='Toggle Sidebar Navigation' name='sidebar-nav-toggle' className={`sidebarnav-button flex justify-center items-center w-8 h-8 z-10 relative pointer-events-auto ${isOpen ? 'toggled' : ''}`} onClick={toggleDropdown}>
+      <button aria-label='Toggle Sidebar Navigation' name='sidebar-nav-toggle' className={`sidebarnav-button flex justify-center items-center w-8 h-8 z-10 relative ${isOpen ? 'toggled' : ''}`} onClick={toggleDropdown}>
 
         <div className={`hamburger-icon duration-300 ${isOpen ? 'change' : ''}`}>
           <div className='hamburger-icon-bar1'></div>
@@ -65,12 +70,12 @@ const SidebarNav = () => {
           
 
           {/* Post Related */}
-          <ul className='sidebarnav-navlink-list flex flex-col gap-4 font-bold text-center' aria-label='Main links'>
+          <ul className='sidebarnav-navlink-list flex flex-col gap-4 font-semibold text-center' aria-label='Main links'>
 
             {sectionLinks.map((link) => (
               // <li key={link.id} className={`m-auto duration-100 border-blue-500 ${currentSection === link.id ? 'border-b-2' : ''}`}>
-              <li key={link.id} className={`m-auto ${currentSection === link.id ? 'isActive' : ''}`}>
-                <a href={`#${link.id}`} className={"duration-300 hover:text-blue-400 " + (currentSection === link.id ? 'text-blue-400' : 'text-white')}>{link.name}</a>
+              <li key={link.id} className={`${currentSection === link.id ? 'isActive' : ''}`}>
+                <a href={`#${link.id}`} className={"m-auto duration-300 text-xl hover:text-blue-400 py-1 " + (currentSection === link.id ? 'text-blue-400' : 'text-white')}>{link.name}</a>
               </li>
             ))}
 
@@ -102,6 +107,10 @@ const SidebarNav = () => {
 
         </nav>
       </aside>
+
+      {/* Overlay */}
+      <div className='sidebarnav-overlay' onClick={toggleDropdown}></div>
+
     </div>
   </div>
 )
