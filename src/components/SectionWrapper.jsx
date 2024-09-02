@@ -28,7 +28,7 @@ const SectionWrapper = ({id, title, children}) => {
         </div>}
 
         {/* Section Content */}
-        <div className='section-content-wrapper flex flex-1 flex-col px-4 py-8 items-center justify-center gap-4 bg-gray-800 bg-opacity-30 relative z-10 border-b border-solid border-gray-700'>
+        <div className='section-content-wrapper flex flex-1 flex-col px-4 py-12 items-center justify-center gap-4 bg-gray-800 bg-opacity-30 relative z-10 border-b border-solid border-gray-700'>
           {children}
         </div>
 
