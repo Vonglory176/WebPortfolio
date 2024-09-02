@@ -54,6 +54,8 @@ const References = () => {
         <SectionWrapper id='references' title='References'>
             {/* <div className='flex flex-1 flex-col px-4 py-8 items-center justify-center relative'> */}
 
+                <h2 className='text-4xl font-bold text-center mb-6'>Kind Words from <span className='text-blue-500'>Cool People</span></h2>
+
                 <div className="content-wrapper z-10 gap-8 max-w-[800px] w-full lg:max-w-[1000px] lg:grid lg:grid-cols-[364px,1fr] lg:h-[778px]">
 
                     <div className="flex flex-col gap-6 z-10">
@@ -120,7 +122,7 @@ const References = () => {
 
                         {/* Reference Header */}
                         <div className="flex justify-between items-end">
-                            <h2 className='text-4xl'><span className='text-blue-500 font-bold'>{references[currentReference]?.name.split(' ')[0] || references[0].name.split(' ')[0]}</span> <span className='text-xl text-gray-200'>said...</span></h2>
+                            <h2 className='text-2xl'><span className='text-blue-500 font-bold'>{references[currentReference]?.name.split(' ')[0] || references[0].name.split(' ')[0]}</span> <span className='text-xl text-gray-200'>said...</span></h2>
                             <p className='text-gray-400'>{references[currentReference].description}</p>
                         </div>
 

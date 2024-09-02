@@ -37,11 +37,11 @@ const About = () => {
 
             <div className="content-wrapper flex flex-col gap-4 max-w-[548px]"> {/* 619px */}
                 
-                <div className='text-center'>
+                <div className='flex flex-col items-center justify-center text-center gap-2'>
                     {/* <h3 className='text-2xl font-bold text-left m-auto max-w-[250px] md:max-w-[450px]'>Meet Skyler<span className='text-blue-400'>,</span> an avid <span ref={hobbyRef} className='text-blue-400 transition-opacity opacity-0' key={currentHobby}>{hobbies[currentHobby]}</span></h3> */}
                     
-                    <h1 className='text-4xl font-bold text-center mb-2'>Meet Skyler<span className='text-blue-500'>.</span></h1>
-                    <h2 ref={hobbyRef} className='text-2xl text-center w-full m-auto duration-300 transition-opacity opacity-0 text-blue-500' key={currentHobby}>{hobbies[currentHobby]}</h2>
+                    <h2 className='text-4xl font-bold'>Meet Skyler<span className='text-blue-500'>.</span></h2>
+                    <h3 ref={hobbyRef} className='text-2xl w-full m-auto duration-300 transition-opacity opacity-0 text-blue-500' key={currentHobby}>{hobbies[currentHobby]}</h3>
                     {/* <p className='text-xl font-semibold text-center w-full m-auto duration-300 transition-opacity opacity-0 text-blue-500'>{hobbies[currentHobby]}</p> */}
                 </div>
                 

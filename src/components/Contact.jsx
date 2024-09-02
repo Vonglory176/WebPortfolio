@@ -97,6 +97,10 @@ const Contact = () => {
         <SectionWrapper id='contact' title='Contact'>
             {/* <div className='flex flex-1 flex-col items-center justify-center px-4 py-8 bg-gray-800 bg-opacity-30 relative'> */}
 
+                <div className="flex flex-col items-center justify-center mb-8 gap-2 text-center">
+                    <h1 className='text-3xl sm:text-4xl font-bold'>Start a Conversation</h1>
+                    <h2 className='text-xl sm:text-2xl text-blue-500'>Let's Make Something <span className=''>Incredible</span></h2>
+                </div>
 
                 <div className="content-wrapper flex flex-wrap justify-center items-start gap-12 w-full pb-12"> {/* 619px */}
 
@@ -130,10 +134,10 @@ const Contact = () => {
                     {/* Contact Form */}
                     <form 
                     action=""
-                    className='flex flex-col gap-12 w-full max-w-[536px] relative pt-14'
+                    className='flex flex-col gap-12 w-full max-w-[536px] relative' // pt-14
                     onSubmit={handleSubmit}
                     >
-                        <h2 className='text-2xl md:text-3xl font-bold absolute top-0'>Message Me <span className='text-blue-500'>Directly</span></h2>
+                        {/* <h2 className='text-2xl font-bold absolute top-0'>Message Me Directly</h2> */}
 
                         {/* Email */}
                         <div id='contact-form-email' className={`flex flex-col gap-2 border-b border-gray-400 duration-300 focus-within:border-white relative ${formData.email ? 'is-active' : ''} ${formErrors.email ? 'has-error' : ''}`}>
