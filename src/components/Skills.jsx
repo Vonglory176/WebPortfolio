@@ -35,8 +35,8 @@ const Skills = () => {
             {/* <div className='flex flex-col flex-1 items-center px-4 py-8 justify-center gap-4 bg-gray-800 bg-opacity-30 relative'> flex-1 h-full  */}
 
                 <div className="flex flex-col items-center justify-center gap-2">
-                    <h1 ref={skillHeaderRef} className='text-4xl capitalize font-bold duration-200'><span className='text-blue-500'>{currentSkill}</span> Skills</h1>
-                    <h2 className='text-2xl text-gray-400'>Glance In the Toolbox</h2>
+                    <h2 ref={skillHeaderRef} className='text-4xl capitalize font-bold duration-200'><span className='text-blue-500'>{currentSkill}</span> Skills</h2>
+                    <h3 className='text-2xl text-gray-400'>Glance In the Toolbox</h3>
                 </div>
 
                 <div className="flex flex-col items-center gap-6 px-4 py-6 rounded-lg bg-gray-800 h-[655px] w-full max-w-[500px] md:max-w-[700px] shadow-lg border border-solid border-gray-700">
