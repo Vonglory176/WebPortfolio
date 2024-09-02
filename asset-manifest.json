@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/WebPortfolio/static/css/main.713fa048.css",
-    "main.js": "/WebPortfolio/static/js/main.61fdb517.js",
+    "main.css": "/WebPortfolio/static/css/main.c62e9bff.css",
+    "main.js": "/WebPortfolio/static/js/main.bc289a63.js",
     "static/media/catalystStore-1.webp": "/WebPortfolio/static/media/catalystStore-1.63ae3ead402804b96116.webp",
     "static/media/asteroidGauntlet-2.webp": "/WebPortfolio/static/media/asteroidGauntlet-2.b4bbdcddf7047b694674.webp",
     "static/media/asteroidGauntlet-1.webp": "/WebPortfolio/static/media/asteroidGauntlet-1.45c7e2fbb5c75b384204.webp",
@@ -53,11 +53,11 @@
     "static/media/colprosol-3-small.webp": "/WebPortfolio/static/media/colprosol-3-small.5673975887fe3d9dbb91.webp",
     "static/media/freeScribe-3-small.webp": "/WebPortfolio/static/media/freeScribe-3-small.beda3c00d1be15908177.webp",
     "static/media/freeScribe-2-small.webp": "/WebPortfolio/static/media/freeScribe-2-small.050a63e95a9d122bcea6.webp",
-    "main.713fa048.css.map": "/WebPortfolio/static/css/main.713fa048.css.map",
-    "main.61fdb517.js.map": "/WebPortfolio/static/js/main.61fdb517.js.map"
+    "main.c62e9bff.css.map": "/WebPortfolio/static/css/main.c62e9bff.css.map",
+    "main.bc289a63.js.map": "/WebPortfolio/static/js/main.bc289a63.js.map"
   },
   "entrypoints": [
-    "static/css/main.713fa048.css",
-    "static/js/main.61fdb517.js"
+    "static/css/main.c62e9bff.css",
+    "static/js/main.bc289a63.js"
   ]
 }
