@@ -1,3 +1,8 @@
+// WebPortfolio
+import webPortfolioImage1 from '../assets/images/projects/webportfolio/webportfolio-1.webp'
+import webPortfolioImage1Small from '../assets/images/projects/webportfolio/webportfolio-1-small.webp'
+// import webPortfolioThumbnail from '../assets/images/projects/webPortfolio/webPortfolio-thumbnail.webp'
+
 // Gym App
 import gymAppImage1 from '../assets/images/projects/gymApp/gym-app-1.webp'
 import gymAppImage2 from '../assets/images/projects/gymApp/gym-app-2.webp'
@@ -5,7 +10,7 @@ import gymAppImage3 from '../assets/images/projects/gymApp/gym-app-3.webp'
 import gymAppImage1Small from '../assets/images/projects/gymApp/gym-app-1-small.webp'
 import gymAppImage2Small from '../assets/images/projects/gymApp/gym-app-2-small.webp'
 import gymAppImage3Small from '../assets/images/projects/gymApp/gym-app-3-small.webp'
-import gymAppThumbnail from '../assets/images/projects/gymApp/gym-app-thumbnail.webp'
+// import gymAppThumbnail from '../assets/images/projects/gymApp/gym-app-thumbnail.webp'
 
 // FreeScribe
 import freeScribeImage1 from '../assets/images/projects/freeScribe/freeScribe-1.webp'
@@ -16,7 +21,7 @@ import freeScribeImage1Small from '../assets/images/projects/freeScribe/freeScri
 import freeScribeImage2Small from '../assets/images/projects/freeScribe/freeScribe-2-small.webp'
 import freeScribeImage3Small from '../assets/images/projects/freeScribe/freeScribe-3-small.webp'
 import freeScribeImage4Small from '../assets/images/projects/freeScribe/freeScribe-4-small.webp'
-import freeScribeThumbnail from '../assets/images/projects/freeScribe/freeScribe-thumbnail.webp'
+// import freeScribeThumbnail from '../assets/images/projects/freeScribe/freeScribe-thumbnail.webp'
 
 // ColProSol
 import colProSolImage1 from '../assets/images/projects/colprosol/colprosol-1.webp'
@@ -29,7 +34,7 @@ import colProSolImage2Small from '../assets/images/projects/colprosol/colprosol-
 import colProSolImage3Small from '../assets/images/projects/colprosol/colprosol-3-small.webp'
 import colProSolImage4Small from '../assets/images/projects/colprosol/colprosol-4-small.webp'
 import colProSolImage5Small from '../assets/images/projects/colprosol/colprosol-5-small.webp'
-import colProSolThumbnail from '../assets/images/projects/colprosol/colprosol-thumbnail.webp'
+// import colProSolThumbnail from '../assets/images/projects/colprosol/colprosol-thumbnail.webp'
 
 // ColProSol - Admin
 // import colProSolAdminImage1 from '../assets/images/projects/colprosolAdmin/colprosolAdmin-1.webp'
@@ -41,7 +46,7 @@ import colProSolThumbnail from '../assets/images/projects/colprosol/colprosol-th
 // Catalyst Store Clone
 import catalystStoreImage1 from '../assets/images/projects/catalystStore/catalystStore-1.webp'
 import catalystStoreImage1Small from '../assets/images/projects/catalystStore/catalystStore-1-small.webp'
-import catalystStoreThumbnail from '../assets/images/projects/catalystStore/catalystStore-thumbnail.webp'
+// import catalystStoreThumbnail from '../assets/images/projects/catalystStore/catalystStore-thumbnail.webp'
 
 // Image Generator
 import imageGeneratorImage1 from '../assets/images/projects/imageGenerator/imageGenerator-1.webp'
@@ -50,7 +55,7 @@ import imageGeneratorImage3 from '../assets/images/projects/imageGenerator/image
 import imageGeneratorImage1Small from '../assets/images/projects/imageGenerator/imageGenerator-1-small.webp'
 import imageGeneratorImage2Small from '../assets/images/projects/imageGenerator/imageGenerator-2-small.webp'
 import imageGeneratorImage3Small from '../assets/images/projects/imageGenerator/imageGenerator-3-small.webp'
-import imageGeneratorThumbnail from '../assets/images/projects/imageGenerator/imageGenerator-thumbnail.webp'
+// import imageGeneratorThumbnail from '../assets/images/projects/imageGenerator/imageGenerator-thumbnail.webp'
 
 // Asteroid Gauntlet
 import asteroidGauntletImage1 from '../assets/images/projects/asteroidGauntlet/asteroidGauntlet-1.webp'
@@ -59,15 +64,35 @@ import asteroidGauntletImage3 from '../assets/images/projects/asteroidGauntlet/a
 import asteroidGauntletImage1Small from '../assets/images/projects/asteroidGauntlet/asteroidGauntlet-1-small.webp'
 import asteroidGauntletImage2Small from '../assets/images/projects/asteroidGauntlet/asteroidGauntlet-2-small.webp'
 import asteroidGauntletImage3Small from '../assets/images/projects/asteroidGauntlet/asteroidGauntlet-3-small.webp'
-import asteroidGauntletThumbnail from '../assets/images/projects/asteroidGauntlet/asteroidGauntlet-thumbnail.webp'
+// import asteroidGauntletThumbnail from '../assets/images/projects/asteroidGauntlet/asteroidGauntlet-thumbnail.webp'
 
 export const projects = [
+    {
+        // WebPortfolio
+        name: 'WebPortfolio',
+        description: 'A website for showcasing my projects and skills',
+        thumbnail: {
+            full: webPortfolioImage1,
+            small: webPortfolioImage1Small,
+        },
+        images: {
+            full: [
+                webPortfolioImage1,
+            ],
+            small: [
+                webPortfolioImage1Small,
+            ],
+        },
+        link: 'https://vonglory176.github.io/WebPortfolio/',
+        github: 'https://github.com/Vonglory176/WebPortfolio',
+        skills: ['HTML', 'SCSS', 'Tailwind', 'JavaScript', 'React'],
+    },
     {
         // Gym App
         name: 'Gym App',
         description: 'A website for generating custom workout plans',
         thumbnail: {
-            full: gymAppThumbnail,
+            full: gymAppImage1, // gymAppThumbnail,
             small: gymAppImage1Small,
         },
         images: {
@@ -92,7 +117,7 @@ export const projects = [
         description: 'A website that records and transcribes audio',
         // description: 'A website to record & transcribe audio',
         thumbnail: {
-            full: freeScribeThumbnail,
+            full: freeScribeImage1, // freeScribeThumbnail,
             small: freeScribeImage1Small,
         },
         images: {
@@ -118,7 +143,7 @@ export const projects = [
         name: 'Collective Problem Solver',
         description: 'A community-driven platform for tackling everyday challenges',
         thumbnail: {
-            full: colProSolThumbnail,
+            full: colProSolImage1, // colProSolThumbnail,
             small: colProSolImage1Small,
         },
         images: {
@@ -146,8 +171,8 @@ export const projects = [
         name: 'ColProSol - Admin',
         description: 'An admin-panel for moderating Collective Problem Solver',
         thumbnail: {
-            full: colProSolThumbnail,
-            small: colProSolThumbnail,
+            full: colProSolImage1, // colProSolThumbnail,
+            small: colProSolImage1Small,
         },
         images: {
             full: [
@@ -174,8 +199,8 @@ export const projects = [
         name: 'Catalyst Store Clone',
         description: 'A fully functional recreation of the Catalyst Games Store',
         thumbnail: {
-            full: catalystStoreThumbnail,
-            small: catalystStoreThumbnail,
+            full: catalystStoreImage1, // catalystStoreThumbnail,
+            small: catalystStoreImage1Small,
         },
         images: {
             full: [
@@ -195,15 +220,15 @@ export const projects = [
         },
         link: 'https://catalyst-clone.netlify.app/',
         github: 'https://github.com/Vonglory176/CatalystClone',
-        skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'Firebase', 'RESTful API', 'Stripe Payments'],
+        skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'Firebase', 'RESTful API', 'Stripe Checkout'],
     },
     {
         // Image Generator
         name: 'Image Generator',
         description: 'A website that uses AI to generate images',
         thumbnail: {
-            full: imageGeneratorThumbnail,
-            small: imageGeneratorThumbnail,
+            full: imageGeneratorImage1, // imageGeneratorThumbnail,
+            small: imageGeneratorImage1Small,
         },
         images: {
             full: [
@@ -226,8 +251,8 @@ export const projects = [
         name: 'Asteroid Gauntlet',
         description: 'A small game I made with JavaScript and Canvas',
         thumbnail: {
-            full: asteroidGauntletThumbnail,
-            small: asteroidGauntletThumbnail,
+            full: asteroidGauntletImage1, // asteroidGauntletThumbnail,
+            small: asteroidGauntletImage1Small,
         },
         images: {
             full: [
