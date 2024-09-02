@@ -55,7 +55,6 @@ TODO ---
 Look at aria controls
 
 Update size of small projects images
-Make Sidenav larger
 Make skill transition faster?
 
 Change transition opacity logic (References + Skills) to use useEffect
@@ -68,6 +67,7 @@ IDEAS ---
 
 Make landing background swap between images (background 4) via timer
 Add a load animation for projects, making them appear one by one
+Add arrow key control to References and Skills
 
 
 */
