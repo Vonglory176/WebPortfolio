@@ -24,8 +24,8 @@ const Landing = () => {
                 </div>
 
                 {/* Name and Title */}
-                <div className='text-center'>
-                    <h1 className='text-4xl font-bold mb-2'><span>Skyler</span> <span className='text-blue-500'>Conley</span></h1>
+                <div className='text-center flex flex-col items-center justify-center gap-2'>
+                    <h1 className='text-4xl font-bold'><span>Skyler</span> <span className='text-blue-500'>Conley</span></h1>
                     <h2 className='text-2xl'> <span className='text-blue-500'>Full Stack</span> Web Developer</h2>
                 </div>
 
