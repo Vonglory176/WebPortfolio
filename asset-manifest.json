@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.25ced694.css",
-    "main.js": "/static/js/main.1ec13ff5.js",
+    "main.js": "/static/js/main.1278d20c.js",
     "static/media/catalystStore-1.webp": "/static/media/catalystStore-1.63ae3ead402804b96116.webp",
     "static/media/asteroidGauntlet-2.webp": "/static/media/asteroidGauntlet-2.b4bbdcddf7047b694674.webp",
     "static/media/asteroidGauntlet-1.webp": "/static/media/asteroidGauntlet-1.45c7e2fbb5c75b384204.webp",
@@ -11,7 +11,6 @@
     "static/media/bg-colors-6.png": "/static/media/bg-colors-6.49faed7788b0d6cf081b.png",
     "static/media/bg-colors-5.png": "/static/media/bg-colors-5.6085aab64dc395cbe0db.png",
     "static/media/bg-colors-3.png": "/static/media/bg-colors-3.07492fc02c618c142512.png",
-    "static/media/bg-colors-1.png": "/static/media/bg-colors-1.d78c08ed9d85e5e85d0b.png",
     "static/media/imageGenerator-2.webp": "/static/media/imageGenerator-2.6afaa4d4579613c6bae2.webp",
     "static/media/imageGenerator-1.webp": "/static/media/imageGenerator-1.8bf7cb0d2562a39c30a7.webp",
     "static/media/freeScribe-1.webp": "/static/media/freeScribe-1.637b5264ddcd5a1181d1.webp",
@@ -54,10 +53,10 @@
     "static/media/freeScribe-3-small.webp": "/static/media/freeScribe-3-small.beda3c00d1be15908177.webp",
     "static/media/freeScribe-2-small.webp": "/static/media/freeScribe-2-small.050a63e95a9d122bcea6.webp",
     "main.25ced694.css.map": "/static/css/main.25ced694.css.map",
-    "main.1ec13ff5.js.map": "/static/js/main.1ec13ff5.js.map"
+    "main.1278d20c.js.map": "/static/js/main.1278d20c.js.map"
   },
   "entrypoints": [
     "static/css/main.25ced694.css",
-    "static/js/main.1ec13ff5.js"
+    "static/js/main.1278d20c.js"
   ]
 }
