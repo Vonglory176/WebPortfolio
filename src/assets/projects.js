@@ -70,7 +70,7 @@ export const projects = [
     {
         // WebPortfolio
         name: 'WebPortfolio',
-        description: 'A website for showcasing my projects and skills',
+        description: 'My personal portfolio for showcasing my projects and skills.',
         thumbnail: {
             full: webPortfolioImage1,
             small: webPortfolioImage1Small,
@@ -83,7 +83,7 @@ export const projects = [
                 webPortfolioImage1Small,
             ],
         },
-        link: 'https://vonglory176.github.io/WebPortfolio/',
+        link: 'https://www.skylergconley.com/',
         github: 'https://github.com/Vonglory176/WebPortfolio',
         skills: ['HTML', 'SCSS', 'Tailwind', 'JavaScript', 'React'],
     },
