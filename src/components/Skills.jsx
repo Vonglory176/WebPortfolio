@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import SectionWrapper from './SectionWrapper'
 import { skills } from '../assets/skills'
-import { FaCode, FaServer, FaTools } from 'react-icons/fa'
+// import { FaCode, FaServer, FaTools } from 'react-icons/fa'
 
 const Skills = () => {
     const [currentSkill, setCurrentSkill] = useState('frontend')

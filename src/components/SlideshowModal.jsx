@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useSiteContext } from '../context/SiteContext'
-import { FaArrowLeft, FaArrowRight, FaSpinner } from 'react-icons/fa'
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import { FaX } from 'react-icons/fa6'
 import ProgressiveImage from 'react-progressive-graceful-image'
 // import loadingIcon from '../assets/icons/loading-icon.svg'

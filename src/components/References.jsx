@@ -3,7 +3,7 @@ import SectionWrapper from './SectionWrapper'
 import { references } from '../assets/references'
 import { FaChevronDown } from 'react-icons/fa'
 import ProgressiveImage from 'react-progressive-graceful-image'
-import bgColorImg from '../assets/images/bg-colors-3.png'
+// import bgColorImg from '../assets/images/bg-colors-3.png'
 
 const References = () => {
     const [currentReference, setCurrentReference] = useState(2)

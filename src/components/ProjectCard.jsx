@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaExternalLinkAlt, FaGithub, FaImages, FaInfo, FaTools } from 'react-icons/fa'
+import { FaExternalLinkAlt, FaGithub, FaImages } from 'react-icons/fa'
 import TextCarosuel from './TextCarosuel'
 import { useSiteContext } from '../context/SiteContext'
 import ProgressiveImage from 'react-progressive-graceful-image'

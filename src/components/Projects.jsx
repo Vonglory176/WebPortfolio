@@ -2,8 +2,8 @@ import React from 'react'
 import SectionWrapper from './SectionWrapper'
 import { projects } from '../assets/projects'
 import ProjectCard from './ProjectCard'
-import ProgressiveImage from 'react-progressive-graceful-image'
-import bgColorImg from '../assets/images/bg-colors-6.png'
+// import ProgressiveImage from 'react-progressive-graceful-image'
+// import bgColorImg from '../assets/images/bg-colors-6.png'
 // import { FaExternalLinkAlt, FaGithub, FaImages, FaInfo, FaTools } from 'react-icons/fa'
 
 const Projects = () => {

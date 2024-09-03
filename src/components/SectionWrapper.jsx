@@ -3,7 +3,7 @@ import { useSiteContext } from '../context/SiteContext'
 import { useInView } from 'react-intersection-observer'
 import ProgressiveImage from 'react-progressive-graceful-image'
 
-import bgPattern from '../assets/images/bg-site.png'
+// import bgPattern from '../assets/images/bg-site.png'
 import landingBgColorImg from '../assets/images/bg-colors-5.png'
 import projectsBgColorImg from '../assets/images/bg-colors-6.png'
 import referencesBgColorImg from '../assets/images/bg-colors-3.png'
