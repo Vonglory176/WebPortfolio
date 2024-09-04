@@ -52,6 +52,9 @@ export default App
 
 /*
 TODO ---
+Fix up and convert pictures for Catalyst-Clone
+Get pictures for ColProSol-Admin (Temp remove if not possible)
+
 Look at aria controls
 
 Update size of small projects images
