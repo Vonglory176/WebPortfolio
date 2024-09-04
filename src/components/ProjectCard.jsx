@@ -47,11 +47,11 @@ const ProjectCard = ({project, index}) => {
                     <div className='flex items-center justify-between gap-2 w-full px-4 max-w-[343px]'>
 
                         {/* View Project */}
-                        <a href={project.link} target='_blank' aria-label="View Project" className='bg-blue-600 bg-opacity-80 text-white p-3 rounded-full hover:bg-blue-700 duration-300'><FaExternalLinkAlt size={20} /></a>
+                        <a href={project.link} rel="noreferrer" target='_blank' aria-label="View Project" className='bg-blue-600 bg-opacity-80 text-white p-3 rounded-full hover:bg-blue-700 duration-300'><FaExternalLinkAlt size={20} /></a>
                         
                         {/* View Github */}
                         {project.github ? (
-                            <a href={project.github} target='_blank' aria-label="View Github" className='bg-blue-600 bg-opacity-80 text-white p-3 rounded-full hover:bg-blue-700 duration-300'>
+                            <a href={project.github} rel="noreferrer" target='_blank' aria-label="View Github" className='bg-blue-600 bg-opacity-80 text-white p-3 rounded-full hover:bg-blue-700 duration-300'>
                                 <FaGithub size={20} />
                             </a>
                         ) : (

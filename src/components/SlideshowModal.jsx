@@ -45,7 +45,7 @@ const SlideshowModal = () => {
 
                     <div className="modal-ui-top flex items-center justify-between">
                         <h2 className='text-xl font-bold rounded-full bg-blue-600 bg-opacity-80 px-2 py-1'>
-                            {modal.link ? <a href={modal.link} target='_blank'>{modal.name}</a> : modal.name}
+                            {modal.link ? <a href={modal.link} rel="noreferrer" target='_blank'>{modal.name}</a> : modal.name}
                         </h2>
                         <button aria-label='Close Slideshow Modal' name='close-slideshow-modal' className="close-button p-3 rounded-full bg-blue-600 bg-opacity-80" onClick={hideModal}><FaX size={20} /></button>
                     </div>

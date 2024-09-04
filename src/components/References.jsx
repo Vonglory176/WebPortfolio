@@ -72,6 +72,7 @@ const References = () => {
                                 >
                                     {windowWidth >= 375 && <a 
                                     href={reference.linkedIn}
+                                    rel="noreferrer"
                                     target='_blank'
                                     className='w-20 h-20 rounded-full bg-gray-800 overflow-hidden shadow-lg'> {/* border-[2px] border-white shadow-[0_0_7px_cyan] */}
                                         
