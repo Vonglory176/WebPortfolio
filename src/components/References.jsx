@@ -54,7 +54,10 @@ const References = () => {
         <SectionWrapper id='references' title='References'>
             {/* <div className='flex flex-1 flex-col px-4 py-8 items-center justify-center relative'> */}
 
-                <h2 className='text-4xl font-bold text-center mb-6'>Kind Words from <span className='text-blue-500'>Cool People</span></h2>
+                <div className="flex flex-col items-center justify-center gap-2 mb-6">
+                    <h2 className='text-4xl font-bold text-center'>Kind Words from <span className='text-blue-500'>Cool People</span></h2>
+                    <h3 className='text-2xl text-gray-400 hidden sm:block'>See what people are saying about my work</h3>
+                </div>
 
                 <div className="content-wrapper z-10 gap-8 max-w-[800px] w-full lg:max-w-[1000px] lg:grid lg:grid-cols-[364px,1fr] lg:h-[778px]">
 
