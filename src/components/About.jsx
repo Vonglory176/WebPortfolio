@@ -19,7 +19,7 @@ const About = () => {
             })
         }, 3000)
         return () => clearInterval(interval)
-    }, [])
+    }, [hobbies])
 
     useEffect(() => {
         if (hobbyRef.current) {
@@ -70,7 +70,7 @@ const About = () => {
                         <p>Projects Completed</p>
                     </div>
 
-                    <a href={resume} download='Skyler_Conley_Resume.pdf' target='_blank' title="Download Skyler's Resume" className='bg-blue-700 text-white px-4 py-3 my-auto rounded hover:bg-blue-800 duration-300 flex items-center gap-2'>
+                    <a href={resume} download='Skyler_Conley_Resume.pdf' rel="noreferrer" target='_blank' title="Download Skyler's Resume" className='bg-blue-700 text-white px-4 py-3 my-auto rounded hover:bg-blue-800 duration-300 flex items-center gap-2'>
                         {/* Download */}
                         <span className='hidden sm:block'>Download</span>
                         <span>Resume</span>
