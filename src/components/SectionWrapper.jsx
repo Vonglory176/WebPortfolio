@@ -4,9 +4,9 @@ import { useInView } from 'react-intersection-observer'
 import ProgressiveImage from 'react-progressive-graceful-image'
 
 // import bgPattern from '../assets/images/bg-site.png'
-import landingBgColorImg from '../assets/images/bg-colors-5.png'
-import projectsBgColorImg from '../assets/images/bg-colors-6.png'
-import referencesBgColorImg from '../assets/images/bg-colors-3.png'
+import landingBgColorImg from '../assets/images/backgrounds/bg-colors-5.png'
+import projectsBgColorImg from '../assets/images/backgrounds/bg-colors-6.png'
+import referencesBgColorImg from '../assets/images/backgrounds/bg-colors-3.png'
 
 const SectionWrapper = ({id, title, children}) => {
   const { handleInView } = useSiteContext()
@@ -34,7 +34,6 @@ const SectionWrapper = ({id, title, children}) => {
 
         {/* -- BACKGROUND IMAGES -- */}
 
-        {/* Landing */}
         <div className="background-image-container pointer-events-none">
             {currentBackgroundImage ? 
               <ProgressiveImage src={currentBackgroundImage} placeholder={''}>
@@ -52,32 +51,6 @@ const SectionWrapper = ({id, title, children}) => {
               null
             }
         </div>
-
-        {/* Projects */}
-        {/* <div className="background-image-container pointer-events-none">
-            <ProgressiveImage src={bgColorImg} placeholder={''}>
-                {(src, loading) => (
-                    <img
-                        src={src}
-                        alt={""}
-                        className={`w-full h-full object-cover duration-300 ${loading ? 'opacity-0' : 'opacity-100'}`}
-                    />
-                )}
-            </ProgressiveImage>
-        </div> */}
-
-        {/* References */}
-        {/* <div className="background-image-container pointer-events-none">
-            <ProgressiveImage src={bgColorImg} placeholder={''}>
-                {(src, loading) => (
-                    <img
-                        src={src}
-                        alt={""}
-                        className={`w-full h-auto object-cover object-center duration-300 ${loading ? 'opacity-0' : 'opacity-100'}`}
-                    />
-                )}
-            </ProgressiveImage>
-        </div> */}
 
     </section>
   )
