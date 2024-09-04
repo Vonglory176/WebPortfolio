@@ -46,6 +46,16 @@ import colProSolImage5Small from '../assets/images/projects/colprosol/colprosol-
 // Catalyst Store Clone
 import catalystStoreImage1 from '../assets/images/projects/catalystStore/catalystStore-1.webp'
 import catalystStoreImage1Small from '../assets/images/projects/catalystStore/catalystStore-1-small.webp'
+import catalystStoreImage2 from '../assets/images/projects/catalystStore/catalystStore-2.webp'
+import catalystStoreImage2Small from '../assets/images/projects/catalystStore/catalystStore-2-small.webp'
+import catalystStoreImage3 from '../assets/images/projects/catalystStore/catalystStore-3.webp'
+import catalystStoreImage3Small from '../assets/images/projects/catalystStore/catalystStore-3-small.webp'
+import catalystStoreImage4 from '../assets/images/projects/catalystStore/catalystStore-4.webp'
+import catalystStoreImage4Small from '../assets/images/projects/catalystStore/catalystStore-4-small.webp'
+import catalystStoreImage5 from '../assets/images/projects/catalystStore/catalystStore-5.webp'
+import catalystStoreImage5Small from '../assets/images/projects/catalystStore/catalystStore-5-small.webp'
+import catalystStoreImage6 from '../assets/images/projects/catalystStore/catalystStore-6.webp'
+import catalystStoreImage6Small from '../assets/images/projects/catalystStore/catalystStore-6-small.webp'
 // import catalystStoreThumbnail from '../assets/images/projects/catalystStore/catalystStore-thumbnail.webp'
 
 // Image Generator
@@ -166,34 +176,34 @@ export const projects = [
         github: '',
         skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API'],
     },
-    {
-        // ColProSol - Admin
-        name: 'ColProSol - Admin',
-        description: 'An admin-panel for moderating Collective Problem Solver',
-        thumbnail: {
-            full: colProSolImage1, // colProSolThumbnail,
-            small: colProSolImage1Small,
-        },
-        images: {
-            full: [
-                colProSolImage1,
-                colProSolImage2,
-                colProSolImage3,
-                colProSolImage4,
-                colProSolImage5,
-            ],
-            small: [
-                colProSolImage1Small,
-                colProSolImage2Small,
-                colProSolImage3Small,
-                colProSolImage4Small,
-                colProSolImage5Small,
-            ],
-        },
-        link: 'https://colprosol.com/',
-        github: '',
-        skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API'],
-    },
+    // {
+    //     // ColProSol - Admin
+    //     name: 'ColProSol - Admin',
+    //     description: 'An admin-panel for moderating Collective Problem Solver',
+    //     thumbnail: {
+    //         full: colProSolImage1, // colProSolThumbnail,
+    //         small: colProSolImage1Small,
+    //     },
+    //     images: {
+    //         full: [
+    //             colProSolImage1,
+    //             colProSolImage2,
+    //             colProSolImage3,
+    //             colProSolImage4,
+    //             colProSolImage5,
+    //         ],
+    //         small: [
+    //             colProSolImage1Small,
+    //             colProSolImage2Small,
+    //             colProSolImage3Small,
+    //             colProSolImage4Small,
+    //             colProSolImage5Small,
+    //         ],
+    //     },
+    //     link: 'https://colprosol.com/',
+    //     github: '',
+    //     skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API'],
+    // },
     {
         // Catalyst Store Clone
         name: 'Catalyst Store Clone',
@@ -205,17 +215,19 @@ export const projects = [
         images: {
             full: [
                 catalystStoreImage1,
-                // catalystStoreImage2,
-                // catalystStoreImage3,
-                // catalystStoreImage4,
-                // catalystStoreImage5,
+                catalystStoreImage2,
+                catalystStoreImage3,
+                catalystStoreImage4,
+                catalystStoreImage5,
+                catalystStoreImage6,
             ],
             small: [
                 catalystStoreImage1Small,
-                // catalystStoreImage2Small,
-                // catalystStoreImage3Small,
-                // catalystStoreImage4Small,
-                // catalystStoreImage5Small,
+                catalystStoreImage2Small,
+                catalystStoreImage3Small,
+                catalystStoreImage4Small,
+                catalystStoreImage5Small,
+                catalystStoreImage6Small,
             ],
         },
         link: 'https://catalyst-clone.netlify.app/',
