@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.25ced694.css",
-    "main.js": "/static/js/main.f54996a4.js",
+    "main.js": "/static/js/main.b287df44.js",
     "static/media/catalystStore-1.webp": "/static/media/catalystStore-1.63ae3ead402804b96116.webp",
+    "static/media/catalystStore-2.webp": "/static/media/catalystStore-2.a052e16e3198e0f43b21.webp",
     "static/media/asteroidGauntlet-2.webp": "/static/media/asteroidGauntlet-2.b4bbdcddf7047b694674.webp",
     "static/media/asteroidGauntlet-1.webp": "/static/media/asteroidGauntlet-1.45c7e2fbb5c75b384204.webp",
     "static/media/asteroidGauntlet-3.webp": "/static/media/asteroidGauntlet-3.b45f10c53278cb057740.webp",
@@ -11,6 +12,7 @@
     "static/media/bg-colors-6.png": "/static/media/bg-colors-6.49faed7788b0d6cf081b.png",
     "static/media/bg-colors-5.png": "/static/media/bg-colors-5.6085aab64dc395cbe0db.png",
     "static/media/bg-colors-3.png": "/static/media/bg-colors-3.07492fc02c618c142512.png",
+    "static/media/catalystStore-4.webp": "/static/media/catalystStore-4.f1154ca7a2628e13e56a.webp",
     "static/media/imageGenerator-2.webp": "/static/media/imageGenerator-2.6afaa4d4579613c6bae2.webp",
     "static/media/imageGenerator-1.webp": "/static/media/imageGenerator-1.8bf7cb0d2562a39c30a7.webp",
     "static/media/freeScribe-1.webp": "/static/media/freeScribe-1.637b5264ddcd5a1181d1.webp",
@@ -21,12 +23,16 @@
     "static/media/freeScribe-2.webp": "/static/media/freeScribe-2.33e3ef18d0d829142a66.webp",
     "static/media/freeScribe-4.webp": "/static/media/freeScribe-4.59c0d7685a3a5e22bdb0.webp",
     "static/media/colprosol-4.webp": "/static/media/colprosol-4.a8d8671911d455cf5d15.webp",
+    "static/media/catalystStore-3.webp": "/static/media/catalystStore-3.0ea015b0e5d678f663d1.webp",
     "static/media/colprosol-3.webp": "/static/media/colprosol-3.554f13735b1d72afe4ed.webp",
     "static/media/SkylerConley-Resume-8-22-2024.pdf": "/static/media/SkylerConley-Resume-8-22-2024.9a355b999b8c3cfdc92a.pdf",
+    "static/media/catalystStore-6.webp": "/static/media/catalystStore-6.a91048164296e147ce13.webp",
     "static/media/colprosol-2.webp": "/static/media/colprosol-2.5069a3d8b97bacac1ff3.webp",
+    "static/media/catalystStore-5.webp": "/static/media/catalystStore-5.75298069195ff13ac3cd.webp",
     "static/media/freeScribe-3.webp": "/static/media/freeScribe-3.e05bc366855f7cdd4cd7.webp",
     "static/media/colprosol-5.webp": "/static/media/colprosol-5.be92c80d4f2420a073e7.webp",
     "static/media/paulPicture.webp": "/static/media/paulPicture.f824fa9df0612c14f25d.webp",
+    "static/media/catalystStore-2-small.webp": "/static/media/catalystStore-2-small.96a81949ccf47d77de4a.webp",
     "static/media/catalystStore-1-small.webp": "/static/media/catalystStore-1-small.0144c07f5f915160c7dd.webp",
     "static/media/keithPicture.webp": "/static/media/keithPicture.2c838ad15c6d3591cbe7.webp",
     "static/media/lawrencePicture.webp": "/static/media/lawrencePicture.b28127c12514a54a31b1.webp",
@@ -41,8 +47,12 @@
     "static/media/imageGenerator-2-small.webp": "/static/media/imageGenerator-2-small.c3cba57934caa5b22695.webp",
     "static/media/gym-app-2-small.webp": "/static/media/gym-app-2-small.ff8e8e60620f0c8528f1.webp",
     "static/media/imageGenerator-1-small.webp": "/static/media/imageGenerator-1-small.43e9f7a15af53ba613d9.webp",
+    "static/media/catalystStore-3-small.webp": "/static/media/catalystStore-3-small.e8e6d4fd897b5d843513.webp",
     "static/media/colprosol-1-small.webp": "/static/media/colprosol-1-small.aa659b64cd252ee04100.webp",
+    "static/media/catalystStore-4-small.webp": "/static/media/catalystStore-4-small.57e84fea717e30f520da.webp",
+    "static/media/catalystStore-6-small.webp": "/static/media/catalystStore-6-small.be826689f305e7eb3e00.webp",
     "static/media/gym-app-1-small.webp": "/static/media/gym-app-1-small.43c4ceffec1c9b3b1c90.webp",
+    "static/media/catalystStore-5-small.webp": "/static/media/catalystStore-5-small.0d0ec62b0e6a689519ca.webp",
     "static/media/colprosol-2-small.webp": "/static/media/colprosol-2-small.4e64f7db46dc4e2443b0.webp",
     "static/media/colprosol-5-small.webp": "/static/media/colprosol-5-small.0b864a0232cd05af9253.webp",
     "static/media/colprosol-4-small.webp": "/static/media/colprosol-4-small.e00520fe726f454ef261.webp",
@@ -53,10 +63,10 @@
     "static/media/freeScribe-3-small.webp": "/static/media/freeScribe-3-small.beda3c00d1be15908177.webp",
     "static/media/freeScribe-2-small.webp": "/static/media/freeScribe-2-small.050a63e95a9d122bcea6.webp",
     "main.25ced694.css.map": "/static/css/main.25ced694.css.map",
-    "main.f54996a4.js.map": "/static/js/main.f54996a4.js.map"
+    "main.b287df44.js.map": "/static/js/main.b287df44.js.map"
   },
   "entrypoints": [
     "static/css/main.25ced694.css",
-    "static/js/main.f54996a4.js"
+    "static/js/main.b287df44.js"
   ]
 }
