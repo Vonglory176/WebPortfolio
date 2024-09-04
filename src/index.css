@@ -86,7 +86,7 @@ body.modal-open {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/images/bg-site.png");
+  background-image: url("./assets/images/backgrounds/bg-site.png");
   pointer-events: none;
 }
 
