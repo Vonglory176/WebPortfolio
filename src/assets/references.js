@@ -9,7 +9,7 @@ export const references = [
         image: paulPicture,
         linkedIn: 'https://www.linkedin.com/in/paul-marius-besliu?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BJfpg%2F9S%2FRLil9mL4ORkVfA%3D%3D',
         description: 'My client at ColProSol',
-        content: '<p>I am pleased to recommend Skyler for a position as a full stack web developer. He built our <a href="https://www.colprosol.com" target="_blank">website</a>, independently learning the required programming languages and technologies.</p><p>Skyler delivered a stable and functional site, adhering to my design and guidance. He showed strong technical skills, attention to detail, and a passion for learning.</p><p>I am confident he will excel in any development role and be a valuable addition to your team.</p>',
+        content: '<p>I am pleased to recommend Skyler for a position as a full stack web developer. He built our <a href="https://www.colprosol.com" rel="noreferrer" target="_blank">website</a>, independently learning the required programming languages and technologies.</p><p>Skyler delivered a stable and functional site, adhering to my design and guidance. He showed strong technical skills, attention to detail, and a passion for learning.</p><p>I am confident he will excel in any development role and be a valuable addition to your team.</p>',
     },
     {
         name: 'Lawrence Conley',
