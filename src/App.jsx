@@ -52,7 +52,7 @@ export default App
 
 /*
 TODO ---
-Fix up and convert pictures for Catalyst-Clone
+Fix up Catalyst-Clone
 Get pictures for ColProSol-Admin (Temp remove if not possible)
 
 Look at aria controls
