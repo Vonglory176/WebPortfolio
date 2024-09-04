@@ -67,6 +67,15 @@ import imageGeneratorImage2Small from '../assets/images/projects/imageGenerator/
 import imageGeneratorImage3Small from '../assets/images/projects/imageGenerator/imageGenerator-3-small.webp'
 // import imageGeneratorThumbnail from '../assets/images/projects/imageGenerator/imageGenerator-thumbnail.webp'
 
+// Webflix
+import webflixImage1 from '../assets/images/projects/webflix/webflix-1.webp'
+import webflixImage1Small from '../assets/images/projects/webflix/webflix-1-small.webp'
+import webflixImage2 from '../assets/images/projects/webflix/webflix-2.webp'
+import webflixImage2Small from '../assets/images/projects/webflix/webflix-2-small.webp'
+import webflixImage3 from '../assets/images/projects/webflix/webflix-3.webp'
+import webflixImage3Small from '../assets/images/projects/webflix/webflix-3-small.webp'
+// import webflixThumbnail from '../assets/images/projects/webflix/webflix-thumbnail.webp'
+
 // Asteroid Gauntlet
 import asteroidGauntletImage1 from '../assets/images/projects/asteroidGauntlet/asteroidGauntlet-1.webp'
 import asteroidGauntletImage2 from '../assets/images/projects/asteroidGauntlet/asteroidGauntlet-2.webp'
@@ -257,6 +266,30 @@ export const projects = [
         link: 'https://vonglory176.github.io/ImageGenerator/',
         github: 'https://github.com/Vonglory176/ImageGenerator',
         skills: ['HTML', 'CSS', 'BootStrap', 'JavaScript', 'React', 'RESTful API', 'OpenAI'],
+    },
+    {
+        // Webflix
+        name: 'Webflix Clone',
+        description: 'The recreated home-page of a popular streaming service',
+        thumbnail: {
+            full: webflixImage1, // imageGeneratorThumbnail,
+            small: webflixImage1Small,
+        },
+        images: {
+            full: [
+                webflixImage1,
+                webflixImage2,
+                webflixImage3,
+            ],
+            small: [
+                webflixImage1Small,
+                webflixImage2Small,
+                webflixImage3Small,
+            ],
+        },
+        link: 'https://vonglory176.github.io/WebflixClone/',
+        github: 'https://github.com/Vonglory176/WebflixClone',
+        skills: ['HTML', 'SCSS', 'JavaScript', 'React'],
     },
     {
         // Asteroid Gauntlet
