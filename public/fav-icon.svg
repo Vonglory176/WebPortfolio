@@ -1,0 +1,6 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#1a202c" />
+  <text x="50%" y="50%" fill="#fff" font-size="36" font-family="Arial" text-anchor="middle" alignment-baseline="middle" dominant-baseline="middle">
+    S<tspan fill="#3b82f6" dominant-baseline="middle">C</tspan>
+  </text>
+</svg>

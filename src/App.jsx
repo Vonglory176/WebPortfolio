@@ -1,97 +1,76 @@
-import Navbar from './component/Navbar'
-import Welcome from './component/Welcome'
-import Projects from './component/Projects'
-import Skills from './component/Skills'
-import References from './component/References'
-import Contact from './component/Contact'
+import Header from "./components/Header"
+import Landing from "./components/Landing"
+import About from "./components/About"
+import Projects from "./components/Projects"
+import Skills from "./components/Skills"
+import Contact from "./components/Contact"
+import References from "./components/References"
+import SlideshowModal from "./components/SlideshowModal"
+import { useSiteContext } from "./context/SiteContext"
+import { useEffect } from "react"
 
-export default function App() {
+
+function App() {
+  const { modal } = useSiteContext()
+
+  useEffect(() => {
+    if (modal) {
+      document.body.classList.add('modal-open')
+    } else {
+      document.body.classList.remove('modal-open')
+    }
+  }, [modal])
 
   return (
-    <>
-      <Navbar />
-      <Welcome />
-      <Projects />
-      <Skills />
-      <References />
-      <Contact />
-    </>
+    <div className="App">
+      
+      <main className={`bg-gray-900 text-white`}>
+
+
+        <Header />
+        {modal && <SlideshowModal />}
+
+        <Landing />
+
+        <About />
+
+        <Projects />
+
+        <Skills />
+
+        <References />
+
+        <Contact />
+
+      </main>
+
+    </div>
   )
 }
 
-/* 
----- TODO ---------------------------------------
+export default App
 
----- NOW ----------
+/*
+TODO ---
+Fix up Catalyst-Clone
+Get pictures for ColProSol-Admin (Temp remove if not possible)
 
----- LATER --------
-Clean up code in general, it's a mess
-Change image code to use Optimized component
-Improve project tile CSS
-Add glow to Moon image
-Add satellite animation
-Add spaceship scroll animation?
-Change star background for less repetition
+Look at aria controls
+
+Update size of small projects images
+Make skill transition faster?
+
+Change transition opacity logic (References + Skills) to use useEffect
+
+Weird issue regarding min-height on sections in Discord ??
+Weird shadow/background issue in mobile when opening/closing a reference
+Weird issues with project info jumping around
+
+IDEAS ---
+
+Make landing background swap between images (background 4) via timer
+Add a load animation for projects, making them appear one by one
+Add arrow key control to References and Skills
+
+
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function App() {
-//   const [count, setCount] = useState(0)
-
-//   return (
-//     <>
-//       <div>
-//         <a href="https://vitejs.dev" target="_blank">
-//           <img src={viteLogo} className="logo" alt="Vite logo" />
-//         </a>
-//         <a href="https://react.dev" target="_blank">
-//           <img src={reactLogo} className="logo react" alt="React logo" />
-//         </a>
-//       </div>
-//       <h1>Vite + React</h1>
-//       <div className="card">
-//         <button onClick={() => setCount((count) => count + 1)}>
-//           count is {count}
-//         </button>
-//         <p>
-//           Edit <code>src/App.jsx</code> and save to test HMR
-//         </p>
-//       </div>
-//       <p className="read-the-docs">
-//         Click on the Vite and React logos to learn more
-//       </p>
-//     </>
-//   )
-// }
-
-// export default App

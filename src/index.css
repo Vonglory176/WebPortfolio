@@ -1,0 +1,300 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --scrollbar-width: 12px;
+  --scrollbar-bg: rgb(31, 41, 55);
+  --scrollbar-thumb: rgb(96, 165, 250);
+}
+
+*, body, main {
+  scrollbar-width: var(--scrollbar-width);
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
+}
+*::-webkit-scrollbar, body::-webkit-scrollbar, main::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+*::-webkit-scrollbar-track, body::-webkit-scrollbar-track, main::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+*::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb, main::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbar-bg);
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px; /* Adjust width as needed */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbar-bg);
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+.custom-scrollbar::-webkit-scrollbar-button {
+  display: none; /* Remove the arrows */
+}
+
+body {
+  /* margin: 0; */
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1a202c;
+  color: white;
+}
+body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+@media (min-width: 1025px) {
+  body.modal-open {
+    padding-right: 17px;
+  }
+  body.modal-open .hamburger-icon {
+    position: absolute;
+    right: 17px;
+  }
+}
+
+.background-image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.background-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/images/backgrounds/bg-site.png");
+  pointer-events: none;
+}
+
+.background-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section {
+  min-height: 100vh;
+  min-height: 100svh;
+}
+
+#contact-form-email,
+#contact-form-subject,
+#contact-form-message {
+  position: relative;
+}
+#contact-form-email label,
+#contact-form-subject label,
+#contact-form-message label {
+  content: attr(htmlFor);
+  position: absolute;
+  top: 16px;
+  left: 8px;
+  transition: 0.3s ease-in-out;
+  pointer-events: none;
+}
+#contact-form-email input:focus + label,
+#contact-form-email textarea:focus + label,
+#contact-form-subject input:focus + label,
+#contact-form-subject textarea:focus + label,
+#contact-form-message input:focus + label,
+#contact-form-message textarea:focus + label {
+  color: #fff;
+}
+#contact-form-email input:focus + label,
+#contact-form-email textarea:focus + label, #contact-form-email.is-active label,
+#contact-form-subject input:focus + label,
+#contact-form-subject textarea:focus + label,
+#contact-form-subject.is-active label,
+#contact-form-message input:focus + label,
+#contact-form-message textarea:focus + label,
+#contact-form-message.is-active label {
+  top: -12px;
+  font-size: 12px;
+  color: inherit;
+}
+#contact-form-email.has-error,
+#contact-form-subject.has-error,
+#contact-form-message.has-error {
+  border-color: #f56565;
+}
+#contact-form-email.is-active:not(.has-error),
+#contact-form-subject.is-active:not(.has-error),
+#contact-form-message.is-active:not(.has-error) {
+  border-color: #fff;
+}
+#contact-form-email.is-active:not(.has-error) label,
+#contact-form-subject.is-active:not(.has-error) label,
+#contact-form-message.is-active:not(.has-error) label {
+  color: #fff;
+}
+
+.project-card {
+  will-change: transform;
+  font-size: 16px;
+}
+.project-card:hover, .project-card:focus-within {
+  scale: 1.037;
+  transform: perspective(1px) translateZ(0);
+  backface-visibility: hidden;
+}
+.project-card:hover .project-card-info, .project-card:focus-within .project-card-info {
+  opacity: 1;
+}
+.project-card .skills-static {
+  display: none;
+}
+@media (min-width: 470px) and (max-width: 767px), (min-width: 908px) and (max-width: 1023px), (min-width: 1346px) {
+  .project-card h3 {
+    font-size: x-large;
+  }
+  .project-card .skills-static {
+    display: flex;
+  }
+  .project-card .skills-carousel {
+    display: none;
+  }
+}
+
+.carousel-content {
+  display: inline-block;
+  animation: scroll 10s linear infinite;
+  transform: translateY(-50%);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.modal-container {
+  animation: fade-in 0.3s ease-in-out;
+}
+
+.fade-in {
+  animation: fade-in 0.3s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.sidebarnav.open .sidebarnav-content, .sidebarnav .sidebarnav-content:focus-within {
+  transform: translateX(-230px);
+  pointer-events: auto;
+  background-color: rgba(31, 41, 55, 0.8);
+}
+.sidebarnav.open .sidebarnav-content + .sidebarnav-overlay, .sidebarnav .sidebarnav-content:focus-within + .sidebarnav-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebarnav .sidebarnav-content {
+  position: fixed;
+  z-index: 2;
+  width: 270px;
+  right: -230px;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+.sidebarnav .sidebarnav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.3s ease-in-out opacity;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.hamburger-icon-bar1, .hamburger-icon-bar2, .hamburger-icon-bar3 {
+  width: 28px;
+  height: 4px;
+  background-color: white;
+  transition: 0.3s;
+  position: relative;
+  border-radius: 10px;
+}
+.hamburger-icon-bar1 {
+  left: 0px;
+}
+.hamburger-icon-bar2 {
+  left: 4px;
+}
+.hamburger-icon-bar3 {
+  left: 0px;
+}
+.hamburger-icon.change {
+  transform: translateX(-200px);
+}
+.hamburger-icon.change .hamburger-icon-bar1 {
+  transform: translate(0, 10px) rotate(-45deg);
+}
+.hamburger-icon.change .hamburger-icon-bar2 {
+  transform: translateX(12px);
+  width: 0px;
+}
+.hamburger-icon.change .hamburger-icon-bar3 {
+  transform: translate(0, -10px) rotate(45deg);
+}
+
+.sidebarnav-navlink-list li a {
+  position: relative;
+}
+.sidebarnav-navlink-list li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #60a5fa;
+  transition: 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+.sidebarnav-navlink-list li.isActive a::after {
+  width: 100%;
+}/*# sourceMappingURL=index.css.map */
