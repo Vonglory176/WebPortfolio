@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useMemo, useRef, useState } from 'react'
 import SectionWrapper from './SectionWrapper'
 import { FaCheckCircle, FaCodeBranch, FaDownload } from 'react-icons/fa'
 // import bgColorImg from '../assets/images/bg-colors-1.png'
@@ -8,8 +8,8 @@ import resume from '../assets/docs/SkylerConley-Resume-8-22-2024.pdf'
 const About = () => {
     const hobbyRef = useRef(null)
     const [currentHobby, setCurrentHobby] = useState(0)
-    // const hobbies = ['Mountain Biker']
-    const hobbies = ['Software Developer', 'Mountain Biker', 'Model Maker', 'Gamer Geek', 'Chess Player', 'Dad Humorist']
+    // const hobbies = ['Software Developer', 'Mountain Biker', 'Model Maker', 'Gamer Geek', 'Chess Player', 'Dad Humorist']
+    const hobbies = useMemo(() => ['Software Developer', 'Mountain Biker', 'Model Maker', 'Gamer Geek', 'Chess Player', 'Dad Humorist'], [])
 
     useEffect(() => {
         const interval = setInterval(() => {

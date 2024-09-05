@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { useSiteContext } from '../context/SiteContext'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import { FaX } from 'react-icons/fa6'
@@ -18,18 +18,26 @@ const SlideshowModal = () => {
     }
 
     // Keyboard Navigation
-    const handleKeyDown = (e) => {
+    const handleKeyDown = useCallback((e) => {
         if (e.key === 'ArrowRight') {
             handleNext()
         } else if (e.key === 'ArrowLeft') {
             handlePrev()
         }
-    }
+    }, [handleNext, handlePrev])
+
+    // const handleKeyDown = (e) => {
+    //     if (e.key === 'ArrowRight') {
+    //         handleNext()
+    //     } else if (e.key === 'ArrowLeft') {
+    //         handlePrev()
+    //     }
+    // }
 
     useEffect(() => {
         window.addEventListener('keydown', handleKeyDown)
         return () => window.removeEventListener('keydown', handleKeyDown)
-    }, [])
+    }, [handleKeyDown])
 
     return (
         <div className='modal-container fixed inset-0 bg-black bg-opacity-60 z-30'>

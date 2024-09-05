@@ -1,5 +1,4 @@
 import React, { createContext, useState, useContext, useEffect } from 'react'
-import { useInView } from 'react-intersection-observer'
 
 // Create the context
 const SiteContext = createContext()
