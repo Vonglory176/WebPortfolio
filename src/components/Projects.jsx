@@ -16,7 +16,7 @@ const Projects = () => {
             <h3 className='text-2xl text-gray-400'>In order of recency</h3>
           </div>
 
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 z-10 p-1'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 z-10 p-1 w-full'>
             {projects.map((project, index) => (
 
               <ProjectCard project={project} index={index} key={index} />
