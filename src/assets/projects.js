@@ -313,7 +313,7 @@ export const projects = [
         },
         link: 'https://vonglory176.github.io/SpaceShip-Game/',
         github: 'https://github.com/Vonglory176/SpaceShip-Game',
-        skills: ['HTML', 'CSS', 'BootStrap', 'JavaScript', 'Canvas'],
+        skills: ['HTML', 'SCSS', 'Tailwind', 'JavaScript', 'Canvas', 'Firebase'],
     },
     
     
