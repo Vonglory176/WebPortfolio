@@ -117,7 +117,7 @@ const Contact = () => {
                                 <p>{email}</p>
                             </a>
                         </li>
-                        <li className='flex flex-col justify-center gap-2'>
+                        {/* <li className='flex flex-col justify-center gap-2'>
                             <h3 className='text-lg font-bold'>Text Me</h3>
                             <a 
                             aria-label="send a text"
@@ -128,7 +128,7 @@ const Contact = () => {
                                 <FaPhone size={18} className='text-blue-500' />
                                 <p>{phoneFormatted}</p>
                             </a>
-                        </li>                    
+                        </li>                     */}
                     </ul>
 
                     {/* Contact Form */}

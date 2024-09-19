@@ -43,9 +43,9 @@ const Landing = () => {
                     <li> 
                         <a aria-label="send mail" href={`mailto:${process.env.REACT_APP_SKYLER_EMAIL}`} rel="noreferrer" target="_blank"><FaEnvelope size={24} className='text-white hover:text-blue-500 duration-300' /></a> 
                     </li> 
-                    <li> 
+                    {/* <li> 
                         <a aria-label="send a text" href={`https://wa.me/${process.env.REACT_APP_SKYLER_PHONE}`} rel="noreferrer" target="_blank"><FaWhatsapp size={24} className='text-white hover:text-blue-500 duration-300' /></a> 
-                    </li> 
+                    </li>  */}
                 </ul>
 
                 {/* Contact Button */}
