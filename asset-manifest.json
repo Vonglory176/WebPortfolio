@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.25ced694.css",
-    "main.js": "/static/js/main.44d7428b.js",
+    "main.js": "/static/js/main.a8e61579.js",
     "static/media/catalystStore-1.webp": "/static/media/catalystStore-1.63ae3ead402804b96116.webp",
     "static/media/webflix-3.webp": "/static/media/webflix-3.9e75d0b7f658c3c17408.webp",
     "static/media/catalystStore-2.webp": "/static/media/catalystStore-2.a052e16e3198e0f43b21.webp",
     "static/media/webflix-1.webp": "/static/media/webflix-1.b77ea3b1cdaf661fab36.webp",
-    "static/media/asteroidGauntlet-2.webp": "/static/media/asteroidGauntlet-2.b4bbdcddf7047b694674.webp",
-    "static/media/asteroidGauntlet-1.webp": "/static/media/asteroidGauntlet-1.45c7e2fbb5c75b384204.webp",
-    "static/media/asteroidGauntlet-3.webp": "/static/media/asteroidGauntlet-3.b45f10c53278cb057740.webp",
+    "static/media/asteroidGauntlet-2.webp": "/static/media/asteroidGauntlet-2.be8d5053ab25cce53ee8.webp",
+    "static/media/asteroidGauntlet-3.webp": "/static/media/asteroidGauntlet-3.905c04a9ca19c45e7d11.webp",
+    "static/media/SkylerConley-Resume-9-10-2024.pdf": "/static/media/SkylerConley-Resume-9-10-2024.582e4c88c2ef4cc6037e.pdf",
+    "static/media/asteroidGauntlet-1.webp": "/static/media/asteroidGauntlet-1.742436c28ce4e14fd1ba.webp",
     "static/media/imageGenerator-3.webp": "/static/media/imageGenerator-3.03149178097a01702779.webp",
     "static/media/webportfolio-1.webp": "/static/media/webportfolio-1.f6e0a6e9fd3127450ba5.webp",
     "static/media/bg-colors-6.png": "/static/media/bg-colors-6.49faed7788b0d6cf081b.png",
@@ -28,7 +29,6 @@
     "static/media/colprosol-4.webp": "/static/media/colprosol-4.a8d8671911d455cf5d15.webp",
     "static/media/catalystStore-3.webp": "/static/media/catalystStore-3.0ea015b0e5d678f663d1.webp",
     "static/media/colprosol-3.webp": "/static/media/colprosol-3.554f13735b1d72afe4ed.webp",
-    "static/media/SkylerConley-Resume-8-22-2024.pdf": "/static/media/SkylerConley-Resume-8-22-2024.9a355b999b8c3cfdc92a.pdf",
     "static/media/catalystStore-6.webp": "/static/media/catalystStore-6.a91048164296e147ce13.webp",
     "static/media/colprosol-2.webp": "/static/media/colprosol-2.5069a3d8b97bacac1ff3.webp",
     "static/media/catalystStore-5.webp": "/static/media/catalystStore-5.75298069195ff13ac3cd.webp",
@@ -41,15 +41,15 @@
     "static/media/webflix-3-small.webp": "/static/media/webflix-3-small.af4aa4c06b3ddcaf12bc.webp",
     "static/media/webflix-1-small.webp": "/static/media/webflix-1-small.bc3e0cc572b3f8e0d00a.webp",
     "static/media/lawrencePicture.webp": "/static/media/lawrencePicture.b28127c12514a54a31b1.webp",
-    "static/media/asteroidGauntlet-2-small.webp": "/static/media/asteroidGauntlet-2-small.bb2ca0ecd1680156b732.webp",
     "static/media/kurtPicture.webp": "/static/media/kurtPicture.10a5f746e613ab7e1802.webp",
     "static/media/skylerPicture.webp": "/static/media/skylerPicture.50862280339464618872.webp",
-    "static/media/asteroidGauntlet-1-small.webp": "/static/media/asteroidGauntlet-1-small.fed15deb36b42b483b77.webp",
     "static/media/webportfolio-1-small.webp": "/static/media/webportfolio-1-small.83356e35c3c413c43922.webp",
-    "static/media/asteroidGauntlet-3-small.webp": "/static/media/asteroidGauntlet-3-small.413042f8abdc2d68f9e9.webp",
     "static/media/imageGenerator-3-small.webp": "/static/media/imageGenerator-3-small.a549a4b7a987814a8f9b.webp",
+    "static/media/asteroidGauntlet-2-small.webp": "/static/media/asteroidGauntlet-2-small.c599c24c96b6da945c5c.webp",
     "static/media/webflix-2-small.webp": "/static/media/webflix-2-small.a0a6370a8f7541ac36ce.webp",
+    "static/media/asteroidGauntlet-3-small.webp": "/static/media/asteroidGauntlet-3-small.2af797a21c2b8bc9f355.webp",
     "static/media/gym-app-3-small.webp": "/static/media/gym-app-3-small.334857380864311185dc.webp",
+    "static/media/asteroidGauntlet-1-small.webp": "/static/media/asteroidGauntlet-1-small.1c5d121cf9a598bb4ea6.webp",
     "static/media/imageGenerator-2-small.webp": "/static/media/imageGenerator-2-small.c3cba57934caa5b22695.webp",
     "static/media/gym-app-2-small.webp": "/static/media/gym-app-2-small.ff8e8e60620f0c8528f1.webp",
     "static/media/imageGenerator-1-small.webp": "/static/media/imageGenerator-1-small.43e9f7a15af53ba613d9.webp",
@@ -69,10 +69,10 @@
     "static/media/freeScribe-3-small.webp": "/static/media/freeScribe-3-small.beda3c00d1be15908177.webp",
     "static/media/freeScribe-2-small.webp": "/static/media/freeScribe-2-small.050a63e95a9d122bcea6.webp",
     "main.25ced694.css.map": "/static/css/main.25ced694.css.map",
-    "main.44d7428b.js.map": "/static/js/main.44d7428b.js.map"
+    "main.a8e61579.js.map": "/static/js/main.a8e61579.js.map"
   },
   "entrypoints": [
     "static/css/main.25ced694.css",
-    "static/js/main.44d7428b.js"
+    "static/js/main.a8e61579.js"
   ]
 }
