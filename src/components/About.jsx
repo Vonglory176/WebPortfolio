@@ -3,7 +3,7 @@ import SectionWrapper from './SectionWrapper'
 import { FaCheckCircle, FaCodeBranch, FaDownload } from 'react-icons/fa'
 // import bgColorImg from '../assets/images/bg-colors-1.png'
 // import ProgressiveImage from 'react-progressive-graceful-image'
-import resume from '../assets/docs/SkylerConley-Resume-8-22-2024.pdf'
+import resume from '../assets/docs/SkylerConley-Resume-9-10-2024.pdf'
 
 const About = () => {
     const hobbyRef = useRef(null)
