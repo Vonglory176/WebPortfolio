@@ -37,10 +37,16 @@ import colProSolImage5Small from '../assets/images/projects/colprosol/colprosol-
 // import colProSolThumbnail from '../assets/images/projects/colprosol/colprosol-thumbnail.webp'
 
 // ColProSol - Admin
-// import colProSolAdminImage1 from '../assets/images/projects/colprosolAdmin/colprosolAdmin-1.webp'
-// import colProSolAdminImage2 from '../assets/images/projects/colprosolAdmin/colprosolAdmin-2.webp'
-// import colProSolAdminImage1Small from '../assets/images/projects/colprosolAdmin/colprosolAdmin-1-small.webp'
-// import colProSolAdminImage2Small from '../assets/images/projects/colprosolAdmin/colprosolAdmin-2-small.webp'
+import colProSolAdminImage1 from '../assets/images/projects/colprosolAdmin/colprosolAdmin-1.webp'
+import colProSolAdminImage2 from '../assets/images/projects/colprosolAdmin/colprosolAdmin-2.webp'
+import colProSolAdminImage3 from '../assets/images/projects/colprosolAdmin/colprosolAdmin-3.webp'
+import colProSolAdminImage4 from '../assets/images/projects/colprosolAdmin/colprosolAdmin-4.webp'
+import colProSolAdminImage5 from '../assets/images/projects/colprosolAdmin/colprosolAdmin-5.webp'
+import colProSolAdminImage1Small from '../assets/images/projects/colprosolAdmin/colprosolAdmin-1-small.webp'
+import colProSolAdminImage2Small from '../assets/images/projects/colprosolAdmin/colprosolAdmin-2-small.webp'
+import colProSolAdminImage3Small from '../assets/images/projects/colprosolAdmin/colprosolAdmin-3-small.webp'
+import colProSolAdminImage4Small from '../assets/images/projects/colprosolAdmin/colprosolAdmin-4-small.webp'
+import colProSolAdminImage5Small from '../assets/images/projects/colprosolAdmin/colprosolAdmin-5-small.webp'
 // import colProSolAdminThumbnail from '../assets/images/projects/colprosolAdmin/colprosolAdmin-thumbnail.webp'
 
 // Catalyst Store Clone
@@ -183,36 +189,37 @@ export const projects = [
         },
         link: 'https://colprosol.com/',
         github: '',
-        skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API'],
+        skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'RESTful API'],
+        // skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API'],
     },
-    // {
-    //     // ColProSol - Admin
-    //     name: 'ColProSol - Admin',
-    //     description: 'An admin-panel for moderating Collective Problem Solver',
-    //     thumbnail: {
-    //         full: colProSolImage1, // colProSolThumbnail,
-    //         small: colProSolImage1Small,
-    //     },
-    //     images: {
-    //         full: [
-    //             colProSolImage1,
-    //             colProSolImage2,
-    //             colProSolImage3,
-    //             colProSolImage4,
-    //             colProSolImage5,
-    //         ],
-    //         small: [
-    //             colProSolImage1Small,
-    //             colProSolImage2Small,
-    //             colProSolImage3Small,
-    //             colProSolImage4Small,
-    //             colProSolImage5Small,
-    //         ],
-    //     },
-    //     link: 'https://colprosol.com/',
-    //     github: '',
-    //     skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API'],
-    // },
+    {
+        // ColProSol - Admin
+        name: 'ColProSol - Admin',
+        description: 'An admin-panel for moderating Collective Problem Solver',
+        thumbnail: {
+            full: colProSolAdminImage1, // colProSolThumbnail,
+            small: colProSolAdminImage1Small,
+        },
+        images: {
+            full: [
+                colProSolAdminImage1,
+                colProSolAdminImage2,
+                colProSolAdminImage3,
+                colProSolAdminImage4,
+                colProSolAdminImage5,
+            ],
+            small: [
+                colProSolAdminImage1Small,
+                colProSolAdminImage2Small,
+                colProSolAdminImage3Small,
+                colProSolAdminImage4Small,
+                colProSolAdminImage5Small,
+            ],
+        },
+        link: 'https://admin.colprosol.com/',
+        github: '',
+        skills: ['JavaScript', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API'],
+    },
     {
         // Catalyst Store Clone
         name: 'Catalyst Store Clone',
