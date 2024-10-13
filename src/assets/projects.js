@@ -233,7 +233,7 @@ export const projects = [
     {
         // FreeScribe
         name: 'FreeScribe',
-        description: 'A service for recording and transcribing audio',
+        description: 'A web application for recording and transcribing audio',
         // description: 'A website to record & transcribe audio',
         thumbnail: {
             full: freeScribeImage1, // freeScribeThumbnail,
