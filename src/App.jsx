@@ -53,9 +53,6 @@ export default App
 /*
 TODO ---
 Fix up Catalyst-Clone
-Get pictures for ColProSol-Admin (Temp remove if not possible)
-
-Look at aria controls
 
 Update size of small projects images
 Make skill transition faster?
@@ -64,7 +61,7 @@ Change transition opacity logic (References + Skills) to use useEffect
 
 Weird issue regarding min-height on sections in Discord ??
 Weird shadow/background issue in mobile when opening/closing a reference
-Weird issues with project info jumping around
+Weird issue with project tile height on other devices?
 
 IDEAS ---
 
