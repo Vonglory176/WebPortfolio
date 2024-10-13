@@ -88,6 +88,10 @@ body.modal-open {
   height: 100%;
   background-image: url("./assets/images/backgrounds/bg-site.png");
   pointer-events: none;
+  z-index: 1;
+}
+.background-image-container.references {
+  height: 1301px;
 }
 
 .background-image-container img {
