@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b10da903.css",
-    "main.js": "/static/js/main.0955b701.js",
+    "main.js": "/static/js/main.dd4018a2.js",
     "static/media/catalystStore-1.webp": "/static/media/catalystStore-1.63ae3ead402804b96116.webp",
     "static/media/webflix-3.webp": "/static/media/webflix-3.9e75d0b7f658c3c17408.webp",
     "static/media/catalystStore-2.webp": "/static/media/catalystStore-2.a052e16e3198e0f43b21.webp",
@@ -47,7 +47,7 @@
     "static/media/freeScribe-3.webp": "/static/media/freeScribe-3.e05bc366855f7cdd4cd7.webp",
     "static/media/foodDeliveryAdmin-1.webp": "/static/media/foodDeliveryAdmin-1.226f8c06374efa89c3c3.webp",
     "static/media/colprosolAdmin-2.webp": "/static/media/colprosolAdmin-2.b01b8674d7631333fe97.webp",
-    "static/media/foodDelivery-6.webp": "/static/media/foodDelivery-6.975fbac0a8bafa992b73.webp",
+    "static/media/foodDelivery-6.webp": "/static/media/foodDelivery-6.c822ee3bdf653e17cca7.webp",
     "static/media/colprosol-5.webp": "/static/media/colprosol-5.be92c80d4f2420a073e7.webp",
     "static/media/colprosolAdmin-5.webp": "/static/media/colprosolAdmin-5.28a2baaff012d8097ba7.webp",
     "static/media/paulPicture.webp": "/static/media/paulPicture.f824fa9df0612c14f25d.webp",
@@ -105,10 +105,10 @@
     "static/media/freeScribe-2-small.webp": "/static/media/freeScribe-2-small.050a63e95a9d122bcea6.webp",
     "static/media/foodDeliveryAdmin-4-small.webp": "/static/media/foodDeliveryAdmin-4-small.15ff3117d4d83d424847.webp",
     "main.b10da903.css.map": "/static/css/main.b10da903.css.map",
-    "main.0955b701.js.map": "/static/js/main.0955b701.js.map"
+    "main.dd4018a2.js.map": "/static/js/main.dd4018a2.js.map"
   },
   "entrypoints": [
     "static/css/main.b10da903.css",
-    "static/js/main.0955b701.js"
+    "static/js/main.dd4018a2.js"
   ]
 }
