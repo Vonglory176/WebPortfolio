@@ -4,9 +4,12 @@ import { useInView } from 'react-intersection-observer'
 import ProgressiveImage from 'react-progressive-graceful-image'
 
 // import bgPattern from '../assets/images/bg-site.png'
-import landingBgColorImg from '../assets/images/backgrounds/bg-colors-5.png'
-import projectsBgColorImg from '../assets/images/backgrounds/bg-colors-6.png'
-import referencesBgColorImg from '../assets/images/backgrounds/bg-colors-3.png'
+import bgColors1 from '../assets/images/backgrounds/bg-colors-1.png'
+// import bgColors2 from '../assets/images/backgrounds/bg-colors-2.png'
+import bgColors3 from '../assets/images/backgrounds/bg-colors-3.png'
+// import bgColors4 from '../assets/images/backgrounds/bg-colors-4.png'
+import bgColors5 from '../assets/images/backgrounds/bg-colors-5.png'
+import bgColors6 from '../assets/images/backgrounds/bg-colors-6.png'
 
 const SectionWrapper = ({id, title, children}) => {
   const { handleInView } = useSiteContext()
@@ -15,7 +18,16 @@ const SectionWrapper = ({id, title, children}) => {
       onChange: handleInView
   })
 
-  const currentBackgroundImage = id === 'landing' ? landingBgColorImg : id === 'projects' ? projectsBgColorImg : id === 'references' ? referencesBgColorImg : null
+  const backgroundImages = {
+    landing: bgColors5,
+    about: bgColors1,
+    // projects: bgColors2,
+    skillset: bgColors6,
+    references: bgColors3,
+    // contact: bgColors1,
+  }
+
+  const currentBackgroundImage = backgroundImages[id]
 
   return (
     //  min-h-screen
@@ -34,7 +46,7 @@ const SectionWrapper = ({id, title, children}) => {
 
         {/* -- BACKGROUND IMAGES -- */}
 
-        <div className="background-image-container pointer-events-none">
+        <div className={`background-image-container pointer-events-none ${id}`}>
             {currentBackgroundImage ? 
               <ProgressiveImage src={currentBackgroundImage} placeholder={''}>
                 {(src, loading) => (
