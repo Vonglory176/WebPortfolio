@@ -118,6 +118,11 @@ body {
     // background-repeat: repeat;
     // opacity: 0.5;
     pointer-events: none;
+    z-index: 1;
+  }
+
+  &.references {
+    height: 1301px;
   }
 
   // &::after {
