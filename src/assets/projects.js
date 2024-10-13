@@ -1,3 +1,35 @@
+// Food-Delivery App
+import foodDeliveryImage1 from '../assets/images/projects/foodDelivery/foodDelivery-1.webp'
+import foodDeliveryImage2 from '../assets/images/projects/foodDelivery/foodDelivery-2.webp'
+import foodDeliveryImage2_5 from '../assets/images/projects/foodDelivery/foodDelivery-2.5.webp'
+import foodDeliveryImage3 from '../assets/images/projects/foodDelivery/foodDelivery-3.webp'
+import foodDeliveryImage4 from '../assets/images/projects/foodDelivery/foodDelivery-4.webp'
+import foodDeliveryImage5 from '../assets/images/projects/foodDelivery/foodDelivery-5.webp'
+import foodDeliveryImage6 from '../assets/images/projects/foodDelivery/foodDelivery-6.webp'
+import foodDeliveryImage7 from '../assets/images/projects/foodDelivery/foodDelivery-7.webp'
+import foodDeliveryImage8 from '../assets/images/projects/foodDelivery/foodDelivery-8.webp'
+import foodDeliveryImage1Small from '../assets/images/projects/foodDelivery/foodDelivery-1-small.webp'
+import foodDeliveryImage2Small from '../assets/images/projects/foodDelivery/foodDelivery-2-small.webp'
+import foodDeliveryImage2_5Small from '../assets/images/projects/foodDelivery/foodDelivery-2.5-small.webp'
+import foodDeliveryImage3Small from '../assets/images/projects/foodDelivery/foodDelivery-3-small.webp'
+import foodDeliveryImage4Small from '../assets/images/projects/foodDelivery/foodDelivery-4-small.webp'
+import foodDeliveryImage5Small from '../assets/images/projects/foodDelivery/foodDelivery-5-small.webp'
+import foodDeliveryImage6Small from '../assets/images/projects/foodDelivery/foodDelivery-6-small.webp'
+import foodDeliveryImage7Small from '../assets/images/projects/foodDelivery/foodDelivery-7-small.webp'
+import foodDeliveryImage8Small from '../assets/images/projects/foodDelivery/foodDelivery-8-small.webp'
+// import foodDeliveryThumbnail from '../assets/images/projects/foodDelivery/foodDelivery-thumbnail.webp'
+
+// Food-Delivery Admin
+import foodDeliveryAdminImage1 from '../assets/images/projects/foodDeliveryAdmin/foodDeliveryAdmin-1.webp'
+import foodDeliveryAdminImage2 from '../assets/images/projects/foodDeliveryAdmin/foodDeliveryAdmin-2.webp'
+import foodDeliveryAdminImage3 from '../assets/images/projects/foodDeliveryAdmin/foodDeliveryAdmin-3.webp'
+import foodDeliveryAdminImage4 from '../assets/images/projects/foodDeliveryAdmin/foodDeliveryAdmin-4.webp'
+import foodDeliveryAdminImage1Small from '../assets/images/projects/foodDeliveryAdmin/foodDeliveryAdmin-1-small.webp'
+import foodDeliveryAdminImage2Small from '../assets/images/projects/foodDeliveryAdmin/foodDeliveryAdmin-2-small.webp'
+import foodDeliveryAdminImage3Small from '../assets/images/projects/foodDeliveryAdmin/foodDeliveryAdmin-3-small.webp'
+import foodDeliveryAdminImage4Small from '../assets/images/projects/foodDeliveryAdmin/foodDeliveryAdmin-4-small.webp'
+// import foodDeliveryThumbnail from '../assets/images/projects/foodDelivery/foodDelivery-thumbnail.webp'
+
 // WebPortfolio
 import webPortfolioImage1 from '../assets/images/projects/webportfolio/webportfolio-1.webp'
 import webPortfolioImage1Small from '../assets/images/projects/webportfolio/webportfolio-1-small.webp'
@@ -93,9 +125,71 @@ import asteroidGauntletImage3Small from '../assets/images/projects/asteroidGaunt
 
 export const projects = [
     {
+        // Food-Delivery App
+        name: 'Tomato Food Delivery',
+        description: 'A food delivery service for ordering from local restaurants',
+        thumbnail: {
+            full: foodDeliveryImage1,
+            small: foodDeliveryImage1Small,
+        },
+        images: {
+            full: [
+                foodDeliveryImage1,
+                foodDeliveryImage2,
+                foodDeliveryImage2_5,
+                foodDeliveryImage3,
+                foodDeliveryImage4,
+                foodDeliveryImage5,
+                foodDeliveryImage6,
+                foodDeliveryImage7,
+                foodDeliveryImage8,
+            ],
+            small: [
+                foodDeliveryImage1Small,
+                foodDeliveryImage2Small,
+                foodDeliveryImage2_5Small,
+                foodDeliveryImage3Small,
+                foodDeliveryImage4Small,
+                foodDeliveryImage5Small,
+                foodDeliveryImage6Small,
+                foodDeliveryImage7Small,
+                foodDeliveryImage8Small,
+            ],
+        },
+        link: 'https://food-delivery.skylergconley.com/',
+        github: 'https://github.com/Vonglory176/Food-Delivery',
+        skills: ['HTML', 'SCSS', 'TypeScript', 'React', 'Vite', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API', 'Stripe Checkout'],
+    },
+    {
+        // Food-Delivery Admin
+        name: 'Tomato FD - Admin',
+        description: 'An admin-panel for managing the Tomato food delivery service',
+        thumbnail: {
+            full: foodDeliveryAdminImage1,
+            small: foodDeliveryAdminImage1Small,
+        },
+        images: {
+            full: [
+                foodDeliveryAdminImage1,
+                foodDeliveryAdminImage2,
+                foodDeliveryAdminImage3,
+                foodDeliveryAdminImage4,
+            ],
+            small: [
+                foodDeliveryAdminImage1Small,
+                foodDeliveryAdminImage2Small,
+                foodDeliveryAdminImage3Small,
+                foodDeliveryAdminImage4Small,
+            ],
+        },
+        link: 'https://food-delivery-admin.skylergconley.com/',
+        github: 'https://github.com/Vonglory176/Food-Delivery',
+        skills: ['HTML', 'SCSS', 'TypeScript', 'React', 'Vite', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API'],
+    },
+    {
         // WebPortfolio
         name: 'WebPortfolio',
-        description: 'My personal portfolio for showcasing my projects and skills.',
+        description: 'My personal portfolio for showcasing projects and skills.',
         thumbnail: {
             full: webPortfolioImage1,
             small: webPortfolioImage1Small,
@@ -110,12 +204,12 @@ export const projects = [
         },
         link: 'https://www.skylergconley.com/',
         github: 'https://github.com/Vonglory176/WebPortfolio',
-        skills: ['HTML', 'SCSS', 'Tailwind', 'JavaScript', 'React'],
+        skills: ['HTML', 'SCSS', 'Tailwind', 'JavaScript', 'React', 'EmailJS'],
     },
     {
         // Gym App
-        name: 'Gym App',
-        description: 'A website for generating custom workout plans',
+        name: 'Swolenormous',
+        description: 'A web application for building custom workout plans',
         thumbnail: {
             full: gymAppImage1, // gymAppThumbnail,
             small: gymAppImage1Small,
@@ -139,7 +233,7 @@ export const projects = [
     {
         // FreeScribe
         name: 'FreeScribe',
-        description: 'A website that records and transcribes audio',
+        description: 'A service for recording and transcribing audio',
         // description: 'A website to record & transcribe audio',
         thumbnail: {
             full: freeScribeImage1, // freeScribeThumbnail,
@@ -189,8 +283,8 @@ export const projects = [
         },
         link: 'https://colprosol.com/',
         github: '',
-        skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'RESTful API'],
-        // skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API'],
+        // skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'RESTful API'],
+        skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API'],
     },
     {
         // ColProSol - Admin
@@ -218,7 +312,7 @@ export const projects = [
         },
         link: 'https://admin.colprosol.com/',
         github: '',
-        skills: ['JavaScript', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API'],
+        skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'NodeJS', 'ExpressJS', 'MongoDB', 'RESTful API'],
     },
     {
         // Catalyst Store Clone
@@ -253,7 +347,7 @@ export const projects = [
     {
         // Image Generator
         name: 'Image Generator',
-        description: 'A website that uses AI to generate images',
+        description: 'A web application that uses AI to generate images',
         thumbnail: {
             full: imageGeneratorImage1, // imageGeneratorThumbnail,
             small: imageGeneratorImage1Small,
