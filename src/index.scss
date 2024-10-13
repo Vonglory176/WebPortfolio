@@ -223,14 +223,39 @@ section {
     // }
   // }
 
-  will-change: transform;
+  .image-wrapper {
+    will-change: transform;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      pointer-events: none;
+      transition: .3s ease-in-out opacity;
+    }
+  }
+
 
   &:hover, &:focus-within {
 
-    scale: 1.037; // 1.03; // 1.06;
-    // transform: scale(1.03) perspective(1px) translateZ(0px);
-    transform: perspective(1px) translateZ(0);
-    backface-visibility: hidden;
+    .image-wrapper {
+      scale: 1.037; // 1.03; // 1.06;
+      // transform: scale(1.03) perspective(1px) translateZ(0px);
+      transform: perspective(1px) translateZ(0);
+      backface-visibility: hidden;
+    
+      &::after {
+        opacity: 1;
+      }
+    }
+
 
     .project-card-info {
       opacity: 1;
