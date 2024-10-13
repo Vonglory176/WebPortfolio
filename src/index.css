@@ -90,7 +90,7 @@ body.modal-open {
   pointer-events: none;
   z-index: 1;
 }
-.background-image-container.references {
+.background-image-container.references img {
   height: 1301px;
 }
 
