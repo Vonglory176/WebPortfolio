@@ -1,4 +1,27 @@
 // Food-Delivery App
+import issaquahChurchImage1 from '../assets/images/projects/issaquahCC/issaquahCC-1.webp'
+import issaquahChurchImage2 from '../assets/images/projects/issaquahCC/issaquahCC-2.webp'
+import issaquahChurchImage3 from '../assets/images/projects/issaquahCC/issaquahCC-3.webp'
+import issaquahChurchImage4 from '../assets/images/projects/issaquahCC/issaquahCC-4.webp'
+import issaquahChurchImage5 from '../assets/images/projects/issaquahCC/issaquahCC-5.webp'
+import issaquahChurchImage6 from '../assets/images/projects/issaquahCC/issaquahCC-6.webp'
+import issaquahChurchImage7 from '../assets/images/projects/issaquahCC/issaquahCC-7.webp'
+import issaquahChurchImage8 from '../assets/images/projects/issaquahCC/issaquahCC-8.webp'
+import issaquahChurchImage9 from '../assets/images/projects/issaquahCC/issaquahCC-9.webp'
+import issaquahChurchImage10 from '../assets/images/projects/issaquahCC/issaquahCC-10.webp'
+import issaquahChurchImage1Small from '../assets/images/projects/issaquahCC/issaquahCC-1-small.webp'
+import issaquahChurchImage2Small from '../assets/images/projects/issaquahCC/issaquahCC-2-small.webp'
+import issaquahChurchImage3Small from '../assets/images/projects/issaquahCC/issaquahCC-3-small.webp'
+import issaquahChurchImage4Small from '../assets/images/projects/issaquahCC/issaquahCC-4-small.webp'
+import issaquahChurchImage5Small from '../assets/images/projects/issaquahCC/issaquahCC-5-small.webp'
+import issaquahChurchImage6Small from '../assets/images/projects/issaquahCC/issaquahCC-6-small.webp'
+import issaquahChurchImage7Small from '../assets/images/projects/issaquahCC/issaquahCC-7-small.webp'
+import issaquahChurchImage8Small from '../assets/images/projects/issaquahCC/issaquahCC-8-small.webp'
+import issaquahChurchImage9Small from '../assets/images/projects/issaquahCC/issaquahCC-9-small.webp'
+import issaquahChurchImage10Small from '../assets/images/projects/issaquahCC/issaquahCC-10-small.webp'
+
+
+// Food-Delivery App
 import foodDeliveryImage1 from '../assets/images/projects/foodDelivery/foodDelivery-1.webp'
 import foodDeliveryImage2 from '../assets/images/projects/foodDelivery/foodDelivery-2.webp'
 import foodDeliveryImage2_5 from '../assets/images/projects/foodDelivery/foodDelivery-2.5.webp'
@@ -125,6 +148,52 @@ import asteroidGauntletImage3Small from '../assets/images/projects/asteroidGaunt
 
 export const projects = [
     {
+        // Issaquah Christian Church
+        name: 'Issaquah CC',
+        description: 'A website rebuild I did for Issaquah Christian Church',
+        thumbnail: {
+            full: issaquahChurchImage1,
+            small: issaquahChurchImage1Small,
+        },
+        images: {
+            full: [
+                issaquahChurchImage1,
+                issaquahChurchImage8, // Showing Lighthouse Score
+
+                issaquahChurchImage2,
+
+                issaquahChurchImage3,
+                issaquahChurchImage9, // Showing Lighthouse Score
+
+                issaquahChurchImage4,
+                issaquahChurchImage5,
+                issaquahChurchImage6,
+
+                issaquahChurchImage7,
+                issaquahChurchImage10, // Showing Lighthouse Score
+            ],
+            small: [
+                issaquahChurchImage1Small,
+                issaquahChurchImage8Small, // Showing Lighthouse Score
+
+                issaquahChurchImage2Small,
+
+                issaquahChurchImage3Small,
+                issaquahChurchImage9Small, // Showing Lighthouse Score
+
+                issaquahChurchImage4Small,
+                issaquahChurchImage5Small,
+                issaquahChurchImage6Small,
+
+                issaquahChurchImage7Small,
+                issaquahChurchImage10Small, // Showing Lighthouse Score
+            ],
+        },
+        link: 'https://issaquah-cc.skylergconley.com/',
+        github: '',
+        skills: ['HTML', 'SCSS', 'JavaScript', 'React', 'RESTful API', 'Axios'],
+    },
+    {
         // Food-Delivery App
         name: 'Tomato Food Delivery',
         description: 'A food delivery service for ordering from local restaurants',
@@ -189,7 +258,7 @@ export const projects = [
     {
         // WebPortfolio
         name: 'WebPortfolio',
-        description: 'My personal portfolio for showcasing projects and skills.',
+        description: 'My personal portfolio for showcasing projects and skills... Welcome!',
         thumbnail: {
             full: webPortfolioImage1,
             small: webPortfolioImage1Small,
