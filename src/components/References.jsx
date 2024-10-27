@@ -110,7 +110,7 @@ const References = () => {
                                 </figcaption>
 
                                 {/* SMALL VIEW - Reference Content */}
-                                <div className={`wrapper border-solid border-gray-700 rounded-lg overflow-hidden bg-gray-800 lg:hidden rounded-lg mt-4 duration-500 ${checkRef(index) && isOpen ? 'shadow-lg border max-h-[600px]' : 'max-h-0'}`}>
+                                <div className={`wrapper content-small-view border-solid border-gray-700 rounded-lg overflow-hidden bg-gray-800 lg:hidden rounded-lg mt-4 duration-500 ${checkRef(index) && isOpen ? 'shadow-lg border max-h-[600px]' : 'max-h-0'}`}>
                                     <div className={`custom-scrollbar overflow-y-scroll duration-500 bg-gray-800 px-3 py-6 p-1 ${checkRef(index) && isOpen ? 'max-h-[600px]' : 'max-h-0'}`}>                                
                                         <h3 className='mb-4'><span className='text-blue-500 font-bold text-2xl '>{reference.name.split(' ')[0]}</span><span className='text-gray-400 text-xl'> said...</span></h3>
                                         <blockquote dangerouslySetInnerHTML={{ __html: reference.content }} className='flex flex-col h-full gap-4' />
@@ -122,7 +122,7 @@ const References = () => {
                     </div>
 
                     {/* LARGE VIEW - Reference Content */}
-                    <div className='hidden lg:flex flex-col gap-4 duration-200' ref={largeViewContentRef}>
+                    <div className='content-small-view hidden lg:flex flex-col gap-4 duration-200' ref={largeViewContentRef}>
 
                         {/* Reference Header */}
                         <div className="flex justify-between items-end">
