@@ -57,6 +57,8 @@ Fix up Catalyst-Clone
 Update size of small projects images
 Make skill transition faster?
 
+Add "Axios" skill?
+
 Change transition opacity logic (References + Skills) to use useEffect
 
 Weird issue regarding min-height on sections in Discord ??
