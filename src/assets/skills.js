@@ -1,3 +1,4 @@
+
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPython, FaGit, FaGithub, FaGitlab, FaSass, FaBootstrap, FaGlobe, FaMobileAlt, FaTools, FaServer, FaCode } from 'react-icons/fa'
 import { SiTypescript, SiNextdotjs, SiRedux, SiMongodb, SiPostgresql, SiMysql, SiFirebase, SiFigma, SiAdobephotoshop, SiPostman, SiTailwindcss, SiJson, SiJquery, SiW3Schools, SiExpress, SiMicrosoftsqlserver, SiVite } from 'react-icons/si'
 import { AiOutlineApi, AiOutlineProject } from 'react-icons/ai'
@@ -36,7 +37,7 @@ export const skills = {
             { name: 'ExpressJS', image: SiExpress, description: 'Express.js' },
             { name: 'Python', image: FaPython, description: 'Python' },
             { name: 'MySQL', image: SiMysql, description: 'MySQL' },
-            { name: 'MS SQL Server', image: SiMicrosoftsqlserver, description: 'Microsoft SQL Server' },
+            // { name: 'MS SQL Server', image: SiMicrosoftsqlserver, description: 'Microsoft SQL Server' },
             { name: 'Postgres', image: SiPostgresql, description: 'PostgreSQL' },
             { name: 'Firebase', image: SiFirebase, description: 'Firebase' },
             { name: 'MongoDB', image: SiMongodb, description: 'MongoDB' },
