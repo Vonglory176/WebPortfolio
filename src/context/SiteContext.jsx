@@ -9,6 +9,7 @@ const SiteContext = createContext()
 const SiteProvider = ({ children }) => {
   const [modal, setModal] = useState(null)
   const [currentSection, setCurrentSection] = useState(null)
+  const [windowWidth, setWindowWidth] = useState(0)
   // const sections = ['landing', 'about', 'projects', 'skills', 'references', 'contact']
 
   const showModal = (newModal) => setModal(newModal)
@@ -16,16 +17,31 @@ const SiteProvider = ({ children }) => {
 
   const handleInView = (inView, entry) => {
     if (inView) {
-      setCurrentSection(entry.target.id)
+      const formattedId = entry.target.id.replace(/-cover/g, '')
+      setCurrentSection(formattedId)
     }
   }
 
+  // Resize Listener
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth)
+  }
+
   useEffect(() => {
-    console.log(currentSection)
-  }, [currentSection])
+    window.addEventListener('resize', handleResize)
+    setWindowWidth(window.innerWidth)
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
+
+  // useEffect(() => {
+  //   console.log(currentSection)
+  // }, [currentSection])
 
   return (
-    <SiteContext.Provider value={{ modal, showModal, hideModal, currentSection, handleInView }}>
+    <SiteContext.Provider value={{ modal, showModal, hideModal, currentSection, handleInView, windowWidth }}>
       {children}
     </SiteContext.Provider>
   )
