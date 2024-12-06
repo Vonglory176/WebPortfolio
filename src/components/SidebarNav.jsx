@@ -33,7 +33,7 @@ const SidebarNav = () => {
     const handleBlur = (e) => {
       if (!e.currentTarget.contains(e.relatedTarget)) {
         setIsOpen(false)
-        console.log('blur')
+        // console.log('blur')
       }
     }
 
