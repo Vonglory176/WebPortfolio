@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useRef, useState } from 'react'
 import SectionWrapper from '../SectionWrapper'
 import { FaEnvelope, FaPhone } from 'react-icons/fa'
@@ -43,16 +45,16 @@ const Contact = () => {
             const templateParams = {
                 from_name: formData.email,
                 to_name: 'Skyler',
-                to_email: process.env.REACT_APP_SKYLER_EMAIL, // Replace with your primary email
+                to_email: process.env.NEXT_PUBLIC_SKYLER_EMAIL, // Replace with your primary email
                 subject: formData.subject,
                 message: formData.message
             }
 
             emailjs.send(
-                process.env.REACT_APP_EMAILJS_SERVICE_ID, 
-                process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
+                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, 
+                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, 
                 templateParams, 
-                process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
             )
                 .then((response) => {
                     console.log('SUCCESS!', response.status, response.text)
@@ -89,17 +91,17 @@ const Contact = () => {
         return errorCheck
     }
 
-    const email = process.env.REACT_APP_SKYLER_EMAIL
-    const phone = process.env.REACT_APP_SKYLER_PHONE
-    const phoneFormatted = process.env.REACT_APP_SKYLER_PHONE_FORMATTED
+    const email = process.env.NEXT_PUBLIC_SKYLER_EMAIL
+    // const phone = process.env.NEXT_PUBLIC_SKYLER_PHONE
+    // const phoneFormatted = process.env.NEXT_PUBLIC_SKYLER_PHONE_FORMATTED
 
     return (
         <SectionWrapper id='contact' title='Contact'>
             {/* <div className='flex flex-1 flex-col items-center justify-center px-4 py-8 bg-gray-800 bg-opacity-30 relative'> */}
 
                 <div className="flex flex-col items-center justify-center mb-8 gap-2 text-center">
-                    <h1 className='text-3xl sm:text-4xl font-bold'>Start a Conversation</h1>
-                    <h2 className='text-xl sm:text-2xl text-blue-500'>Let&apos;s Make Something <span className=''>Incredible</span></h2>
+                    <h2 className='text-3xl sm:text-4xl font-bold'>Start a Conversation</h2>
+                    <h3 className='text-xl sm:text-2xl text-blue-500'>Let&apos;s Make Something <span className=''>Incredible</span></h3>
                 </div>
 
                 <div className="content-wrapper flex flex-wrap justify-center items-start gap-12 w-full pb-12"> {/* 619px */}
