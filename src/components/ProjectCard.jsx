@@ -1,28 +1,24 @@
-import { FaExternalLinkAlt, FaGithub, FaImages } from 'react-icons/fa'
-import TextCarosuel from './TextCarosuel'
-import { useSiteContext } from '../context/SiteContext'
+import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
+import TextCarosuel from '@/components/TextCarosuel'
+import ViewImages from '@/components/ViewImages'
+import ClientImage from '@/components/ClientImage'
+// import { useSiteContext } from '../context/SiteContext'
 // import ProgressiveImage from 'react-progressive-graceful-image'
 
 const ProjectCard = ({project, index}) => {
-    const { showModal } = useSiteContext()
+    // const { showModal } = useSiteContext()
 
     return (
         <div key={index} className='project-card bg-gray-800 rounded-lg relative w-full h-full min-h-[195px] aspect-w-16 aspect-h-9'> {/* w-[343px] h-[195px] // hover:scale-105 */}
 
-            {/* <ProgressiveImage src={project.thumbnail.full} placeholder={project.thumbnail.small}> */}
             <div className="image-wrapper h-full rounded-lg overflow-hidden duration-300 hover:bg-black hover:bg-opacity-50">
-                {/* <ProgressiveImage src={project.images.full[0]} placeholder={project.thumbnail.small}>
-                    {(src, loading) => (
-                        <img
-                            src={src}
-                            alt={project.name}
-                            className={`w-full h-full object-cover rounded-lg shadow-lg ${loading ? 'blur-sm' : 'blur-0'}`}
-                            // style={{ objectFit: 'cover', imageRendering: 'crisp-edges' }}
-                        />
-                    )}
-                </ProgressiveImage> */}
+                <ClientImage
+                    src={project.images.full[0]} // {project.thumbnail.full} // placeholder={project.thumbnail.small}>
+                    alt={project.name}
+                    className='project-card-image w-full h-full object-cover'
+                    priority={true}
+                />
             </div>
-            {/* <img src={project.thumbnail} alt={project.name} className='project-card-image w-full h-full object-cover' /> */}
 
             <div className='project-card-info rounded-lg absolute inset-0 opacity-0 duration-300 flex items-center justify-center'>
                 
@@ -62,11 +58,12 @@ const ProjectCard = ({project, index}) => {
                         )}
 
                         {/* View Images */}
-                        <button aria-label="View Images" onClick={() => showModal(project)} className='bg-blue-600 bg-opacity-80 text-white p-3 rounded-full flex items-center gap-2 hover:bg-blue-700 duration-300'>
+                        <ViewImages project={project} />
+                        {/* <button aria-label="View Images" onClick={() => showModal(project)} className='bg-blue-600 bg-opacity-80 text-white p-3 rounded-full flex items-center gap-2 hover:bg-blue-700 duration-300'>
                             <FaImages size={20} />
-                            {/* <FaTools size={20} /> */}
-                            {/* <FaInfo size={20} /> */}
-                        </button>
+                            <FaTools size={20} />
+                            <FaInfo size={20} />
+                        </button> */}
 
                     </div>
 
