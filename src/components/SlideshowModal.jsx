@@ -4,8 +4,7 @@ import React, { useCallback, useEffect, useState } from 'react'
 import { useSiteContext } from '../context/SiteContext'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import { FaX } from 'react-icons/fa6'
-// import ProgressiveImage from 'react-progressive-graceful-image'
-// import loadingIcon from '../assets/icons/loading-icon.svg'
+import ClientImage from './ClientImage'
 
 // Slideshow Modal --> Display determined by SiteContext
 const SlideshowModal = () => {
@@ -104,6 +103,12 @@ const SlideshowModalContent = () => {
                             />
                         )}
                     </ProgressiveImage> */}
+                    <ClientImage
+                        src={modal.images.full[currentIndex]}
+                        alt={modal.name}
+                        className="modal-image object-cover"
+                        priority={true}
+                    />
                     {/* <img src={modal.images[currentIndex]} alt={modal.name} className="modal-image object-cover" /> */}
                 </div>
 
