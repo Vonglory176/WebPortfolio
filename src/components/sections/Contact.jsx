@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import SectionWrapper from './SectionWrapper'
+import SectionWrapper from '../SectionWrapper'
 import { FaEnvelope, FaPhone } from 'react-icons/fa'
 import autosize from 'autosize'
 import emailjs from 'emailjs-com'
@@ -99,7 +99,7 @@ const Contact = () => {
 
                 <div className="flex flex-col items-center justify-center mb-8 gap-2 text-center">
                     <h1 className='text-3xl sm:text-4xl font-bold'>Start a Conversation</h1>
-                    <h2 className='text-xl sm:text-2xl text-blue-500'>Let's Make Something <span className=''>Incredible</span></h2>
+                    <h2 className='text-xl sm:text-2xl text-blue-500'>Let&apos;s Make Something <span className=''>Incredible</span></h2>
                 </div>
 
                 <div className="content-wrapper flex flex-wrap justify-center items-start gap-12 w-full pb-12"> {/* 619px */}

@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
-import SectionWrapper from './SectionWrapper'
-import { references } from '../assets/references'
+import SectionWrapper from '../SectionWrapper'
+import { references } from '../../assets/references'
 import { FaChevronDown } from 'react-icons/fa'
-import ProgressiveImage from 'react-progressive-graceful-image'
+// import ProgressiveImage from 'react-progressive-graceful-image'
 // import bgColorImg from '../assets/images/bg-colors-3.png'
 
 const References = () => {
@@ -76,7 +76,7 @@ const References = () => {
                                     target='_blank'
                                     className='w-20 h-20 rounded-full bg-gray-800 overflow-hidden shadow-lg'> {/* border-[2px] border-white shadow-[0_0_7px_cyan] */}
                                         
-                                        <ProgressiveImage src={reference.image} placeholder={''}>
+                                        {/* <ProgressiveImage src={reference.image} placeholder={''}>
                                             {(src, loading) => (
                                                 <img
                                                     src={src}
@@ -84,7 +84,7 @@ const References = () => {
                                                     className={`w-full h-full object-cover duration-300 ${loading ? 'opacity-0' : 'opacity-100'}`}
                                                 />
                                             )}
-                                        </ProgressiveImage>
+                                        </ProgressiveImage> */}
 
                                         {/* <img 
                                         className='object-cover'

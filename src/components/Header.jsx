@@ -1,5 +1,4 @@
-import React from 'react'
-import SidebarNav from './SidebarNav'
+import SidebarNav from '@/components/SidebarNav'
 
 const Header = () => {
   return (

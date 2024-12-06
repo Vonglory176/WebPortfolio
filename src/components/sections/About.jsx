@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react'
-import SectionWrapper from './SectionWrapper'
+import SectionWrapper from '../SectionWrapper'
 import { FaCheckCircle, FaCodeBranch, FaDownload } from 'react-icons/fa'
 // import bgColorImg from '../assets/images/bg-colors-1.png'
 // import ProgressiveImage from 'react-progressive-graceful-image'

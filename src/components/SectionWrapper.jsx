@@ -1,22 +1,25 @@
-import React from 'react'
-import { useSiteContext } from '../context/SiteContext'
-import { useInView } from 'react-intersection-observer'
-import ProgressiveImage from 'react-progressive-graceful-image'
+// 'use client'
+
+// import React from 'react'
+// import { useSiteContext } from '@/context/SiteContext'
+import ClientImage from '@/components/ClientImage'
+// import { useInView } from 'react-intersection-observer'
+// import ProgressiveImage from 'react-progressive-graceful-image'
 
 // import bgPattern from '../assets/images/bg-site.png'
-import bgColors1 from '../assets/images/backgrounds/bg-colors-1.png'
-// import bgColors2 from '../assets/images/backgrounds/bg-colors-2.png'
-import bgColors3 from '../assets/images/backgrounds/bg-colors-3.png'
-// import bgColors4 from '../assets/images/backgrounds/bg-colors-4.png'
-import bgColors5 from '../assets/images/backgrounds/bg-colors-5.png'
-import bgColors6 from '../assets/images/backgrounds/bg-colors-6.png'
+import bgColors1 from '@/assets/images/backgrounds/bg-colors-1.png'
+// import bgColors2 from '@/assets/images/backgrounds/bg-colors-2.png'
+import bgColors3 from '@/assets/images/backgrounds/bg-colors-3.png'
+// import bgColors4 from '@/assets/images/backgrounds/bg-colors-4.png'
+import bgColors5 from '@/assets/images/backgrounds/bg-colors-5.png'
+import bgColors6 from '@/assets/images/backgrounds/bg-colors-6.png'
 
 const SectionWrapper = ({id, title, children}) => {
-  const { handleInView } = useSiteContext()
-  const { ref } = useInView({
-      threshold: 0.6,
-      onChange: handleInView
-  })
+  // const { handleInView } = useSiteContext()
+  // const { ref } = useInView({
+  //     threshold: 0.6,
+  //     onChange: handleInView
+  // })
 
   const backgroundImages = {
     landing: bgColors5,
@@ -28,6 +31,8 @@ const SectionWrapper = ({id, title, children}) => {
   }
 
   const currentBackgroundImage = backgroundImages[id]
+
+  const ref = null // "CHANGE THIS"
 
   return (
     //  min-h-screen
@@ -47,16 +52,13 @@ const SectionWrapper = ({id, title, children}) => {
         {/* -- BACKGROUND IMAGES -- */}
 
         <div className={`background-image-container pointer-events-none ${id}`}>
-            {currentBackgroundImage ? 
-              <ProgressiveImage src={currentBackgroundImage} placeholder={''}>
-                {(src, loading) => (
-                    <img
-                        src={src}
-                        alt={""}
-                        className={`w-full h-full object-cover duration-300 ${loading ? 'opacity-0' : 'opacity-100'}`}
-                    />
-                )}
-              </ProgressiveImage>
+            {currentBackgroundImage ?
+
+              <ClientImage
+                src={currentBackgroundImage}
+                alt={""}
+                className='w-full h-full object-cover'
+              />
 
               :
 

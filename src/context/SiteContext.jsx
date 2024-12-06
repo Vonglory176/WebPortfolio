@@ -1,4 +1,6 @@
-import React, { createContext, useState, useContext, useEffect } from 'react'
+'use client'
+
+import { createContext, useState, useContext, useEffect } from 'react'
 
 // Create the context
 const SiteContext = createContext()

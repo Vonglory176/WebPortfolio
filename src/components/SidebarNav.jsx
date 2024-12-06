@@ -1,5 +1,7 @@
+"use client"
+
 import React, { useRef, useState } from 'react'
-import { useSiteContext } from '../context/SiteContext'
+import { useSiteContext } from '@/context/SiteContext'
 
 const SidebarNav = () => {
     const { currentSection } = useSiteContext()
@@ -78,30 +80,6 @@ const SidebarNav = () => {
                 <a href={`#${link.id}`} className={"m-auto duration-300 text-xl hover:text-blue-400 py-1 " + (currentSection === link.id ? 'text-blue-400' : 'text-white')}>{link.name}</a>
               </li>
             ))}
-
-            {/* <li>
-              <a href="#landing" className={"duration-300 " + (currentSection === 'landing' ? 'text-blue-500' : 'text-white')}>Home</a>
-            </li>
-
-            <li>
-              <a href="#about">About</a>
-            </li>
-
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-
-            <li>
-              <a href="#references">References</a>
-            </li>
-
-            <li>
-              <a href="#contact">Contact</a>
-            </li> */}
 
           </ul>
 

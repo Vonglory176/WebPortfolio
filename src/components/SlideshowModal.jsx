@@ -1,21 +1,47 @@
+'use client'
+
 import React, { useCallback, useEffect, useState } from 'react'
 import { useSiteContext } from '../context/SiteContext'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import { FaX } from 'react-icons/fa6'
-import ProgressiveImage from 'react-progressive-graceful-image'
+// import ProgressiveImage from 'react-progressive-graceful-image'
 // import loadingIcon from '../assets/icons/loading-icon.svg'
 
+// Slideshow Modal --> Display determined by SiteContext
 const SlideshowModal = () => {
+    const { modal } = useSiteContext()
+
+    useEffect(() => {
+        if (modal) {
+            document.body.classList.add('modal-open')
+        } else {
+            document.body.classList.remove('modal-open')
+        }
+    }, [modal])
+
+    return modal ? <SlideshowModalContent /> : null
+}
+
+// The Modal Content
+const SlideshowModalContent = () => {
     const { modal, hideModal } = useSiteContext()
     const [currentIndex, setCurrentIndex] = useState(0)
 
-    const handleNext = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % modal.images.full.length)
-    }
+    // const handleNext = () => {
+    //     setCurrentIndex((prevIndex) => (prevIndex + 1) % modal.images.full.length)
+    // }
 
-    const handlePrev = () => {
+    // const handlePrev = () => {
+    //     setCurrentIndex((prevIndex) => (prevIndex - 1 + modal.images.full.length) % modal.images.full.length)
+    // }
+
+    const handleNext = useCallback(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % modal.images.full.length)
+    }, [modal.images.full.length])
+
+    const handlePrev = useCallback(() => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + modal.images.full.length) % modal.images.full.length)
-    }
+    }, [modal.images.full.length])
 
     // Keyboard Navigation
     const handleKeyDown = useCallback((e) => {
@@ -25,14 +51,6 @@ const SlideshowModal = () => {
             handlePrev()
         }
     }, [handleNext, handlePrev])
-
-    // const handleKeyDown = (e) => {
-    //     if (e.key === 'ArrowRight') {
-    //         handleNext()
-    //     } else if (e.key === 'ArrowLeft') {
-    //         handlePrev()
-    //     }
-    // }
 
     useEffect(() => {
         window.addEventListener('keydown', handleKeyDown)
@@ -76,16 +94,16 @@ const SlideshowModal = () => {
 
                 {/* Slideshow Images */}
                 <div id='slideshow-image-container' className="modal-image-container fixed inset-0 flex items-center justify-center">
-                    <ProgressiveImage src={modal.images.full[currentIndex]} placeholder={modal.images.small[currentIndex]}>
+                    {/* <ProgressiveImage src={modal.images.full[currentIndex]} placeholder={modal.images.small[currentIndex]}>
                         {(src, loading) => (
                             <img
                                 src={src}
                                 alt={modal.name}
                                 className={`object-contain min-h-[100svh] min-w-[100svw] max-h-[100svh] max-w-[1920px] ${loading ? 'blur-sm' : 'blur-0 transition-[filter] duration-300'}`}
-                                // className={`w-full h-full object-cover duration-300 max-w-[1920px] max-h-[1080px] ${loading ? 'blur-sm' : 'blur-0'}`}
+                            // className={`w-full h-full object-cover duration-300 max-w-[1920px] max-h-[1080px] ${loading ? 'blur-sm' : 'blur-0'}`}
                             />
                         )}
-                    </ProgressiveImage>
+                    </ProgressiveImage> */}
                     {/* <img src={modal.images[currentIndex]} alt={modal.name} className="modal-image object-cover" /> */}
                 </div>
 

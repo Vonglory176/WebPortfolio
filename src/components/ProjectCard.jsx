@@ -1,8 +1,7 @@
-import React from 'react'
 import { FaExternalLinkAlt, FaGithub, FaImages } from 'react-icons/fa'
 import TextCarosuel from './TextCarosuel'
 import { useSiteContext } from '../context/SiteContext'
-import ProgressiveImage from 'react-progressive-graceful-image'
+// import ProgressiveImage from 'react-progressive-graceful-image'
 
 const ProjectCard = ({project, index}) => {
     const { showModal } = useSiteContext()
@@ -12,7 +11,7 @@ const ProjectCard = ({project, index}) => {
 
             {/* <ProgressiveImage src={project.thumbnail.full} placeholder={project.thumbnail.small}> */}
             <div className="image-wrapper h-full rounded-lg overflow-hidden duration-300 hover:bg-black hover:bg-opacity-50">
-                <ProgressiveImage src={project.images.full[0]} placeholder={project.thumbnail.small}>
+                {/* <ProgressiveImage src={project.images.full[0]} placeholder={project.thumbnail.small}>
                     {(src, loading) => (
                         <img
                             src={src}
@@ -21,7 +20,7 @@ const ProjectCard = ({project, index}) => {
                             // style={{ objectFit: 'cover', imageRendering: 'crisp-edges' }}
                         />
                     )}
-                </ProgressiveImage>
+                </ProgressiveImage> */}
             </div>
             {/* <img src={project.thumbnail} alt={project.name} className='project-card-image w-full h-full object-cover' /> */}
 
