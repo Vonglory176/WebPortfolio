@@ -31,18 +31,51 @@ export default function RootLayout({ children }) {
       >
         <SiteProvider>
 
-          {/* <div className="App"> */}
+          <Header />
+          
+          <main className='bg-gray-900 text-white'>
 
             {/* General Layout */}
-            <Header />
 
             {/* Page Content */}
             {children}
 
-          {/* </div> */}
+          </main>
 
         </SiteProvider>
       </body>
     </html>
   )
 }
+
+// ClientImage placeholder not working
+// Skills are not static
+// References are not static
+// Contact is not static
+
+// Skill carousel not wide enough
+
+
+/*
+TODO ---
+Fix up Catalyst-Clone
+
+Update size of small projects images
+Make skill transition faster?
+
+Add "Axios" skill?
+
+Change transition opacity logic (References + Skills) to use useEffect
+
+Weird issue regarding min-height on sections in Discord ??
+Weird shadow/background issue in mobile when opening/closing a reference
+Weird issue with project tile height on other devices?
+
+IDEAS ---
+
+Make landing background swap between images (background 4) via timer
+Add a load animation for projects, making them appear one by one
+Add arrow key control to References and Skills
+
+
+*/
