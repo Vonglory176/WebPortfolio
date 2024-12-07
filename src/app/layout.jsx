@@ -53,6 +53,8 @@ export default function RootLayout({ children }) {
 // References are not static
 // Contact is not static
 
+// Project card backgrounds need to expand with hover-overlay
+
 // Skill carousel not wide enough
 
 
