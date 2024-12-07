@@ -24,6 +24,9 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  NEXT_PUBLIC_SKYLER_EMAIL: ${{ secrets.NEXT_PUBLIC_SKYLER_EMAIL }}
+
 jobs:
   # Build job
   build:
@@ -75,14 +78,14 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }} --legacy-peer-deps
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
-        env:
-          NEXT_PUBLIC_BASE_URL: ${{ secrets.NEXT_PUBLIC_BASE_URL }}
-          NEXT_PUBLIC_SKYLER_PHONE: ${{ secrets.NEXT_PUBLIC_SKYLER_PHONE }}
-          NEXT_PUBLIC_SKYLER_PHONE_FORMATTED: ${{ secrets.NEXT_PUBLIC_SKYLER_PHONE_FORMATTED }}
-          NEXT_PUBLIC_SKYLER_EMAIL: ${{ env.NEXT_PUBLIC_SKYLER_EMAIL }}
-          NEXT_PUBLIC_EMAILJS_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_EMAILJS_SERVICE_ID }}
-          NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: ${{ secrets.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID }}
-          NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY }}
+        # env:
+        #   NEXT_PUBLIC_BASE_URL: ${{ secrets.NEXT_PUBLIC_BASE_URL }}
+        #   NEXT_PUBLIC_SKYLER_PHONE: ${{ secrets.NEXT_PUBLIC_SKYLER_PHONE }}
+        #   NEXT_PUBLIC_SKYLER_PHONE_FORMATTED: ${{ secrets.NEXT_PUBLIC_SKYLER_PHONE_FORMATTED }}
+        #   NEXT_PUBLIC_SKYLER_EMAIL: ${{ vars.NEXT_PUBLIC_SKYLER_EMAIL }}
+        #   NEXT_PUBLIC_EMAILJS_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_EMAILJS_SERVICE_ID }}
+        #   NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: ${{ secrets.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID }}
+        #   NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
