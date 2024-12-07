@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
-// const nextConfig = {
-//     // basePath: '/webportfolio', // Not needed for custom domain
-//     output: 'export',
-//     // reactStrictMode: false,
-// };
+
+const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
     output: 'export',
