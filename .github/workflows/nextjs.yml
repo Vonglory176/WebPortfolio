@@ -76,13 +76,13 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
         env:
-          NEXT_PUBLIC_BASE_URL: ${{ secrets.NEXT_PUBLIC_BASE_URL }}
-          NEXT_PUBLIC_SKYLER_PHONE: ${{ secrets.NEXT_PUBLIC_SKYLER_PHONE }}
-          NEXT_PUBLIC_SKYLER_PHONE_FORMATTED: ${{ secrets.NEXT_PUBLIC_SKYLER_PHONE_FORMATTED }}
-          NEXT_PUBLIC_SKYLER_EMAIL: ${{ secrets.NEXT_PUBLIC_SKYLER_EMAIL }}
-          NEXT_PUBLIC_EMAILJS_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_EMAILJS_SERVICE_ID }}
-          NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: ${{ secrets.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID }}
-          NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY }}
+          BASE_URL: ${{ secrets.NEXT_PUBLIC_BASE_URL }}
+          SKYLER_PHONE: ${{ secrets.NEXT_PUBLIC_SKYLER_PHONE }}
+          SKYLER_PHONE_FORMATTED: ${{ secrets.NEXT_PUBLIC_SKYLER_PHONE_FORMATTED }}
+          SKYLER_EMAIL: ${{ secrets.NEXT_PUBLIC_SKYLER_EMAIL }}
+          EMAILJS_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_EMAILJS_SERVICE_ID }}
+          EMAILJS_TEMPLATE_ID: ${{ secrets.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID }}
+          EMAILJS_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
