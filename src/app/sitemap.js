@@ -1,4 +1,5 @@
-
+export const dynamic = "force-static"
+export const revalidate = 60 // Revalidate every 60 seconds
 
 export default async function sitemap() {
   // const response = await fetch("https://dummyjson.com/posts");
