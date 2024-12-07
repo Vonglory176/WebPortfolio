@@ -72,9 +72,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
       - name: Load environment variables
-        uses: actions/setup-env@v4
-        with:
-          file: .env.production
+        run: |
+          echo "Loading environment variables from .env.production"
+          set -o allexport
+          source .env.production
+          set +o allexport
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }} --legacy-peer-deps
       - name: Build with Next.js
