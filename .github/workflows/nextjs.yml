@@ -24,10 +24,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-env:
-  NEXT_PUBLIC_BASE_URL: "https://www.skylergconley.com"
-  NEXT_PUBLIC_SKYLER_EMAIL: ${{ secrets.NEXT_PUBLIC_SKYLER_EMAIL }}
-
 jobs:
   # Build job
   build:
