@@ -76,7 +76,7 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
         env:
-          NEXT_PUBLIC_BASE_URL: "https://www.skylergconley.com" # ${{ secrets.NEXT_PUBLIC_BASE_URL }}
+          NEXT_PUBLIC_BASE_URL: "https://www.skylerGconley.com" # ${{ secrets.NEXT_PUBLIC_BASE_URL }}
         #   NEXT_PUBLIC_SKYLER_PHONE: ${{ secrets.NEXT_PUBLIC_SKYLER_PHONE }}
         #   NEXT_PUBLIC_SKYLER_PHONE_FORMATTED: ${{ secrets.NEXT_PUBLIC_SKYLER_PHONE_FORMATTED }}
         #   NEXT_PUBLIC_SKYLER_EMAIL: ${{ vars.NEXT_PUBLIC_SKYLER_EMAIL }}

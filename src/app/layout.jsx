@@ -23,6 +23,14 @@ export const metadata = {
   // themeColor: "#1a202c",
 }
 
+// export const getStaticProps = async () => {
+//   return {
+//     props: {
+//       skylerEmail: process.env.NEXT_PUBLIC_SKYLER_EMAIL,
+//     },
+//   }
+// }
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
