@@ -1,7 +1,3 @@
-User-Agent: *
-Allow: /
-Disallow: /admin
-Disallow: /privacy
-Disallow: /not-found
-
-Sitemap: https://skylergconley.com/sitemap.xml
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
