@@ -9,23 +9,24 @@ const nextConfig = {
         unoptimized: true // Disable default image optimization
     },
 
-    // env: {
-    //     NEXT_PUBLIC_BASE_URL: "https://www.skylergconley.com", // process.env.NEXT_PUBLIC_BASE_URL,
+    env: {
+        // NEXT_PUBLIC_BASE_URL: "https://www.skylergconley.com", // process.env.NEXT_PUBLIC_BASE_URL,
+        NEXT_PUBLIC_BASE_URL: process.env.NEXT_PUBLIC_BASE_URL,
 
-    //     // NEXT_PUBLIC_SKYLER_PHONE: process.env.NEXT_PUBLIC_SKYLER_PHONE,
-    //     // NEXT_PUBLIC_SKYLER_PHONE_FORMATTED: process.env.NEXT_PUBLIC_SKYLER_PHONE_FORMATTED,
+        // NEXT_PUBLIC_SKYLER_PHONE: process.env.NEXT_PUBLIC_SKYLER_PHONE,
+        // NEXT_PUBLIC_SKYLER_PHONE_FORMATTED: process.env.NEXT_PUBLIC_SKYLER_PHONE_FORMATTED,
 
-    //     // NEXT_PUBLIC_SKYLER_EMAIL: process.env.NEXT_PUBLIC_SKYLER_EMAIL,
-    //     // NEXT_PUBLIC_SKYLER_EMAIL: "SkylerGConley@gmail.com"
+        NEXT_PUBLIC_SKYLER_EMAIL: process.env.NEXT_PUBLIC_SKYLER_EMAIL,
+        // NEXT_PUBLIC_SKYLER_EMAIL: "SkylerGConley@gmail.com"
 
-    //     NEXT_PUBLIC_EMAILJS_SERVICE_ID: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-    //     NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-    //     NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+        NEXT_PUBLIC_EMAILJS_SERVICE_ID: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY,
 
 
-    //     // MY_SECRET: process.env.MY_SECRET, // Server-side secret
-    //     // NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL, // Client-side accessible
-    // },
+        // MY_SECRET: process.env.MY_SECRET, // Server-side secret
+        // NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL, // Client-side accessible
+    },
 
 
 
