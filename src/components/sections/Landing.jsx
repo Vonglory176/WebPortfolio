@@ -1,3 +1,5 @@
+'use client'
+
 import SectionWrapper from '@/components/SectionWrapper'
 import skylerPicture from '@/assets/images/people/skylerPicture.webp'
 import { FaGithub, FaLinkedin, FaGitlab, FaEnvelope, FaChevronDown } from 'react-icons/fa'
@@ -5,15 +7,10 @@ import ClientImage from '@/components/ClientImage'
 
 // import ProgressiveImage from 'react-progressive-graceful-image'
 
-export const getStaticProps = async () => {
-  return {
-    props: {
-      skylerEmail: process.env.NEXT_PUBLIC_SKYLER_EMAIL,
-    },
-  }
-}
+const Landing = () => {
 
-const Landing = ({ skylerEmail }) => {
+    console.log(process.env.NEXT_PUBLIC_SKYLER_EMAIL)
+    
     return (
         <SectionWrapper id='landing'>
 
@@ -55,7 +52,7 @@ const Landing = ({ skylerEmail }) => {
                         <a aria-label="linkedin" href="https://www.linkedin.com/in/skyler-g-conley-1b6a33133/" rel="noreferrer" target="_blank"><FaLinkedin size={24} className='text-white hover:text-blue-500 duration-300' /></a>
                     </li>
                     <li>
-                        <a aria-label="send mail" href={`mailto:${skylerEmail}`} rel="noreferrer" target="_blank"><FaEnvelope size={24} className='text-white hover:text-blue-500 duration-300' /></a>
+                        <a aria-label="send mail" href={`mailto:${process.env.NEXT_PUBLIC_SKYLER_EMAIL}`} rel="noreferrer" target="_blank"><FaEnvelope size={24} className='text-white hover:text-blue-500 duration-300' /></a>
                     </li>
                     {/* <li> 
                         <a aria-label="send a text" href={`https://wa.me/${process.env.NEXT_PUBLIC_SKYLER_PHONE}`} rel="noreferrer" target="_blank"><FaWhatsapp size={24} className='text-white hover:text-blue-500 duration-300' /></a> 
