@@ -10,11 +10,13 @@ const nextConfig = {
     },
 
     env: {
-        NEXT_PUBLIC_BASE_URL: process.env.NEXT_PUBLIC_BASE_URL,
+        NEXT_PUBLIC_BASE_URL: "https://www.skylergconley.com", // process.env.NEXT_PUBLIC_BASE_URL,
 
         // NEXT_PUBLIC_SKYLER_PHONE: process.env.NEXT_PUBLIC_SKYLER_PHONE,
         // NEXT_PUBLIC_SKYLER_PHONE_FORMATTED: process.env.NEXT_PUBLIC_SKYLER_PHONE_FORMATTED,
-        NEXT_PUBLIC_SKYLER_EMAIL: "SkylerGConley@gmail.com", // process.env.NEXT_PUBLIC_SKYLER_EMAIL,
+
+        // NEXT_PUBLIC_SKYLER_EMAIL: process.env.NEXT_PUBLIC_SKYLER_EMAIL,
+        // NEXT_PUBLIC_SKYLER_EMAIL: "SkylerGConley@gmail.com"
 
         NEXT_PUBLIC_EMAILJS_SERVICE_ID: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
