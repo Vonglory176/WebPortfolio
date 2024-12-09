@@ -77,7 +77,6 @@ jobs:
         # run: ${{ steps.detect-package-manager.outputs.runner }} next build
         run: | 
           touch .env
-          echo "NEXT_PUBLIC_BASE_URL: ${{ secrets.NEXT_PUBLIC_BASE_URL }}" >> .env
           echo "NEXT_PUBLIC_SKYLER_EMAIL: ${{ secrets.NEXT_PUBLIC_SKYLER_EMAIL }}" >> .env
           ${{ steps.detect-package-manager.outputs.runner }} next build
         # env:
