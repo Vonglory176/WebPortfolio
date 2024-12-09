@@ -75,18 +75,15 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }} --legacy-peer-deps
       - name: Build with Next.js
         # run: ${{ steps.detect-package-manager.outputs.runner }} next build
-        run: | 
-          touch .env
-          echo "NEXT_PUBLIC_SKYLER_EMAIL: ${{ secrets.NEXT_PUBLIC_SKYLER_EMAIL }}" >> .env
-          ${{ steps.detect-package-manager.outputs.runner }} next build
-        # env:
-          # NEXT_PUBLIC_BASE_URL: "https://www.skylerGconley.com" # ${{ secrets.NEXT_PUBLIC_BASE_URL }}
-        #   NEXT_PUBLIC_SKYLER_PHONE: ${{ secrets.NEXT_PUBLIC_SKYLER_PHONE }}
-        #   NEXT_PUBLIC_SKYLER_PHONE_FORMATTED: ${{ secrets.NEXT_PUBLIC_SKYLER_PHONE_FORMATTED }}
-          # NEXT_PUBLIC_SKYLER_EMAIL: ${{ secrets.NEXT_PUBLIC_SKYLER_EMAIL }}
-        #   NEXT_PUBLIC_EMAILJS_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_EMAILJS_SERVICE_ID }}
-        #   NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: ${{ secrets.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID }}
-        #   NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY }}
+        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        env:
+          NEXT_PUBLIC_BASE_URL: ${{ secrets.NEXT_PUBLIC_BASE_URL }}
+          # NEXT_PUBLIC_SKYLER_PHONE: ${{ secrets.NEXT_PUBLIC_SKYLER_PHONE }}
+          # NEXT_PUBLIC_SKYLER_PHONE_FORMATTED: ${{ secrets.NEXT_PUBLIC_SKYLER_PHONE_FORMATTED }}
+          NEXT_PUBLIC_SKYLER_EMAIL: ${{ secrets.NEXT_PUBLIC_SKYLER_EMAIL }}
+          NEXT_PUBLIC_EMAILJS_SERVICE_ID: ${{ secrets.NEXT_PUBLIC_EMAILJS_SERVICE_ID }}
+          NEXT_PUBLIC_EMAILJS_TEMPLATE_ID: ${{ secrets.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID }}
+          NEXT_PUBLIC_EMAILJS_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
