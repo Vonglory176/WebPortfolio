@@ -1,5 +1,3 @@
-'use client'
-
 import SectionWrapper from '@/components/SectionWrapper'
 import skylerPicture from '@/assets/images/people/skylerPicture.webp'
 import { FaGithub, FaLinkedin, FaGitlab, FaEnvelope, FaChevronDown } from 'react-icons/fa'
@@ -9,8 +7,6 @@ import ClientImage from '@/components/ClientImage'
 
 const Landing = () => {
 
-    console.log(process.env.NEXT_PUBLIC_SKYLER_EMAIL)
-    
     return (
         <SectionWrapper id='landing'>
 
