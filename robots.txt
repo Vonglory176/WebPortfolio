@@ -2,6 +2,5 @@ User-Agent: *
 Allow: /
 Disallow: /admin
 Disallow: /privacy
-Disallow: /not-found
 
 Sitemap: https://skylergconley.com/sitemap.xml
