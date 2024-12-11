@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google"
 import "@/styles/index.css"
 
+// import openGraphImage from "@/assets/opengraph-image-full.png"
 import { SiteProvider } from "@/context/SiteContext"
 import Header from "@/components/Header"
 
@@ -16,20 +17,25 @@ export const metadata = {
     template: "%s | SkylerGConley.com",
   },
   description: "Skyler's personal website and portfolio as a Full-Stack Developer. Take a look around and see what I've been up to over the years! Updates come regularly, so check back often to see the latest progress in my journey.",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
+
+  openGraph: {
+    images:  { // ["/opengraph-image.png"],
+      url: '/opengraph-image.png',
+      width: 1200,
+      height: 630,
+      alt: "Skyler's Web-Portfolio Card",
+    }
+  },
+
   twitter: {
     card: "summary_large_image",
-    // site: "@SkylerGConley", // Links to a Twitter profile (N/A)
+    site: "skylergconley.com", // Links to a Twitter profile (N/A)
+    // title: "Skyler's Web-Portfolio | SkylerGConley.com",
+    // description: "Skyler's personal website and portfolio as a Full-Stack Developer. Take a look around and see what I've been up to over the years! Updates come regularly, so check back often to see the latest progress in my journey.",
   },
   // themeColor: "#1a202c",
 }
-
-// export const getStaticProps = async () => {
-//   return {
-//     props: {
-//       skylerEmail: process.env.NEXT_PUBLIC_SKYLER_EMAIL,
-//     },
-//   }
-// }
 
 export default function RootLayout({ children }) {
   return (
