@@ -273,7 +273,7 @@ export const projects = [
         },
         link: 'https://www.skylergconley.com/',
         github: 'https://github.com/Vonglory176/WebPortfolio',
-        skills: ['HTML', 'SCSS', 'Tailwind', 'JavaScript', 'React', 'EmailJS'],
+        skills: ['HTML', 'SCSS', 'Tailwind', 'JavaScript', 'NextJS', 'React', 'EmailJS'],
     },
     {
         // Gym App
