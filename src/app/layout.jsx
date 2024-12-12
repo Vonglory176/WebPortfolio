@@ -21,7 +21,7 @@ export const metadata = {
 
   openGraph: {
     images:  { // ["/opengraph-image.png"],
-      url: '/opengraph-image.png',
+      url: 'https://media.discordapp.net/attachments/937466658027618324/1316548844804116501/opengraph-image.png?ex=675b7328&is=675a21a8&hm=008526c8ce684acd3820d12f2bda3faba524c9b34777b46d314825c96974a108&=&format=webp&quality=lossless',
       width: 1200,
       height: 630,
       alt: "Skyler's Web-Portfolio Card",
@@ -70,6 +70,9 @@ export default function RootLayout({ children }) {
 // Project card backgrounds need to expand with hover-overlay
 
 // Skill carousel not wide enough
+
+// OG-Image uses discord link (Generate image? // ImageResponse)
+//  - Generate image? https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-image#image-files-jpg-png-gif
 
 
 /*
