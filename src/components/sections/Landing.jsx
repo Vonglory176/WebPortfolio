@@ -1,5 +1,5 @@
 import SectionWrapper from '@/components/SectionWrapper'
-import skylerPicture from '@/assets/images/people/skylerPicture.webp'
+import skylerPicture from '@/assets/images/people/skylerPicture_enhanced.webp'
 import { FaGithub, FaLinkedin, FaGitlab, FaEnvelope, FaChevronDown } from 'react-icons/fa'
 import ClientImage from '@/components/ClientImage'
 
