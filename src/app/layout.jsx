@@ -21,7 +21,7 @@ export const metadata = {
 
   openGraph: {
     images:  { // ["/opengraph-image.png"],
-      url: 'https://media.discordapp.net/attachments/937466658027618324/1316548844804116501/opengraph-image.png?ex=675b7328&is=675a21a8&hm=008526c8ce684acd3820d12f2bda3faba524c9b34777b46d314825c96974a108&=&format=webp&quality=lossless',
+      url: 'https://media.discordapp.net/attachments/937466658027618324/1316873426174218290/opengraph-image-2.png?ex=675ca173&is=675b4ff3&hm=34b47afd352959b64bcd0f991f9d25ee2381722ca5ad402c36d4754cb05a7936&=&format=webp&quality=lossless',
       width: 1200,
       height: 630,
       alt: "Skyler's Web-Portfolio Card",
@@ -66,6 +66,8 @@ export default function RootLayout({ children }) {
 // Skills are not static
 // References are not static
 // Contact is not static
+
+// Some images are TOO LARGE !!!!!!!!!!!!!!
 
 // Project card backgrounds need to expand with hover-overlay
 
