@@ -20,7 +20,7 @@ export const metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL),
 
   openGraph: {
-    images:  { // ["/opengraph-image.png"],
+    images: { // ["/opengraph-image.png"],
       url: 'https://media.discordapp.net/attachments/937466658027618324/1316873426174218290/opengraph-image-2.png?ex=675ca173&is=675b4ff3&hm=34b47afd352959b64bcd0f991f9d25ee2381722ca5ad402c36d4754cb05a7936&=&format=webp&quality=lossless',
       width: 1200,
       height: 630,
@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
         <SiteProvider>
 
           <Header />
-          
+
           <main className='bg-gray-900 text-white'>
 
             {/* General Layout */}
@@ -62,41 +62,55 @@ export default function RootLayout({ children }) {
   )
 }
 
-// ClientImage placeholder not working
-// Skills are not static
-// References are not static
-// Contact is not static
-
-// Some images are TOO LARGE !!!!!!!!!!!!!!
-
-// Project card backgrounds need to expand with hover-overlay
-
-// Skill carousel not wide enough
-
-// OG-Image uses discord link (Generate image? // ImageResponse)
-//  - Generate image? https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-image#image-files-jpg-png-gif
-
-
 /*
-TODO ---
-Fix up Catalyst-Clone
 
-Update size of small projects images
-Make skill transition faster?
+BUGS ---------------------------------------------------------------------------
 
-Add "Axios" skill?
+  Some images are TOO LARGE !!!!!!!!!!!!!!
 
-Change transition opacity logic (References + Skills) to use useEffect
+  Project card backgrounds need to expand with hover-overlay
 
-Weird issue regarding min-height on sections in Discord ??
-Weird shadow/background issue in mobile when opening/closing a reference
-Weird issue with project tile height on other devices?
+  Skill carousel not wide enough
 
-IDEAS ---
+  Generate OG-Image? https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-image#image-files-jpg-png-gif
 
-Make landing background swap between images (background 4) via timer
-Add a load animation for projects, making them appear one by one
-Add arrow key control to References and Skills
+
+IDEAS ---------------------------------------------------------------------------
+
+  Link modals to URLS (Can be linked to on resume)
+  ADD AREA FOR DESCRIPTION AND EXTRA INFORMATION (Including learning goals) (Add desc to READMEs)
+  Add filters for projects (Topics -> eCommerce, etc // Skills -> React, etc) (Maybe only highlight projects that match the filter)
+
+  Make review system??
+
+  Add a load animation for projects, making them appear one by one
+  Add arrow key control to References and Skills
+
+
+TODO ---------------------------------------------------------------------------
+
+  Fix up Catalyst-Clone
+
+  Update size of small projects images
+  Make skill transition faster?
+
+  Add "Axios" skill?
+
+  Change transition opacity logic (References + Skills) to use useEffect
+
+  Weird issue regarding min-height on sections in Discord ??
+  Weird shadow/background issue in mobile when opening/closing a reference
+  Weird issue with project tile height on other devices?
+
+
+PROBLEMS ---------------------------------------------------------------------------
+
+  ClientImage placeholder not working
+  Skills are not static
+  References are not static
+  Contact is not static
+
+  OG-Image uses discord link (Generate image? // ImageResponse)
 
 
 */
