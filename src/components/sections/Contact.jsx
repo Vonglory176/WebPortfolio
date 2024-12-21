@@ -74,10 +74,16 @@ const Contact = () => {
         const { email, subject, message } = formData
         console.log(email, subject, message)
 
+        const bannedEmails = ['alabamahomenetwoks.com'] // Literal domain
+
         const emailValid = Boolean(email.trim())
         const subjectValid = Boolean(subject.trim())
         const messageValid = Boolean(message.trim())
-        const errorCheck = emailValid && subjectValid && messageValid
+
+        const generalException = bannedEmails.includes(email.split('@')[1])
+
+
+        const errorCheck = emailValid && subjectValid && messageValid && !generalException
 
         console.log(errorCheck)
 
@@ -85,6 +91,7 @@ const Contact = () => {
             email: emailValid ? false : "Email cannot be blank",
             subject: subjectValid ? false : "Subject cannot be blank",
             message: messageValid ? false : "Message cannot be blank",
+            general: generalException ? "Something went wrong, please try again later" : false,
             errorExists: !errorCheck
         })
 
