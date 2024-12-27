@@ -1,14 +1,22 @@
-import paulPicture from '../assets/images/people/paulPicture.webp'
-import lawrencePicture from '../assets/images/people/lawrencePicture.webp'
-import keithPicture from '../assets/images/people/keithPicture.webp'
-import kurtPicture from '../assets/images/people/kurtPicture.webp'
+import kylePicture from '@/assets/images/people/kylePicture.webp'
+import paulPicture from '@/assets/images/people/paulPicture.webp'
+import lawrencePicture from '@/assets/images/people/lawrencePicture.webp'
+import keithPicture from '@/assets/images/people/keithPicture.webp'
+import kurtPicture from '@/assets/images/people/kurtPicture.webp'
 
 export const references = [
     {
+        name: 'Kyle Anderson',
+        image: kylePicture,
+        linkedIn: 'https://www.linkedin.com/in/kyle-anderson-a688b826/',
+        description: 'My Boss at Ocular Instruments',
+        content: '<p>Skyler is dependable, punctual, and organized. A good skillset for the casing roll he is currently in. He will ask questions and will listen to the answers. In the time he has worked here, he has managed to earn a certification without disruption to his working role here.</p>',
+    },
+    {
         name: 'Paul Besliu',
         image: paulPicture,
-        linkedIn: 'https://www.linkedin.com/in/paul-marius-besliu?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BJfpg%2F9S%2FRLil9mL4ORkVfA%3D%3D',
-        description: 'My client at ColProSol',
+        linkedIn: 'https://www.linkedin.com/in/paul-marius-besliu/',
+        description: 'My Client at ColProSol',
         content: '<p>I am pleased to recommend Skyler for a position as a full stack web developer. He built our <a href="https://www.colprosol.com" rel="noreferrer" target="_blank">website</a>, independently learning the required programming languages and technologies.</p><p>Skyler delivered a stable and functional site, adhering to my design and guidance. He showed strong technical skills, attention to detail, and a passion for learning.</p><p>I am confident he will excel in any development role and be a valuable addition to your team.</p>',
     },
     {
