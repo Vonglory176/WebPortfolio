@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 import SectionWrapper from '@/components/SectionWrapper'
-import { skills } from '@/assets/skills'
+import { skills } from '@/assets/data/skills'
 // import { FaCode, FaServer, FaTools } from 'react-icons/fa'
 
 const Skills = () => {
