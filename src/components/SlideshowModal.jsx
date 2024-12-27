@@ -106,7 +106,7 @@ const SlideshowModalContent = () => {
                     <ClientImage
                         src={modal.images.full[currentIndex]}
                         alt={modal.name}
-                        className="modal-image object-cover"
+                        className="modal-image object-contain w-full h-full"
                         priority={true}
                     />
                     {/* <img src={modal.images[currentIndex]} alt={modal.name} className="modal-image object-cover" /> */}
