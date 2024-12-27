@@ -11,7 +11,7 @@ const ProjectCard = ({project, index}) => {
     return (
         <div key={index} className='project-card bg-gray-800 rounded-lg relative w-full h-full min-h-[195px] aspect-w-16 aspect-h-9'> {/* w-[343px] h-[195px] // hover:scale-105 */}
 
-            <div className="image-wrapper h-full rounded-lg overflow-hidden duration-300 hover:bg-black hover:bg-opacity-50">
+            <div className="image-wrapper h-full rounded-lg overflow-hidden duration-300 bg-gray-800 hover:bg-black hover:bg-opacity-50">
                 <ClientImage
                     src={project.images.full[0]} // {project.thumbnail.full} // placeholder={project.thumbnail.small}>
                     alt={project.name}
