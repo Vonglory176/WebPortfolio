@@ -22,9 +22,10 @@ const SectionWrapper = ({id, title, children}) => {
 
   const backgroundImages = {
     landing: bgColors5,
-    about: bgColors1,
+    // about: bgColors4, // bgColors1,
     // projects: bgColors2,
     skillset: bgColors6,
+    experience: bgColors1, // bgColors4,
     references: bgColors3,
     // contact: bgColors1,
   }
@@ -46,7 +47,7 @@ const SectionWrapper = ({id, title, children}) => {
         </div>}
 
         {/* Section Content */}
-        <div className='section-content-wrapper flex flex-1 flex-col px-4 py-12 items-center justify-center gap-4 bg-gray-800 bg-opacity-30 relative z-10 border-b border-solid border-gray-700'>
+        <div className='section-content-wrapper flex flex-1 flex-col px-4 py-12 items-center justify-center gap-4 relative z-10 border-b border-solid border-gray-700'> {/*  bg-gray-800 bg-opacity-30 */}
           {children}
         </div>
 
