@@ -21,7 +21,7 @@ const About = () => {
                 </div>
 
 
-                <div className="flex flex-col items-center gap-4 px-4 py-6 rounded-lg bg-gray-800 z-10 shadow-lg border border-solid border-gray-700">
+                <div className="flex flex-col items-center gap-4 px-4 py-6 rounded-lg bg-gray-800 z-10 shadow-lg border border-solid border-gray-700 text-gray-200">
 
                     {/* <h3 className='text-center text-2xl font-bold w-full'>Meet Skyler<span className='text-blue-400'>.</span></h3> */}
                     <p>Results-oriented and highly motivated <span className='text-blue-400'>Full-Stack Developer</span> with <span className='text-blue-400'>3+ years</span> of experience in <span className='text-blue-400'>Web Development</span>, specializing in the <span className='text-blue-400'>MERN tech stack</span>.</p>
