@@ -66,11 +66,9 @@ export default function RootLayout({ children }) {
 
 BUGS ---------------------------------------------------------------------------
 
-  Some images are TOO LARGE !!!!!!!!!!!!!!
+  Links in References are not colored
 
-  Project card backgrounds need to expand with hover-overlay
-
-  Skill carousel not wide enough
+  Skill carousel not wide enough (Make carousel scale on hover?)
 
   Generate OG-Image? https://nextjs.org/docs/app/api-reference/file-conventions/metadata/opengraph-image#image-files-jpg-png-gif
 
