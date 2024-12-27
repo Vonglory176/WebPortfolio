@@ -6,7 +6,7 @@ const HobbyDisplay = () => {
     const hobbyRef = useRef(null)
     const [currentHobby, setCurrentHobby] = useState(0)
     // const hobbies = ['Software Developer', 'Mountain Biker', 'Model Maker', 'Gamer Geek', 'Chess Player', 'Dad Humorist']
-    const hobbies = useMemo(() => ['Software Developer', 'Mountain Biker', 'Model Maker', 'Gamer Geek', 'Chess Player', 'Dad Humorist'], [])
+    const hobbies = useMemo(() => ['Software Developer', 'Honors Student', 'Mountain Biker', 'Model Maker', 'Gamer Geek', 'Chess Player', 'Dad Humorist'], [])
 
     useEffect(() => {
         const interval = setInterval(() => {
