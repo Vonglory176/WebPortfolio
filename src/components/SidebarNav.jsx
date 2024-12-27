@@ -13,6 +13,7 @@ const SidebarNav = () => {
         { id: 'about', name: 'About' },
         { id: 'projects', name: 'Projects' },
         { id: 'skillset', name: 'Skillset' },
+        { id: 'experience', name: 'Experience' },
         { id: 'references', name: 'References' },
         { id: 'contact', name: 'Contact' }
     ]
