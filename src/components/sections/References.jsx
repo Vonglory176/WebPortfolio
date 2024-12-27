@@ -3,14 +3,14 @@
 import React, { useEffect, useRef, useState } from 'react'
 import ClientImage from '@/components/ClientImage'
 import SectionWrapper from '@/components/SectionWrapper'
-import { references } from '@/assets/references'
+import { references } from '@/assets/data/references'
 import { FaChevronDown } from 'react-icons/fa'
 import { useSiteContext } from '@/context/SiteContext'
 // import bgColorImg from '../assets/images/bg-colors-3.png'
 
 const References = () => {
     const { windowWidth } = useSiteContext()
-    const [currentReference, setCurrentReference] = useState(2)
+    const [currentReference, setCurrentReference] = useState(3)
     const [isOpen, setIsOpen] = useState(false)
     const largeViewContentRef = useRef(null)
 
@@ -95,8 +95,11 @@ const References = () => {
                                     className={`flex justify-center items-center flex-1 h-full p-4 rounded-lg h-[80px] shadow-lg duration-300 border-solid border ${checkRef(index) && windowWidth >= 1024 ? ' scale-105' : ''} ${checkRef(index) && (windowWidth < 1024 ? isOpen : true) ? 'bg-blue-800 border-blue-500' : 'bg-gray-800 bg-opacity-50 border-gray-700 hover:bg-gray-700'}`}>
 
                                     <div className='flex flex-col text-left'>
+                                        {/* Name */}
                                         <h3 className='text-xl font-bold truncate'>{reference.name}</h3>
-                                        <span className={`text-sm duration-300 ${checkRef(index) && (windowWidth < 1024 ? isOpen : true) ? 'text-gray-300' : 'text-gray-400'}`}>{reference.description}</span>
+                                        
+                                        {/* Description */}
+                                        <span className={`text-sm duration-300 line-clamp-2 ${checkRef(index) && (windowWidth < 1024 ? isOpen : true) ? 'text-gray-300' : 'text-gray-400'}`}>{reference.description}</span>
                                     </div>
 
                                     <FaChevronDown className={`ml-auto lg:hidden ${checkRef(index) && isOpen ? 'rotate-180' : ''}`} />
@@ -108,8 +111,8 @@ const References = () => {
                             {/* SMALL VIEW - Reference Content */}
                             <div className={`wrapper content-small-view border-solid border-gray-700 rounded-lg overflow-hidden bg-gray-800 lg:hidden rounded-lg mt-4 duration-500 ${checkRef(index) && isOpen ? 'shadow-lg border max-h-[600px]' : 'max-h-0'}`}>
                                 <div className={`custom-scrollbar overflow-y-scroll duration-500 bg-gray-800 px-3 py-6 p-1 ${checkRef(index) && isOpen ? 'max-h-[600px]' : 'max-h-0'}`}>
-                                    <h3 className='mb-4'><span className='text-blue-500 font-bold text-2xl '>{reference.name.split(' ')[0]}</span><span className='text-gray-400 text-xl'> said...</span></h3>
-                                    <blockquote dangerouslySetInnerHTML={{ __html: reference.content }} className='flex flex-col h-full gap-4' />
+                                    <h3 className='mb-4'><a href={references[currentReference]?.linkedIn || references[0].linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 font-bold text-2xl '>{reference.name.split(' ')[0]}</a><span className='text-gray-400 text-xl'> said...</span></h3>
+                                    <blockquote dangerouslySetInnerHTML={{ __html: reference.content }} className='flex flex-col h-full gap-4 text-gray-200' />
                                 </div>
                             </div>
 
@@ -122,7 +125,8 @@ const References = () => {
 
                     {/* Reference Header */}
                     <div className="flex justify-between items-end">
-                        <h2 className='text-2xl'><span className='text-blue-500 font-bold'>{references[currentReference]?.name.split(' ')[0] || references[0].name.split(' ')[0]}</span> <span className='text-xl text-gray-200'>said...</span></h2>
+                        {/* <h2 className='text-2xl'><span className='text-blue-500 font-bold'>{references[currentReference]?.name.split(' ')[0] || references[0].name.split(' ')[0]}</span> <span className='text-xl text-gray-200'>said...</span></h2> */}
+                        <h2 className='text-2xl'><a href={references[currentReference]?.linkedIn || references[0].linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 font-bold hover:underline'>{references[currentReference]?.name.split(' ')[0] || references[0].name.split(' ')[0]}</a> <span className='text-xl text-gray-200'>said...</span></h2>
                         <p className='text-gray-400'>{references[currentReference].description}</p>
                     </div>
 
