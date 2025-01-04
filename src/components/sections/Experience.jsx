@@ -13,6 +13,8 @@ const Experience = () => {
                 <div className='flex flex-col items-center justify-center text-center gap-2'>
 
                     <h2 className='text-4xl font-bold'>My <span className='text-blue-500'>Work</span> History</h2>
+                    <h3 className='text-2xl text-gray-400 hidden sm:block'>Follow what I&apos;ve gotten up to over the years</h3>
+
 
                 </div>
 
