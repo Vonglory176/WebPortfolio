@@ -108,7 +108,7 @@ const Contact = () => {
 
                 <div className="flex flex-col items-center justify-center mb-8 gap-2 text-center">
                     <h2 className='text-3xl sm:text-4xl font-bold'>Start a Conversation</h2>
-                    <h3 className='text-xl sm:text-2xl text-blue-500'>Let&apos;s Make Something <span className=''>Incredible</span></h3>
+                    <h3 className='text-xl sm:text-2xl text-blue-500'>Let&apos;s make something <span className=''>incredible</span></h3>
                 </div>
 
                 <div className="content-wrapper flex flex-wrap justify-center items-start gap-12 w-full pb-12"> {/* 619px */}
