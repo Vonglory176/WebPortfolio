@@ -62,32 +62,35 @@ const References = () => {
                                 className={`flex items-center gap-4 w-full rounded-lg ${index % 2 === 0 ? 'flex-row-reverse' : ''}`} // bg-gray-800 rounded-lg hover:bg-gray-800
                             // onClick={() => setCurrentReference(index === currentReference ? null : index)}
                             >
-                                {windowWidth >= 375 && <a
-                                    href={reference.linkedIn}
-                                    rel="noreferrer"
-                                    target='_blank'
-                                    className='w-20 h-20 rounded-full bg-gray-800 overflow-hidden shadow-lg'> {/* border-[2px] border-white shadow-[0_0_7px_cyan] */}
 
-                                    <ClientImage
-                                        src={reference.image}
-                                        alt={reference.name}
-                                    />
-                                    {/* <ProgressiveImage src={reference.image} placeholder={''}>
-                                            {(src, loading) => (
-                                                <img
-                                                    src={src}
-                                                    alt={reference.name}
-                                                    className={`w-full h-full object-cover duration-300 ${loading ? 'opacity-0' : 'opacity-100'}`}
-                                                />
-                                            )}
-                                        </ProgressiveImage> */}
+                                {/* Size check */}
+                                {windowWidth >= 375 &&
 
-                                    {/* <img 
-                                        className='object-cover'
-                                        src={reference.image} 
-                                        alt={reference.name} 
-                                        /> */}
-                                </a>}
+                                    // Linkedin check
+                                    reference.linkedIn ?
+
+                                    <a
+                                        href={reference.linkedIn}
+                                        rel="noreferrer"
+                                        target='_blank'
+                                        className='w-20 h-20 rounded-full bg-gray-800 overflow-hidden shadow-lg'> {/* border-[2px] border-white shadow-[0_0_7px_cyan] */}
+
+                                        <ClientImage
+                                            src={reference.image}
+                                            alt={reference.name}
+                                        />
+                                    </a>
+
+                                    :
+
+                                    <div className='w-20 h-20 rounded-full bg-gray-800 overflow-hidden shadow-lg'>
+                                        <ClientImage
+                                            src={reference.image}
+                                            alt={reference.name}
+                                        />
+                                    </div>
+
+                                }
 
 
                                 <button
@@ -97,7 +100,7 @@ const References = () => {
                                     <div className='flex flex-col text-left'>
                                         {/* Name */}
                                         <h3 className='text-xl font-bold truncate'>{reference.name}</h3>
-                                        
+
                                         {/* Description */}
                                         <span className={`text-sm duration-300 line-clamp-2 ${checkRef(index) && (windowWidth < 1024 ? isOpen : true) ? 'text-gray-300' : 'text-gray-400'}`}>{reference.description}</span>
                                     </div>
@@ -111,8 +114,34 @@ const References = () => {
                             {/* SMALL VIEW - Reference Content */}
                             <div className={`wrapper content-small-view border-solid border-gray-700 rounded-lg overflow-hidden bg-gray-800 lg:hidden rounded-lg mt-4 duration-500 ${checkRef(index) && isOpen ? 'shadow-lg border max-h-[600px]' : 'max-h-0'}`}>
                                 <div className={`custom-scrollbar overflow-y-scroll duration-500 bg-gray-800 px-3 py-6 p-1 ${checkRef(index) && isOpen ? 'max-h-[600px]' : 'max-h-0'}`}>
-                                    <h3 className='mb-4'><a href={references[currentReference]?.linkedIn || references[0].linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 font-bold text-2xl '>{reference.name.split(' ')[0]}</a><span className='text-gray-400 text-xl'> said...</span></h3>
+                                    {/* <h3 className='mb-4'><a href={references[currentReference]?.linkedIn || references[0].linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 font-bold text-2xl hover:underline '>{reference.name.split(' ')[0]}</a><span className='text-gray-400 text-xl'> said...</span></h3> */}
+                                    <h3 className='mb-4'>
+                                        {reference.linkedIn ? (
+                                            <a
+                                                href={reference.linkedIn}
+                                                target='_blank'
+                                                rel='noreferrer'
+                                                className='text-blue-500 font-bold text-2xl hover:underline'
+                                            >
+                                                {reference.name.split(' ')[0]}
+                                            </a>
+                                        ) : (
+                                            <span className='text-blue-500 font-bold text-2xl'>
+                                                {reference.name.split(' ')[0]}
+                                            </span>
+                                        )}
+                                        <span className='text-gray-400 text-xl'> said...</span>
+                                    </h3>
                                     <blockquote dangerouslySetInnerHTML={{ __html: reference.content }} className='flex flex-col h-full gap-4 text-gray-200' />
+                                    <hr className='border-gray-700 my-4' />
+                                    <p className='text-gray-400 text-center'>For more information about {reference.name}, you can
+
+                                        {/* LinkedIn check */}
+                                        {<span> reach out directly through <a href={reference.linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 hover:underline'>LinkedIn</a>, or</span>}
+
+                                        {/* Skyler Email */}
+                                        <span> email me at <a href={`mailto:${process.env.NEXT_PUBLIC_SKYLER_EMAIL}`} className='text-blue-500 hover:underline'>{process.env.NEXT_PUBLIC_SKYLER_EMAIL}</a></span>
+                                    </p>
                                 </div>
                             </div>
 
@@ -126,14 +155,32 @@ const References = () => {
                     {/* Reference Header */}
                     <div className="flex justify-between items-end">
                         {/* <h2 className='text-2xl'><span className='text-blue-500 font-bold'>{references[currentReference]?.name.split(' ')[0] || references[0].name.split(' ')[0]}</span> <span className='text-xl text-gray-200'>said...</span></h2> */}
-                        <h2 className='text-2xl'><a href={references[currentReference]?.linkedIn || references[0].linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 font-bold hover:underline'>{references[currentReference]?.name.split(' ')[0] || references[0].name.split(' ')[0]}</a> <span className='text-xl text-gray-200'>said...</span></h2>
+                        {/* <h2 className='text-2xl'><a href={references[currentReference]?.linkedIn || references[0].linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 font-bold hover:underline'>{references[currentReference]?.name.split(' ')[0] || references[0].name.split(' ')[0]}</a> <span className='text-xl text-gray-200'>said...</span></h2> */}
+
+                        <h2 className='text-2xl'>
+                            {references[currentReference]?.linkedIn ? (
+                                <a href={references[currentReference]?.linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 font-bold hover:underline'>{references[currentReference]?.name.split(' ')[0] || references[0].name.split(' ')[0]}</a>
+                            ) : (
+                                <span className='text-blue-500 font-bold'>{references[currentReference]?.name.split(' ')[0] || references[0].name.split(' ')[0]}</span>
+                            )}
+                            <span className='text-xl text-gray-200'> said...</span>
+                        </h2>
                         <p className='text-gray-400'>{references[currentReference].description}</p>
                     </div>
 
                     {/* Reference Content */}
                     <div className="wrapper pr-1 border border-solid border-gray-700 rounded-lg max-h-[722px] bg-gray-800 shadow-lg">
                         <div className={`duration-500 overflow-y-auto px-4 py-6 h-full gap-4 custom-scrollbar`}>
-                            <blockquote dangerouslySetInnerHTML={{ __html: references[currentReference]?.content || references[0].content }} className='flex flex-col gap-4' />
+                            <blockquote dangerouslySetInnerHTML={{ __html: references[currentReference]?.content || references[0].content }} className='flex flex-col gap-4 text-gray-200' />
+                            <hr className='border-gray-700 my-4' />
+                            <p className='text-gray-400 text-center'>For more information about {references[currentReference]?.name || references[0].name}, you can
+
+                                {/* LinkedIn check */}
+                                {references[currentReference]?.linkedIn && <span> reach out directly through <a href={references[currentReference]?.linkedIn || references[0].linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 hover:underline'>LinkedIn</a>, or</span>}
+
+                                {/* Skyler Email */}
+                                <span> email me at <a href={`mailto:${process.env.NEXT_PUBLIC_SKYLER_EMAIL}`} className='text-blue-500 hover:underline'>{process.env.NEXT_PUBLIC_SKYLER_EMAIL}</a></span>
+                            </p>
                         </div>
                     </div>
                 </div>
