@@ -134,7 +134,7 @@ const References = () => {
                                     </h3>
                                     <blockquote dangerouslySetInnerHTML={{ __html: reference.content }} className='flex flex-col h-full gap-4 text-gray-200' />
                                     <hr className='border-gray-700 my-4' />
-                                    <p className='text-gray-400 text-center'>For more information about {reference.name}, you can
+                                    <p className='text-gray-400 text-center text-sm'>For more information about {reference.name}, you can
 
                                         {/* LinkedIn check */}
                                         {<span> reach out directly through <a href={reference.linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 hover:underline'>LinkedIn</a>, or</span>}
@@ -173,7 +173,7 @@ const References = () => {
                         <div className={`duration-500 overflow-y-auto px-4 py-6 h-full gap-4 custom-scrollbar`}>
                             <blockquote dangerouslySetInnerHTML={{ __html: references[currentReference]?.content || references[0].content }} className='flex flex-col gap-4 text-gray-200' />
                             <hr className='border-gray-700 my-4' />
-                            <p className='text-gray-400 text-center'>For more information about {references[currentReference]?.name || references[0].name}, you can
+                            <p className='text-gray-400 text-center text-sm'>For more information about {references[currentReference]?.name || references[0].name}, you can
 
                                 {/* LinkedIn check */}
                                 {references[currentReference]?.linkedIn && <span> reach out directly through <a href={references[currentReference]?.linkedIn || references[0].linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 hover:underline'>LinkedIn</a>, or</span>}
