@@ -1,16 +1,17 @@
-import kylePicture from '@/assets/images/people/kylePicture.webp'
+import dougPicture from '@/assets/images/people/dougPicture.webp'
 import paulPicture from '@/assets/images/people/paulPicture.webp'
+import kylePicture from '@/assets/images/people/kylePicture.webp'
 import lawrencePicture from '@/assets/images/people/lawrencePicture.webp'
 import keithPicture from '@/assets/images/people/keithPicture.webp'
 import kurtPicture from '@/assets/images/people/kurtPicture.webp'
 
 export const references = [
     {
-        name: 'Kyle Anderson',
-        image: kylePicture,
-        linkedIn: 'https://www.linkedin.com/in/kyle-anderson-a688b826/',
-        description: 'My Boss at Ocular Instruments',
-        content: '<p>Skyler is dependable, punctual, and organized. A good skillset for the casing roll he is currently in. He will ask questions and will listen to the answers. In the time he has worked here, he has managed to earn a certification without disruption to his working role here.</p>',
+        name: 'Doug Ortega',
+        image: dougPicture,
+        linkedIn: '', // 'https://www.issaquah.cc/staff',
+        description: 'My Client at Issaquah Christian Church',
+        content: '<p>Skyler is a fine example of a person who pays attention and works hard at what he does because his name is on the line.</p><p>There\'s a lot to be said about agreeing on a handshake and following through on your agreement. Skyler worked hard to make sure he understood what I needed, building what I needed, and taking the time to make sure the painstaking details were all there and working.</p><p>Regular communication is key with me, and he came through on every level. I would work with him again without thought.</p>',
     },
     {
         name: 'Paul Besliu',
@@ -18,6 +19,13 @@ export const references = [
         linkedIn: 'https://www.linkedin.com/in/paul-marius-besliu/',
         description: 'My Client at ColProSol',
         content: '<p>I am pleased to recommend Skyler for a position as a full stack web developer. He built our <a href="https://www.colprosol.com" rel="noreferrer" target="_blank">website</a>, independently learning the required programming languages and technologies.</p><p>Skyler delivered a stable and functional site, adhering to my design and guidance. He showed strong technical skills, attention to detail, and a passion for learning.</p><p>I am confident he will excel in any development role and be a valuable addition to your team.</p>',
+    },
+    {
+        name: 'Kyle Anderson',
+        image: kylePicture,
+        linkedIn: 'https://www.linkedin.com/in/kyle-anderson-a688b826/',
+        description: 'My Boss at Ocular Instruments',
+        content: '<p>Skyler is dependable, punctual, and organized. A good skillset for the casing roll he is currently in. He will ask questions and will listen to the answers. In the time he has worked here, he has managed to earn a certification without disruption to his working role here.</p>',
     },
     {
         name: 'Lawrence Conley',
@@ -40,7 +48,7 @@ export const references = [
     {
         name: 'Kurt Friedrich',
         image: kurtPicture,
-        linkedIn: 'https://www2.bellevuecollege.edu/directory/PersonDetails.aspx?PersonID=7eeJoSznOJHuVHjfVjscVA==&SearchString=Kurt%20Friedrich',
+        linkedIn: '', // 'https://www2.bellevuecollege.edu/directory/PersonDetails.aspx?PersonID=7eeJoSznOJHuVHjfVjscVA==&SearchString=Kurt%20Friedrich',
         description: 'My PROG-209 Professor',
         content: '<p>To whom it may concern:</p><p>Skyler Conley was a student of mine in a web programming class at Bellevue College. Back in January of 2023 the course was called PROG209, it has since been renamed to DEV209. It is a 2nd year course which focuses on writing a complete web app, both the client code and the server-side code. For the client, the course requires appropriate use of JavaScript objects and constructors, HTML, CSS, a SPA (Single Page Application) JavaScript framework, and making RESTful calls to the server to persist and retrieve data. The server-side code was done in a Virtual Machine hosting Linux with the Node.js server. Data was persisted to the Linux file system. All sources were kept in GitHub. For a second project, Skyler was required to write a web-based game using the HTML Canvas features.</p><p>Skyler was a solid programmer, and he had no difficulty comprehending new material. He received perfect scores on every homework and test. In addition, he always went well beyond the actual assignment, writing considerable extra code to make his solution to a problem much more eloquent and user friendly. His web app project and his Asteroid Gauntlet game project (see his resume), were substantially better than the average games from other students.</p><p>Because this was an online class, there was very little student to student interaction. However, what I observed in his interactions with me in class was a friendly, articulate, and responsible student, a real pleasure to have in my class.</p>'
         
