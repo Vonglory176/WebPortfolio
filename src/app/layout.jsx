@@ -66,6 +66,8 @@ export default function RootLayout({ children }) {
 
 BUGS ---------------------------------------------------------------------------
 
+  Borders for references in mobile view transition weird (use something similar to 'transition-colors'?)
+
   Links in References are not colored
 
   Skill carousel not wide enough (Make carousel scale on hover?)
@@ -74,6 +76,8 @@ BUGS ---------------------------------------------------------------------------
 
 
 IDEAS ---------------------------------------------------------------------------
+
+  Add quotation images to references
 
   Link modals to URLS (Can be linked to on resume)
   ADD AREA FOR DESCRIPTION AND EXTRA INFORMATION (Including learning goals) (Add desc to READMEs)
@@ -86,6 +90,8 @@ IDEAS --------------------------------------------------------------------------
 
 
 TODO ---------------------------------------------------------------------------
+
+  Really need to clean up references section ('small/large view' duplicate code)
 
   Fix up Catalyst-Clone
 
