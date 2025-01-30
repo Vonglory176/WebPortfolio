@@ -30,7 +30,7 @@ export const workExperience = [
     {
         position: 'Head of Casing Department',
         company: 'Ocular Instruments',
-        date: 'Aug 2018 - Present',
+        date: 'Aug 2018 - Jan 2025',
         link: 'https://ocularinc.com/',
     
         // landmarks: {} // (Promotions)
