@@ -10,6 +10,7 @@ const About = () => {
 
             <div className="content-wrapper flex flex-col gap-4 max-w-[548px]"> {/* 619px */}
 
+                {/* Hobby Display */}
                 <div className='flex flex-col items-center justify-center text-center gap-2'>
                     {/* <h3 className='text-2xl font-bold text-left m-auto max-w-[250px] md:max-w-[450px]'>Meet Skyler<span className='text-blue-400'>,</span> an avid <span ref={hobbyRef} className='text-blue-400 transition-opacity opacity-0' key={currentHobby}>{hobbies[currentHobby]}</span></h3> */}
 
@@ -20,15 +21,20 @@ const About = () => {
                     {/* <p className='text-xl font-semibold text-center w-full m-auto duration-300 transition-opacity opacity-0 text-blue-500'>{hobbies[currentHobby]}</p> */}
                 </div>
 
-
+                {/* About Me */}
                 <div className="flex flex-col items-center gap-4 px-4 py-6 rounded-lg bg-gray-800 z-10 shadow-lg border border-solid border-gray-700 text-gray-200">
 
                     {/* <h3 className='text-center text-2xl font-bold w-full'>Meet Skyler<span className='text-blue-400'>.</span></h3> */}
-                    <p>Results-oriented and highly motivated <span className='text-blue-400'>Full-Stack Developer</span> with <span className='text-blue-400'>3+ years</span> of experience in <span className='text-blue-400'>Web Development</span>, specializing in the <span className='text-blue-400'>MERN tech stack</span>.</p>
-                    <p>Proficient in <span className='text-blue-400'>Responsive Design</span>, <span className='text-blue-400'>Best Practices</span>, and <span className='text-blue-400'>W3C Standards</span>. <span className='text-blue-400'>Self-motivated</span>, <span className='text-blue-400'>fast learner</span>, and always eager to tackle new challenges to expand my skillset.</p>
+
+                    <p>Vetted <span className='text-blue-400'>Full-Stack Web Developer</span> with <span className='text-blue-400'>3+ Years</span> of professional experience building modern web applications and custom enterprise solutions.</p>
+
+                    <p>Specialized in <span className='text-blue-400'>React</span>, <span className='text-blue-400'>NextJS</span>, and <span className='text-blue-400'>NodeJS</span>, with additional expertise in various <span className='text-blue-400'>Content Management Systems</span> and <span className='text-blue-400'>Database Technologies</span>. Proven track record in delivering <span className='text-blue-400'>SEO-Optimized</span> and <span className='text-blue-400'>High-Performance</span> web solutions with rich <span className='text-blue-400'>Analytics</span> integration.</p>
+
+                    <p>Passionate about the <span className='text-blue-400'>Collaborative Development</span> of beautiful, <span className='text-blue-400'>User-Friendly</span> applications adhering to industry best practices in <span className='text-blue-400'>Clean Code</span>, <span className='text-blue-400'>System Architecture</span>, <span className='text-blue-400'>Accessibility</span>, and <span className='text-blue-400'>Design</span>.</p>
 
                 </div>
 
+                {/* Stats & Resume */}
                 <div className="flex justify-around gap-2 w-full z-10 text-gray-400 text-center">
 
                     <div className="flex flex-col items-center justify-center gap-2 w-full max-w-[110px]">
@@ -37,9 +43,9 @@ const About = () => {
                         <p>Projects Completed</p>
                     </div>
 
-                    <a 
+                    <a
                         href='/SkylerConley_Resume_1-30-2025.pdf'
-                        download ='Skyler_Conley_Resume.pdf'
+                        download='Skyler_Conley_Resume.pdf'
                         rel="noreferrer noopener"
                         target='_blank'
                         title="Download Skyler's Resume"
