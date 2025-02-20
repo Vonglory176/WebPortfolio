@@ -2,6 +2,18 @@ import phiThetaKappa from '@/assets/images/PhiThetaKappa.webp'
 
 export const workExperience = [
 
+    // FAST Supplements LLC
+    {
+        position: 'Full-Stack Developer',
+        company: 'FAST Supplements LLC',
+        link: 'https://fastsupplements.com',
+        date: 'Mar 2025',
+        
+        bulletPoints: [
+            '<span class="font-semibold text-white">Coming Soon</span> 🎉',
+        ],
+    },
+
     // SA Software
     {
         position: 'Freelance Web Developer',
@@ -28,7 +40,7 @@ export const workExperience = [
 
     // Ocular Instruments
     {
-        position: 'Head of Casing Department',
+        position: 'Production Staff',
         company: 'Ocular Instruments',
         date: 'Aug 2018 - Jan 2025',
         link: 'https://ocularinc.com/',
@@ -42,7 +54,7 @@ export const workExperience = [
 
     // Disney
     {
-        position: 'Summer SDET Internship',
+        position: 'SDET Internship',
         company: 'Disney Parks Technology Services',
         date: 'Jun 2023 - Sep 2023',
         link: 'https://jobs.disneycareers.com/technology',
