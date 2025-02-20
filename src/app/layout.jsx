@@ -77,6 +77,8 @@ BUGS ---------------------------------------------------------------------------
 
 IDEAS ---------------------------------------------------------------------------
 
+  Add "Year" to projects
+
   Add quotation images to references
 
   Link modals to URLS (Can be linked to on resume)

@@ -28,7 +28,7 @@ export default function NotFound() {
 
       <div className="content-wrapper flex flex-col max-w-[480px] items-center justify-center text-center gap-4"> {/* 619px */}
 
-        <h1 className='text-3xl sm:text-4xl font-bold font-bold'>The page you are looking for does not exist<span className='text-blue-500'>.</span></h1>
+        <h1 className='text-3xl sm:text-4xl font-bold'>The page you are looking for does not exist<span className='text-blue-500'>.</span></h1>
 
         <hr className='w-full border-t-2 border-blue-500' />
 
