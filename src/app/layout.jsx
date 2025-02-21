@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
 
           <Header />
 
-          <main className='bg-gray-900 text-white'>
+          <main className='bg-gray-900 text-white overflow-x-clip'>
 
             {/* General Layout */}
 
@@ -92,6 +92,8 @@ IDEAS --------------------------------------------------------------------------
 
 
 TODO ---------------------------------------------------------------------------
+
+  Make "Skills" title attribute default to "name" if "description" is empty
 
   Really need to clean up references section ('small/large view' duplicate code)
 

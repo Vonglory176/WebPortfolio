@@ -8,7 +8,7 @@ const About = () => {
     return (
         <SectionWrapper id='about' title='About'>
 
-            <div className="content-wrapper flex flex-col gap-4 max-w-[548px]"> {/* 619px */}
+            <div className="content-wrapper flex flex-col gap-4 max-w-[700px]"> {/* 619px // 548px */}
 
                 {/* Hobby Display */}
                 <div className='flex flex-col items-center justify-center text-center gap-2'>

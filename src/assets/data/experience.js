@@ -4,7 +4,7 @@ export const workExperience = [
 
     // FAST Supplements LLC
     {
-        position: 'Full-Stack Developer',
+        position: 'Full-Stack Web Developer',
         company: 'FAST Supplements LLC',
         link: 'https://fastsupplements.com',
         date: 'Mar 2025',
