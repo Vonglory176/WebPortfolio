@@ -101,7 +101,7 @@ const Skills = () => {
 
                             {/* Category */}
                             <div className='w-full border-b border-gray-700 pb-6 mb-6'>
-                                <h3 className='text-lg sm:text-xl font-semibold line-clamp-1 min-w-max text-gray-500 pb-6 text-center sm:text-left'>{category.name}</h3>
+                                <h4 className='text-lg sm:text-xl font-semibold line-clamp-1 min-w-max text-gray-500 pb-6 text-center sm:text-left'>{category.name}</h4>
 
                                 <div className="grid grid-cols-4 justify-between gap-5 w-full sm:gap-8 lg:gap-x-4 duration-200 transition-opacity">
 

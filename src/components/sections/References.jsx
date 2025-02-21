@@ -112,11 +112,11 @@ const References = () => {
                             </figcaption>
 
                             {/* SMALL VIEW - Reference Content */}
-                            <div className={`wrapper content-small-view border-solid border-gray-700 rounded-lg overflow-hidden bg-gray-800 lg:hidden rounded-lg mt-4 duration-500 ${checkRef(index) && isOpen ? 'shadow-lg border max-h-[600px]' : 'max-h-0'}`}>
+                            <div className={`wrapper content-small-view border-solid border-gray-700 overflow-hidden bg-gray-800 lg:hidden rounded-lg mt-4 duration-500 ${checkRef(index) && isOpen ? 'shadow-lg border max-h-[600px]' : 'max-h-0'}`}>
                                 <div className={`custom-scrollbar overflow-y-scroll duration-500 bg-gray-800 px-3 py-6 p-1 ${checkRef(index) && isOpen ? 'max-h-[600px]' : 'max-h-0'}`}>
                                     {/* <h3 className='mb-4'><a href={references[currentReference]?.linkedIn || references[0].linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 font-bold text-2xl hover:underline '>{reference.name.split(' ')[0]}</a><span className='text-gray-400 text-xl'> said...</span></h3> */}
                                     <h3 className='mb-4'>
-                                        {reference.linkedIn ? (
+                                        {/* {reference.linkedIn ? (
                                             <a
                                                 href={reference.linkedIn}
                                                 target='_blank'
@@ -125,11 +125,11 @@ const References = () => {
                                             >
                                                 {reference.name.split(' ')[0]}
                                             </a>
-                                        ) : (
+                                        ) : ( */}
                                             <span className='text-blue-500 font-bold text-2xl'>
                                                 {reference.name.split(' ')[0]}
                                             </span>
-                                        )}
+                                        {/* )} */}
                                         <span className='text-gray-400 text-xl'> said...</span>
                                     </h3>
                                     <blockquote dangerouslySetInnerHTML={{ __html: reference.content }} className='flex flex-col h-full gap-4 text-gray-200' />
@@ -137,10 +137,10 @@ const References = () => {
                                     <p className='text-gray-400 text-center text-sm'>For more information about {reference.name}, you can
 
                                         {/* LinkedIn check */}
-                                        {<span> reach out directly through <a href={reference.linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 hover:underline'>LinkedIn</a>, or</span>}
+                                        {<span> reach out directly through <a href={reference.linkedIn} target='_blank' rel='noreferrer' className='text-blue-400 underline'>LinkedIn</a>, or</span>}
 
                                         {/* Skyler Email */}
-                                        <span> email me at <a href={`mailto:${process.env.NEXT_PUBLIC_SKYLER_EMAIL}`} className='text-blue-500 hover:underline'>{process.env.NEXT_PUBLIC_SKYLER_EMAIL}</a></span>
+                                        <span> email me at <a href={`mailto:${process.env.NEXT_PUBLIC_SKYLER_EMAIL}`} className='text-blue-400 underline'>{process.env.NEXT_PUBLIC_SKYLER_EMAIL}</a></span>
                                     </p>
                                 </div>
                             </div>
@@ -158,11 +158,11 @@ const References = () => {
                         {/* <h2 className='text-2xl'><a href={references[currentReference]?.linkedIn || references[0].linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 font-bold hover:underline'>{references[currentReference]?.name.split(' ')[0] || references[0].name.split(' ')[0]}</a> <span className='text-xl text-gray-200'>said...</span></h2> */}
 
                         <h2 className='text-2xl'>
-                            {references[currentReference]?.linkedIn ? (
-                                <a href={references[currentReference]?.linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 font-bold hover:underline'>{references[currentReference]?.name.split(' ')[0] || references[0].name.split(' ')[0]}</a>
-                            ) : (
+                            {/* {references[currentReference]?.linkedIn ? (
+                                <a href={references[currentReference]?.linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 font-bold underline'>{references[currentReference]?.name.split(' ')[0] || references[0].name.split(' ')[0]}</a>
+                            ) : ( */}
                                 <span className='text-blue-500 font-bold'>{references[currentReference]?.name.split(' ')[0] || references[0].name.split(' ')[0]}</span>
-                            )}
+                            {/* )} */}
                             <span className='text-xl text-gray-200'> said...</span>
                         </h2>
                         <p className='text-gray-400'>{references[currentReference].description}</p>
@@ -176,10 +176,10 @@ const References = () => {
                             <p className='text-gray-400 text-center text-sm'>For more information about {references[currentReference]?.name || references[0].name}, you can
 
                                 {/* LinkedIn check */}
-                                {references[currentReference]?.linkedIn && <span> reach out directly through <a href={references[currentReference]?.linkedIn || references[0].linkedIn} target='_blank' rel='noreferrer' className='text-blue-500 hover:underline'>LinkedIn</a>, or</span>}
+                                {references[currentReference]?.linkedIn && <span> reach out directly through <a href={references[currentReference]?.linkedIn || references[0].linkedIn} target='_blank' rel='noreferrer' className='text-blue-400 underline'>LinkedIn</a>, or</span>}
 
                                 {/* Skyler Email */}
-                                <span> email me at <a href={`mailto:${process.env.NEXT_PUBLIC_SKYLER_EMAIL}`} className='text-blue-500 hover:underline'>{process.env.NEXT_PUBLIC_SKYLER_EMAIL}</a></span>
+                                <span> email me at <a href={`mailto:${process.env.NEXT_PUBLIC_SKYLER_EMAIL}`} className='text-blue-400 underline'>{process.env.NEXT_PUBLIC_SKYLER_EMAIL}</a></span>
                             </p>
                         </div>
                     </div>

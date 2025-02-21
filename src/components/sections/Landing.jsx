@@ -61,11 +61,13 @@ const Landing = () => {
 
                 {/* Scroll For More */}
                 <div className='absolute bottom-0 left-0 w-full'>
-                    <h2 className='text-xl text-center'><a href="#about" className='hover:text-blue-400 duration-300'>Scroll For More</a></h2>
+                    <a href="#about" className='hover:text-blue-400 duration-300'>
+                        <h2 className='text-xl text-center'>Scroll For More</h2>
 
-                    <div className="flex justify-center mt-2 mb-4">
-                        <FaChevronDown size={24} className="animate-bounce" />
-                    </div>
+                        <div className="flex justify-center mt-2 mb-4">
+                            <FaChevronDown size={24} className="animate-bounce" />
+                        </div>
+                    </a>
                 </div>
             </div>
         </SectionWrapper>

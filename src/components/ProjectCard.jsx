@@ -26,7 +26,7 @@ const ProjectCard = ({project, index}) => {
 
                     {/* Project Name and Description */}
                     <div className='flex flex-col items-center justify-center py-1 px-2 max-w-[339px] bg-blue-600 rounded-lg bg-opacity-80 mx-4'>
-                        <h3 className='font-bold'>{project.name}</h3>
+                        <h4 className='font-bold'>{project.name}</h4>
                         {/* <hr className='w-56 border-gray-300' /> */}
                         <p className='text-gray-200'>{project.description}</p>
                     </div>

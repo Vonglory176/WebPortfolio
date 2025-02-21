@@ -32,9 +32,9 @@ const Experience = () => {
                                     {/* Left Side */}
                                     <div className='relative'>
                                         <div className='pb-4 bg-gray-800 z-10 relative'>
-                                            <Icon className='text-blue-500' size={24} />
+                                            <Icon className='text-blue-400' size={24} />
                                         </div>
-                                        <div className={`absolute ${index === data.length - 1 ? 'top-0' : 'top-4'} bottom-0 left-[50%] translate-x-[-50%] h-full w-[3px] bg-blue-500 z-[1]`} />
+                                        <div className={`absolute ${index === data.length - 1 ? 'top-0' : 'top-4'} bottom-0 left-[50%] translate-x-[-50%] h-full w-[3px] bg-blue-400 z-[1]`} />
                                     </div>
 
                                     {/* Right Side */}
@@ -42,8 +42,8 @@ const Experience = () => {
                                         <div className='flex flex-col'>
                                             <span className='text-gray-400'>{experience.date}</span>
                                             <h3 className='text-xl font-bold line-clamp-2'>{experience.position || experience.award}</h3>
-                                            <p className='text-sm text-blue-500 text-wrap'>
-                                                <a href={experience.link} target='_blank' rel='noreferrer' className='text-blue-500 font-semibold hover:underline'>{experience.company}</a>
+                                            <p className='text-sm text-blue-400 text-wrap'>
+                                                <a href={experience.link} target='_blank' rel='noreferrer' className='text-blue-400 font-semibold underline'>{experience.company}</a>
                                             </p>
                                         </div>
 

@@ -21,7 +21,7 @@ export const metadata = {
 
   openGraph: {
     images: { // ["/opengraph-image.png"],
-      url: 'https://media.discordapp.net/attachments/937466658027618324/1316873426174218290/opengraph-image-2.png?ex=675ca173&is=675b4ff3&hm=34b47afd352959b64bcd0f991f9d25ee2381722ca5ad402c36d4754cb05a7936&=&format=webp&quality=lossless',
+      url: 'https://media.discordapp.net/attachments/937466658027618324/1342641967506391040/opengraph-image-2.png?ex=67ba6046&is=67b90ec6&hm=df3188698e102db50a569c241fac4df0893e0a7419bdc1a9bfa1b8a0f3845f1d&=&format=webp&quality=lossless',
       width: 1200,
       height: 630,
       alt: "Skyler's Web-Portfolio Card",
@@ -92,8 +92,6 @@ IDEAS --------------------------------------------------------------------------
 
 
 TODO ---------------------------------------------------------------------------
-
-  Make "Skills" title attribute default to "name" if "description" is empty
 
   Really need to clean up references section ('small/large view' duplicate code)
 
