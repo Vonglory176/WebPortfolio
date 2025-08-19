@@ -6,11 +6,16 @@ export const workExperience = [
     {
         position: 'Full-Stack Web Developer',
         company: 'FAST Supplements LLC',
-        link: 'https://fastsupplements.com',
-        date: 'Mar 2025',
+        link: 'https://www.fastsupplements.com',
+        date: 'Mar 2025 - Present',
         
         bulletPoints: [
-            '<span class="font-semibold text-white">Coming Soon</span> 🎉',
+            // '<span class="font-semibold text-white">Coming Soon</span> 🎉',
+            '<span class="font-semibold text-white">Developed and maintained two complete websites</span>, this including both a Shopify e-commerce & NextJS (with Strapi Headless-CMS) project from concept to launch, managing the full customization suite, version / environment handling, and third-party integrations among much more.',
+            '<span class="font-semibold text-white">Debugged complex third-party Shopify theme code</span>, adapting it into custom solutions that met specific business requirements.',
+            '<span class="font-semibold text-white">Implemented comprehensive SEO optimization</span> including meta descriptions, structured data, and content optimization, resulting in improved search engine visibility and organic traffic growth.',
+            '<span class="font-semibold text-white">Collaborated with team members</span> to accurately implement website blueprints from Figma and manage digital marketing initiatives including Google Ads, TikTok advertising campaigns, and affiliate program setup.',
+            '<span class="font-semibold text-white">Provided technical support and IT assistance</span> for business operations including account management, DNS configuration, and third-party platform integrations.',
         ],
     },
 
