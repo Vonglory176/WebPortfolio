@@ -44,7 +44,7 @@ const About = () => {
                     </div>
 
                     <a
-                        href='/SkylerConley_Resume_1-30-2025.pdf'
+                        href='/SkylerConley_Resume_8-18-2025.pdf'
                         download='Skyler_Conley_Resume.pdf'
                         rel="noreferrer noopener"
                         target='_blank'
