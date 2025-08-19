@@ -1,4 +1,8 @@
-// Food-Delivery App
+// Fast Supplements
+import fastSupplementsImage1 from '@/assets/images/projects/fastSupplements/fastSupplements-1.webp'
+import fastSupplementsImage1Small from '@/assets/images/projects/fastSupplements/fastSupplements-1-small.webp'
+
+// Issaquah Christian Church
 import issaquahChurchImage1 from '@/assets/images/projects/issaquahCC/issaquahCC-1.webp'
 import issaquahChurchImage2 from '@/assets/images/projects/issaquahCC/issaquahCC-2.webp'
 import issaquahChurchImage3 from '@/assets/images/projects/issaquahCC/issaquahCC-3.webp'
@@ -147,6 +151,46 @@ import asteroidGauntletImage3Small from '@/assets/images/projects/asteroidGauntl
 // import asteroidGauntletThumbnail from '@/assets/images/projects/asteroidGauntlet/asteroidGauntlet-thumbnail.webp'
 
 export const projects = [
+    // {
+    //     // RealHomeBuyers
+    //     name: 'RealHomeBuyers',
+    //     description: 'A RealEstate website I built for RealHomeBuyers',
+    //     thumbnail: {
+    //         full: realHomeBuyersImage1,
+    //         small: realHomeBuyersImage1Small,
+    //     },
+    //     images: {
+    //         full: [
+    //             realHomeBuyersImage1,
+    //         ],
+    //         small: [
+    //             realHomeBuyersImage1Small,
+    //         ],
+    //     },
+    //     link: 'https://www.myrealhomebuyers.com/',
+    //     github: '',
+    //     skills: ['HTML', 'SCSS', 'TypeScript', 'RESTful API', 'NextJS', 'Strapi'], // SHOULD THESE BE ORDERED AS FRAMEWORK FIRST?
+    // },
+    {
+        // Fast Supplements
+        name: 'Fast Supplements',
+        description: 'A Shopify website I built for FastSupplements LLC',
+        thumbnail: {
+            full: fastSupplementsImage1,
+            small: fastSupplementsImage1Small,
+        },
+        images: {
+            full: [
+                fastSupplementsImage1,
+            ],
+            small: [
+                fastSupplementsImage1Small,
+            ],
+        },
+        link: 'https://www.fastsupplements.com/',
+        github: '',
+        skills: ['HTML', 'SCSS', 'JavaScript', 'Liquid', 'Shopify', 'Shopify CLI'],
+    },
     {
         // Issaquah Christian Church
         name: 'Issaquah CC',
