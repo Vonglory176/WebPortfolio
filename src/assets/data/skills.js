@@ -1,6 +1,6 @@
 
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaPython, FaGitAlt, FaGithub, FaGitlab, FaSass, FaBootstrap, FaGlobe, FaMobileAlt, FaTools, FaServer, FaCode, FaAws, FaSharp, FaBug, FaChartLine, FaRunning, FaUniversalAccess, FaSearch, FaUsers, FaBox, FaBook } from 'react-icons/fa'
-import { SiTypescript, SiJavascript, SiNextdotjs, SiRedux, SiMongodb, SiPostgresql, SiFirebase, SiFigma, SiAdobephotoshop, SiPostman, SiTailwindcss, SiJson, SiJquery, SiW3Schools, SiExpress, SiMicrosoftsqlserver, SiVite, SiPhp, SiWordpress, SiDirectus, SiJira, SiJenkins, SiTestinglibrary, SiRedis, SiAdobeillustrator, SiEslint, SiElectron, } from 'react-icons/si'
+import { SiTypescript, SiJavascript, SiNextdotjs, SiRedux, SiMongodb, SiPostgresql, SiFirebase, SiFigma, SiAdobephotoshop, SiPostman, SiTailwindcss, SiJson, SiJquery, SiW3Schools, SiExpress, SiMicrosoftsqlserver, SiVite, SiPhp, SiWordpress, SiDirectus, SiJira, SiJenkins, SiTestinglibrary, SiRedis, SiAdobeillustrator, SiEslint, SiElectron, SiShopify, SiStrapi, } from 'react-icons/si'
 import { GrMysql } from 'react-icons/gr'
 import { DiMsqlServer } from "react-icons/di";
 import { AiOutlineApi } from 'react-icons/ai'
@@ -150,8 +150,10 @@ export const skills = {
             {
                 name: 'CMS Systems',
                 list: [
-                    { shortName: 'WordPress', fullName: 'WordPress CMS', image: SiWordpress, description: 'The world\'s most popular content management system for building websites and blogs.' },
+                    { shortName: 'Strapi', fullName: 'Strapi CMS', image: SiStrapi, description: 'A modern headless CMS that wraps your database with a dynamic API and intuitive admin app.' },
+                    { shortName: 'Shopify', fullName: 'Shopify CMS', image: SiShopify, description: 'A leading e-commerce platform and CMS for building online stores with extensive customization capabilities.' },
                     { shortName: 'Directus', fullName: 'Directus CMS', image: SiDirectus, description: 'A modern headless CMS that wraps your database with a dynamic API and intuitive admin app.' },
+                    { shortName: 'WordPress', fullName: 'WordPress CMS', image: SiWordpress, description: 'The world\'s most popular content management system for building websites and blogs.' },
                 ]
             },
 
