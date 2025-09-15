@@ -11,11 +11,11 @@ export const workExperience = [
         
         bulletPoints: [
             // '<span class="font-semibold text-white">Coming Soon</span> 🎉',
-            '<span class="font-semibold text-white">Developed and maintained two complete websites</span>, this including both a Shopify e-commerce & NextJS (with Strapi Headless-CMS) project from concept to launch, managing the full customization suite, version / environment handling, and third-party integrations among much more.',
-            '<span class="font-semibold text-white">Debugged complex third-party Shopify theme code</span>, adapting it into custom solutions that met specific business requirements.',
-            '<span class="font-semibold text-white">Implemented comprehensive SEO optimization</span> including meta descriptions, structured data, and content optimization, resulting in improved search engine visibility and organic traffic growth.',
-            '<span class="font-semibold text-white">Collaborated with team members</span> to accurately implement website blueprints from Figma and manage digital marketing initiatives including Google Ads, TikTok advertising campaigns, and affiliate program setup.',
-            '<span class="font-semibold text-white">Provided technical support and IT assistance</span> for business operations including account management, DNS configuration, and third-party platform integrations.',
+            '<span class="font-semibold text-white">Developed and maintained two complete websites from concept to launch</span>: a Shopify e-commerce platform and a NextJS application with Strapi headless CMS, managing full customization, version control, environment handling, and third-party integrations.',
+            '<span class="font-semibold text-white">Adapted broken third-party Shopify code into custom solutions</span> that met specific business requirements and improved functionality.',
+            '<span class="font-semibold text-white">Implemented comprehensive SEO optimization</span> resulting in improved search engine visibility, organic traffic growth, and tracked conversions.',
+            '<span class="font-semibold text-white">Collaborated with team members to implement website blueprints from Figma and manage digital marketing initiatives</span> (Google Ads, TikTok advertising & affiliates, etc.) while providing technical support and IT assistance for business operations.',
+            '<span class="font-semibold text-white">Saved hundreds of dollars in subscription fees</span> by devising various custom alternatives to replace paid third-party services.',
         ],
     },
 
@@ -27,19 +27,10 @@ export const workExperience = [
         date: 'Jan 2023 - Present',
         
         bulletPoints: [
-            '<span class="font-semibold text-white">Optimized website performance</span> by up to 50%, reducing load times and improving user experience through efficient coding practices',
+            '<span class="font-semibold text-white">Optimized website performance by up to 50%</span>, reducing load times and improving user experience through efficient coding practices',
             '<span class="font-semibold text-white">Developed and maintained responsive websites</span> using React and NextJS, ensuring cross-browser compatibility and dynamic user interfaces',
             '<span class="font-semibold text-white">Implemented SEO best practices</span>, significantly improving website visibility and search engine rankings',
-            '<span class="font-semibold text-white">Collaborated with clients</span> to deliver customized web solutions, providing technical guidance and gathering requirements effectively'
-
-            // 'Developed and maintained websites for small businesses and personal projects, ensuring responsive design and cross-browser compatibility',
-            // 'Utilized modern web technologies such as React and NextJS to create dynamic and interactive user interfaces.',
-            // 'Collaborated with clients to gather requirements, provide technical guidance, and deliver customized web solutions.',
-            // 'Implemented SEO best practices to improve website visibility and search engine rankings.',
-            // 'Managed version control using Git, ensuring code quality and facilitating collaboration with other developers.',
-            // 'Optimized website performance by up to 50%, reducing load times and improving user experience through efficient coding practices.',
-            // 'Designed and integrated APIs to enhance site functionality and enable seamless data exchange between systems.',
-            // 'Continuously learned and adapted to new technologies and industry trends to stay current in the field of web development.',
+            '<span class="font-semibold text-white">Collaborated with clients to deliver customized web solutions</span>, providing technical guidance and gathering requirements effectively'
         ],
     },
 
@@ -52,7 +43,7 @@ export const workExperience = [
     
         // landmarks: {} // (Promotions)
         bulletPoints: [
-            '<span class="font-semibold text-white">Led my peers</span> and coordinated with other departments to meet company production goals and ship out thousands of products on time.',
+            '<span class="font-semibold text-white">Led department</span>, coordinating with peers to meet company production goals and ship out thousands of products on time.',
             '<span class="font-semibold text-white">Streamlined the casing process</span> by devising several efficient and time saving methods of packaging, organization and material preparation.',
         ],
     },
@@ -66,9 +57,9 @@ export const workExperience = [
     
         // landmarks: {} // (Promotions)
         bulletPoints: [
-            '<span class="font-semibold text-white">Restored functionality</span> to a dozen broken test-case audit features, which the GQE Team had previously been blocked by.',
-            '<span class="font-semibold text-white">Updated and maintained</span> the GQE Team\'s mobile test automation framework, utilizing JavaScript, TypeScript, and the Cucumber BDD framework',
-            '<span class="font-semibold text-white">Refactored</span> the GQE Team\'s Chrome extension, originally developed for Hewlett Packard\'s ALM tool, to transition to the new QTest management tool. This involved updating all functions to comply with QTest\'s REST API and displaying the returned data appropriately in the Chrome extensions interface.',
+            '<span class="font-semibold text-white">Restored functionality to 12 broken test-case audit features</span>, which the GQE Team had previously been blocked by.',
+            '<span class="font-semibold text-white">Updated and maintained mobile test automation framework</span> using JavaScript, TypeScript, and the Cucumber BDD framework',
+            '<span class="font-semibold text-white">Refactored Chrome extension</span> to transition from Hewlett Packard\'s ALM tool to QTest management tool, updating all functions to comply with QTest\'s REST API.',
         ],
     },
 
@@ -81,8 +72,8 @@ export const workExperience = [
     
         // landmarks: {} // (Promotions)
         bulletPoints: [
-            '<span class="font-semibold text-white">Collaberated with my team</span> to complete a series of testcases and verify full project functionality in reasonable time.',
-            '<span class="font-semibold text-white">Discovered and documented</span> dozens of bugs across many different projects, working alongside the development teams through various detailed reports and imagery.',
+            '<span class="font-semibold text-white">Collaborated with team members to complete testcases</span> and verify full project functionality ahead of schedule.',
+            '<span class="font-semibold text-white">Discovered and documented dozens of bugs</span> across many different projects, working alongside the development teams through various detailed reports and imagery.',
         ],
     }
 ]
