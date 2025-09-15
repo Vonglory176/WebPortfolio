@@ -10,7 +10,7 @@ import { useSiteContext } from '@/context/SiteContext'
 
 const References = () => {
     const { windowWidth } = useSiteContext()
-    const [currentReference, setCurrentReference] = useState(3)
+    const [currentReference, setCurrentReference] = useState(0)
     const [isOpen, setIsOpen] = useState(false)
     const largeViewContentRef = useRef(null)
 

@@ -4,8 +4,16 @@ import kylePicture from '@/assets/images/people/kylePicture.webp'
 import lawrencePicture from '@/assets/images/people/lawrencePicture.webp'
 import keithPicture from '@/assets/images/people/keithPicture.webp'
 import kurtPicture from '@/assets/images/people/kurtPicture.webp'
+import ruslanPicture from '@/assets/images/people/ruslanPicture.webp'
 
 export const references = [
+    {
+        name: 'Ruslan Cherkasskikh',
+        image: ruslanPicture,
+        linkedIn: '', // 'https://www.issaquah.cc/staff',
+        description: 'My Boss at FastSupplements',
+        content: '<p>I have worked with Skyler for at least the last 7 months and will hopefully continue as budgets allow. Usually when you hire someone out of college, you generally need to spend a lot of time training and spending a lot of time together to bring them up to speed, but Skyler is not one you need to train. If he is not proficient in something, he will figure it out and learn it quickly. He looks for opportunities to make himself better and it excites him to learn new information and skills. Skyler has a gift of doing a lot with little direction and most importantly not only being proactive but foreseeing issues and fixing them quickly. It has been a pleasure working with him and any team or company would benefit from his attitude and skillset as he is such an asset.</p><p>When we brought on another person to the team, Skyler quickly brought her up to speed and took it upon himself to meet regularly to collaborate. What more could you ask from a team member? It refreshing to see an individual wanting to not only better himself but take every opportunity to build up the team and company.</p><p>Skyler has worked on multiple projects with us including but not limited to website build out, a shopify store, SEO, Ad campaigns through Google, Facebook/Instagram, Google analytics, email marketing campaigns, etc. While this list is comprehensive, he did so much more with little direction. As we are a start up, he integrated so well into the atmosphere where you have limited resources, limited budgets and have to wear many hats. He kept a positive attitude and instead of saying that something couldn\'t be done, he would say "let me figure that out." Highly recommend Skyler as an employee, contractor, collaborator, team member. Because of his positive and "can-do" attitude, he will succeed anywhere. I look forward to working together in the future!</p><p>-Russ</p>',
+    },
     {
         name: 'Doug Ortega',
         image: dougPicture,

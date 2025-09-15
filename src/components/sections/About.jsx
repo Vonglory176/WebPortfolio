@@ -26,7 +26,7 @@ const About = () => {
 
                     {/* <h3 className='text-center text-2xl font-bold w-full'>Meet Skyler<span className='text-blue-400'>.</span></h3> */}
 
-                    <p>Vetted <span className='text-blue-400'>Full-Stack Web Developer</span> with <span className='text-blue-400'>3+ Years</span> of professional experience building modern web applications and custom enterprise solutions.</p>
+                    <p>Vetted <span className='text-blue-400'>Full-Stack Web Developer</span> with <span className='text-blue-400'>4+ Years</span> of professional experience building modern web applications and custom enterprise solutions.</p>
 
                     <p>Specialized in <span className='text-blue-400'>React</span>, <span className='text-blue-400'>NextJS</span>, and <span className='text-blue-400'>NodeJS</span>, with additional expertise in various <span className='text-blue-400'>Content Management Systems</span> and <span className='text-blue-400'>Database Technologies</span>. Proven track record in delivering <span className='text-blue-400'>SEO-Optimized</span> and <span className='text-blue-400'>High-Performance</span> web solutions with rich <span className='text-blue-400'>Analytics</span> integration.</p>
 
@@ -44,7 +44,7 @@ const About = () => {
                     </div>
 
                     <a
-                        href='/SkylerConley_Resume_8-18-2025.pdf'
+                        href='/SkylerConley_Resume_9-11-2025.pdf'
                         download='Skyler_Conley_Resume.pdf'
                         rel="noreferrer noopener"
                         target='_blank'

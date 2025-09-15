@@ -1,3 +1,9 @@
+// RealHomeBuyers
+import realHomeBuyersImage1 from '@/assets/images/projects/realHomeBuyers/realHomeBuyers-1.webp'
+import realHomeBuyersImage2 from '@/assets/images/projects/realHomeBuyers/realHomeBuyers-2.webp'
+import realHomeBuyersImage3 from '@/assets/images/projects/realHomeBuyers/realHomeBuyers-3.webp'
+
+
 // Fast Supplements
 import fastSupplementsImage1 from '@/assets/images/projects/fastSupplements/fastSupplements-1.webp'
 import fastSupplementsImage1Small from '@/assets/images/projects/fastSupplements/fastSupplements-1-small.webp'
@@ -151,30 +157,34 @@ import asteroidGauntletImage3Small from '@/assets/images/projects/asteroidGauntl
 // import asteroidGauntletThumbnail from '@/assets/images/projects/asteroidGauntlet/asteroidGauntlet-thumbnail.webp'
 
 export const projects = [
-    // {
-    //     // RealHomeBuyers
-    //     name: 'RealHomeBuyers',
-    //     description: 'A RealEstate website I built for RealHomeBuyers',
-    //     thumbnail: {
-    //         full: realHomeBuyersImage1,
-    //         small: realHomeBuyersImage1Small,
-    //     },
-    //     images: {
-    //         full: [
-    //             realHomeBuyersImage1,
-    //         ],
-    //         small: [
-    //             realHomeBuyersImage1Small,
-    //         ],
-    //     },
-    //     link: 'https://www.myrealhomebuyers.com/',
-    //     github: '',
-    //     skills: ['HTML', 'SCSS', 'TypeScript', 'RESTful API', 'NextJS', 'Strapi'], // SHOULD THESE BE ORDERED AS FRAMEWORK FIRST?
-    // },
+    {
+        // RealHomeBuyers
+        name: 'Real Home Buyers',
+        description: 'A Strapi-powered Real Estate website I built & maintain for RealHomeBuyers',
+        thumbnail: {
+            full: realHomeBuyersImage1,
+            small: realHomeBuyersImage1,
+        },
+        images: {
+            full: [
+                realHomeBuyersImage1,
+                realHomeBuyersImage2,
+                realHomeBuyersImage3,
+            ],
+            small: [
+                realHomeBuyersImage1,
+                realHomeBuyersImage2,
+                realHomeBuyersImage3,
+            ],
+        },
+        link: 'https://www.myrealhomebuyers.com/',
+        github: '',
+        skills: ['HTML', 'SCSS', 'TypeScript', 'RESTful API', 'NextJS', 'Strapi', 'Google Analytics', 'InvestorFuse CRM'], // SHOULD THESE BE ORDERED AS FRAMEWORK FIRST?
+    },
     {
         // Fast Supplements
         name: 'Fast Supplements',
-        description: 'A Shopify website I built for FastSupplements LLC',
+        description: 'A Shopify e-commerce website that I built & maintain for FastSupplements',
         thumbnail: {
             full: fastSupplementsImage1,
             small: fastSupplementsImage1Small,
@@ -189,7 +199,7 @@ export const projects = [
         },
         link: 'https://www.fastsupplements.com/',
         github: '',
-        skills: ['HTML', 'SCSS', 'JavaScript', 'Liquid', 'Shopify', 'Shopify CLI'],
+        skills: ['HTML', 'SCSS', 'JavaScript', 'Liquid', 'Shopify', 'Shopify CLI', 'Mailchimp CRM'],
     },
     {
         // Issaquah Christian Church
