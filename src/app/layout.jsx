@@ -1,4 +1,5 @@
 import { Poppins } from "next/font/google"
+import Script from "next/script"
 import "@/styles/index.css"
 
 // import openGraphImage from "@/assets/opengraph-image-full.png"
@@ -40,6 +41,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4EBQJ1D4PG"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4EBQJ1D4PG');
+          `}
+        </Script>
+      </head>
       <body
         className={`${poppins.variable} antialiased`} // bg-gray-900 text-white
       >
