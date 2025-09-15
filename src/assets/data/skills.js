@@ -1,6 +1,6 @@
 
 import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaPython, FaGitAlt, FaGithub, FaGitlab, FaSass, FaBootstrap, FaGlobe, FaMobileAlt, FaTools, FaServer, FaCode, FaAws, FaSharp, FaBug, FaChartLine, FaRunning, FaUniversalAccess, FaSearch, FaUsers, FaBox, FaBook } from 'react-icons/fa'
-import { SiTypescript, SiJavascript, SiNextdotjs, SiRedux, SiMongodb, SiPostgresql, SiFirebase, SiFigma, SiAdobephotoshop, SiPostman, SiTailwindcss, SiJson, SiJquery, SiW3Schools, SiExpress, SiMicrosoftsqlserver, SiVite, SiPhp, SiWordpress, SiDirectus, SiJira, SiJenkins, SiTestinglibrary, SiRedis, SiAdobeillustrator, SiEslint, SiElectron, SiShopify, SiStrapi, } from 'react-icons/si'
+import { SiTypescript, SiJavascript, SiNextdotjs, SiRedux, SiMongodb, SiPostgresql, SiFirebase, SiFigma, SiAdobephotoshop, SiPostman, SiTailwindcss, SiJson, SiJquery, SiW3Schools, SiExpress, SiMicrosoftsqlserver, SiVite, SiPhp, SiWordpress, SiDirectus, SiJira, SiJenkins, SiTestinglibrary, SiRedis, SiAdobeillustrator, SiEslint, SiElectron, SiShopify, SiStrapi, SiVercel, SiNetlify, } from 'react-icons/si'
 import { GrMysql } from 'react-icons/gr'
 import { DiMsqlServer } from "react-icons/di";
 import { AiOutlineApi } from 'react-icons/ai'
@@ -94,6 +94,8 @@ export const skills = {
                 list: [
                     { shortName: 'AWS', fullName: 'Amazon Web Services', image: FaAws, description: 'A comprehensive cloud computing platform offering scalable and reliable infrastructure services.' },
                     { shortName: 'Azure', fullName: 'Microsoft Azure', image: VscAzure, description: 'Microsoft\'s cloud platform providing a wide range of services for building and managing applications.' },
+                    { shortName: 'Vercel', fullName: 'Vercel', image: SiVercel, description: 'A cloud platform for static sites and serverless functions, optimized for Next.js deployments.' },
+                    { shortName: 'Netlify', fullName: 'Netlify', image: SiNetlify, description: 'A cloud computing platform that offers hosting and serverless backend services for web applications.' },
                 ]
             },
 
