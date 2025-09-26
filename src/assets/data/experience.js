@@ -2,23 +2,6 @@ import phiThetaKappa from '@/assets/images/PhiThetaKappa.webp'
 
 export const workExperience = [
 
-    // FAST Supplements LLC
-    {
-        position: 'Full-Stack Web Developer',
-        company: 'FAST Supplements LLC',
-        link: 'https://www.fastsupplements.com',
-        date: 'Mar 2025 - Present',
-        
-        bulletPoints: [
-            // '<span class="font-semibold text-white">Coming Soon</span> 🎉',
-            '<span class="font-semibold text-white">Developed and maintained two complete websites from concept to launch</span>: a Shopify e-commerce platform and a NextJS application with Strapi headless CMS, managing full customization, version control, environment handling, and third-party integrations.',
-            '<span class="font-semibold text-white">Adapted broken third-party Shopify code into custom solutions</span> that met specific business requirements and improved functionality.',
-            '<span class="font-semibold text-white">Implemented comprehensive SEO optimization</span> resulting in improved search engine visibility, organic traffic growth, and tracked conversions.',
-            '<span class="font-semibold text-white">Collaborated with team members to implement website blueprints from Figma and manage digital marketing initiatives</span> (Google Ads, TikTok advertising & affiliates, etc.) while providing technical support and IT assistance for business operations.',
-            '<span class="font-semibold text-white">Saved hundreds of dollars in subscription fees</span> by devising various custom alternatives to replace paid third-party services.',
-        ],
-    },
-
     // SA Software
     {
         position: 'Freelance Web Developer',
@@ -31,6 +14,23 @@ export const workExperience = [
             '<span class="font-semibold text-white">Developed and maintained responsive websites</span> using React and NextJS, ensuring cross-browser compatibility and dynamic user interfaces',
             '<span class="font-semibold text-white">Implemented SEO best practices</span>, significantly improving website visibility and search engine rankings',
             '<span class="font-semibold text-white">Collaborated with clients to deliver customized web solutions</span>, providing technical guidance and gathering requirements effectively'
+        ],
+    },
+
+    // FAST Supplements LLC
+    {
+        position: 'Full-Stack Web Developer',
+        company: 'FAST Supplements LLC',
+        link: 'https://www.fastsupplements.com',
+        date: 'Feb 2025 - Sep 2025',
+        
+        bulletPoints: [
+            // '<span class="font-semibold text-white">Coming Soon</span> 🎉',
+            '<span class="font-semibold text-white">Developed and maintained two complete websites from concept to launch</span>: a Shopify e-commerce platform and a NextJS application with Strapi headless CMS, managing full customization, version control, environment handling, and third-party integrations.',
+            '<span class="font-semibold text-white">Adapted broken third-party Shopify code into custom solutions</span> that met specific business requirements and improved functionality.',
+            '<span class="font-semibold text-white">Implemented comprehensive SEO optimization</span> resulting in improved search engine visibility, organic traffic growth, and tracked conversions.',
+            '<span class="font-semibold text-white">Collaborated with team members to implement website blueprints from Figma and manage digital marketing initiatives</span> (Google Ads, TikTok advertising & affiliates, etc.) while providing technical support and IT assistance for business operations.',
+            '<span class="font-semibold text-white">Saved hundreds of dollars in subscription fees</span> by devising various custom alternatives to replace paid third-party services.',
         ],
     },
 
