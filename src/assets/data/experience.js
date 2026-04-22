@@ -2,12 +2,24 @@ import phiThetaKappa from '@/assets/images/PhiThetaKappa.webp'
 
 export const workExperience = [
 
+    // DataSurge LLC
+    {
+        position: 'Full-Stack Software Engineer',
+        company: 'DataSurge LLC',
+        link: 'https://www.datasurge.com',
+        date: 'Jan 2026 - Present',
+        
+        bulletPoints: [
+            '<span class="font-semibold text-white">Coming soon</span>🎉',
+        ],
+    },
+
     // SA Software
     {
         position: 'Freelance Web Developer',
         company: 'Silicon Avatar Software',
         link: 'https://skylergconley.com',
-        date: 'Jan 2023 - Present',
+        date: 'Jan 2023 - Dec 2025',
         
         bulletPoints: [
             '<span class="font-semibold text-white">Optimized website performance by up to 50%</span>, reducing load times and improving user experience through efficient coding practices',
@@ -80,6 +92,19 @@ export const workExperience = [
 
 export const educationalExperience = [
     {
+        award: 'B.S. in Computer Science',
+        company: 'Western Governors University',
+        date: 'Dec 2027 (Expected)',
+        link: 'https://www.wgu.edu/online-it-degrees/computer-science.html',
+    
+        // landmarks: {} // (Promotions)
+        bulletPoints: [
+            'Accelerated <span class="font-semibold text-white">competency-based</span> program',
+            '<span class="font-semibold text-white">Certifications for ITIL® 4 Foundation & Linux Essentials</span>',
+        ],
+        // image: 
+    },
+    {
         award: 'Programming for Mobile and Web Development Certificate of Achievement',
         company: 'Bellevue College',
         date: 'Jun 2023',
@@ -87,7 +112,8 @@ export const educationalExperience = [
     
         // landmarks: {} // (Promotions)
         bulletPoints: [
-            '<span class="font-semibold text-white">Honors student</span> with references',
+            'Several <span class="font-semibold text-white">Professor references</span> (see next section)',
+            '<span class="font-semibold text-white">Honors student</span> with Phi Theta Kappa',
             'Maintained a perfect <span class="font-semibold text-white">4.0 GPA</span>',
         ],
 
